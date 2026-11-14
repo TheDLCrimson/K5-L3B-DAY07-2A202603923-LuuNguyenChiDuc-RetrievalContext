@@ -218,3 +218,51 @@ M4 was re-run alongside so the two times are comparable; its scores are unchange
 **A4 (`A4_rerank_pool10`) is chosen** and frozen in [results/agent/selection.json](results/agent/selection.json) before any test run.
 It is also the cheapest configuration ($0.0333 for 33 questions) and the fastest after A0 (6.4 s median).
 The margins on dev are small: one grade point and a few citations separate the five, so the test run is the real check.
+
+## E4 - test, run once (Part 5)
+
+Run on 14/11/2026 after the choice was committed ([results/agent/selection.json](results/agent/selection.json), commit `cd74e73`), with `--final`, once for the baseline A0 and once for the chosen A4.
+The raw results were committed (`1a1a779`) before any test answer was labelled.
+Test has 10 answerable and 3 unanswerable questions, all written before any Lab 7 run and never used for tuning.
+The labels ([review_labels.csv](results/agent/test/review_labels.csv), one reason per row) were drafted with AI assistance by reading each answer against every chunk in its context, then checked by the author.
+
+**Retrieval, one search on the original question** ([results/retrieval/test/summary.md](results/retrieval/test/summary.md)):
+
+| Method | Hit@1 | Evidence Hit@3 | MRR@10 | Context Evidence Rate | Median ms |
+| --- | --- | --- | --- | --- | --- |
+| dense (M1, baseline) | 7/10 | 8/10 (misses t03, t07) | 0.750 | 8/10 | 37 |
+| hybrid_rerank_pool10 (chosen) | 9/10 | 10/10 | 0.933 | 10/10 | 1,832 |
+
+**Agent:**
+
+| Measure | A0 dense (baseline) | A4 rerank pool 10 (chosen) |
+| --- | --- | --- |
+| Grounded answer 2 / 1 / 0 (mean /2) | 10 / 0 / 0 (2.00) | 8 / 0 / 2 (1.60) |
+| Context grade 2 / 1 / 0 (10 answerable) | 10 / 0 / 0 | 9 / 0 / 1 |
+| Context Evidence Rate (automatic) | 10/10 | 9/10 |
+| Citations that support the answer | 32/33 | 40/41 |
+| Answers with citations | 10/10 | 9/9 |
+| Correct abstention / false abstention | 3/3, 0/10 | 2/3, 1/10 |
+| Tool use; retrieval calls (1 / 2 / 3 / 4 per question) | 13/13; 29 (5 / 3 / 2 / 3) | 13/13; 28 (5 / 3 / 3 / 2) |
+| Cost (13 questions); time median / p90 | $0.0211; 7.3 s / 12.2 s | $0.0234; 10.0 s / 20.2 s |
+| Errors | 0 | 0 |
+
+**What went wrong for A4, from the traces.**
+
+- t07: both agents made the same first search ("thời điểm có hiệu lực của hợp đồng chuyển nhượng quyền sử dụng đất").
+  A4's reranker did not show Điều 188 clause 3 among its three new results. Its second search then targeted Điều 168 (when a right may be exercised), and it answered that instead (answer 0, context 0).
+  A0's second search used the law's wording ("phải được đăng ký ... có hiệu lực kể từ thời điểm đăng ký") and found it.
+  One search with the original question does put the clause at rank 3 for the chosen method, so the miss comes from the model's query, not the method.
+- t10: A4's first search returned the exact clause (Điều 179 clause 3), and the answer quotes "mỗi lần thuê không quá 10 năm", then refuses because the law says "sản xuất nông nghiệp" where the question says "trồng trọt".
+  With the same chunk, A0 answered. This is over-caution by the model, which the abstention rule in the prompt invites.
+- tu02: A4 refuses the fee rate, but states that Điều 190 (2013) exempts farmland transfers (chuyển nhượng) within a commune; the clause is about swaps (chuyển đổi), so the refusal adds an unsupported claim.
+
+**Conclusion.**
+On test, the chosen configuration retrieves better on its own (Evidence Hit@3 10/10 against 8/10) but answers worse inside the agent (1.60 against 2.00), with every difference traced to how the model wrote a query, when it stopped searching, or how cautious it was.
+On dev the five configurations tied within 0.05, and the tie-break on citation share chose A4 by a margin of a few citations.
+So the dev choice was not a reliable one: with 30 dev and 10 test questions, and one run each, the agent configurations cannot be told apart.
+What does hold: on dev every agent's context reaches the evidence more often than one search on the original question (30/30 against 26-28/30), and on test the baseline agent does too (10/10 against 8/10 for one dense search).
+It is not guaranteed: A4's context on test (9/10) is below its own single search (10/10), because the model replaced the user's wording with a worse query.
+Abstention on unanswerable questions holds up: 3/3 for every dev configuration and 5 of 6 on test across the two runs, where the one failure refused correctly but added a false claim.
+Reading the citations catches wrong ones that an ID check would pass (for example 0415 in A0 t03, 0411 in A4 tu02).
+Worth doing next: repeated runs per configuration to measure run-to-run variance, a larger test set, and a rule that does not let one exact word ("trồng trọt") trigger a refusal when a quoted clause answers the question.
