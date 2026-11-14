@@ -145,7 +145,13 @@
   "ms": 5965.2,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q02",
@@ -293,7 +299,13 @@
   "ms": 7310.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q03",
@@ -442,7 +454,13 @@
   "ms": 5892.6,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q04",
@@ -591,7 +609,13 @@
   "ms": 6638.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q05",
@@ -739,7 +763,13 @@
   "ms": 6155.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q06",
@@ -976,7 +1006,13 @@
   "ms": 13916.0,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q07",
@@ -1126,7 +1162,14 @@
   "ms": 7797.3,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q08",
@@ -1275,7 +1318,13 @@
   "ms": 9075.6,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q09",
@@ -1424,7 +1473,14 @@
   "ms": 6746.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q10",
@@ -1576,7 +1632,14 @@
   "ms": 8756.8,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q11",
@@ -1725,7 +1788,14 @@
   "ms": 6368.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q12",
@@ -1874,7 +1944,14 @@
   "ms": 8817.2,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q13",
@@ -2023,7 +2100,14 @@
   "ms": 8989.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q14",
@@ -2172,7 +2256,14 @@
   "ms": 6148.9,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q15",
@@ -2447,7 +2538,14 @@
   "ms": 12626.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q16",
@@ -2596,7 +2694,13 @@
   "ms": 8366.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q17",
@@ -2956,7 +3060,13 @@
   "ms": 22859.9,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q18",
@@ -3105,7 +3215,14 @@
   "ms": 8730.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q19",
@@ -3253,7 +3370,13 @@
   "ms": 6710.1,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "q20",
@@ -3529,7 +3652,13 @@
   "ms": 11886.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h01",
@@ -3677,7 +3806,13 @@
   "ms": 6640.4,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h02",
@@ -3827,7 +3962,13 @@
   "ms": 6088.2,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h03",
@@ -4034,7 +4175,13 @@
   "ms": 11292.7,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h04",
@@ -4183,7 +4330,13 @@
   "ms": 7340.3,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h05",
@@ -4460,7 +4613,13 @@
   "ms": 12719.0,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h06",
@@ -4668,7 +4827,14 @@
   "ms": 11719.2,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h07",
@@ -4817,7 +4983,14 @@
   "ms": 11245.0,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h08",
@@ -4968,7 +5141,14 @@
   "ms": 7526.0,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h09",
@@ -5332,7 +5512,13 @@
   "ms": 21336.6,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "h10",
@@ -5481,7 +5667,13 @@
   "ms": 7869.0,
   "context_hit": true,
   "cited_gold": true,
-  "first_search_hit": true
+  "first_search_hit": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
  },
  {
   "query_id": "u01",
@@ -5764,7 +5956,9 @@
   "prompt_tokens": 13449,
   "completion_tokens": 1382,
   "cost_usd": 0.002016,
-  "ms": 15145.8
+  "ms": 15145.8,
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "u02",
@@ -6189,7 +6383,9 @@
   "prompt_tokens": 23664,
   "completion_tokens": 1134,
   "cost_usd": 0.002904,
-  "ms": 21535.5
+  "ms": 21535.5,
+  "filter_year": null,
+  "wrong_version_citations": []
  },
  {
   "query_id": "u03",
@@ -6427,6 +6623,8 @@
   "prompt_tokens": 9935,
   "completion_tokens": 813,
   "cost_usd": 0.001386,
-  "ms": 12187.8
+  "ms": 12187.8,
+  "filter_year": null,
+  "wrong_version_citations": []
  }
 ]

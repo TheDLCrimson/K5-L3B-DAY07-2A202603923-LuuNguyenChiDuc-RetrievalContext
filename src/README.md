@@ -42,7 +42,7 @@ The chunk export and the benchmark are committed, so these steps only rebuild th
 | `context.py` | Labels chunks with their citation key and source, and packs them into the 3,300-character budget |
 | `eval_retrieval.py` | Retrieval and context metrics per method; writes `results/retrieval/<split>/` |
 | `providers.py` | Chat Completions client (OpenRouter by default), adapted from the Day 4 lab; reports cost and time per call |
-| `agent.py` | The tool-calling agent: `search_law`, optional `read_neighbors`, `finish`; stop conditions and code guards |
+| `agent.py` | The tool-calling agent: `search_law` and `finish`, optional per-version search; stop conditions and code guards |
 | `run_agent.py` | Runs one agent configuration on a split; writes traces and automatic metrics to `results/agent/<split>/<config>/` |
 
 ## Tests

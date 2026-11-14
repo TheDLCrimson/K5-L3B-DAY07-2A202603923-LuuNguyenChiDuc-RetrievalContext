@@ -21,22 +21,26 @@ from collections import Counter
 from datetime import UTC, datetime
 from typing import Any
 
-from .agent import Agent, Neighbors
+from .agent import Agent
 from .build_benchmark import QUESTIONS_PATH
 from .day6 import REPO_ROOT
-from .evidence import any_hit
+from .evidence import any_hit, evidence_hit
 from .export_day6 import load_chunks
 from .providers import Provider
 from .retrieval import Bm25Retriever, CrossEncoderScorer, DenseRetriever, HybridRetriever, RerankRetriever
 
 OUT_DIR = REPO_ROOT / "results" / "agent"
 CONFIGS = {
-    "A0_dense": {"retriever": "dense", "neighbors": False,
+    "A0_dense": {"retriever": "dense", "per_version": False,
                  "note": "baseline: the agent with dense search on the Day 6 index"},
-    "A1_rerank": {"retriever": "hybrid_rerank", "neighbors": False,
+    "A1_rerank": {"retriever": "hybrid_rerank", "per_version": False,
                   "note": "the agent with the retrieval chosen in E1"},
-    "A2_rerank_neighbors": {"retriever": "hybrid_rerank", "neighbors": True,
-                            "note": "A1 plus the read_neighbors tool"},
+    "A3_rerank_per_version": {"retriever": "hybrid_rerank", "per_version": True,
+                              "note": "A1, searching each law version when the question names none"},
+    "A4_rerank_pool10": {"retriever": "hybrid_rerank_pool10", "per_version": False,
+                         "note": "A1 with a rerank pool of the top 10 per side instead of 20"},
+    "A5_per_version_pool10": {"retriever": "hybrid_rerank_pool10", "per_version": True,
+                              "note": "A3 and A4 combined"},
 }
 
 
@@ -44,8 +48,9 @@ def build_retriever(name: str):
     dense = DenseRetriever()
     if name == "dense":
         return dense
-    if name == "hybrid_rerank":
-        return RerankRetriever(HybridRetriever(dense, Bm25Retriever()), CrossEncoderScorer())
+    if name in ("hybrid_rerank", "hybrid_rerank_pool10"):
+        pool = 20 if name == "hybrid_rerank" else 10
+        return RerankRetriever(HybridRetriever(dense, Bm25Retriever(), candidates=pool), CrossEncoderScorer())
     raise ValueError(f"unknown retriever {name!r}")
 
 
@@ -57,7 +62,20 @@ def score(record: dict[str, Any], q: dict[str, Any], chunks_by_id: dict[str, dic
         record["context_hit"] = hit(record["context_ids"])
         record["first_search_hit"] = bool(searches) and hit(searches[0]["shown"])
         record["cited_gold"] = hit(record["citations"])
+        gold_years = {gold_year(g) for g in q["gold"]}
+        record["both_laws_expected"] = not q.get("filter") and gold_years == {2013, 2024}
+        record["cited_gold_years"] = sorted({gold_year(g) for g in q["gold"] for i in record["citations"]
+                                             if evidence_hit(chunks_by_id[i], g)})
+    if record["status"] != "error":
+        year = (q.get("filter") or {}).get("year")
+        record["filter_year"] = year
+        record["wrong_version_citations"] = ([i for i in record["citations"]
+                                              if chunks_by_id[i]["metadata"]["year"] != year] if year else [])
     return record
+
+
+def gold_year(gold: dict[str, Any]) -> int:
+    return 2013 if gold["source_id"] == "ldd2013" else 2024
 
 
 def trace(agent: Agent, q: dict[str, Any], chunks_by_id: dict[str, dict]) -> dict[str, Any]:
@@ -89,6 +107,11 @@ def summarize(rows: list[dict]) -> dict[str, Any]:
         "first_search_evidence": ratio(sum(r["first_search_hit"] for r in ans), len(ans)),
         "answered_citing_a_gold_chunk": ratio(sum(r["cited_gold"] for r in ans if r["status"] == "answered"),
                                              sum(r["status"] == "answered" for r in ans)),
+        "both_laws_cited": ratio(sum(len(r["cited_gold_years"]) == 2 for r in ans if r["both_laws_expected"]),
+                                 sum(r["both_laws_expected"] for r in ans)),
+        "both_laws_missed": [r["query_id"] for r in ans if r["both_laws_expected"] and len(r["cited_gold_years"]) < 2],
+        "wrong_version_citations": ratio(sum(len(r["wrong_version_citations"]) for r in ok),
+                                         sum(len(r["citations"]) for r in ok if r["filter_year"])),
         "abstained_on_unanswerable": ratio(sum(r["status"] == "abstain" for r in unans), len(unans)),
         "abstained_on_answerable": ratio(sum(r["status"] == "abstain" for r in ans), len(ans)),
         "answers_with_citations": ratio(sum(bool(r["citations"]) for r in answered), len(answered)),
@@ -117,6 +140,8 @@ def markdown(name: str, split: str, config: dict, s: dict) -> str:
             ("Context Evidence Rate (answerable)", fmt(s["context_evidence_rate"])),
             ("Gold in the first search's results (answerable)", fmt(s["first_search_evidence"])),
             ("Answered and cited a gold chunk (ID check, not a support label)", fmt(s["answered_citing_a_gold_chunk"])),
+            ("Cited gold from both laws (no version named, gold in both)", fmt(s["both_laws_cited"])),
+            ("Citations from the other law version (version named)", fmt(s["wrong_version_citations"])),
             ("Abstained on unanswerable (status only; confirmed by reading)", fmt(s["abstained_on_unanswerable"])),
             ("Abstained on answerable", fmt(s["abstained_on_answerable"])),
             ("Answers with citations", fmt(s["answers_with_citations"])),
@@ -171,7 +196,7 @@ def main() -> None:
         write_outputs(out, record, rows)
         return
     cfg = CONFIGS[args.config]
-    agent = Agent(Provider(), build_retriever(cfg["retriever"]), Neighbors(chunks) if cfg["neighbors"] else None)
+    agent = Agent(Provider(), build_retriever(cfg["retriever"]), per_version=cfg["per_version"])
     agent.retriever.search("đất đai", 1)  # load models before timing
 
     rows = []

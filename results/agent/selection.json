@@ -1,0 +1,160 @@
+{
+  "chosen": "A4_rerank_pool10",
+  "baseline_for_test": "A0_dense",
+  "rule": [
+    "gate: 3/3 correct abstentions on dev unanswerable and no more false abstentions than A0",
+    "highest mean grounded answer on dev answerable; within 0.05 is a tie",
+    "then the higher share of citations that support the answer",
+    "then lower median time per question, then lower cost"
+  ],
+  "applied": "all five pass the gate; all within 0.05 of 2.00 at step 2; A4 has the highest supporting-citation share (70/70) at step 3",
+  "dev": {
+    "A0_dense": {
+      "grounded_mean": 2.0,
+      "citation_validity": {
+        "n": 69,
+        "N": 71
+      },
+      "abstention": {
+        "n": 3,
+        "N": 3
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 30
+      },
+      "ms_median": 4930.2,
+      "cost_usd": 0.038862,
+      "config": {
+        "name": "A0_dense",
+        "provider": "openrouter",
+        "model": "anthropic/claude-haiku-5.5",
+        "retriever": "dense",
+        "read_neighbors": false,
+        "max_turns": 6,
+        "max_searches": 4,
+        "results_per_search": 3,
+        "context_budget_chars_per_result": 3300,
+        "note": "baseline: the agent with dense search on the Day 6 index"
+      }
+    },
+    "A1_rerank": {
+      "grounded_mean": 1.9667,
+      "citation_validity": {
+        "n": 74,
+        "N": 75
+      },
+      "abstention": {
+        "n": 3,
+        "N": 3
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 30
+      },
+      "ms_median": 8730.4,
+      "cost_usd": 0.037454,
+      "config": {
+        "name": "A1_rerank",
+        "provider": "openrouter",
+        "model": "anthropic/claude-haiku-5.5",
+        "retriever": "hybrid_rerank",
+        "read_neighbors": false,
+        "max_turns": 6,
+        "max_searches": 4,
+        "results_per_search": 3,
+        "context_budget_chars_per_result": 3300,
+        "note": "the agent with the retrieval chosen in E1"
+      }
+    },
+    "A3_rerank_per_version": {
+      "grounded_mean": 1.9667,
+      "citation_validity": {
+        "n": 83,
+        "N": 84
+      },
+      "abstention": {
+        "n": 3,
+        "N": 3
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 30
+      },
+      "ms_median": 11597.3,
+      "cost_usd": 0.03756,
+      "config": {
+        "name": "A3_rerank_per_version",
+        "provider": "openrouter",
+        "model": "anthropic/claude-haiku-5.5",
+        "retriever": "hybrid_rerank",
+        "per_version": true,
+        "max_turns": 6,
+        "max_searches": 4,
+        "results_per_search": 3,
+        "context_budget_chars_per_result": 3300,
+        "note": "A1, searching each law version when the question names none"
+      }
+    },
+    "A4_rerank_pool10": {
+      "grounded_mean": 2.0,
+      "citation_validity": {
+        "n": 70,
+        "N": 70
+      },
+      "abstention": {
+        "n": 3,
+        "N": 3
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 30
+      },
+      "ms_median": 6411.1,
+      "cost_usd": 0.033337,
+      "config": {
+        "name": "A4_rerank_pool10",
+        "provider": "openrouter",
+        "model": "anthropic/claude-haiku-5.5",
+        "retriever": "hybrid_rerank_pool10",
+        "per_version": false,
+        "max_turns": 6,
+        "max_searches": 4,
+        "results_per_search": 3,
+        "context_budget_chars_per_result": 3300,
+        "note": "A1 with a rerank pool of the top 10 per side instead of 20"
+      }
+    },
+    "A5_per_version_pool10": {
+      "grounded_mean": 1.9667,
+      "citation_validity": {
+        "n": 84,
+        "N": 85
+      },
+      "abstention": {
+        "n": 3,
+        "N": 3
+      },
+      "false_abstention": {
+        "n": 0,
+        "N": 30
+      },
+      "ms_median": 7821.4,
+      "cost_usd": 0.041233,
+      "config": {
+        "name": "A5_per_version_pool10",
+        "provider": "openrouter",
+        "model": "anthropic/claude-haiku-5.5",
+        "retriever": "hybrid_rerank_pool10",
+        "per_version": true,
+        "max_turns": 6,
+        "max_searches": 4,
+        "results_per_search": 3,
+        "context_budget_chars_per_result": 3300,
+        "note": "A3 and A4 combined"
+      }
+    }
+  },
+  "decided_at": "2026-11-14T15:07:44+00:00",
+  "note": "fixed on dev before any test run; test is run once for A4 and for the baseline A0"
+}

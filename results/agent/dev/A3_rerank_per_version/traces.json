@@ -1,0 +1,6605 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2013, hộ gia đình, cá nhân được nhận chuyển quyền sử dụng đất nông nghiệp tối đa bao nhiêu lần hạn mức giao đất?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013, tại Điều 130 khoản 1, hạn mức nhận chuyển quyền sử dụng đất nông nghiệp của hộ gia đình, cá nhân không quá 10 lần hạn mức giao đất nông nghiệp của hộ gia đình, cá nhân đối với mỗi loại đất quy định tại các khoản 1, 2 và 3 Điều 129 [B-ldd2013-0269]. Việc Chính phủ quy định cụ thể theo từng vùng và thời kỳ được nêu tại khoản 2 Điều 130 [B-ldd2013-0269].",
+  "citations": [
+   "B-ldd2013-0269"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức nhận chuyển quyền sử dụng đất nông nghiệp của hộ gia đình, cá nhân không quá hạn mức giao đất",
+    "filter": 2013,
+    "ms": 3507.5,
+    "results": [
+     {
+      "id": "B-ldd2013-0269",
+      "score": 0.999252,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 71,
+      "page_end": 72,
+      "year": 2013,
+      "articles": [
+       130
+      ]
+     },
+     {
+      "id": "B-ldd2013-0266",
+      "score": 0.992142,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 71,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       129
+      ]
+     },
+     {
+      "id": "B-ldd2013-0265",
+      "score": 0.983211,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 70,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       128,
+       129
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0269",
+     "B-ldd2013-0266",
+     "B-ldd2013-0265"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1891.4,
+    "usage": {
+     "prompt_tokens": 1525,
+     "completion_tokens": 123,
+     "total_tokens": 1648,
+     "cost": 0.00021186,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000214,
+      "upstream_inference_prompt_cost": 0.0001525,
+      "upstream_inference_completions_cost": 6.15e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1899.8,
+    "usage": {
+     "prompt_tokens": 2961,
+     "completion_tokens": 322,
+     "total_tokens": 3283,
+     "cost": 0.000452529,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004571,
+      "upstream_inference_prompt_cost": 0.0002961,
+      "upstream_inference_completions_cost": 0.000161
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0269",
+   "B-ldd2013-0266",
+   "B-ldd2013-0265"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4486,
+  "completion_tokens": 445,
+  "cost_usd": 0.000664,
+  "ms": 7298.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Luật Đất đai 2024 cho phép một cá nhân gom bao nhiêu đất nông nghiệp qua nhận chuyển nhượng, tặng cho, tính theo bội số của hạn mức được Nhà nước giao?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, hạn mức nhận chuyển quyền sử dụng đất nông nghiệp của cá nhân không quá 15 lần hạn mức giao đất nông nghiệp của cá nhân đối với mỗi loại đất quy định tại các khoản 1, 2 và 3 Điều 176 [B-ldd2024_cb367-0013]. Việc xác định hạn mức này phải căn cứ vào điều kiện đất đai, công nghệ sản xuất, chuyển dịch lao động, cơ cấu kinh tế và quá trình đô thị hóa; Ủy ban nhân dân cấp tỉnh quy định hạn mức cụ thể phù hợp với địa phương [B-ldd2024_cb367-0013]. Lưu ý: kết quả tìm được chỉ nêu mức 15 lần đối với nhận chuyển quyền; đoạn tìm được không nêu riêng quy định về nhận tặng cho, nên tôi không khẳng định mức trần khác cho trường hợp tặng cho.",
+  "citations": [
+   "B-ldd2024_cb367-0013"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức nhận chuyển nhượng quyền sử dụng đất nông nghiệp của hộ gia đình, cá nhân không quá bao nhiêu lần hạn mức giao đất",
+    "filter": 2024,
+    "ms": 3452.6,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0013",
+      "score": 0.998577,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 5,
+      "page_end": 5,
+      "year": 2024,
+      "articles": [
+       177
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0044",
+      "score": 0.979245,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 15,
+      "page_end": 15,
+      "year": 2024,
+      "articles": [
+       109
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.966122,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 5,
+      "page_end": 5,
+      "year": 2024,
+      "articles": [
+       176
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0013",
+     "B-ldd2024_cb365-0044",
+     "B-ldd2024_cb367-0011"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1465.5,
+    "usage": {
+     "prompt_tokens": 1532,
+     "completion_tokens": 136,
+     "total_tokens": 1668,
+     "cost": 0.000218988,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002212,
+      "upstream_inference_prompt_cost": 0.0001532,
+      "upstream_inference_completions_cost": 6.8e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3139.7,
+    "usage": {
+     "prompt_tokens": 3277,
+     "completion_tokens": 553,
+     "total_tokens": 3830,
+     "cost": 0.000598158,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006042,
+      "upstream_inference_prompt_cost": 0.0003277,
+      "upstream_inference_completions_cost": 0.0002765
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb367-0013",
+   "B-ldd2024_cb365-0044",
+   "B-ldd2024_cb367-0011"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4809,
+  "completion_tokens": 689,
+  "cost_usd": 0.000817,
+  "ms": 8058.1,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2013, Ủy ban nhân dân cấp xã phải hòa giải xong tranh chấp đất đai trong thời hạn bao lâu?",
+  "status": "answered",
+  "answer": "Theo Điều 202 khoản 3 Luật Đất đai 2013, Chủ tịch Ủy ban nhân dân cấp xã có trách nhiệm tổ chức hòa giải tranh chấp đất đai tại địa phương; thủ tục hòa giải tại Ủy ban nhân dân cấp xã phải được thực hiện trong thời hạn không quá 45 ngày, kể từ ngày nhận được đơn yêu cầu giải quyết tranh chấp đất đai [B-ldd2013-0432]. Việc hòa giải phải lập thành biên bản có chữ ký các bên và xác nhận hòa giải thành hoặc không thành [B-ldd2013-0432].",
+  "citations": [
+   "B-ldd2013-0432"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "Ủy ban nhân dân cấp xã hòa giải tranh chấp đất đai thời hạn hòa giải xong",
+    "filter": 2013,
+    "ms": 3186.1,
+    "results": [
+     {
+      "id": "B-ldd2013-0432",
+      "score": 0.99242,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 112,
+      "page_end": 112,
+      "year": 2013,
+      "articles": [
+       202
+      ]
+     },
+     {
+      "id": "B-ldd2013-0433",
+      "score": 0.922145,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 112,
+      "page_end": 113,
+      "year": 2013,
+      "articles": [
+       202
+      ]
+     },
+     {
+      "id": "B-ldd2013-0434",
+      "score": 0.798529,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 113,
+      "page_end": 113,
+      "year": 2013,
+      "articles": [
+       203
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0432",
+     "B-ldd2013-0433",
+     "B-ldd2013-0434"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1139.7,
+    "usage": {
+     "prompt_tokens": 1512,
+     "completion_tokens": 111,
+     "total_tokens": 1623,
+     "cost": 0.000204633,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002067,
+      "upstream_inference_prompt_cost": 0.0001512,
+      "upstream_inference_completions_cost": 5.55e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2011.8,
+    "usage": {
+     "prompt_tokens": 3199,
+     "completion_tokens": 347,
+     "total_tokens": 3546,
+     "cost": 0.000488466,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004934,
+      "upstream_inference_prompt_cost": 0.0003199,
+      "upstream_inference_completions_cost": 0.0001735
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0432",
+   "B-ldd2013-0433",
+   "B-ldd2013-0434"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4711,
+  "completion_tokens": 458,
+  "cost_usd": 0.000693,
+  "ms": 6337.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Hai nhà hàng xóm tranh chấp ranh đất và nộp đơn lên xã nhờ hòa giải; theo Luật Đất đai 2024, xã có tối đa bao nhiêu ngày để hòa giải?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, tại Điều 235, việc hòa giải tranh chấp đất đai tại Ủy ban nhân dân cấp xã nơi có đất tranh chấp phải được thực hiện trong thời hạn không quá 30 ngày kể từ ngày nhận được đơn yêu cầu hòa giải [B-ldd2024_cb367-0164]. Trước đó, Chủ tịch Ủy ban nhân dân cấp xã phải thành lập Hội đồng hòa giải tranh chấp đất đai sau khi nhận đơn [B-ldd2024_cb367-0163].",
+  "citations": [
+   "B-ldd2024_cb367-0164",
+   "B-ldd2024_cb367-0163"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hòa giải tranh chấp đất đai Ủy ban nhân dân cấp xã thời hạn hòa giải ngày",
+    "filter": 2024,
+    "ms": 3381.4,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0164",
+      "score": 0.999308,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 46,
+      "page_end": 46,
+      "year": 2024,
+      "articles": [
+       235
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0165",
+      "score": 0.952585,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 46,
+      "page_end": 46,
+      "year": 2024,
+      "articles": [
+       235
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0163",
+      "score": 0.929384,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 45,
+      "page_end": 46,
+      "year": 2024,
+      "articles": [
+       235
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0164",
+     "B-ldd2024_cb367-0165",
+     "B-ldd2024_cb367-0163"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1524.9,
+    "usage": {
+     "prompt_tokens": 1531,
+     "completion_tokens": 140,
+     "total_tokens": 1671,
+     "cost": 0.000220869,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002231,
+      "upstream_inference_prompt_cost": 0.0001531,
+      "upstream_inference_completions_cost": 7e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1976.2,
+    "usage": {
+     "prompt_tokens": 3354,
+     "completion_tokens": 340,
+     "total_tokens": 3694,
+     "cost": 0.000500346,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005054,
+      "upstream_inference_prompt_cost": 0.0003354,
+      "upstream_inference_completions_cost": 0.00017
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb367-0164",
+   "B-ldd2024_cb367-0165",
+   "B-ldd2024_cb367-0163"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4885,
+  "completion_tokens": 480,
+  "cost_usd": 0.000721,
+  "ms": 6882.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2013, cá nhân không trực tiếp sản xuất nông nghiệp có được nhận chuyển nhượng đất trồng lúa không?",
+  "status": "answered",
+  "answer": "Có. Theo Điều 191 khoản 3 Luật Đất đai 2013, hộ gia đình, cá nhân không trực tiếp sản xuất nông nghiệp không được nhận chuyển nhượng hoặc nhận tặng cho quyền sử dụng đất trồng lúa [B-ldd2013-0412]. Lưu ý, quy định cấm này nằm tại khoản 3; khoản 2 của cùng điều chỉ áp dụng cho tổ chức kinh tế nhận chuyển nhượng đất trồng lúa, đất rừng phòng hộ, đất rừng đặc dụng của hộ gia đình, cá nhân (trừ trường hợp được chuyển mục đích theo quy hoạch, kế hoạch sử dụng đất đã được phê duyệt) [B-ldd2013-0412].\n\nNói cách khác, theo Luật Đất đai 2013, câu trả lời là không: cá nhân không trực tiếp sản xuất nông nghiệp không được nhận chuyển nhượng đất trồng lúa.",
+  "citations": [
+   "B-ldd2013-0412"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "cá nhân không trực tiếp sản xuất nông nghiệp nhận chuyển nhượng quyền sử dụng đất trồng lúa",
+    "filter": 2013,
+    "ms": 3320.8,
+    "results": [
+     {
+      "id": "B-ldd2013-0412",
+      "score": 0.992126,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 106,
+      "page_end": 107,
+      "year": 2013,
+      "articles": [
+       191
+      ]
+     },
+     {
+      "id": "B-ldd2013-0415",
+      "score": 0.923349,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 107,
+      "page_end": 108,
+      "year": 2013,
+      "articles": [
+       193
+      ]
+     },
+     {
+      "id": "B-ldd2013-0414",
+      "score": 0.725232,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 107,
+      "page_end": 107,
+      "year": 2013,
+      "articles": [
+       192
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0412",
+     "B-ldd2013-0415",
+     "B-ldd2013-0414"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1354.4,
+    "usage": {
+     "prompt_tokens": 1511,
+     "completion_tokens": 148,
+     "total_tokens": 1659,
+     "cost": 0.000222849,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002251,
+      "upstream_inference_prompt_cost": 0.0001511,
+      "upstream_inference_completions_cost": 7.4e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 28,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2549.2,
+    "usage": {
+     "prompt_tokens": 3385,
+     "completion_tokens": 473,
+     "total_tokens": 3858,
+     "cost": 0.00056925,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000575,
+      "upstream_inference_prompt_cost": 0.0003385,
+      "upstream_inference_completions_cost": 0.0002365
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0412",
+   "B-ldd2013-0415",
+   "B-ldd2013-0414"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4896,
+  "completion_tokens": 621,
+  "cost_usd": 0.000792,
+  "ms": 7224.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2024, một nhân viên văn phòng muốn nhận chuyển nhượng đất trồng lúa vượt hạn mức thì phải đáp ứng điều kiện gì?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, nhân viên văn phòng (cá nhân không trực tiếp sản xuất nông nghiệp) muốn nhận chuyển nhượng đất trồng lúa với diện tích vượt hạn mức quy định tại Điều 176 phải đáp ứng các điều kiện sau [B-ldd2024_cb363-0122]:\n\n1. Thành lập tổ chức kinh tế để thực hiện việc nhận chuyển nhượng phần đất vượt hạn mức.\n2. Có phương án sử dụng đất trồng lúa gồm các nội dung theo khoản 6 Điều 45, và phương án này phải được Ủy ban nhân dân cấp huyện phê duyệt [B-ldd2024_cb363-0122].\n\nTrường hợp được miễn các điều kiện trên là người nhận tặng cho thuộc hàng thừa kế [B-ldd2024_cb363-0122].\n\nHạn mức nhận chuyển quyền sử dụng đất nông nghiệp của cá nhân không quá 15 lần hạn mức giao đất nông nghiệp đối với từng loại đất (Điều 177 khoản 1), do Ủy ban nhân dân cấp tỉnh quy định cụ thể [B-ldd2024_cb367-0013]. Lưu ý: nội dung chi tiết của khoản 6 Điều 45 (các nội dung phải có trong phương án) chưa được tìm thấy trong các đoạn đã tra cứu.",
+  "citations": [
+   "B-ldd2024_cb363-0122",
+   "B-ldd2024_cb367-0013"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "nhận chuyển nhượng quyền sử dụng đất trồng lúa vượt hạn mức điều kiện",
+    "filter": 2024,
+    "ms": 3363.8,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0122",
+      "score": 0.981662,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 42,
+      "page_end": 42,
+      "year": 2024,
+      "articles": [
+       45
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0013",
+      "score": 0.851986,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 5,
+      "page_end": 5,
+      "year": 2024,
+      "articles": [
+       177
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0077",
+      "score": 0.719813,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 26,
+      "page_end": 27,
+      "year": 2024,
+      "articles": [
+       122
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0122",
+     "B-ldd2024_cb367-0013",
+     "B-ldd2024_cb365-0077"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "phương án sử dụng đất trồng lúa nội dung tổ chức kinh tế cá nhân không trực tiếp sản xuất nông nghiệp",
+    "filter": 2024,
+    "ms": 3559.2,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0122",
+      "score": 0.993081,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 42,
+      "page_end": 42,
+      "year": 2024,
+      "articles": [
+       45
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0029",
+      "score": 0.896321,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 9,
+      "page_end": 9,
+      "year": 2024,
+      "articles": [
+       182
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0020",
+      "score": 0.864151,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 7,
+      "page_end": 7,
+      "year": 2024,
+      "articles": [
+       180
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0029",
+     "B-ldd2024_cb367-0020",
+     "B-ldd2024_cb367-0028"
+    ],
+    "already_shown": [
+     "B-ldd2024_cb363-0122"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1232.7,
+    "usage": {
+     "prompt_tokens": 1523,
+     "completion_tokens": 108,
+     "total_tokens": 1631,
+     "cost": 0.000204237,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002063,
+      "upstream_inference_prompt_cost": 0.0001523,
+      "upstream_inference_completions_cost": 5.4e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2200.3,
+    "usage": {
+     "prompt_tokens": 3200,
+     "completion_tokens": 285,
+     "total_tokens": 3485,
+     "cost": 0.000457875,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004625,
+      "upstream_inference_prompt_cost": 0.00032,
+      "upstream_inference_completions_cost": 0.0001425
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 162,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3233.7,
+    "usage": {
+     "prompt_tokens": 5166,
+     "completion_tokens": 692,
+     "total_tokens": 5858,
+     "cost": 0.000853974,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008626,
+      "upstream_inference_prompt_cost": 0.0005166,
+      "upstream_inference_completions_cost": 0.000346
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 45,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb363-0122",
+   "B-ldd2024_cb367-0013",
+   "B-ldd2024_cb365-0077",
+   "B-ldd2024_cb367-0029",
+   "B-ldd2024_cb367-0020",
+   "B-ldd2024_cb367-0028"
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "prompt_tokens": 9889,
+  "completion_tokens": 1085,
+  "cost_usd": 0.001516,
+  "ms": 13590.0,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Trước khi ra quyết định thu hồi đất nông nghiệp, cơ quan nhà nước phải báo cho người đang sử dụng đất trước ít nhất bao lâu?",
+  "status": "answered",
+  "answer": "Theo cả Luật Đất đai 2013 và Luật Đất đai 2024, trước khi ra quyết định thu hồi đất nông nghiệp, cơ quan nhà nước có thẩm quyền phải thông báo thu hồi đất cho người có đất thu hồi biết chậm nhất là 90 ngày. Quy định này nằm tại Điều 67 khoản 1 Luật Đất đai 2013 [B-ldd2013-0122] và Điều 85 khoản 1 Luật Đất đai 2024, trong đó Điều 85 yêu cầu gửi văn bản thông báo cho người có đất thu hồi, chủ sở hữu tài sản gắn liền với đất và người có quyền lợi, nghĩa vụ liên quan [B-ldd2024_cb363-0238].\n\nGhi chú: các điều này nằm trong mục thu hồi đất vì mục đích quốc phòng, an ninh; phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng. Theo khoản 2 của hai điều, nếu người sử dụng đất trong khu vực thu hồi đồng ý để thu hồi trước thời hạn, Ủy ban nhân dân có thẩm quyền có thể quyết định thu hồi mà không phải chờ hết 90 ngày [B-ldd2013-0122; B-ldd2024_cb363-0239].",
+  "citations": [
+   "B-ldd2013-0122",
+   "B-ldd2024_cb363-0238",
+   "B-ldd2024_cb363-0239"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thông báo thu hồi đất nông nghiệp trước thời hạn người sử dụng đất",
+    "filter": 2013,
+    "ms": 3355.0,
+    "results": [
+     {
+      "id": "B-ldd2013-0122",
+      "score": 0.995264,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 34,
+      "page_end": 34,
+      "year": 2013,
+      "articles": [
+       67
+      ]
+     },
+     {
+      "id": "B-ldd2013-0126",
+      "score": 0.453364,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 35,
+      "page_end": 35,
+      "year": 2013,
+      "articles": [
+       69
+      ]
+     },
+     {
+      "id": "B-ldd2013-0160",
+      "score": 0.390969,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 43,
+      "page_end": 43,
+      "year": 2013,
+      "articles": [
+       77
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0122",
+     "B-ldd2013-0126",
+     "B-ldd2013-0160"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thông báo thu hồi đất nông nghiệp trước thời hạn người sử dụng đất",
+    "filter": 2024,
+    "ms": 3402.6,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0238",
+      "score": 0.973454,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 81,
+      "page_end": 81,
+      "year": 2024,
+      "articles": [
+       85
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0239",
+      "score": 0.915124,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 81,
+      "page_end": 81,
+      "year": 2024,
+      "articles": [
+       85
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0240",
+      "score": 0.778933,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 81,
+      "page_end": 81,
+      "year": 2024,
+      "articles": [
+       85
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0238",
+     "B-ldd2024_cb363-0239",
+     "B-ldd2024_cb363-0240"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1768.3,
+    "usage": {
+     "prompt_tokens": 1514,
+     "completion_tokens": 248,
+     "total_tokens": 1762,
+     "cost": 0.000272646,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002754,
+      "upstream_inference_prompt_cost": 0.0001514,
+      "upstream_inference_completions_cost": 0.000124
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3711.4,
+    "usage": {
+     "prompt_tokens": 4761,
+     "completion_tokens": 744,
+     "total_tokens": 5505,
+     "cost": 0.000839619,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008481,
+      "upstream_inference_prompt_cost": 0.0004761,
+      "upstream_inference_completions_cost": 0.000372
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0122",
+   "B-ldd2013-0126",
+   "B-ldd2013-0160",
+   "B-ldd2024_cb363-0238",
+   "B-ldd2024_cb363-0239",
+   "B-ldd2024_cb363-0240"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6275,
+  "completion_tokens": 992,
+  "cost_usd": 0.001112,
+  "ms": 12237.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2024, ruộng trồng cây hằng năm bị bỏ không 12 tháng liên tục thì Nhà nước có thu hồi ngay không?",
+  "status": "answered",
+  "answer": "Không thu hồi ngay. Theo Luật Đất đai 2024, Điều 81 khoản 7, đất trồng cây hằng năm không được sử dụng trong 12 tháng liên tục chỉ là một trong các trường hợp thu hồi đất do vi phạm, và chỉ áp dụng khi người sử dụng đã bị xử phạt vi phạm hành chính mà không đưa đất vào sử dụng theo thời hạn ghi trong quyết định xử phạt [B-ldd2024_cb363-0224]. Trường hợp bất khả kháng không thuộc diện thu hồi này (khoản 9) [B-ldd2024_cb363-0225]. Các đoạn tìm được không nêu thủ tục ra quyết định thu hồi.",
+  "citations": [
+   "B-ldd2024_cb363-0224",
+   "B-ldd2024_cb363-0225"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "đất trồng cây hằng năm bị bỏ không liên tục 12 tháng thu hồi đất",
+    "filter": 2024,
+    "ms": 3705.1,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0224",
+      "score": 0.988997,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 77,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       81
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0225",
+      "score": 0.767115,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 77,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       81
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0201",
+      "score": 0.560344,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 69,
+      "page_end": 69,
+      "year": 2024,
+      "articles": [
+       76
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0224",
+     "B-ldd2024_cb363-0225",
+     "B-ldd2024_cb363-0201"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1343.8,
+    "usage": {
+     "prompt_tokens": 1514,
+     "completion_tokens": 144,
+     "total_tokens": 1658,
+     "cost": 0.000221166,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002234,
+      "upstream_inference_prompt_cost": 0.0001514,
+      "upstream_inference_completions_cost": 7.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 39,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 5337.4,
+    "usage": {
+     "prompt_tokens": 3231,
+     "completion_tokens": 1113,
+     "total_tokens": 4344,
+     "cost": 0.000870804,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008796,
+      "upstream_inference_prompt_cost": 0.0003231,
+      "upstream_inference_completions_cost": 0.0005565
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 241,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": "Theo Luật Đất đai 2024, **không phải thu hồi ngay**. Trường hợp này chỉ bị thu hồi khi đủ hai điều kiện cùng lúc.\n\nTheo khoản 7 Điều 81, đất trồng cây hằng năm (và đất nuôi trồng thủy sản) không được sử dụng trong 12 tháng liên tục, **và** người sử dụng đã bị xử phạt vi phạm hành chính mà không đưa đất vào sử dụng theo thời hạn ghi trong quyết định xử phạt [B-ldd2024_cb363-0224]. Nếu chỉ bỏ không 12 tháng mà chưa bị xử phạt hành chính, hoặc đã bị xử phạt nhưng vẫn đưa đất vào sử dụng đúng hạn, thì không thuộc trường hợp thu hồi này.\n\nKhoản 9 Điều 81 cũng loại trừ trường hợp bất khả kháng khỏi các trường hợp thu hồi tại khoản 6, 7 và 8 [B-ldd2024_cb363-0225].\n\nCác đoạn tìm được không nêu trình tự, thủ tục cụ thể để ra quyết định thu hồi sau khi đủ điều kiện trên.\n\nCăn cứ: Luật Đất đai 2024, Điều 81 khoản 7 và khoản 9."
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb363-0224",
+   "B-ldd2024_cb363-0225",
+   "B-ldd2024_cb363-0201"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4745,
+  "completion_tokens": 1257,
+  "cost_usd": 0.001092,
+  "ms": 10386.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Khi nhận thừa kế quyền sử dụng đất, thời hạn phải đăng ký biến động được tính từ thời điểm nào?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013, khi nhận thừa kế quyền sử dụng đất, thời hạn đăng ký biến động (không quá 30 ngày kể từ ngày có biến động) được tính từ ngày phân chia xong quyền sử dụng đất là di sản thừa kế (Điều 95, khoản 6) [B-ldd2013-0194].\n\nTheo Luật Đất đai 2024, quy định tương tự tại Điều 133, khoản 3: thời hạn 30 ngày để đăng ký biến động được tính từ ngày phân chia xong quyền sử dụng đất là di sản thừa kế theo quy định của pháp luật về dân sự, hoặc kể từ ngày bản án, quyết định của Tòa án có hiệu lực pháp luật [B-ldd2024_cb365-0120]. Việc đăng ký biến động đối với thừa kế thuộc điểm a khoản 1 Điều 133 [B-ldd2024_cb365-0115].",
+  "citations": [
+   "B-ldd2013-0194",
+   "B-ldd2024_cb365-0120",
+   "B-ldd2024_cb365-0115"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "nhận thừa kế quyền sử dụng đất thời hạn đăng ký biến động",
+    "filter": 2013,
+    "ms": 3339.9,
+    "results": [
+     {
+      "id": "B-ldd2013-0194",
+      "score": 0.97692,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 51,
+      "page_end": 51,
+      "year": 2013,
+      "articles": [
+       95
+      ]
+     },
+     {
+      "id": "B-ldd2013-0190",
+      "score": 0.863809,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 50,
+      "page_end": 50,
+      "year": 2013,
+      "articles": [
+       95
+      ]
+     },
+     {
+      "id": "B-ldd2013-0264",
+      "score": 0.303096,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 70,
+      "page_end": 70,
+      "year": 2013,
+      "articles": [
+       128
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0194",
+     "B-ldd2013-0190",
+     "B-ldd2013-0264"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "nhận thừa kế quyền sử dụng đất thời hạn đăng ký biến động",
+    "filter": 2024,
+    "ms": 2881.0,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0120",
+      "score": 0.986686,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 42,
+      "page_end": 42,
+      "year": 2024,
+      "articles": [
+       133
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0115",
+      "score": 0.833643,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 40,
+      "page_end": 41,
+      "year": 2024,
+      "articles": [
+       133
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0116",
+      "score": 0.784531,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 41,
+      "page_end": 41,
+      "year": 2024,
+      "articles": [
+       133
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0120",
+     "B-ldd2024_cb365-0115",
+     "B-ldd2024_cb365-0116"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1448.3,
+    "usage": {
+     "prompt_tokens": 1499,
+     "completion_tokens": 223,
+     "total_tokens": 1722,
+     "cost": 0.000258786,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002614,
+      "upstream_inference_prompt_cost": 0.0001499,
+      "upstream_inference_completions_cost": 0.0001115
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2353.9,
+    "usage": {
+     "prompt_tokens": 4550,
+     "completion_tokens": 479,
+     "total_tokens": 5029,
+     "cost": 0.000687555,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006945,
+      "upstream_inference_prompt_cost": 0.000455,
+      "upstream_inference_completions_cost": 0.0002395
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0194",
+   "B-ldd2013-0190",
+   "B-ldd2013-0264",
+   "B-ldd2024_cb365-0120",
+   "B-ldd2024_cb365-0115",
+   "B-ldd2024_cb365-0116"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6049,
+  "completion_tokens": 702,
+  "cost_usd": 0.000946,
+  "ms": 10023.3,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Một hộ nông dân ở đồng bằng sông Cửu Long được Nhà nước giao tối đa bao nhiêu đất trồng cây hằng năm?",
+  "status": "answered",
+  "answer": "Theo cả hai luật, hộ nông dân ở đồng bằng sông Cửu Long được giao tối đa 03 ha cho mỗi loại đất trồng cây hằng năm (áp dụng riêng cho từng loại đất). Luật Đất đai 2013, Điều 129 khoản 1 điểm a quy định mức không quá 03 ha cho mỗi loại đất đối với khu vực Đông Nam Bộ và đồng bằng sông Cửu Long [B-ldd2013-0265]; nếu được giao nhiều loại đất gồm đất trồng cây hàng năm, nuôi trồng thủy sản và làm muối thì tổng không quá 05 ha [B-ldd2013-0266]. Luật Đất đai 2024, Điều 176 khoản 1 điểm a quy định mức tương tự, không quá 03 ha cho mỗi loại đất [B-ldd2024_cb367-0010]; tổng không quá 05 ha khi được giao nhiều loại đất trong nhóm này [B-ldd2024_cb367-0011]. Lưu ý: Luật 2024 quy định đối tượng là \"cá nhân trực tiếp sản xuất nông nghiệp\", còn Luật 2013 là \"hộ gia đình, cá nhân\".",
+  "citations": [
+   "B-ldd2013-0265",
+   "B-ldd2013-0266",
+   "B-ldd2024_cb367-0010",
+   "B-ldd2024_cb367-0011"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức giao đất trồng cây hằng năm cho hộ gia đình, cá nhân đồng bằng sông Cửu Long",
+    "filter": 2013,
+    "ms": 3572.8,
+    "results": [
+     {
+      "id": "B-ldd2013-0265",
+      "score": 0.99592,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 70,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       128,
+       129
+      ]
+     },
+     {
+      "id": "B-ldd2013-0266",
+      "score": 0.98438,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 71,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       129
+      ]
+     },
+     {
+      "id": "B-ldd2013-0267",
+      "score": 0.810458,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 71,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       129
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0265",
+     "B-ldd2013-0266",
+     "B-ldd2013-0267"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức giao đất trồng cây hằng năm cho hộ gia đình, cá nhân đồng bằng sông Cửu Long",
+    "filter": 2024,
+    "ms": 3707.3,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.989948,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 4,
+      "page_end": 4,
+      "year": 2024,
+      "articles": [
+       175,
+       176
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.933957,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 5,
+      "page_end": 5,
+      "year": 2024,
+      "articles": [
+       176
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0001",
+      "score": 0.646533,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 1,
+      "page_end": 2,
+      "year": 2024,
+      "articles": [
+       172
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0010",
+     "B-ldd2024_cb367-0011",
+     "B-ldd2024_cb367-0001"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1707.8,
+    "usage": {
+     "prompt_tokens": 1507,
+     "completion_tokens": 261,
+     "total_tokens": 1768,
+     "cost": 0.000278388,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002812,
+      "upstream_inference_prompt_cost": 0.0001507,
+      "upstream_inference_completions_cost": 0.0001305
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 31,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 6069.3,
+    "usage": {
+     "prompt_tokens": 5127,
+     "completion_tokens": 1428,
+     "total_tokens": 6555,
+     "cost": 0.001214433,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0012267,
+      "upstream_inference_prompt_cost": 0.0005127,
+      "upstream_inference_completions_cost": 0.000714
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": "**Trả lời:** Theo cả hai luật, hộ nông dân ở đồng bằng sông Cửu Long được giao tối đa **03 héc ta (ha) cho mỗi loại đất** trồng cây hằng năm. Mức này áp dụng cho từng loại đất riêng, không phải tổng cộng.\n\n**Luật Đất đai 2013:** Điều 129 khoản 1 điểm a quy định không quá 03 ha cho mỗi loại đất trồng cây hàng năm, đất nuôi trồng thủy sản và đất làm muối đối với tỉnh, thành phố thuộc khu vực Đông Nam Bộ và đồng bằng sông Cửu Long [B-ldd2013-0265]. Nếu hộ được giao nhiều loại đất gồm đất trồng cây hàng năm, đất nuôi trồng thủy sản và đất làm muối thì tổng hạn mức không quá 05 ha [B-ldd2013-0266].\n\n**Luật Đất đai 2024:** Điều 176 khoản 1 điểm a quy định mức tương tự, không quá 03 ha cho mỗi loại đất đối với khu vực đồng bằng sông Cửu Long [B-ldd2024_cb367-0010]. Khi được giao nhiều loại đất trong nhóm này thì tổng hạn mức không quá 05 ha [B-ldd2024_cb367-0011].\n\nLưu ý: Luật 2024 quy định hạn mức này đối với \"cá nhân trực tiếp sản xuất nông nghiệp\", trong khi Luật 2013 dùng \"hộ gia đình, cá nhân\". Các đoạn luật tìm được chưa nêu địa phương có quy định hạn mức khác hay không.\n\n**Căn cứ:** [B-ldd2013-0265], [B-ldd2013-0266], [B-ldd2024_cb367-0010], [B-ldd2024_cb367-0011]"
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0265",
+   "B-ldd2013-0266",
+   "B-ldd2013-0267",
+   "B-ldd2024_cb367-0010",
+   "B-ldd2024_cb367-0011",
+   "B-ldd2024_cb367-0001"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6634,
+  "completion_tokens": 1689,
+  "cost_usd": 0.001493,
+  "ms": 15057.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Kiểm kê đất đai được thực hiện bao lâu một lần?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013: kiểm kê đất đai được tiến hành 05 năm một lần (khoản 2 Điều 34) [B-ldd2013-0050]. Việc thống kê đất đai thì mỗi năm một lần, trừ năm thực hiện kiểm kê [B-ldd2013-0050]. Ngoài ra, kiểm kê theo chuyên đề do Thủ tướng Chính phủ hoặc Bộ trưởng Bộ Tài nguyên và Môi trường quyết định [B-ldd2013-0050].\n\nTheo Luật Đất đai 2024: kiểm kê đất đai được thực hiện 05 năm một lần, tính đến hết ngày 31 tháng 12 của năm có chữ số cuối là 4 hoặc 9 (điểm b khoản 2 Điều 57) [B-ldd2024_cb363-0148]. Thống kê đất đai thực hiện hằng năm, tính đến hết ngày 31/12 của năm thống kê, trừ năm kiểm kê (điểm a khoản 2 Điều 57) [B-ldd2024_cb363-0148]. Kiểm kê chuyên đề được thực hiện theo yêu cầu quản lý trong từng thời kỳ do Bộ trưởng Bộ Tài nguyên và Môi trường hoặc Chủ tịch UBND cấp tỉnh quyết định (khoản 3 Điều 57) [B-ldd2024_cb363-0148].",
+  "citations": [
+   "B-ldd2013-0050",
+   "B-ldd2024_cb363-0148"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "kiểm kê đất đai được thực hiện bao lâu một lần",
+    "filter": 2013,
+    "ms": 3735.2,
+    "results": [
+     {
+      "id": "B-ldd2013-0050",
+      "score": 0.995271,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 14,
+      "page_end": 14,
+      "year": 2013,
+      "articles": [
+       34
+      ]
+     },
+     {
+      "id": "B-ldd2013-0051",
+      "score": 0.94192,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 14,
+      "page_end": 14,
+      "year": 2013,
+      "articles": [
+       34
+      ]
+     },
+     {
+      "id": "B-ldd2013-0049",
+      "score": 0.699777,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 13,
+      "page_end": 14,
+      "year": 2013,
+      "articles": [
+       33
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0050",
+     "B-ldd2013-0051",
+     "B-ldd2013-0049"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "kiểm kê đất đai được thực hiện bao lâu một lần",
+    "filter": 2024,
+    "ms": 3062.5,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0148",
+      "score": 0.996252,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 50,
+      "page_end": 51,
+      "year": 2024,
+      "articles": [
+       57
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0153",
+      "score": 0.949428,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 52,
+      "page_end": 53,
+      "year": 2024,
+      "articles": [
+       59
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0151",
+      "score": 0.875972,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 52,
+      "page_end": 52,
+      "year": 2024,
+      "articles": [
+       58
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0148",
+     "B-ldd2024_cb363-0153",
+     "B-ldd2024_cb363-0151"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1587.4,
+    "usage": {
+     "prompt_tokens": 1475,
+     "completion_tokens": 204,
+     "total_tokens": 1679,
+     "cost": 0.000247005,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002495,
+      "upstream_inference_prompt_cost": 0.0001475,
+      "upstream_inference_completions_cost": 0.000102
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 22,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2889.3,
+    "usage": {
+     "prompt_tokens": 4912,
+     "completion_tokens": 640,
+     "total_tokens": 5552,
+     "cost": 0.000803088,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008112,
+      "upstream_inference_prompt_cost": 0.0004912,
+      "upstream_inference_completions_cost": 0.00032
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0050",
+   "B-ldd2013-0051",
+   "B-ldd2013-0049",
+   "B-ldd2024_cb363-0148",
+   "B-ldd2024_cb363-0153",
+   "B-ldd2024_cb363-0151"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6387,
+  "completion_tokens": 844,
+  "cost_usd": 0.00105,
+  "ms": 11274.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Ba anh em cùng đứng tên chung một thửa đất thì được cấp sổ đỏ như thế nào?",
+  "status": "answered",
+  "answer": "Câu hỏi không nêu phiên bản luật nên tôi trả lời theo cả hai luật:\n\n**Luật Đất đai 2013 (45/2013/QH13):** Thửa đất có nhiều người cùng có quyền sử dụng đất thì Giấy chứng nhận phải ghi đầy đủ tên những người đó và cấp cho mỗi người 01 Giấy chứng nhận. Nếu các chủ sử dụng có yêu cầu thì có thể cấp chung một Giấy chứng nhận và trao cho người đại diện [B-ldd2013-0198] (Điều 98 khoản 2).\n\n**Luật Đất đai 2024 (31/2024/QH15):** Thửa đất có nhiều người cùng có quyền sử dụng đất thì cấp cho mỗi người 01 Giấy chứng nhận. Nếu những người cùng có quyền sử dụng có yêu cầu thì có thể cấp chung 01 Giấy chứng nhận và trao cho người đại diện [B-ldd2024_cb365-0122] (Điều 135 khoản 2).\n\nTóm lại, với ba anh em đứng tên chung, mỗi người được cấp một sổ đỏ riêng, hoặc cả ba có thể đề nghị cấp chung một sổ và giao cho người đại diện giữ. Các đoạn luật đã tìm không nêu chi tiết thủ tục hay hồ sơ cụ thể.",
+  "citations": [
+   "B-ldd2013-0198",
+   "B-ldd2024_cb365-0122"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "cấp Giấy chứng nhận quyền sử dụng đất cho nhiều người cùng sử dụng đất chung một thửa đất",
+    "filter": 2013,
+    "ms": 3412.7,
+    "results": [
+     {
+      "id": "B-ldd2013-0198",
+      "score": 0.996055,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 52,
+      "page_end": 52,
+      "year": 2013,
+      "articles": [
+       98
+      ]
+     },
+     {
+      "id": "B-ldd2013-0210",
+      "score": 0.79537,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 55,
+      "page_end": 55,
+      "year": 2013,
+      "articles": [
+       100
+      ]
+     },
+     {
+      "id": "B-ldd2013-0201",
+      "score": 0.648681,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 53,
+      "page_end": 53,
+      "year": 2013,
+      "articles": [
+       98
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0198",
+     "B-ldd2013-0210",
+     "B-ldd2013-0201"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "cấp Giấy chứng nhận quyền sử dụng đất cho nhiều người cùng sử dụng đất chung một thửa đất",
+    "filter": 2024,
+    "ms": 3240.8,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0122",
+      "score": 0.99559,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 43,
+      "page_end": 43,
+      "year": 2024,
+      "articles": [
+       135
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0209",
+      "score": 0.980604,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 67,
+      "page_end": 67,
+      "year": 2024,
+      "articles": [
+       147
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0164",
+      "score": 0.960877,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 54,
+      "page_end": 54,
+      "year": 2024,
+      "articles": [
+       138
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0122",
+     "B-ldd2024_cb365-0209",
+     "B-ldd2024_cb365-0164"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1637.4,
+    "usage": {
+     "prompt_tokens": 1490,
+     "completion_tokens": 251,
+     "total_tokens": 1741,
+     "cost": 0.000271755,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002745,
+      "upstream_inference_prompt_cost": 0.000149,
+      "upstream_inference_completions_cost": 0.0001255
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3645.6,
+    "usage": {
+     "prompt_tokens": 5230,
+     "completion_tokens": 748,
+     "total_tokens": 5978,
+     "cost": 0.00088803,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000897,
+      "upstream_inference_prompt_cost": 0.000523,
+      "upstream_inference_completions_cost": 0.000374
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0198",
+   "B-ldd2013-0210",
+   "B-ldd2013-0201",
+   "B-ldd2024_cb365-0122",
+   "B-ldd2024_cb365-0209",
+   "B-ldd2024_cb365-0164"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6720,
+  "completion_tokens": 999,
+  "cost_usd": 0.00116,
+  "ms": 11936.9,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Chủ đầu tư được giao đất làm dự án nhưng chậm đưa đất vào sử dụng thì được gia hạn tối đa bao lâu trước khi bị thu hồi?",
+  "status": "answered",
+  "answer": "Theo cả Luật Đất đai 2013 và 2024, chủ đầu tư được gia hạn tối đa 24 tháng để đưa đất vào sử dụng; hết thời hạn này mà vẫn chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất.\n\n- Luật Đất đai 2013 (Điều 64, điểm i): nếu đất giao để thực hiện dự án đầu tư không được đưa vào sử dụng, chủ đầu tư được gia hạn 24 tháng và phải nộp khoản tiền tương ứng tiền sử dụng đất hoặc tiền thuê đất trong thời gian chậm tiến độ. Hết thời hạn gia hạn vẫn chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất mà không bồi thường về đất và tài sản gắn liền với đất, trừ trường hợp bất khả kháng [B-ldd2013-0115].\n\n- Luật Đất đai 2024 (Điều 81, khoản 8 và 9): chủ đầu tư được gia hạn sử dụng không quá 24 tháng và phải nộp bổ sung khoản tiền tương ứng tiền sử dụng đất, tiền thuê đất cho thời gian gia hạn. Hết thời hạn gia hạn vẫn chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất mà không bồi thường về đất, tài sản gắn liền với đất và chi phí đầu tư vào đất còn lại. Các quy định này không áp dụng với trường hợp bất khả kháng [B-ldd2024_cb363-0225].\n\n- Chuyển tiếp: Điều 254 khoản 3 Luật 2024 quy định trường hợp đã có văn bản xác định vi phạm trước ngày Luật 2024 có hiệu lực thì, nếu chưa có quyết định thu hồi, áp dụng khoản 8 và 9 Điều 81; nếu đã có quyết định thu hồi thì thực hiện theo quyết định đó [B-ldd2024_cb367-0209].",
+  "citations": [
+   "B-ldd2013-0115",
+   "B-ldd2024_cb363-0225",
+   "B-ldd2024_cb367-0209"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "gia hạn thời gian đưa đất vào sử dụng đối với nhà đầu tư được giao đất thực hiện dự án chậm đưa đất vào sử dụng bị thu hồi",
+    "filter": 2013,
+    "ms": 4304.9,
+    "results": [
+     {
+      "id": "B-ldd2013-0115",
+      "score": 0.992936,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 32,
+      "page_end": 32,
+      "year": 2013,
+      "articles": [
+       64
+      ]
+     },
+     {
+      "id": "B-ldd2013-0258",
+      "score": 0.88266,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 68,
+      "page_end": 68,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     },
+     {
+      "id": "B-ldd2013-0260",
+      "score": 0.211872,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 69,
+      "page_end": 69,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0115",
+     "B-ldd2013-0258",
+     "B-ldd2013-0260"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "gia hạn thời gian đưa đất vào sử dụng đối với nhà đầu tư được giao đất thực hiện dự án chậm đưa đất vào sử dụng bị thu hồi",
+    "filter": 2024,
+    "ms": 4635.8,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0225",
+      "score": 0.989043,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 77,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       81
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0209",
+      "score": 0.695423,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 58,
+      "page_end": 58,
+      "year": 2024,
+      "articles": [
+       254
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0228",
+      "score": 0.654434,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 63,
+      "page_end": 63,
+      "year": 2024,
+      "articles": [
+       258
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0225",
+     "B-ldd2024_cb367-0209",
+     "B-ldd2024_cb367-0228"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1845.3,
+    "usage": {
+     "prompt_tokens": 1516,
+     "completion_tokens": 315,
+     "total_tokens": 1831,
+     "cost": 0.000306009,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0003091,
+      "upstream_inference_prompt_cost": 0.0001516,
+      "upstream_inference_completions_cost": 0.0001575
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 10227.3,
+    "usage": {
+     "prompt_tokens": 5259,
+     "completion_tokens": 2919,
+     "total_tokens": 8178,
+     "cost": 0.001965546,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0019854,
+      "upstream_inference_prompt_cost": 0.0005259,
+      "upstream_inference_completions_cost": 0.0014595
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 255,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": "Theo cả hai luật, thời gian gia hạn tối đa là 24 tháng. Sau thời hạn đó, nếu chủ đầu tư vẫn chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất.\n\n**Luật Đất đai 2013 (45/2013/QH13):** Đất được Nhà nước giao để thực hiện dự án đầu tư mà không được sử dụng trong 12 tháng liên tục, hoặc chậm 24 tháng so với tiến độ trong dự án, là một trường hợp thu hồi do vi phạm (Điều 64, điểm i). Trong trường hợp chưa đưa đất vào sử dụng, chủ đầu tư được gia hạn 24 tháng và phải nộp khoản tiền tương ứng với tiền sử dụng đất hoặc tiền thuê đất trong thời gian chậm tiến độ. Hết thời hạn gia hạn mà vẫn chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất mà không bồi thường về đất và tài sản gắn liền với đất, trừ trường hợp bất khả kháng [B-ldd2013-0115].\n\n**Luật Đất đai 2024 (31/2024/QH15):** Quy định tương tự tại Điều 81, khoản 8. Chủ đầu tư được gia hạn sử dụng không quá 24 tháng và phải nộp bổ sung khoản tiền tương ứng với tiền sử dụng đất, tiền thuê đất cho thời gian được gia hạn. Hết thời hạn gia hạn mà chưa đưa đất vào sử dụng thì Nhà nước thu hồi đất mà không bồi thường về đất, tài sản gắn liền với đất và chi phí đầu tư vào đất còn lại. Khoản 9 loại trừ trường hợp bất khả kháng [B-ldd2024_cb363-0225].\n\nĐiểm khác biệt: Luật 2024 ghi rõ \"không quá 24 tháng\", còn Luật 2013 ghi \"24 tháng\". Ngoài ra, Luật 2024 còn không bồi thường \"chi phí đầu tư vào đất còn lại\".\n\nVề việc chuyển tiếp, Điều 254 khoản 3 Luật 2024 quy định các trường hợp đã có văn bản xác định vi phạm trước ngày Luật 2024 có hiệu lực: nếu chưa có quyết định thu hồi thì áp dụng khoản 8 và 9 Điều 81; nếu đã có quyết định thu hồi thì thực hiện theo quyết định đó [B-ldd2024_cb367-0209]."
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0115",
+   "B-ldd2013-0258",
+   "B-ldd2013-0260",
+   "B-ldd2024_cb363-0225",
+   "B-ldd2024_cb367-0209",
+   "B-ldd2024_cb367-0228"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6775,
+  "completion_tokens": 3234,
+  "cost_usd": 0.002272,
+  "ms": 21013.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Thửa đất được định nghĩa như thế nào?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013, Điều 3 khoản 1: \"Thửa đất là phần diện tích đất được giới hạn bởi ranh giới xác định trên thực địa hoặc được mô tả trên hồ sơ.\" [B-ldd2013-0002]\n\nTheo Luật Đất đai 2024, Điều 3 khoản 42: \"Thửa đất là phần diện tích đất được giới hạn bởi ranh giới mô tả trên hồ sơ địa chính hoặc được xác định trên thực địa.\" [B-ldd2024_cb363-0013]\n\nHai định nghĩa về cơ bản giống nhau; điểm khác là Luật 2024 nói \"hồ sơ địa chính\" thay cho \"hồ sơ\" ở Luật 2013.",
+  "citations": [
+   "B-ldd2013-0002",
+   "B-ldd2024_cb363-0013"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất là gì định nghĩa",
+    "filter": 2013,
+    "ms": 3165.0,
+    "results": [
+     {
+      "id": "B-ldd2013-0002",
+      "score": 0.949513,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 1,
+      "page_end": 1,
+      "year": 2013,
+      "articles": [
+       3
+      ]
+     },
+     {
+      "id": "B-ldd2013-0004",
+      "score": 0.272038,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 2,
+      "page_end": 2,
+      "year": 2013,
+      "articles": [
+       3
+      ]
+     },
+     {
+      "id": "B-ldd2013-0198",
+      "score": 0.229817,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 52,
+      "page_end": 52,
+      "year": 2013,
+      "articles": [
+       98
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0002",
+     "B-ldd2013-0004",
+     "B-ldd2013-0198"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất là gì định nghĩa",
+    "filter": 2024,
+    "ms": 2999.0,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0013",
+      "score": 0.903512,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 6,
+      "page_end": 6,
+      "year": 2024,
+      "articles": [
+       3
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.480624,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 34,
+      "page_end": 35,
+      "year": 2024,
+      "articles": [
+       220
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.427768,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 66,
+      "page_end": 66,
+      "year": 2024,
+      "articles": [
+       146
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0013",
+     "B-ldd2024_cb367-0123",
+     "B-ldd2024_cb365-0206"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 2024.6,
+    "usage": {
+     "prompt_tokens": 1468,
+     "completion_tokens": 189,
+     "total_tokens": 1657,
+     "cost": 0.000238887,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002413,
+      "upstream_inference_prompt_cost": 0.0001468,
+      "upstream_inference_completions_cost": 9.45e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 27,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2290.9,
+    "usage": {
+     "prompt_tokens": 4953,
+     "completion_tokens": 389,
+     "total_tokens": 5342,
+     "cost": 0.000682902,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006898,
+      "upstream_inference_prompt_cost": 0.0004953,
+      "upstream_inference_completions_cost": 0.0001945
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0002",
+   "B-ldd2013-0004",
+   "B-ldd2013-0198",
+   "B-ldd2024_cb363-0013",
+   "B-ldd2024_cb367-0123",
+   "B-ldd2024_cb365-0206"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6421,
+  "completion_tokens": 578,
+  "cost_usd": 0.000922,
+  "ms": 10479.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Kế hoạch sử dụng đất cấp tỉnh được lập cho thời kỳ bao nhiêu năm?",
+  "status": "answered",
+  "answer": "Kế hoạch sử dụng đất cấp tỉnh được lập cho thời kỳ 05 năm, theo cả hai luật:\n\n- Luật Đất đai 2013: Kỳ kế hoạch sử dụng đất cấp quốc gia, cấp tỉnh, quốc phòng và an ninh là 05 năm (Điều 37 khoản 2) [B-ldd2013-0056].\n- Luật Đất đai 2024: Thời kỳ kế hoạch sử dụng đất quốc gia và kế hoạch sử dụng đất cấp tỉnh là 05 năm (Điều 62 khoản 4) [B-ldd2024_cb363-0159]. Luật 2024 cũng quy định thời kỳ quy hoạch sử dụng đất cấp tỉnh thống nhất với thời kỳ quy hoạch tỉnh (Điều 62 khoản 2) [B-ldd2024_cb363-0159].\n\nLưu ý: Luật 2013 quy định quy hoạch sử dụng đất cấp tỉnh có định hướng 10 năm (Điều 39 khoản 2 điểm a) [B-ldd2013-0061]; khác với kế hoạch 05 năm.",
+  "citations": [
+   "B-ldd2013-0056",
+   "B-ldd2024_cb363-0159",
+   "B-ldd2013-0061"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "kế hoạch sử dụng đất cấp tỉnh thời kỳ kế hoạch 5 năm",
+    "filter": 2013,
+    "ms": 2778.6,
+    "results": [
+     {
+      "id": "B-ldd2013-0061",
+      "score": 0.989594,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 17,
+      "page_end": 17,
+      "year": 2013,
+      "articles": [
+       39
+      ]
+     },
+     {
+      "id": "B-ldd2013-0056",
+      "score": 0.984493,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 15,
+      "page_end": 15,
+      "year": 2013,
+      "articles": [
+       37
+      ]
+     },
+     {
+      "id": "B-ldd2013-0059",
+      "score": 0.972274,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 16,
+      "page_end": 16,
+      "year": 2013,
+      "articles": [
+       38
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0061",
+     "B-ldd2013-0056",
+     "B-ldd2013-0059"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "kế hoạch sử dụng đất cấp tỉnh thời kỳ kế hoạch 5 năm",
+    "filter": 2024,
+    "ms": 3454.1,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0164",
+      "score": 0.992777,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 56,
+      "page_end": 57,
+      "year": 2024,
+      "articles": [
+       65
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0165",
+      "score": 0.989904,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 57,
+      "page_end": 57,
+      "year": 2024,
+      "articles": [
+       65
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0159",
+      "score": 0.989691,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 55,
+      "page_end": 55,
+      "year": 2024,
+      "articles": [
+       62
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0164",
+     "B-ldd2024_cb363-0165",
+     "B-ldd2024_cb363-0159"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1757.0,
+    "usage": {
+     "prompt_tokens": 1492,
+     "completion_tokens": 257,
+     "total_tokens": 1749,
+     "cost": 0.000274923,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002777,
+      "upstream_inference_prompt_cost": 0.0001492,
+      "upstream_inference_completions_cost": 0.0001285
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3702.5,
+    "usage": {
+     "prompt_tokens": 5121,
+     "completion_tokens": 683,
+     "total_tokens": 5804,
+     "cost": 0.000845064,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008536,
+      "upstream_inference_prompt_cost": 0.0005121,
+      "upstream_inference_completions_cost": 0.0003415
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0061",
+   "B-ldd2013-0056",
+   "B-ldd2013-0059",
+   "B-ldd2024_cb363-0164",
+   "B-ldd2024_cb363-0165",
+   "B-ldd2024_cb363-0159"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6613,
+  "completion_tokens": 940,
+  "cost_usd": 0.00112,
+  "ms": 11692.4,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2024, bảng giá đất lần đầu được áp dụng từ ngày nào, và sau đó được điều chỉnh với chu kỳ ra sao?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, Điều 159 khoản 3:\n- Bảng giá đất lần đầu do Ủy ban nhân dân cấp tỉnh xây dựng, trình Hội đồng nhân dân cùng cấp quyết định để công bố và áp dụng từ ngày 01/01/2026 [B-ldd2024_cb365-0260].\n- Chu kỳ điều chỉnh: hằng năm, Ủy ban nhân dân cấp tỉnh trình Hội đồng nhân dân cấp tỉnh quyết định điều chỉnh, sửa đổi, bổ sung bảng giá đất để áp dụng từ ngày 01/01 của năm tiếp theo. Nếu cần thiết, có thể điều chỉnh trong năm theo quyết định của Hội đồng nhân dân cấp tỉnh [B-ldd2024_cb365-0260].\n\nLiên quan đến giai đoạn chuyển tiếp, Điều 257 khoản 1 quy định bảng giá đất theo Luật Đất đai 2013 tiếp tục được áp dụng đến hết ngày 31/12/2025; khi cần thiết, Ủy ban nhân dân cấp tỉnh có thể điều chỉnh bảng giá theo Luật 2024 [B-ldd2024_cb367-0223].",
+  "citations": [
+   "B-ldd2024_cb365-0260",
+   "B-ldd2024_cb367-0223"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "bảng giá đất áp dụng lần đầu từ ngày và điều chỉnh chu kỳ",
+    "filter": 2024,
+    "ms": 3304.4,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0260",
+      "score": 0.947611,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 85,
+      "page_end": 85,
+      "year": 2024,
+      "articles": [
+       159
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0223",
+      "score": 0.314519,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 61,
+      "page_end": 62,
+      "year": 2024,
+      "articles": [
+       257
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0237",
+      "score": 0.144665,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 77,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       153
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0260",
+     "B-ldd2024_cb367-0223",
+     "B-ldd2024_cb365-0237"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1200.4,
+    "usage": {
+     "prompt_tokens": 1515,
+     "completion_tokens": 104,
+     "total_tokens": 1619,
+     "cost": 0.000201465,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002035,
+      "upstream_inference_prompt_cost": 0.0001515,
+      "upstream_inference_completions_cost": 5.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3370.6,
+    "usage": {
+     "prompt_tokens": 3112,
+     "completion_tokens": 713,
+     "total_tokens": 3825,
+     "cost": 0.000661023,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006677,
+      "upstream_inference_prompt_cost": 0.0003112,
+      "upstream_inference_completions_cost": 0.0003565
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 121,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb365-0260",
+   "B-ldd2024_cb367-0223",
+   "B-ldd2024_cb365-0237"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4627,
+  "completion_tokens": 817,
+  "cost_usd": 0.000862,
+  "ms": 7875.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Luật Đất đai 2024 có điều khoản nào được áp dụng sớm hơn ngày hiệu lực chung không, và từ ngày nào?",
+  "status": "answered",
+  "answer": "Có. Luật Đất đai 2024 có hiệu lực chung từ ngày 01/01/2025, nhưng Khoản 2 Điều 252 quy định Điều 190 và Điều 248 của Luật này có hiệu lực thi hành từ ngày 01/4/2024 [B-ldd2024_cb367-0206].\n\nNgoài ra, Khoản 3 Điều 252 quy định Khoản 9 Điều 60 có hiệu lực từ ngày Nghị quyết số 61/2022/QH15 hết hiệu lực. Đây là trường hợp có điều kiện, không phải một ngày cố định [B-ldd2024_cb367-0206].\n\nLưu ý: các đoạn đã tìm không nêu nội dung cụ thể của Điều 190 và Điều 248, nên không xác định được chi tiết các điều này.",
+  "citations": [
+   "B-ldd2024_cb367-0206"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "Luật Đất đai 2024 điều khoản áp dụng trước ngày có hiệu lực thi hành",
+    "filter": 2024,
+    "ms": 3537.8,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.983139,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 57,
+      "page_end": 57,
+      "year": 2024,
+      "articles": [
+       251,
+       252
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0229",
+      "score": 0.973082,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 63,
+      "page_end": 63,
+      "year": 2024,
+      "articles": [
+       259
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0211",
+      "score": 0.960356,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 59,
+      "page_end": 59,
+      "year": 2024,
+      "articles": [
+       254
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0206",
+     "B-ldd2024_cb367-0229",
+     "B-ldd2024_cb367-0211"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hiệu lực thi hành của Luật Đất đai và quy định chuyển tiếp",
+    "filter": 2024,
+    "ms": 3440.4,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.998516,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 57,
+      "page_end": 57,
+      "year": 2024,
+      "articles": [
+       251,
+       252
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0217",
+      "score": 0.978435,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 60,
+      "page_end": 60,
+      "year": 2024,
+      "articles": [
+       255
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0244",
+      "score": 0.977715,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 66,
+      "page_end": 66,
+      "year": 2024,
+      "articles": [
+       260
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0217",
+     "B-ldd2024_cb367-0244",
+     "B-ldd2024_cb367-0241"
+    ],
+    "already_shown": [
+     "B-ldd2024_cb367-0206"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1598.0,
+    "usage": {
+     "prompt_tokens": 1503,
+     "completion_tokens": 202,
+     "total_tokens": 1705,
+     "cost": 0.000248787,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002513,
+      "upstream_inference_prompt_cost": 0.0001503,
+      "upstream_inference_completions_cost": 0.000101
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3321.3,
+    "usage": {
+     "prompt_tokens": 5220,
+     "completion_tokens": 610,
+     "total_tokens": 5830,
+     "cost": 0.00081873,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000827,
+      "upstream_inference_prompt_cost": 0.000522,
+      "upstream_inference_completions_cost": 0.000305
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 207,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb367-0206",
+   "B-ldd2024_cb367-0229",
+   "B-ldd2024_cb367-0211",
+   "B-ldd2024_cb367-0217",
+   "B-ldd2024_cb367-0244",
+   "B-ldd2024_cb367-0241"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6723,
+  "completion_tokens": 812,
+  "cost_usd": 0.001068,
+  "ms": 11898.0,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Dự án đầu tư cần thời hạn sử dụng đất dài hơn 50 năm thì được giao, cho thuê đất tối đa bao nhiêu năm?",
+  "status": "answered",
+  "answer": "Theo cả hai luật, thời hạn giao đất, cho thuê đất đối với dự án đầu tư thường tối đa là 50 năm; chỉ trong trường hợp đặc biệt mới được tối đa 70 năm.\n\n- Luật Đất đai 2013 (Điều 126 khoản 3): thời hạn không quá 50 năm. Với dự án có vốn đầu tư lớn nhưng thu hồi vốn chậm, hoặc dự án ở địa bàn có điều kiện kinh tế - xã hội khó khăn hoặc đặc biệt khó khăn mà cần thời hạn dài hơn, thời hạn không quá 70 năm [B-ldd2013-0258].\n\n- Luật Đất đai 2024 (Điều 172 điểm c): thời hạn giao đất, cho thuê đất để thực hiện dự án đầu tư được xem xét theo thời hạn hoạt động của dự án nhưng không quá 50 năm. Với dự án có thời hạn hoạt động trên 50 năm theo Luật Đầu tư, thời hạn theo dự án nhưng không quá 70 năm [B-ldd2024_cb367-0002].\n\nNhư vậy, dự án có thời hạn trên 50 năm vẫn chỉ được giao, cho thuê tối đa 70 năm theo cả hai luật. Khi hết hạn, nếu còn nhu cầu sử dụng thì có thể được gia hạn nhưng không vượt quá mức tối đa nói trên.",
+  "citations": [
+   "B-ldd2013-0258",
+   "B-ldd2024_cb367-0002"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thời hạn giao đất, cho thuê đất đối với dự án đầu tư tối đa không quá 50 năm",
+    "filter": 2013,
+    "ms": 3111.9,
+    "results": [
+     {
+      "id": "B-ldd2013-0258",
+      "score": 0.992713,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 68,
+      "page_end": 68,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     },
+     {
+      "id": "B-ldd2013-0257",
+      "score": 0.803453,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 68,
+      "page_end": 68,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     },
+     {
+      "id": "B-ldd2013-0260",
+      "score": 0.692388,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 69,
+      "page_end": 69,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0258",
+     "B-ldd2013-0257",
+     "B-ldd2013-0260"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thời hạn giao đất, cho thuê đất đối với dự án đầu tư tối đa không quá 50 năm",
+    "filter": 2024,
+    "ms": 3754.7,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0002",
+      "score": 0.995274,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 2,
+      "page_end": 2,
+      "year": 2024,
+      "articles": [
+       172
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0100",
+      "score": 0.839728,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 35,
+      "page_end": 35,
+      "year": 2024,
+      "articles": [
+       126
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0216",
+      "score": 0.827423,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 60,
+      "page_end": 60,
+      "year": 2024,
+      "articles": [
+       255
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0002",
+     "B-ldd2024_cb365-0100",
+     "B-ldd2024_cb367-0216"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1747.7,
+    "usage": {
+     "prompt_tokens": 1509,
+     "completion_tokens": 264,
+     "total_tokens": 1773,
+     "cost": 0.000280071,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002829,
+      "upstream_inference_prompt_cost": 0.0001509,
+      "upstream_inference_completions_cost": 0.000132
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4496.2,
+    "usage": {
+     "prompt_tokens": 5133,
+     "completion_tokens": 888,
+     "total_tokens": 6021,
+     "cost": 0.000947727,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009573,
+      "upstream_inference_prompt_cost": 0.0005133,
+      "upstream_inference_completions_cost": 0.000444
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 245,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0258",
+   "B-ldd2013-0257",
+   "B-ldd2013-0260",
+   "B-ldd2024_cb367-0002",
+   "B-ldd2024_cb365-0100",
+   "B-ldd2024_cb367-0216"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6642,
+  "completion_tokens": 1152,
+  "cost_usd": 0.001228,
+  "ms": 13110.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Luật Đất đai 2013 bắt đầu có hiệu lực từ ngày nào?",
+  "status": "answered",
+  "answer": "Luật Đất đai 2013 (45/2013/QH13) có hiệu lực thi hành từ ngày 01 tháng 7 năm 2014 (Điều 211, khoản 1) [B-ldd2013-0449]. Đồng thời, Luật đất đai số 13/2003/QH11 và Nghị quyết số 49/2013/QH13 hết hiệu lực kể từ ngày Luật này có hiệu lực [B-ldd2013-0449].",
+  "citations": [
+   "B-ldd2013-0449"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "Luật Đất đai có hiệu lực thi hành từ ngày",
+    "filter": 2013,
+    "ms": 3022.5,
+    "results": [
+     {
+      "id": "B-ldd2013-0449",
+      "score": 0.996018,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 116,
+      "page_end": 117,
+      "year": 2013,
+      "articles": [
+       211
+      ]
+     },
+     {
+      "id": "B-ldd2013-0446",
+      "score": 0.954605,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 116,
+      "page_end": 116,
+      "year": 2013,
+      "articles": [
+       210
+      ]
+     },
+     {
+      "id": "B-ldd2013-0448",
+      "score": 0.843644,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 116,
+      "page_end": 116,
+      "year": 2013,
+      "articles": [
+       210
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0449",
+     "B-ldd2013-0446",
+     "B-ldd2013-0448"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1212.7,
+    "usage": {
+     "prompt_tokens": 1482,
+     "completion_tokens": 92,
+     "total_tokens": 1574,
+     "cost": 0.000192258,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001942,
+      "upstream_inference_prompt_cost": 0.0001482,
+      "upstream_inference_completions_cost": 4.6e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1780.9,
+    "usage": {
+     "prompt_tokens": 3121,
+     "completion_tokens": 263,
+     "total_tokens": 3384,
+     "cost": 0.000439164,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004436,
+      "upstream_inference_prompt_cost": 0.0003121,
+      "upstream_inference_completions_cost": 0.0001315
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0449",
+   "B-ldd2013-0446",
+   "B-ldd2013-0448"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4603,
+  "completion_tokens": 355,
+  "cost_usd": 0.000631,
+  "ms": 6016.3,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "q20",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Thửa đất chuẩn dùng để làm gì trong định giá đất?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, thửa đất chuẩn là thửa đất có các đặc tính về diện tích, hình thể, kích thước mang tính đại diện cho các thửa đất trong vùng giá trị, được chọn làm thửa đất chuẩn để định giá cho các thửa đất khác trong vùng giá trị (khoản 43 Điều 3) [B-ldd2024_cb363-0013]. Nói cách khác, thửa đất chuẩn là thửa đất mẫu dùng làm cơ sở để định giá các thửa đất khác cùng vùng giá trị.\n\nLuật Đất đai 2013: các đoạn tìm được không có định nghĩa hay quy định nào về \"thửa đất chuẩn\", nên không thể khẳng định nội dung tương ứng trong luật này. Các đoạn 2013 chỉ nêu nguyên tắc định giá đất (Điều 112) [B-ldd2013-0233] và cơ chế bảng giá đất, giá đất cụ thể (Điều 114) [B-ldd2013-0236], [B-ldd2013-0237].",
+  "citations": [
+   "B-ldd2024_cb363-0013",
+   "B-ldd2013-0233",
+   "B-ldd2013-0236",
+   "B-ldd2013-0237"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất chuẩn được sử dụng để định giá đất",
+    "filter": 2013,
+    "ms": 3457.4,
+    "results": [
+     {
+      "id": "B-ldd2013-0233",
+      "score": 0.799357,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 61,
+      "page_end": 61,
+      "year": 2013,
+      "articles": [
+       111,
+       112
+      ]
+     },
+     {
+      "id": "B-ldd2013-0237",
+      "score": 0.694319,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 62,
+      "page_end": 62,
+      "year": 2013,
+      "articles": [
+       114
+      ]
+     },
+     {
+      "id": "B-ldd2013-0236",
+      "score": 0.283399,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 62,
+      "page_end": 62,
+      "year": 2013,
+      "articles": [
+       114
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0233",
+     "B-ldd2013-0237",
+     "B-ldd2013-0236"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất chuẩn được sử dụng để định giá đất",
+    "filter": 2024,
+    "ms": 3319.4,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0013",
+      "score": 0.962113,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 6,
+      "page_end": 6,
+      "year": 2024,
+      "articles": [
+       3
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0256",
+      "score": 0.955936,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 83,
+      "page_end": 84,
+      "year": 2024,
+      "articles": [
+       158
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0255",
+      "score": 0.947511,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 83,
+      "page_end": 83,
+      "year": 2024,
+      "articles": [
+       158
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0013",
+     "B-ldd2024_cb365-0256",
+     "B-ldd2024_cb365-0255"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất chuẩn vùng giá trị định giá các thửa đất khác",
+    "filter": 2013,
+    "ms": 3442.8,
+    "results": [
+     {
+      "id": "B-ldd2013-0233",
+      "score": 0.290405,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 61,
+      "page_end": 61,
+      "year": 2013,
+      "articles": [
+       111,
+       112
+      ]
+     },
+     {
+      "id": "B-ldd2013-0237",
+      "score": 0.181463,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 62,
+      "page_end": 62,
+      "year": 2013,
+      "articles": [
+       114
+      ]
+     },
+     {
+      "id": "B-ldd2013-0234",
+      "score": 0.085661,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 61,
+      "page_end": 61,
+      "year": 2013,
+      "articles": [
+       113
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0234",
+     "B-ldd2013-0002",
+     "B-ldd2013-0235"
+    ],
+    "already_shown": [
+     "B-ldd2013-0233",
+     "B-ldd2013-0237"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1665.6,
+    "usage": {
+     "prompt_tokens": 1476,
+     "completion_tokens": 202,
+     "total_tokens": 1678,
+     "cost": 0.000246114,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002486,
+      "upstream_inference_prompt_cost": 0.0001476,
+      "upstream_inference_completions_cost": 0.000101
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 24,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1721.1,
+    "usage": {
+     "prompt_tokens": 5075,
+     "completion_tokens": 209,
+     "total_tokens": 5284,
+     "cost": 0.00060588,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000612,
+      "upstream_inference_prompt_cost": 0.0005075,
+      "upstream_inference_completions_cost": 0.0001045
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 112,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2837.1,
+    "usage": {
+     "prompt_tokens": 6690,
+     "completion_tokens": 528,
+     "total_tokens": 7218,
+     "cost": 0.00092367,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000933,
+      "upstream_inference_prompt_cost": 0.000669,
+      "upstream_inference_completions_cost": 0.000264
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0233",
+   "B-ldd2013-0237",
+   "B-ldd2013-0236",
+   "B-ldd2024_cb363-0013",
+   "B-ldd2024_cb365-0256",
+   "B-ldd2024_cb365-0255",
+   "B-ldd2013-0234",
+   "B-ldd2013-0002",
+   "B-ldd2013-0235"
+  ],
+  "searches": 3,
+  "model_calls": 3,
+  "prompt_tokens": 13241,
+  "completion_tokens": 939,
+  "cost_usd": 0.001776,
+  "ms": 16443.8,
+  "context_hit": true,
+  "first_search_hit": false,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h01",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2013, Chính phủ ban hành khung giá đất theo chu kỳ bao lâu?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013, Điều 113, Chính phủ ban hành khung giá đất định kỳ 05 năm một lần đối với từng loại đất, theo từng vùng [B-ldd2013-0234]. Trong thời gian thực hiện, nếu giá đất phổ biến trên thị trường tăng từ 20% trở lên so với giá tối đa hoặc giảm từ 20% trở lên so với giá tối thiểu trong khung giá, Chính phủ điều chỉnh khung giá cho phù hợp [B-ldd2013-0234].",
+  "citations": [
+   "B-ldd2013-0234"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "Chính phủ ban hành khung giá đất theo chu kỳ",
+    "filter": 2013,
+    "ms": 4083.5,
+    "results": [
+     {
+      "id": "B-ldd2013-0234",
+      "score": 0.99216,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 61,
+      "page_end": 61,
+      "year": 2013,
+      "articles": [
+       113
+      ]
+     },
+     {
+      "id": "B-ldd2013-0235",
+      "score": 0.905249,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 61,
+      "page_end": 62,
+      "year": 2013,
+      "articles": [
+       114
+      ]
+     },
+     {
+      "id": "B-ldd2013-0030",
+      "score": 0.530019,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 9,
+      "page_end": 9,
+      "year": 2013,
+      "articles": [
+       18
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0234",
+     "B-ldd2013-0235",
+     "B-ldd2013-0030"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1120.3,
+    "usage": {
+     "prompt_tokens": 1494,
+     "completion_tokens": 92,
+     "total_tokens": 1586,
+     "cost": 0.000193446,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001954,
+      "upstream_inference_prompt_cost": 0.0001494,
+      "upstream_inference_completions_cost": 4.6e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1864.7,
+    "usage": {
+     "prompt_tokens": 2589,
+     "completion_tokens": 302,
+     "total_tokens": 2891,
+     "cost": 0.000405801,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004099,
+      "upstream_inference_prompt_cost": 0.0002589,
+      "upstream_inference_completions_cost": 0.000151
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0234",
+   "B-ldd2013-0235",
+   "B-ldd2013-0030"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4083,
+  "completion_tokens": 394,
+  "cost_usd": 0.000599,
+  "ms": 7068.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h02",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2013, khi Nhà nước thu hồi đất mà không có đất để bồi thường thì tiền bồi thường được tính theo giá đất tại thời điểm nào?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2013, Điều 74 khoản 2: việc bồi thường thực hiện bằng giao đất cùng mục đích sử dụng với loại đất thu hồi; nếu không có đất để bồi thường thì được bồi thường bằng tiền theo giá đất cụ thể của loại đất thu hồi do Ủy ban nhân dân cấp tỉnh quyết định tại thời điểm quyết định thu hồi đất [B-ldd2013-0152].\n\nLưu ý: đối với đất phi nông nghiệp không phải đất ở của hộ gia đình, cá nhân (Điều 80 khoản 1) và của tổ chức kinh tế (Điều 81 khoản 1), khi không có đất bồi thường thì bồi thường bằng tiền theo thời hạn sử dụng đất còn lại [B-ldd2013-0166][B-ldd2013-0167]. Các đoạn tìm được không nêu cách xác định giá đất trong trường hợp này.",
+  "citations": [
+   "B-ldd2013-0152",
+   "B-ldd2013-0166",
+   "B-ldd2013-0167"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "bồi thường khi Nhà nước thu hồi đất không có đất để bồi thường giá đất tại thời điểm quyết định thu hồi đất",
+    "filter": 2013,
+    "ms": 3412.5,
+    "results": [
+     {
+      "id": "B-ldd2013-0152",
+      "score": 0.994835,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 41,
+      "page_end": 41,
+      "year": 2013,
+      "articles": [
+       73,
+       74
+      ]
+     },
+     {
+      "id": "B-ldd2013-0167",
+      "score": 0.96976,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 44,
+      "page_end": 44,
+      "year": 2013,
+      "articles": [
+       81
+      ]
+     },
+     {
+      "id": "B-ldd2013-0166",
+      "score": 0.967551,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 44,
+      "page_end": 44,
+      "year": 2013,
+      "articles": [
+       80
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0152",
+     "B-ldd2013-0167",
+     "B-ldd2013-0166"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1262.8,
+    "usage": {
+     "prompt_tokens": 1520,
+     "completion_tokens": 120,
+     "total_tokens": 1640,
+     "cost": 0.00020988,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000212,
+      "upstream_inference_prompt_cost": 0.000152,
+      "upstream_inference_completions_cost": 6e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2343.5,
+    "usage": {
+     "prompt_tokens": 3197,
+     "completion_tokens": 476,
+     "total_tokens": 3673,
+     "cost": 0.000552123,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005577,
+      "upstream_inference_prompt_cost": 0.0003197,
+      "upstream_inference_completions_cost": 0.000238
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0152",
+   "B-ldd2013-0167",
+   "B-ldd2013-0166"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4717,
+  "completion_tokens": 596,
+  "cost_usd": 0.000762,
+  "ms": 7019.0,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2013
+  ],
+  "filter_year": 2013,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h03",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Nhà nước lấy đất nhà tôi nhưng không còn đất để đền; theo Luật Đất đai 2024 thì số tiền đền bù được tính theo giá đất ở thời điểm nào?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024, khi không còn đất để bồi thường bằng đất thì số tiền bồi thường được tính theo giá đất cụ thể của loại đất thu hồi do Ủy ban nhân dân cấp có thẩm quyền quyết định tại thời điểm phê duyệt phương án bồi thường, hỗ trợ, tái định cư (Điều 91, khoản 2) [B-ldd2024_cb365-0001].",
+  "citations": [
+   "B-ldd2024_cb365-0001"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "giá đất bồi thường khi Nhà nước thu hồi đất thời điểm xác định giá đất cụ thể",
+    "filter": 2024,
+    "ms": 4361.9,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0256",
+      "score": 0.94154,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 83,
+      "page_end": 84,
+      "year": 2024,
+      "articles": [
+       158
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0001",
+      "score": 0.933087,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 1,
+      "page_end": 1,
+      "year": 2024,
+      "articles": [
+       91
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0210",
+      "score": 0.881547,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 58,
+      "page_end": 58,
+      "year": 2024,
+      "articles": [
+       254
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0256",
+     "B-ldd2024_cb365-0001",
+     "B-ldd2024_cb367-0210"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1340.2,
+    "usage": {
+     "prompt_tokens": 1522,
+     "completion_tokens": 109,
+     "total_tokens": 1631,
+     "cost": 0.000204633,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002067,
+      "upstream_inference_prompt_cost": 0.0001522,
+      "upstream_inference_completions_cost": 5.45e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2190.3,
+    "usage": {
+     "prompt_tokens": 3322,
+     "completion_tokens": 350,
+     "total_tokens": 3672,
+     "cost": 0.000502128,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005072,
+      "upstream_inference_prompt_cost": 0.0003322,
+      "upstream_inference_completions_cost": 0.000175
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 84,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb365-0256",
+   "B-ldd2024_cb365-0001",
+   "B-ldd2024_cb367-0210"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4844,
+  "completion_tokens": 459,
+  "cost_usd": 0.000707,
+  "ms": 7892.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h04",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2024, hết thời hạn trưng dụng đất mà mục đích trưng dụng chưa hoàn thành thì xử lý thế nào?",
+  "status": "answered",
+  "answer": "Theo Điều 90 Luật Đất đai 2024, khi hết thời hạn trưng dụng đất mà mục đích trưng dụng chưa hoàn thành thì được gia hạn, nhưng thời gian gia hạn không quá 30 ngày [B-ldd2024_cb363-0277]. Quyết định gia hạn phải được thể hiện bằng văn bản và gửi cho người có đất trưng dụng và chủ sở hữu tài sản gắn liền với đất trưng dụng trước khi kết thúc thời hạn trưng dụng [B-ldd2024_cb363-0277]. Thẩm quyền quyết định gia hạn thuộc Bộ trưởng các bộ liên quan hoặc Chủ tịch Ủy ban nhân dân cấp tỉnh, cấp huyện theo khoản 3, và không được ủy quyền [B-ldd2024_cb363-0276]. Ngoài ra, người có thẩm quyền trưng dụng có trách nhiệm hoàn trả đất khi hết thời hạn trưng dụng [B-ldd2024_cb363-0278].",
+  "citations": [
+   "B-ldd2024_cb363-0277",
+   "B-ldd2024_cb363-0276",
+   "B-ldd2024_cb363-0278"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hết thời hạn trưng dụng đất mà mục đích trưng dụng chưa hoàn thành",
+    "filter": 2024,
+    "ms": 4051.0,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0277",
+      "score": 0.997211,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 92,
+      "page_end": 92,
+      "year": 2024,
+      "articles": [
+       90
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0278",
+      "score": 0.886029,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 92,
+      "page_end": 92,
+      "year": 2024,
+      "articles": [
+       90
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0276",
+      "score": 0.666066,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 92,
+      "page_end": 92,
+      "year": 2024,
+      "articles": [
+       90
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0277",
+     "B-ldd2024_cb363-0278",
+     "B-ldd2024_cb363-0276"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1466.6,
+    "usage": {
+     "prompt_tokens": 1511,
+     "completion_tokens": 104,
+     "total_tokens": 1615,
+     "cost": 0.000201069,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002031,
+      "upstream_inference_prompt_cost": 0.0001511,
+      "upstream_inference_completions_cost": 5.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2459.1,
+    "usage": {
+     "prompt_tokens": 2974,
+     "completion_tokens": 528,
+     "total_tokens": 3502,
+     "cost": 0.000555786,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005614,
+      "upstream_inference_prompt_cost": 0.0002974,
+      "upstream_inference_completions_cost": 0.000264
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb363-0277",
+   "B-ldd2024_cb363-0278",
+   "B-ldd2024_cb363-0276"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4485,
+  "completion_tokens": 632,
+  "cost_usd": 0.000757,
+  "ms": 7976.9,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h05",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Đất ở thì có bị giới hạn thời gian sử dụng không?",
+  "status": "answered",
+  "answer": "Không. Đất ở không bị giới hạn thời gian sử dụng; đây là loại đất được sử dụng ổn định lâu dài.\n\n- Luật Đất đai 2013: Điều 125 khoản 1 quy định người sử dụng đất được sử dụng đất ổn định lâu dài trong trường hợp \"Đất ở do hộ gia đình, cá nhân sử dụng\" [B-ldd2013-0255]. Điều 126 quy định về đất sử dụng có thời hạn, và đất ở không thuộc nhóm này [B-ldd2013-0259].\n- Luật Đất đai 2024: Điều 171 khoản 1 quy định đất sử dụng ổn định lâu dài gồm \"Đất ở\" [B-ldd2024_cb367-0000].\n\nLưu ý: Các đoạn tìm được không nêu đầy đủ nội dung Điều 126 của Luật 2013 hay Điều 172 của Luật 2024 nên tôi không khẳng định thêm về các loại đất có thời hạn khác.",
+  "citations": [
+   "B-ldd2013-0255",
+   "B-ldd2013-0259",
+   "B-ldd2024_cb367-0000"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thời hạn sử dụng đất ở ổn định lâu dài",
+    "filter": 2013,
+    "ms": 3146.2,
+    "results": [
+     {
+      "id": "B-ldd2013-0255",
+      "score": 0.982822,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 67,
+      "page_end": 68,
+      "year": 2013,
+      "articles": [
+       124,
+       125
+      ]
+     },
+     {
+      "id": "B-ldd2013-0263",
+      "score": 0.982324,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 70,
+      "page_end": 70,
+      "year": 2013,
+      "articles": [
+       127
+      ]
+     },
+     {
+      "id": "B-ldd2013-0259",
+      "score": 0.982309,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 68,
+      "page_end": 69,
+      "year": 2013,
+      "articles": [
+       126
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0255",
+     "B-ldd2013-0263",
+     "B-ldd2013-0259"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thời hạn sử dụng đất ở ổn định lâu dài",
+    "filter": 2024,
+    "ms": 3738.3,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0000",
+      "score": 0.981022,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 1,
+      "page_end": 1,
+      "year": 2024,
+      "articles": [
+       170,
+       171
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0007",
+      "score": 0.958956,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 3,
+      "page_end": 3,
+      "year": 2024,
+      "articles": [
+       173
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0008",
+      "score": 0.958123,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 3,
+      "page_end": 4,
+      "year": 2024,
+      "articles": [
+       174
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0000",
+     "B-ldd2024_cb367-0007",
+     "B-ldd2024_cb367-0008"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1455.4,
+    "usage": {
+     "prompt_tokens": 1475,
+     "completion_tokens": 201,
+     "total_tokens": 1676,
+     "cost": 0.00024552,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000248,
+      "upstream_inference_prompt_cost": 0.0001475,
+      "upstream_inference_completions_cost": 0.0001005
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3257.0,
+    "usage": {
+     "prompt_tokens": 5298,
+     "completion_tokens": 615,
+     "total_tokens": 5913,
+     "cost": 0.000828927,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008373,
+      "upstream_inference_prompt_cost": 0.0005298,
+      "upstream_inference_completions_cost": 0.0003075
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0255",
+   "B-ldd2013-0263",
+   "B-ldd2013-0259",
+   "B-ldd2024_cb367-0000",
+   "B-ldd2024_cb367-0007",
+   "B-ldd2024_cb367-0008"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6773,
+  "completion_tokens": 816,
+  "cost_usd": 0.001074,
+  "ms": 11597.3,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h06",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Hai bên tranh chấp đất đều đã có sổ đỏ thì phải mang vụ việc ra cơ quan nào giải quyết?",
+  "status": "answered",
+  "answer": "Trường hợp các bên tranh chấp đều có Giấy chứng nhận (sổ đỏ) thì vụ việc do Tòa án giải quyết, không phải cơ quan hành chính.\n\n- Luật Đất đai 2013: Tranh chấp đất đai mà đương sự có Giấy chứng nhận hoặc giấy tờ quy định tại Điều 100, và tranh chấp về tài sản gắn liền với đất, thì do Tòa án nhân dân giải quyết (Điều 203 khoản 1). Điều này áp dụng sau khi đã hòa giải tại Ủy ban nhân dân cấp xã mà không thành [B-ldd2013-0434].\n\n- Luật Đất đai 2024: Tranh chấp đất đai mà các bên tranh chấp hoặc một trong các bên có Giấy chứng nhận quyền sử dụng đất (cùng các loại giấy chứng nhận quyền sở hữu nhà ở, công trình, tài sản gắn liền với đất liệt kê tại khoản 1), hoặc có một trong các loại giấy tờ quy định tại Điều 137, và tranh chấp về tài sản gắn liền với đất, thì do Tòa án giải quyết (Điều 236 khoản 1) [B-ldd2024_cb367-0167].\n\nNgược lại, khi các bên không có Giấy chứng nhận hoặc giấy tờ tương ứng, các bên được chọn giữa nộp đơn tại Ủy ban nhân dân có thẩm quyền hoặc khởi kiện tại Tòa án (Luật 2013 Điều 203 khoản 2; Luật 2024 Điều 236 khoản 2) [B-ldd2013-0434] [B-ldd2024_cb367-0168].\n\nLưu ý: các đoạn tra cứu không đầy đủ toàn bộ điều luật, nên căn cứ thủ tục cụ thể (ví dụ yêu cầu hòa giải tại cấp xã trước khi khởi kiện) nên kiểm tra thêm với văn bản đầy đủ.",
+  "citations": [
+   "B-ldd2013-0434",
+   "B-ldd2024_cb367-0167",
+   "B-ldd2024_cb367-0168"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "tranh chấp đất đai giữa hai bên đều có giấy chứng nhận quyền sử dụng đất thẩm quyền giải quyết của Tòa án hoặc Ủy ban nhân dân",
+    "filter": 2013,
+    "ms": 3413.5,
+    "results": [
+     {
+      "id": "B-ldd2013-0434",
+      "score": 0.994641,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 113,
+      "page_end": 113,
+      "year": 2013,
+      "articles": [
+       203
+      ]
+     },
+     {
+      "id": "B-ldd2013-0435",
+      "score": 0.981792,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 113,
+      "page_end": 113,
+      "year": 2013,
+      "articles": [
+       203
+      ]
+     },
+     {
+      "id": "B-ldd2013-0358",
+      "score": 0.796536,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 93,
+      "page_end": 93,
+      "year": 2013,
+      "articles": [
+       169
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0434",
+     "B-ldd2013-0435",
+     "B-ldd2013-0358"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "tranh chấp đất đai giữa hai bên đều có giấy chứng nhận quyền sử dụng đất thẩm quyền giải quyết của Tòa án hoặc Ủy ban nhân dân",
+    "filter": 2024,
+    "ms": 4029.7,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0167",
+      "score": 0.994955,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 46,
+      "page_end": 47,
+      "year": 2024,
+      "articles": [
+       236
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0168",
+      "score": 0.990417,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 47,
+      "page_end": 47,
+      "year": 2024,
+      "articles": [
+       236
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0173",
+      "score": 0.985167,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 48,
+      "page_end": 48,
+      "year": 2024,
+      "articles": [
+       236
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0167",
+     "B-ldd2024_cb367-0168",
+     "B-ldd2024_cb367-0173"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1965.7,
+    "usage": {
+     "prompt_tokens": 1500,
+     "completion_tokens": 312,
+     "total_tokens": 1812,
+     "cost": 0.00030294,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000306,
+      "upstream_inference_prompt_cost": 0.00015,
+      "upstream_inference_completions_cost": 0.000156
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 5080.9,
+    "usage": {
+     "prompt_tokens": 4910,
+     "completion_tokens": 1137,
+     "total_tokens": 6047,
+     "cost": 0.001048905,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010595,
+      "upstream_inference_prompt_cost": 0.000491,
+      "upstream_inference_completions_cost": 0.0005685
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 273,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0434",
+   "B-ldd2013-0435",
+   "B-ldd2013-0358",
+   "B-ldd2024_cb367-0167",
+   "B-ldd2024_cb367-0168",
+   "B-ldd2024_cb367-0173"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6410,
+  "completion_tokens": 1449,
+  "cost_usd": 0.001352,
+  "ms": 14490.1,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h07",
+  "split": "dev",
+  "type": "dien_dat_lai",
+  "answerable": true,
+  "question": "Đất của ông bà tôi đã bị Nhà nước giao cho người khác từ thời trước; bây giờ gia đình có đòi lại được không?",
+  "status": "answered",
+  "answer": "Theo cả Luật Đất đai 2013 và Luật Đất đai 2024, về nguyên tắc gia đình khó đòi lại đất trong trường hợp này.\n\n- Luật Đất đai 2013, Điều 26 khoản 5: Nhà nước không thừa nhận việc đòi lại đất đã được giao theo quy định của Nhà nước cho người khác sử dụng trong quá trình thực hiện chính sách đất đai của Nhà nước Việt Nam dân chủ cộng hòa, Chính phủ Cách mạng lâm thời Cộng hòa miền Nam Việt Nam và Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam [B-ldd2013-0040].\n- Luật Đất đai 2024, Điều 17 khoản 2: quy định tương tự, Nhà nước không thừa nhận việc đòi lại đất đã được giao theo quy định của Nhà nước cho người khác sử dụng trong các giai đoạn chính sách đất đai nêu trên [B-ldd2024_cb363-0042].\n\nLưu ý: quy định này áp dụng với đất đã được giao theo quy định của Nhà nước trong các giai đoạn đó. Các đoạn luật tôi tra cứu được chưa nêu rõ trường hợp đất bị giao không đúng quy định hoặc không có căn cứ pháp lý, nên tôi không kết luận được cho trường hợp cụ thể của gia đình bạn. Muốn xác định chính xác, cần xem đất được giao theo văn bản nào và trong giai đoạn nào.\n\nNếu có tranh chấp, luật quy định trước hết có thể hòa giải tại Ủy ban nhân dân cấp xã; nếu không thành, tùy có Giấy chứng nhận hoặc giấy tờ theo quy định hay không, đương sự có thể khởi kiện tại Tòa án hoặc nộp đơn tại Ủy ban nhân dân có thẩm quyền [B-ldd2013-0432, B-ldd2013-0434; B-ldd2024_cb367-0168]. Nên tham khảo luật sư hoặc cơ quan tài nguyên và môi trường địa phương để đánh giá hồ sơ.",
+  "citations": [
+   "B-ldd2013-0040",
+   "B-ldd2024_cb363-0042",
+   "B-ldd2013-0432",
+   "B-ldd2013-0434",
+   "B-ldd2024_cb367-0168"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "người sử dụng đất đòi lại đất đã bị Nhà nước giao cho người khác trước đây; thời hiệu yêu cầu giải quyết tranh chấp đất đai",
+    "filter": 2013,
+    "ms": 4501.6,
+    "results": [
+     {
+      "id": "B-ldd2013-0040",
+      "score": 0.808468,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 11,
+      "page_end": 11,
+      "year": 2013,
+      "articles": [
+       26
+      ]
+     },
+     {
+      "id": "B-ldd2013-0432",
+      "score": 0.657116,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 112,
+      "page_end": 112,
+      "year": 2013,
+      "articles": [
+       202
+      ]
+     },
+     {
+      "id": "B-ldd2013-0434",
+      "score": 0.65089,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 113,
+      "page_end": 113,
+      "year": 2013,
+      "articles": [
+       203
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0040",
+     "B-ldd2013-0432",
+     "B-ldd2013-0434"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "người sử dụng đất đòi lại đất đã bị Nhà nước giao cho người khác trước đây; thời hiệu yêu cầu giải quyết tranh chấp đất đai",
+    "filter": 2024,
+    "ms": 4669.9,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0042",
+      "score": 0.805279,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 16,
+      "page_end": 16,
+      "year": 2024,
+      "articles": [
+       17
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0168",
+      "score": 0.639442,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 47,
+      "page_end": 47,
+      "year": 2024,
+      "articles": [
+       236
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0172",
+      "score": 0.598789,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 48,
+      "page_end": 48,
+      "year": 2024,
+      "articles": [
+       236
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0042",
+     "B-ldd2024_cb367-0168",
+     "B-ldd2024_cb367-0172"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 2391.4,
+    "usage": {
+     "prompt_tokens": 1502,
+     "completion_tokens": 401,
+     "total_tokens": 1903,
+     "cost": 0.000347193,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0003507,
+      "upstream_inference_prompt_cost": 0.0001502,
+      "upstream_inference_completions_cost": 0.0002005
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 6346.3,
+    "usage": {
+     "prompt_tokens": 4894,
+     "completion_tokens": 1300,
+     "total_tokens": 6194,
+     "cost": 0.001128006,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0011394,
+      "upstream_inference_prompt_cost": 0.0004894,
+      "upstream_inference_completions_cost": 0.00065
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 351,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0040",
+   "B-ldd2013-0432",
+   "B-ldd2013-0434",
+   "B-ldd2024_cb363-0042",
+   "B-ldd2024_cb367-0168",
+   "B-ldd2024_cb367-0172"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6396,
+  "completion_tokens": 1701,
+  "cost_usd": 0.001475,
+  "ms": 17909.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h08",
+  "split": "dev",
+  "type": "truc_tiep",
+  "answerable": true,
+  "question": "Đăng ký đất đai có bắt buộc không, và bắt buộc với ai?",
+  "status": "answered",
+  "answer": "Có. Theo cả hai luật, đăng ký đất đai là bắt buộc đối với người sử dụng đất và người được giao đất để quản lý.\n\n- Luật Đất đai 2013: Điều 95 khoản 1 quy định đăng ký đất đai là bắt buộc đối với người sử dụng đất và người được giao đất để quản lý; đăng ký quyền sở hữu nhà ở và tài sản khác gắn liền với đất thực hiện theo yêu cầu của chủ sở hữu [B-ldd2013-0189].\n- Luật Đất đai 2024: Điều 131 khoản 1 quy định đăng ký đất đai là bắt buộc đối với người sử dụng đất và người được giao đất để quản lý. Tài sản gắn liền với đất (nhà ở, công trình xây dựng) được đăng ký theo yêu cầu của chủ sở hữu [B-ldd2024_cb365-0113].\n\nVề nội dung đăng ký, cả hai luật đều gồm đăng ký lần đầu và đăng ký biến động [B-ldd2013-0189], [B-ldd2024_cb365-0113]. Theo Luật 2024, đăng ký lần đầu áp dụng khi thửa đất đang sử dụng chưa đăng ký, thửa đất được Nhà nước giao hoặc cho thuê, hoặc thửa đất được giao để quản lý mà chưa đăng ký [B-ldd2024_cb365-0114]. Theo Luật 2013, đăng ký biến động áp dụng khi đã được cấp Giấy chứng nhận hoặc đã đăng ký mà có thay đổi như chuyển nhượng, tặng cho, thế chấp, đổi tên, thay đổi thửa đất hoặc mục đích sử dụng [B-ldd2013-0190].",
+  "citations": [
+   "B-ldd2013-0189",
+   "B-ldd2013-0190",
+   "B-ldd2024_cb365-0113",
+   "B-ldd2024_cb365-0114"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "đăng ký đất đai bắt buộc đối với người sử dụng đất",
+    "filter": 2013,
+    "ms": 4306.1,
+    "results": [
+     {
+      "id": "B-ldd2013-0189",
+      "score": 0.998192,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 50,
+      "page_end": 50,
+      "year": 2013,
+      "articles": [
+       94,
+       95
+      ]
+     },
+     {
+      "id": "B-ldd2013-0193",
+      "score": 0.914627,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 51,
+      "page_end": 51,
+      "year": 2013,
+      "articles": [
+       95
+      ]
+     },
+     {
+      "id": "B-ldd2013-0190",
+      "score": 0.880846,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 50,
+      "page_end": 50,
+      "year": 2013,
+      "articles": [
+       95
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0189",
+     "B-ldd2013-0193",
+     "B-ldd2013-0190"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "đăng ký đất đai bắt buộc đối với người sử dụng đất",
+    "filter": 2024,
+    "ms": 3859.5,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0113",
+      "score": 0.997349,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 39,
+      "page_end": 40,
+      "year": 2024,
+      "articles": [
+       130,
+       131
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0114",
+      "score": 0.837255,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 40,
+      "page_end": 40,
+      "year": 2024,
+      "articles": [
+       132
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0168",
+      "score": 0.655206,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 55,
+      "page_end": 55,
+      "year": 2024,
+      "articles": [
+       138
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0113",
+     "B-ldd2024_cb365-0114",
+     "B-ldd2024_cb365-0168"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1595.4,
+    "usage": {
+     "prompt_tokens": 1479,
+     "completion_tokens": 207,
+     "total_tokens": 1686,
+     "cost": 0.000248886,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002514,
+      "upstream_inference_prompt_cost": 0.0001479,
+      "upstream_inference_completions_cost": 0.0001035
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3471.7,
+    "usage": {
+     "prompt_tokens": 5099,
+     "completion_tokens": 783,
+     "total_tokens": 5882,
+     "cost": 0.000892386,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009014,
+      "upstream_inference_prompt_cost": 0.0005099,
+      "upstream_inference_completions_cost": 0.0003915
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0189",
+   "B-ldd2013-0193",
+   "B-ldd2013-0190",
+   "B-ldd2024_cb365-0113",
+   "B-ldd2024_cb365-0114",
+   "B-ldd2024_cb365-0168"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6578,
+  "completion_tokens": 990,
+  "cost_usd": 0.001141,
+  "ms": 13233.1,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": true,
+  "cited_gold_years": [
+   2013,
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h09",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Mảnh đất chưa được cấp giấy chứng nhận thì có tách thành hai thửa được không?",
+  "status": "answered",
+  "answer": "Theo Luật Đất đai 2024 (31/2024/QH15): không. Việc tách thửa chỉ được thực hiện khi thửa đất đã được cấp một trong các loại Giấy chứng nhận (Giấy chứng nhận quyền sử dụng đất, Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở, Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất, hoặc Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất). Ngoài ra, thửa đất còn trong thời hạn sử dụng và không có tranh chấp, không bị kê biên thi hành án, không bị áp dụng biện pháp khẩn cấp tạm thời [B-ldd2024_cb367-0123] (Điều 220 khoản 1 điểm a, b, c). Vì vậy, mảnh đất chưa được cấp Giấy chứng nhận thì không đáp ứng điều kiện tách thửa theo Điều 220 này. Điều 146 khoản 3 cũng chỉ áp dụng cho thửa đất đã được cấp Giấy chứng nhận [B-ldd2024_cb365-0208].\n\nTheo Luật Đất đai 2013 (45/2013/QH13): các đoạn tìm được chưa nêu điều kiện tách thửa đối với đất chưa có Giấy chứng nhận. Chỉ có Điều 99 điểm i và Điều 167 điểm b đề cập đến tách thửa trong các trường hợp khác (người sử dụng đất tách thửa, hợp thửa; nhóm người sử dụng đất phân chia quyền sử dụng đất), nhưng không nói rõ đất chưa được cấp Giấy chứng nhận có được tách hay không [B-ldd2013-0204] [B-ldd2013-0349]. Vì vậy chưa đủ căn cứ để kết luận theo Luật 2013.",
+  "citations": [
+   "B-ldd2024_cb367-0123",
+   "B-ldd2024_cb365-0208",
+   "B-ldd2013-0204",
+   "B-ldd2013-0349"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "tách thửa đất chưa có giấy chứng nhận quyền sử dụng đất điều kiện tách thửa",
+    "filter": 2013,
+    "ms": 4089.2,
+    "results": [
+     {
+      "id": "B-ldd2013-0204",
+      "score": 0.741403,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 54,
+      "page_end": 54,
+      "year": 2013,
+      "articles": [
+       99
+      ]
+     },
+     {
+      "id": "B-ldd2013-0349",
+      "score": 0.723175,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 91,
+      "page_end": 91,
+      "year": 2013,
+      "articles": [
+       167
+      ]
+     },
+     {
+      "id": "B-ldd2013-0154",
+      "score": 0.715518,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 41,
+      "page_end": 41,
+      "year": 2013,
+      "articles": [
+       75
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0204",
+     "B-ldd2013-0349",
+     "B-ldd2013-0154"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "tách thửa đất chưa có giấy chứng nhận quyền sử dụng đất điều kiện tách thửa",
+    "filter": 2024,
+    "ms": 3280.5,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.987604,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 34,
+      "page_end": 35,
+      "year": 2024,
+      "articles": [
+       220
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.971743,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 67,
+      "page_end": 67,
+      "year": 2024,
+      "articles": [
+       146
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.970972,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 66,
+      "page_end": 67,
+      "year": 2024,
+      "articles": [
+       146
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0123",
+     "B-ldd2024_cb365-0208",
+     "B-ldd2024_cb365-0207"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "thửa đất được tách thửa điều kiện quyền sử dụng đất đã được cấp Giấy chứng nhận",
+    "filter": 2013,
+    "ms": 3740.0,
+    "results": [
+     {
+      "id": "B-ldd2013-0204",
+      "score": 0.942394,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 54,
+      "page_end": 54,
+      "year": 2013,
+      "articles": [
+       99
+      ]
+     },
+     {
+      "id": "B-ldd2013-0198",
+      "score": 0.843397,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 52,
+      "page_end": 52,
+      "year": 2013,
+      "articles": [
+       98
+      ]
+     },
+     {
+      "id": "B-ldd2013-0349",
+      "score": 0.834956,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 91,
+      "page_end": 91,
+      "year": 2013,
+      "articles": [
+       167
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0198",
+     "B-ldd2013-0201",
+     "B-ldd2013-0202"
+    ],
+    "already_shown": [
+     "B-ldd2013-0204",
+     "B-ldd2013-0349"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1670.4,
+    "usage": {
+     "prompt_tokens": 1487,
+     "completion_tokens": 239,
+     "total_tokens": 1726,
+     "cost": 0.000265518,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002682,
+      "upstream_inference_prompt_cost": 0.0001487,
+      "upstream_inference_completions_cost": 0.0001195
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 25,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1982.0,
+    "usage": {
+     "prompt_tokens": 5024,
+     "completion_tokens": 166,
+     "total_tokens": 5190,
+     "cost": 0.000579546,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005854,
+      "upstream_inference_prompt_cost": 0.0005024,
+      "upstream_inference_completions_cost": 8.3e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 5836.2,
+    "usage": {
+     "prompt_tokens": 6656,
+     "completion_tokens": 1229,
+     "total_tokens": 7885,
+     "cost": 0.001267299,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0012801,
+      "upstream_inference_prompt_cost": 0.0006656,
+      "upstream_inference_completions_cost": 0.0006145
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 358,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0204",
+   "B-ldd2013-0349",
+   "B-ldd2013-0154",
+   "B-ldd2024_cb367-0123",
+   "B-ldd2024_cb365-0208",
+   "B-ldd2024_cb365-0207",
+   "B-ldd2013-0198",
+   "B-ldd2013-0201",
+   "B-ldd2013-0202"
+  ],
+  "searches": 3,
+  "model_calls": 3,
+  "prompt_tokens": 13167,
+  "completion_tokens": 1634,
+  "cost_usd": 0.002112,
+  "ms": 20598.8,
+  "context_hit": true,
+  "first_search_hit": false,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "h10",
+  "split": "dev",
+  "type": "dieu_kien_ngoai_le",
+  "answerable": true,
+  "question": "Theo Luật Đất đai 2024, người đang dùng đất ổn định nhưng chưa được cấp sổ thì có được coi là người sử dụng đất không?",
+  "status": "answered",
+  "answer": "Có. Theo Điều 4 Luật Đất đai 2024 (31/2024/QH15), \"người sử dụng đất\" bao gồm tổ chức, hộ gia đình, cá nhân được Nhà nước giao đất, cho thuê đất, công nhận quyền sử dụng đất, nhận quyền sử dụng đất hoặc thuê lại đất, và cả trường hợp \"đang sử dụng đất ổn định, đủ điều kiện cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà chưa được Nhà nước cấp Giấy chứng nhận\" [B-ldd2024_cb363-0016].\n\nLưu ý: điều kiện là phải đang sử dụng đất ổn định và đủ điều kiện được cấp Giấy chứng nhận; việc chưa có sổ không làm mất tư cách người sử dụng đất.\n\nVí dụ liên quan: với hộ gia đình, cá nhân đang sử dụng đất ổn định vào mục đích nông nghiệp, không có tranh chấp (được UBND cấp xã xác nhận) thì có thể được cấp Giấy chứng nhận theo Điều 138 Luật Đất đai 2024, trong phạm vi hạn mức giao đất nông nghiệp [B-ldd2024_cb365-0167]. Các đoạn đã tìm không nêu đầy đủ điều kiện cho từng loại đất khác.",
+  "citations": [
+   "B-ldd2024_cb363-0016",
+   "B-ldd2024_cb365-0167"
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "người sử dụng đất đang sử dụng đất ổn định chưa được cấp Giấy chứng nhận quyền sử dụng đất",
+    "filter": 2024,
+    "ms": 3992.8,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0016",
+      "score": 0.99113,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 7,
+      "page_end": 7,
+      "year": 2024,
+      "articles": [
+       4
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0223",
+      "score": 0.971619,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 71,
+      "page_end": 72,
+      "year": 2024,
+      "articles": [
+       151
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0167",
+      "score": 0.965694,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 55,
+      "page_end": 55,
+      "year": 2024,
+      "articles": [
+       138
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0016",
+     "B-ldd2024_cb365-0223",
+     "B-ldd2024_cb365-0167"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1429.3,
+    "usage": {
+     "prompt_tokens": 1507,
+     "completion_tokens": 157,
+     "total_tokens": 1664,
+     "cost": 0.000226908,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002292,
+      "upstream_inference_prompt_cost": 0.0001507,
+      "upstream_inference_completions_cost": 7.85e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 40,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3592.2,
+    "usage": {
+     "prompt_tokens": 3431,
+     "completion_tokens": 751,
+     "total_tokens": 4182,
+     "cost": 0.000711414,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007186,
+      "upstream_inference_prompt_cost": 0.0003431,
+      "upstream_inference_completions_cost": 0.0003755
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 110,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2024_cb363-0016",
+   "B-ldd2024_cb365-0223",
+   "B-ldd2024_cb365-0167"
+  ],
+  "searches": 1,
+  "model_calls": 2,
+  "prompt_tokens": 4938,
+  "completion_tokens": 908,
+  "cost_usd": 0.000938,
+  "ms": 9014.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "both_laws_expected": false,
+  "cited_gold_years": [
+   2024
+  ],
+  "filter_year": 2024,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "type": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Diện tích tối thiểu được tách thửa đối với đất ở tại Hà Nội là bao nhiêu mét vuông?",
+  "status": "abstain",
+  "answer": "Các đoạn luật tìm được không nêu con số diện tích tối thiểu được tách thửa đối với đất ở tại Hà Nội, nên không thể trả lời bằng số m² cụ thể.\n\nNhững nội dung có trong các đoạn đã tìm:\n- Luật Đất đai 2013: Khoản 2 Điều 143 (đất ở tại nông thôn) và khoản 4 Điều 144 (đất ở tại đô thị) giao Ủy ban nhân dân cấp tỉnh quy định diện tích tối thiểu được tách thửa đối với đất ở, phù hợp với điều kiện và tập quán địa phương [B-ldd2013-0295], [B-ldd2013-0297].\n- Luật Đất đai 2024: Điểm a khoản 2 Điều 220 yêu cầu các thửa đất sau khi tách phải bảo đảm diện tích tối thiểu theo loại đất đang sử dụng theo quy định của Ủy ban nhân dân cấp tỉnh; thửa được tách nhỏ hơn diện tích tối thiểu thì phải hợp thửa đồng thời với thửa đất liền kề [B-ldd2024_cb367-0125]. Khoản 2 và 3 Điều 146 cũng dẫn chiếu đến Điều 220 đối với các thửa đất nhỏ hơn diện tích tối thiểu [B-ldd2024_cb365-0207], [B-ldd2024_cb365-0208].\n\nNhư vậy, cả hai luật đều giao Ủy ban nhân dân cấp tỉnh (ở đây là Thành phố Hà Nội) quy định con số cụ thể. Muốn biết con số đó, cần tra quyết định của UBND Thành phố Hà Nội, văn bản không nằm trong các đoạn luật đã tìm được.",
+  "citations": [
+   "B-ldd2013-0295",
+   "B-ldd2013-0297",
+   "B-ldd2024_cb367-0125",
+   "B-ldd2024_cb365-0207",
+   "B-ldd2024_cb365-0208"
+  ],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "diện tích tối thiểu được tách thửa đối với đất ở",
+    "filter": 2013,
+    "ms": 3802.2,
+    "results": [
+     {
+      "id": "B-ldd2013-0295",
+      "score": 0.960023,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 78,
+      "page_end": 78,
+      "year": 2013,
+      "articles": [
+       142,
+       143
+      ]
+     },
+     {
+      "id": "B-ldd2013-0297",
+      "score": 0.923685,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 78,
+      "page_end": 79,
+      "year": 2013,
+      "articles": [
+       144
+      ]
+     },
+     {
+      "id": "B-ldd2013-0219",
+      "score": 0.498448,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 57,
+      "page_end": 57,
+      "year": 2013,
+      "articles": [
+       103
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0295",
+     "B-ldd2013-0297",
+     "B-ldd2013-0219"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "diện tích tối thiểu được tách thửa đối với đất ở",
+    "filter": 2024,
+    "ms": 2825.3,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0125",
+      "score": 0.991111,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 35,
+      "page_end": 35,
+      "year": 2024,
+      "articles": [
+       220
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.955853,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 67,
+      "page_end": 67,
+      "year": 2024,
+      "articles": [
+       146
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.946801,
+      "rank": 3,
+      "source_id": "ldd2024_cb365",
+      "page": 66,
+      "page_end": 67,
+      "year": 2024,
+      "articles": [
+       146
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0125",
+     "B-ldd2024_cb365-0208",
+     "B-ldd2024_cb365-0207"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1550.7,
+    "usage": {
+     "prompt_tokens": 1495,
+     "completion_tokens": 206,
+     "total_tokens": 1701,
+     "cost": 0.000249975,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002525,
+      "upstream_inference_prompt_cost": 0.0001495,
+      "upstream_inference_completions_cost": 0.000103
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 5024.3,
+    "usage": {
+     "prompt_tokens": 5106,
+     "completion_tokens": 1054,
+     "total_tokens": 6160,
+     "cost": 0.001027224,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010376,
+      "upstream_inference_prompt_cost": 0.0005106,
+      "upstream_inference_completions_cost": 0.000527
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 245,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0295",
+   "B-ldd2013-0297",
+   "B-ldd2013-0219",
+   "B-ldd2024_cb367-0125",
+   "B-ldd2024_cb365-0208",
+   "B-ldd2024_cb365-0207"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6601,
+  "completion_tokens": 1260,
+  "cost_usd": 0.001277,
+  "ms": 13202.8,
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "type": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Hành vi lấn, chiếm đất đai bị phạt tiền tối đa bao nhiêu?",
+  "status": "abstain",
+  "answer": "Các đoạn luật đã tìm được không nêu mức phạt tiền tối đa đối với hành vi lấn, chiếm đất đai, cả trong Luật Đất đai 2013 lẫn Luật Đất đai 2024. Mức phạt tiền thường nằm ở văn bản xử phạt vi phạm hành chính về đất đai, không có trong các đoạn đã tìm.\n\nNhững nội dung liên quan mà các đoạn có nêu:\n- Luật Đất đai 2013: Lấn, chiếm, hủy hoại đất đai là hành vi bị nghiêm cấm (Điều 12 khoản 1) [B-ldd2013-0024]. Người sử dụng đất cố ý hủy hoại đất, hoặc đất được Nhà nước giao quản lý mà để bị lấn, chiếm, có thể bị thu hồi đất (Điều 64 khoản 1 điểm b, đ) [B-ldd2013-0114]. Người vi phạm pháp luật đất đai tùy tính chất, mức độ có thể bị xử lý hành chính hoặc truy cứu trách nhiệm hình sự, và phải bồi thường nếu gây thiệt hại (Điều 206) [B-ldd2013-0439].\n- Luật Đất đai 2024: Lấn đất, chiếm đất, hủy hoại đất là hành vi bị nghiêm cấm (Điều 11 khoản 1) [B-ldd2024_cb363-0028]. Người sử dụng đất hủy hoại đất và đã bị xử phạt hành chính mà tiếp tục vi phạm, hoặc đất được Nhà nước giao quản lý mà để bị lấn đất, chiếm đất, có thể bị thu hồi đất (Điều 81 khoản 2, 5) [B-ldd2024_cb363-0223]. Người vi phạm tùy mức độ bị xử lý kỷ luật, xử phạt vi phạm hành chính hoặc truy cứu trách nhiệm hình sự, và bồi thường nếu gây thiệt hại (Điều 239) [B-ldd2024_cb367-0176].\n\nĐể biết mức phạt tiền tối đa cụ thể, cần tra văn bản quy định xử phạt vi phạm hành chính trong lĩnh vực đất đai, không có trong các đoạn luật đã tìm.",
+  "citations": [
+   "B-ldd2013-0024",
+   "B-ldd2013-0114",
+   "B-ldd2013-0439",
+   "B-ldd2024_cb363-0028",
+   "B-ldd2024_cb363-0223",
+   "B-ldd2024_cb367-0176"
+  ],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hành vi lấn, chiếm đất đai bị xử phạt vi phạm hành chính mức phạt tiền tối đa",
+    "filter": 2013,
+    "ms": 3543.2,
+    "results": [
+     {
+      "id": "B-ldd2013-0024",
+      "score": 0.57951,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 7,
+      "page_end": 7,
+      "year": 2013,
+      "articles": [
+       12
+      ]
+     },
+     {
+      "id": "B-ldd2013-0114",
+      "score": 0.510634,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 32,
+      "page_end": 32,
+      "year": 2013,
+      "articles": [
+       64
+      ]
+     },
+     {
+      "id": "B-ldd2013-0439",
+      "score": 0.501999,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 114,
+      "page_end": 114,
+      "year": 2013,
+      "articles": [
+       206
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0024",
+     "B-ldd2013-0114",
+     "B-ldd2013-0439"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hành vi lấn, chiếm đất đai bị xử phạt vi phạm hành chính mức phạt tiền tối đa",
+    "filter": 2024,
+    "ms": 3435.7,
+    "results": [
+     {
+      "id": "B-ldd2024_cb363-0223",
+      "score": 0.580368,
+      "rank": 1,
+      "source_id": "ldd2024_cb363",
+      "page": 76,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       81
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0028",
+      "score": 0.566534,
+      "rank": 2,
+      "source_id": "ldd2024_cb363",
+      "page": 11,
+      "page_end": 12,
+      "year": 2024,
+      "articles": [
+       11
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0176",
+      "score": 0.551374,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 49,
+      "page_end": 49,
+      "year": 2024,
+      "articles": [
+       238,
+       239
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb363-0223",
+     "B-ldd2024_cb363-0028",
+     "B-ldd2024_cb367-0176"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "xử phạt hành vi lấn đất chiếm đất mức tiền phạt",
+    "filter": 2013,
+    "ms": 3326.8,
+    "results": [
+     {
+      "id": "B-ldd2013-0439",
+      "score": 0.250751,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 114,
+      "page_end": 114,
+      "year": 2013,
+      "articles": [
+       206
+      ]
+     },
+     {
+      "id": "B-ldd2013-0114",
+      "score": 0.22324,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 32,
+      "page_end": 32,
+      "year": 2013,
+      "articles": [
+       64
+      ]
+     },
+     {
+      "id": "B-ldd2013-0024",
+      "score": 0.210682,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 7,
+      "page_end": 7,
+      "year": 2013,
+      "articles": [
+       12
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0440",
+     "B-ldd2013-0334",
+     "B-ldd2013-0337"
+    ],
+    "already_shown": [
+     "B-ldd2013-0439",
+     "B-ldd2013-0114",
+     "B-ldd2013-0024"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "xử phạt hành vi lấn đất chiếm đất mức tiền phạt",
+    "filter": 2024,
+    "ms": 3051.2,
+    "results": [
+     {
+      "id": "B-ldd2024_cb365-0172",
+      "score": 0.536121,
+      "rank": 1,
+      "source_id": "ldd2024_cb365",
+      "page": 56,
+      "page_end": 56,
+      "year": 2024,
+      "articles": [
+       139
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb365-0175",
+      "score": 0.393115,
+      "rank": 2,
+      "source_id": "ldd2024_cb365",
+      "page": 57,
+      "page_end": 57,
+      "year": 2024,
+      "articles": [
+       139
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb363-0223",
+      "score": 0.291772,
+      "rank": 3,
+      "source_id": "ldd2024_cb363",
+      "page": 76,
+      "page_end": 77,
+      "year": 2024,
+      "articles": [
+       81
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb365-0172",
+     "B-ldd2024_cb365-0175",
+     "B-ldd2024_cb365-0174"
+    ],
+    "already_shown": [
+     "B-ldd2024_cb363-0223",
+     "B-ldd2024_cb367-0176",
+     "B-ldd2024_cb363-0028"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1981.4,
+    "usage": {
+     "prompt_tokens": 1486,
+     "completion_tokens": 286,
+     "total_tokens": 1772,
+     "cost": 0.000288684,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002916,
+      "upstream_inference_prompt_cost": 0.0001486,
+      "upstream_inference_completions_cost": 0.000143
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2199.7,
+    "usage": {
+     "prompt_tokens": 4712,
+     "completion_tokens": 307,
+     "total_tokens": 5019,
+     "cost": 0.000618453,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006247,
+      "upstream_inference_prompt_cost": 0.0004712,
+      "upstream_inference_completions_cost": 0.0001535
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4846.5,
+    "usage": {
+     "prompt_tokens": 8424,
+     "completion_tokens": 1132,
+     "total_tokens": 9556,
+     "cost": 0.001394316,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0014084,
+      "upstream_inference_prompt_cost": 0.0008424,
+      "upstream_inference_completions_cost": 0.000566
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 126,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0024",
+   "B-ldd2013-0114",
+   "B-ldd2013-0439",
+   "B-ldd2024_cb363-0223",
+   "B-ldd2024_cb363-0028",
+   "B-ldd2024_cb367-0176",
+   "B-ldd2013-0440",
+   "B-ldd2013-0334",
+   "B-ldd2013-0337",
+   "B-ldd2024_cb365-0172",
+   "B-ldd2024_cb365-0175",
+   "B-ldd2024_cb365-0174"
+  ],
+  "searches": 4,
+  "model_calls": 3,
+  "prompt_tokens": 14622,
+  "completion_tokens": 1725,
+  "cost_usd": 0.002301,
+  "ms": 22385.1,
+  "filter_year": null,
+  "wrong_version_citations": []
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "type": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Hạn mức giao đất ở tại nông thôn ở tỉnh Nghệ An là bao nhiêu?",
+  "status": "abstain",
+  "answer": "Các đoạn luật tìm được không nêu con số hạn mức giao đất ở tại nông thôn cho tỉnh Nghệ An.\n\n- Luật Đất đai 2013: Điều 143 khoản 2 giao Ủy ban nhân dân cấp tỉnh quy định hạn mức đất giao cho mỗi hộ gia đình, cá nhân để làm nhà ở tại nông thôn, căn cứ quỹ đất địa phương và quy hoạch phát triển nông thôn đã được phê duyệt [B-ldd2013-0295].\n- Luật Đất đai 2024: Điều 195 khoản 2 quy định Ủy ban nhân dân cấp tỉnh quy định hạn mức giao đất ở cho cá nhân tại nông thôn, căn cứ quỹ đất và tình hình thực tế của địa phương [B-ldd2024_cb367-0058].\n\nVì vậy, hạn mức cụ thể tại Nghệ An phải tra trong văn bản do Ủy ban nhân dân tỉnh Nghệ An ban hành, không có trong các đoạn luật đã tìm được. Nếu bạn cung cấp văn bản đó, tôi có thể đối chiếu.",
+  "citations": [
+   "B-ldd2013-0295",
+   "B-ldd2024_cb367-0058"
+  ],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức giao đất ở tại nông thôn",
+    "filter": 2013,
+    "ms": 3381.0,
+    "results": [
+     {
+      "id": "B-ldd2013-0295",
+      "score": 0.991769,
+      "rank": 1,
+      "source_id": "ldd2013",
+      "page": 78,
+      "page_end": 78,
+      "year": 2013,
+      "articles": [
+       142,
+       143
+      ]
+     },
+     {
+      "id": "B-ldd2013-0266",
+      "score": 0.986664,
+      "rank": 2,
+      "source_id": "ldd2013",
+      "page": 71,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       129
+      ]
+     },
+     {
+      "id": "B-ldd2013-0265",
+      "score": 0.984829,
+      "rank": 3,
+      "source_id": "ldd2013",
+      "page": 70,
+      "page_end": 71,
+      "year": 2013,
+      "articles": [
+       128,
+       129
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2013-0295",
+     "B-ldd2013-0266",
+     "B-ldd2013-0265"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_law",
+    "query": "hạn mức giao đất ở tại nông thôn",
+    "filter": 2024,
+    "ms": 3496.6,
+    "results": [
+     {
+      "id": "B-ldd2024_cb367-0058",
+      "score": 0.989709,
+      "rank": 1,
+      "source_id": "ldd2024_cb367",
+      "page": 17,
+      "page_end": 17,
+      "year": 2024,
+      "articles": [
+       195
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.98883,
+      "rank": 2,
+      "source_id": "ldd2024_cb367",
+      "page": 5,
+      "page_end": 5,
+      "year": 2024,
+      "articles": [
+       176
+      ]
+     },
+     {
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.977789,
+      "rank": 3,
+      "source_id": "ldd2024_cb367",
+      "page": 4,
+      "page_end": 4,
+      "year": 2024,
+      "articles": [
+       175,
+       176
+      ]
+     }
+    ],
+    "shown": [
+     "B-ldd2024_cb367-0058",
+     "B-ldd2024_cb367-0011",
+     "B-ldd2024_cb367-0010"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1568.0,
+    "usage": {
+     "prompt_tokens": 1490,
+     "completion_tokens": 191,
+     "total_tokens": 1681,
+     "cost": 0.000242055,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002445,
+      "upstream_inference_prompt_cost": 0.000149,
+      "upstream_inference_completions_cost": 9.55e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 21,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_law",
+     "search_law"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3913.5,
+    "usage": {
+     "prompt_tokens": 5002,
+     "completion_tokens": 793,
+     "total_tokens": 5795,
+     "cost": 0.000887733,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008967,
+      "upstream_inference_prompt_cost": 0.0005002,
+      "upstream_inference_completions_cost": 0.0003965
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 240,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "context_ids": [
+   "B-ldd2013-0295",
+   "B-ldd2013-0266",
+   "B-ldd2013-0265",
+   "B-ldd2024_cb367-0058",
+   "B-ldd2024_cb367-0011",
+   "B-ldd2024_cb367-0010"
+  ],
+  "searches": 2,
+  "model_calls": 2,
+  "prompt_tokens": 6492,
+  "completion_tokens": 984,
+  "cost_usd": 0.00113,
+  "ms": 12359.5,
+  "filter_year": null,
+  "wrong_version_citations": []
+ }
+]

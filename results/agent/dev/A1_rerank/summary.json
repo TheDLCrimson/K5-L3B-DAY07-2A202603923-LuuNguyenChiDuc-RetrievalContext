@@ -111,6 +111,19 @@
       "N": 30,
       "rate": 1.0
     },
+    "both_laws_cited": {
+      "n": 12,
+      "N": 13,
+      "rate": 0.9231
+    },
+    "both_laws_missed": [
+      "h05"
+    ],
+    "wrong_version_citations": {
+      "n": 0,
+      "N": 29,
+      "rate": 0.0
+    },
     "abstained_on_unanswerable": {
       "n": 3,
       "N": 3,

@@ -111,6 +111,17 @@
       "N": 30,
       "rate": 1.0
     },
+    "both_laws_cited": {
+      "n": 13,
+      "N": 13,
+      "rate": 1.0
+    },
+    "both_laws_missed": [],
+    "wrong_version_citations": {
+      "n": 0,
+      "N": 22,
+      "rate": 0.0
+    },
     "abstained_on_unanswerable": {
       "n": 3,
       "N": 3,

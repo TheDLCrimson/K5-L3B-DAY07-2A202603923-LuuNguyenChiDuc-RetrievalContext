@@ -6,7 +6,8 @@
 | bm25 | 20/30 (67%) | 23/30 (77%) | 0.7339 | 28/30 (93%) | 23/30 (77%) | 15.1 | 0 |
 | hybrid | 24/30 (80%) | 27/30 (90%) | 0.8611 | 30/30 (100%) | 27/30 (90%) | 61.0 | 0 |
 | hybrid_rrf | 23/30 (77%) | 25/30 (83%) | 0.8254 | 29/30 (97%) | 25/30 (83%) | 67.6 | 0 |
-| hybrid_rerank | 26/30 (87%) | 28/30 (93%) | 0.9111 | 30/30 (100%) | 28/30 (93%) | 4010.8 | 0 |
+| hybrid_rerank | 26/30 (87%) | 28/30 (93%) | 0.9111 | 30/30 (100%) | 28/30 (93%) | 3640.8 | 0 |
+| hybrid_rerank_pool10 | 26/30 (87%) | 27/30 (90%) | 0.9 | 29/30 (97%) | 27/30 (90%) | 2192.8 | 0 |
 
 Misses at 3:
 
@@ -15,6 +16,7 @@ Misses at 3:
 - hybrid: h05, h06, h10
 - hybrid_rrf: q02, h05, h06, h09, h10
 - hybrid_rerank: h03, h06
+- hybrid_rerank_pool10: h03, h05, h06
 
 Configurations:
 
@@ -23,3 +25,4 @@ Configurations:
 - hybrid: `{"method": "hybrid", "candidates_per_side": 20, "fusion": "0.7 * minmax(dense) + 0.3 * minmax(bm25)"}`
 - hybrid_rrf: `{"method": "hybrid_rrf", "candidates_per_side": 20, "fusion": "sum of 1 / (60 + rank)"}`
 - hybrid_rerank: `{"method": "hybrid_rerank", "pool": "union of dense and bm25 top 20", "reranker": "BAAI/bge-reranker-v2-m3", "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e", "max_length": 512, "input": "question text, chunk text", "score": "cross-encoder logit"}`
+- hybrid_rerank_pool10: `{"method": "hybrid_rerank_pool10", "pool": "union of dense and bm25 top 10", "reranker": "BAAI/bge-reranker-v2-m3", "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e", "max_length": 512, "input": "question text, chunk text", "score": "cross-encoder logit"}`

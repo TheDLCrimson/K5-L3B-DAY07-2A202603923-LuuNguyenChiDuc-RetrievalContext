@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from src.agent import ABSTAIN_TEXT, Agent, Neighbors, named_years
+from src.agent import ABSTAIN_TEXT, Agent, named_years
 from src.providers import ProviderError
 from src.retrieval import RetrievalError
 
@@ -72,9 +72,9 @@ def finish(status="answered", answer="Đáp án [B-ldd2013-0001]", citations=("B
     return [("finish", {"status": status, "answer": answer, "citations": list(citations)})]
 
 
-def run(script, question="Câu hỏi?", retriever=None, neighbors=False, **kw):
+def run(script, question="Câu hỏi?", retriever=None, per_version=False, **kw):
     agent = Agent(ScriptedModel(script, **{k: v for k, v in kw.items() if k == "fail_at"}),
-                  retriever or FakeRetriever(), Neighbors(CHUNKS) if neighbors else None,
+                  retriever or FakeRetriever(), per_version,
                   **{k: v for k, v in kw.items() if k in ("max_turns", "max_searches")})
     return agent, agent.run(question)
 
@@ -135,11 +135,30 @@ class AgentTest(unittest.TestCase):
         _, out = run([search(), finish()], retriever=FakeRetriever(fail=True))
         self.assertEqual(out["status"], "error")
 
-    def test_neighbors_same_article_only_and_only_for_shown_chunks(self):
-        self.assertEqual([c["id"] for c in Neighbors(CHUNKS).of("B-ldd2013-0002")], ["B-ldd2013-0001"])
-        agent, out = run([[("read_neighbors", {"chunk_id": "B-ldd2013-0002"})], finish()], neighbors=True)
-        self.assertEqual(out["events"][0]["event"], "neighbors_refused")
-        self.assertIn("read_neighbors", [t["function"]["name"] for t in agent.tools])
+    def test_per_version_allows_each_version_only_when_the_question_names_none(self):
+        retriever = FakeRetriever()
+        _, out = run([search(year=2013), search(year=2024), finish()], question="Đất ở có thời hạn không?",
+                     retriever=retriever, per_version=True)
+        self.assertEqual([c[2] for c in retriever.calls], [2013, 2024])
+        self.assertEqual(out["searches"], 2)
+        retriever = FakeRetriever()
+        _, out = run([search(year=2024), finish()], question="Theo Luật Đất đai 2013, ...?",
+                     retriever=retriever, per_version=True)
+        self.assertEqual((retriever.calls, out["events"][0]["reason"]), ([], "year_contradicts_question"))
+
+    def test_baseline_prompt_and_tools_are_the_ones_recorded_for_a0_and_a1(self):
+        class Describe:
+            def describe(self):
+                return {}
+
+        for name in ("A0_dense", "A1_rerank"):
+            path = ROOT / "results" / "agent" / "dev" / name / "summary.json"
+            if not path.exists():
+                self.skipTest("dev runs not present")
+            recorded = json.loads(path.read_text(encoding="utf-8"))
+            agent = Agent(Describe(), FakeRetriever())
+            self.assertEqual((agent.system, agent.tools), (recorded["system_prompt"], recorded["tools"]))
+        self.assertNotEqual(Agent(Describe(), FakeRetriever(), per_version=True).system, agent.system)
 
     def test_no_benchmark_field_reaches_the_model(self):
         agent, _ = run([search(), finish()], question="Câu hỏi thật?")
@@ -156,3 +175,30 @@ class AgentTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ScoreTest(unittest.TestCase):
+    """Gold-based checks added to traces after a run (src/run_agent.py score)."""
+
+    def test_both_laws_and_wrong_version_citations(self):
+        from src.run_agent import score, summarize
+
+        chunks = {c["id"]: c for c in CHUNKS}
+        gold = [{"source_id": "ldd2013", "page": 1, "evidence": "Điều 1 khoản 1"},
+                {"source_id": "ldd2024_cb363", "page": 1, "evidence": "Điều 1 luật 2024"}]
+        base = {"status": "answered", "events": [{"event": "search", "shown": ["B-ldd2013-0001"]}],
+                "context_ids": ["B-ldd2013-0001", "B-ldd2024_cb363-0001"], "model_calls": 2,
+                "prompt_tokens": 1, "completion_tokens": 1, "cost_usd": 0.0, "ms": 1.0}
+        unfiltered = {"answerable": True, "gold": gold, "filter": None}
+        one_law = score({**base, "query_id": "a", "answerable": True, "citations": ["B-ldd2013-0001"]},
+                        unfiltered, chunks)
+        both = score({**base, "query_id": "b", "answerable": True,
+                      "citations": ["B-ldd2013-0001", "B-ldd2024_cb363-0001"]}, unfiltered, chunks)
+        filtered = score({**base, "query_id": "c", "answerable": True,
+                          "citations": ["B-ldd2013-0001", "B-ldd2024_cb363-0001"]},
+                         {"answerable": True, "gold": gold[:1], "filter": {"year": 2013}}, chunks)
+        self.assertEqual((one_law["cited_gold_years"], both["cited_gold_years"]), ([2013], [2013, 2024]))
+        self.assertEqual(filtered["wrong_version_citations"], ["B-ldd2024_cb363-0001"])
+        s = summarize([one_law, both, filtered])
+        self.assertEqual((s["both_laws_cited"]["n"], s["both_laws_cited"]["N"], s["both_laws_missed"]), (1, 2, ["a"]))
+        self.assertEqual((s["wrong_version_citations"]["n"], s["wrong_version_citations"]["N"]), (1, 2))

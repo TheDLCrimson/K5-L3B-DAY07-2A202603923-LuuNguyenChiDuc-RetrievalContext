@@ -172,11 +172,12 @@ class CrossEncoderScorer:
 
 
 class RerankRetriever:
-    name = "hybrid_rerank"
-
     def __init__(self, hybrid: HybridRetriever, scorer: CrossEncoderScorer) -> None:
         self.hybrid, self.scorer = hybrid, scorer
         self.last_truncated = 0
+        pool = hybrid.candidates
+        self.name = "hybrid_rerank" if pool == CANDIDATES else f"hybrid_rerank_pool{pool}"
+
 
     def config(self) -> dict[str, Any]:
         return {"method": self.name, "pool": f"union of dense and bm25 top {self.hybrid.candidates}",

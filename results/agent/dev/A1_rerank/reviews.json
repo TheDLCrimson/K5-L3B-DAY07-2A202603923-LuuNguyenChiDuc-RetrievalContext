@@ -1,0 +1,341 @@
+[
+ {
+  "query_id": "q01",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "10x the allocation limit per land type, Điều 130 k1; the Government clause is k2 of the same chunk.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q02",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "15x per land type, Điều 177 k1.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "45 days from receiving the request, Điều 202 k3.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "30 days, Điều 235 k2 c.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q05",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "No, Điều 191 k3.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q06",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Must set up an economic organisation with a rice-land plan approved by the district; the heir exception is stated. Điều 45 k7.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q07",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "90 days (180 for non-agricultural land) in both laws, Điều 67 k1 / Điều 85 k1.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q08",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Not immediately: only after an administrative fine and failure to use the land by its deadline, Điều 81 k7.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q09",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "From the date the inherited land is divided; 2024 adds the date a court ruling takes effect. Both laws given.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q10",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "3 ha per land type in both laws (Điều 129 k1a / Điều 176 k1a).",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q11",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Every 5 years in both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q12",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "One certificate per co-owner, or one shared certificate on request, in both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q13",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "24 months (2024: up to 24) with the corresponding payment, then recovery without compensation; both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q14",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Both definitions quoted correctly.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q15",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "5 years in both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q16",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "From 01/01/2026, then adjusted every year from 01/01 of the next year, Điều 159 k3.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q17",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Điều 190 and 248 from 01/04/2024; the law from 01/01/2025, Điều 252. 0202 (an Điều 248 amendment) supports only 'Điều 248 amends the Forestry Law'; the examples come from 0197.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q18",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Up to 70 years with each law's condition.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q19",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "01/07/2014, Điều 211 k1.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "q20",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Definition from Điều 3 k43 and its use in the price table.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h01",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Every 5 years per land type and region, Điều 113.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h02",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Specific price decided by the province at the time of the recovery decision, Điều 74 k2.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h03",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Specific price at the time the compensation plan is approved, Điều 91 k2.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Extended by at most 30 days, Điều 90 k4.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h05",
+  "citation_support": [
+   true,
+   false
+  ],
+  "answer_grade": 1,
+  "reason": "Residential land is used stably and long-term (Điều 125 k1 / Điều 171 k1). Only the 2013 law, which is no longer in force; it says it found nothing in the 2024 law, after its year=2024 search was refused. 0259 is a fragment of Điều 126 and cannot show that the article omits residential land.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h06",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "The court, when the parties hold a certificate (Điều 203 k1 / Điều 236 k1).",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h07",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "The State does not accept claims to land allocated to others under past land policies, both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h08",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Compulsory for land users and those assigned land to manage, both laws.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h09",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "No: a split requires a certificate, Điều 220 k1a.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "h10",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Yes, if using the land stably and eligible for a certificate, Điều 4.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the figure; correctly says the province sets it (Điều 143, 144 / 220 k4).",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the amount; says only that violations are sanctioned and fines are set elsewhere.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ },
+ {
+  "query_id": "u03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the figure; correctly says the province sets it.",
+  "labelled_by": "drafted with AI assistance by reading the answer against every cited chunk and the expected answer; checked by the author"
+ }
+]

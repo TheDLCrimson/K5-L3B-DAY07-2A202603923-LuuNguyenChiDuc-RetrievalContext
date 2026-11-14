@@ -10,6 +10,8 @@
 | Context Evidence Rate (answerable) | 30/30 (100%) |
 | Gold in the first search's results (answerable) | 30/30 (100%) |
 | Answered and cited a gold chunk (ID check, not a support label) | 30/30 (100%) |
+| Cited gold from both laws (no version named, gold in both) | 12/13 (92%) |
+| Citations from the other law version (version named) | 0/29 (0%) |
 | Abstained on unanswerable (status only; confirmed by reading) | 3/3 (100%) |
 | Abstained on answerable | 0/30 (0%) |
 | Answers with citations | 30/30 (100%) |

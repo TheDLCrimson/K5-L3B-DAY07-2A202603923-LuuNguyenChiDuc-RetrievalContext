@@ -34,15 +34,17 @@ from .retrieval import (
 OUT_DIR = REPO_ROOT / "results" / "retrieval"
 DEPTH = 20  # results kept per query; Hit@1/@3, MRR@10 and Hit@20 are read from this list
 CONTEXT_TOP = 3  # results offered to the packer, in rank order
-METHODS = ("dense", "bm25", "hybrid", "hybrid_rrf", "hybrid_rerank")
+METHODS = ("dense", "bm25", "hybrid", "hybrid_rrf", "hybrid_rerank", "hybrid_rerank_pool10")
 
 
 def build(methods: list[str]) -> dict[str, Any]:
     dense, bm25 = DenseRetriever(), Bm25Retriever()
     built = {"dense": dense, "bm25": bm25, "hybrid": HybridRetriever(dense, bm25, "weighted"),
              "hybrid_rrf": HybridRetriever(dense, bm25, "rrf")}
-    if "hybrid_rerank" in methods:
-        built["hybrid_rerank"] = RerankRetriever(built["hybrid"], CrossEncoderScorer())
+    if {"hybrid_rerank", "hybrid_rerank_pool10"} & set(methods):
+        scorer = CrossEncoderScorer()
+        built["hybrid_rerank"] = RerankRetriever(built["hybrid"], scorer)
+        built["hybrid_rerank_pool10"] = RerankRetriever(HybridRetriever(dense, bm25, candidates=10), scorer)
     return {m: built[m] for m in methods}
 
 
@@ -148,7 +150,19 @@ def main() -> None:
         summaries[m], configs[m] = summarize(rows), retriever.config()
         print(f"{m}: Hit@1 {fmt(summaries[m]['hit_at_1'])}, Hit@3 {fmt(summaries[m]['evidence_hit_at_3'])}, "
               f"errors {len(summaries[m]['errors'])}")
-    record = {"split": args.split, "ran_at": datetime.now(UTC).isoformat(timespec="seconds"),
+    ran_at = datetime.now(UTC).isoformat(timespec="seconds")
+    previous = out / "summary.json"
+    if previous.exists():  # keep methods run earlier; each method records when it ran
+        old = json.loads(previous.read_text(encoding="utf-8"))
+        old_ran = old.get("method_ran_at", {m: old["ran_at"] for m in old["summaries"]})
+        summaries = {**{m: s for m, s in old["summaries"].items() if m not in summaries}, **summaries}
+        configs = {**{m: c for m, c in old["configs"].items() if m not in configs}, **configs}
+        method_ran_at = {**old_ran, **{m: ran_at for m in retrievers}}
+    else:
+        method_ran_at = {m: ran_at for m in retrievers}
+    order = [m for m in METHODS if m in summaries]
+    summaries, configs = {m: summaries[m] for m in order}, {m: configs[m] for m in order}
+    record = {"split": args.split, "ran_at": ran_at, "method_ran_at": {m: method_ran_at[m] for m in order},
               "context_budget_chars": context.BUDGET_CHARS, "context_top": CONTEXT_TOP, "depth": DEPTH,
               "configs": configs, "summaries": summaries}
     (out / "summary.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8",

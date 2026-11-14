@@ -1,6 +1,14 @@
 {
   "split": "dev",
-  "ran_at": "2026-11-14T10:18:05+00:00",
+  "ran_at": "2026-11-14T10:57:59+00:00",
+  "method_ran_at": {
+    "dense": "2026-11-14T10:18:05+00:00",
+    "bm25": "2026-11-14T10:18:05+00:00",
+    "hybrid": "2026-11-14T10:18:05+00:00",
+    "hybrid_rrf": "2026-11-14T10:18:05+00:00",
+    "hybrid_rerank": "2026-11-14T10:57:59+00:00",
+    "hybrid_rerank_pool10": "2026-11-14T10:57:59+00:00"
+  },
   "context_budget_chars": 3300,
   "context_top": 3,
   "depth": 20,
@@ -31,6 +39,15 @@
     "hybrid_rerank": {
       "method": "hybrid_rerank",
       "pool": "union of dense and bm25 top 20",
+      "reranker": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "max_length": 512,
+      "input": "question text, chunk text",
+      "score": "cross-encoder logit"
+    },
+    "hybrid_rerank_pool10": {
+      "method": "hybrid_rerank_pool10",
+      "pool": "union of dense and bm25 top 10",
       "reranker": "BAAI/bge-reranker-v2-m3",
       "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
       "max_length": 512,
@@ -279,14 +296,65 @@
         "h03",
         "h06"
       ],
-      "ms_median": 4010.8,
-      "ms_p90": 4522.9,
+      "ms_median": 3640.8,
+      "ms_p90": 4195.6,
       "context_chars_max": 3162,
       "by_type": {
         "dien_dat_lai": {
           "n": 7,
           "N": 9,
           "rate": 0.7778
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 10,
+          "N": 10,
+          "rate": 1.0
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    },
+    "hybrid_rerank_pool10": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 26,
+        "N": 30,
+        "rate": 0.8667
+      },
+      "evidence_hit_at_3": {
+        "n": 27,
+        "N": 30,
+        "rate": 0.9
+      },
+      "mrr_at_10": 0.9,
+      "hit_at_20": {
+        "n": 29,
+        "N": 30,
+        "rate": 0.9667
+      },
+      "context_evidence_rate": {
+        "n": 27,
+        "N": 30,
+        "rate": 0.9
+      },
+      "misses_at_3": [
+        "h03",
+        "h05",
+        "h06"
+      ],
+      "ms_median": 2192.8,
+      "ms_p90": 2452.3,
+      "context_chars_max": 3162,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 6,
+          "N": 9,
+          "rate": 0.6667
         },
         "dieu_kien_ngoai_le": {
           "n": 10,

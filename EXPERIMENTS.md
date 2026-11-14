@@ -136,3 +136,85 @@ The code refused each one and the model searched again without the filter, as th
 
 **What this means for Part 4.** On dev the measures that need no reading are at their ceiling for both configurations, so they cannot pick between them.
 The comparison has to come from reading: whether each answer is right and complete, and whether each citation supports it, plus time and cost.
+
+## E3 - labels, dev errors and the second improvement (Part 4)
+
+Written on 14/11/2026 before any answer was labelled and before A3 or A4 existed.
+
+**Labels.** Every dev answer of each configuration is labelled in `results/agent/dev/<config>/reviews.json`, in the format `starter/agent_metrics.py` reads, with a reason per label:
+
+- `answer_grade` (answerable): 0 wrong, unsupported or refused; 1 partly right or incomplete; 2 right and complete, including every condition the expected answer names.
+  For a question that names no law version and whose answer exists in both laws, an answer from only one law is incomplete (1).
+- `citation_support`: one value per citation, true only when that chunk's text states what it is cited for; an existing ID is not enough.
+- `abstention_correct` (unanswerable): true when the answer refuses the asked value and asserts nothing the chunks do not state.
+
+The labels are drafted with AI assistance by reading each answer against the text of every chunk it cites and against the expected answer, then checked by the author; the report says so.
+
+**Second improvement.** Two changes, each tested on dev against A1:
+
+| ID | Change from A1 | Hypothesis | Measured by |
+| --- | --- | --- | --- |
+| A3 | Per-version search: the code refuses a `year` only when the question names the other version; when the question names none, the prompt asks for a search in each law | Every dev question that names no version and has gold in both laws cites gold from both (13/13; A1 12/13, missing h05), with no citation from the wrong version on a filtered question | Both-law coverage (automatic) and labels |
+| A4 | Rerank pool of the top 10 per side instead of 20 | Rerank time per search about halves (4 s to about 2 s), and Evidence Hit@3 on dev stays within one question of M4 (28/30) | E1 metrics on all 30, then agent time and labels |
+
+If both hold, their combination A5 is run and labelled on dev before the choice; no configuration reaches test without dev labels.
+
+**Selection rule for the final configuration, fixed now.**
+
+1. Gate: 3/3 correct abstentions on the dev unanswerable questions, and no more false abstentions than A0.
+2. Highest mean grounded-answer grade on the 30 dev answerable questions (/2); within 0.05 (1.5 grade points) is a tie.
+3. Then the higher share of citations that support the answer.
+4. Then the lower median time per question, then the lower cost.
+
+## E3 results
+
+Run and labelled on 14/11/2026, dev only (30 answerable, 3 unanswerable).
+Traces, labels (`reviews.json`, one reason per label) and the `starter/agent_metrics.py` output are in each configuration's folder under [results/agent/dev/](results/agent/dev/).
+The labels were drafted with AI assistance by reading every answer against the text of each chunk it cites, then checked by the author.
+
+| ID | Configuration | Grounded answer 2 / 1 / 0 (mean /2) | Citations that support the answer | Cited gold from both laws | Wrong-version citations | Abstention / false abstention | Retrieval calls | Cost (33 questions) | Time per question, median / p90 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A0 | dense | 30 / 0 / 0 (2.00) | 69/71 (97.2%) | 13/13 | 0/22 | 3/3, 0/30 | 52 | $0.0389 | 4.9 s / 9.6 s |
+| A1 | hybrid_rerank | 29 / 1 / 0 (1.97) | 74/75 (98.7%) | 12/13 | 0/29 | 3/3, 0/30 | 49 | $0.0375 | 8.7 s / 18.9 s |
+| A3 | A1 + per-version search | 29 / 1 / 0 (1.97) | 83/84 (98.8%) | 13/13 | 0/24 | 3/3, 0/30 | 57 | $0.0376 | 11.6 s / 19.5 s |
+| A4 | A1 with a rerank pool of 10 per side | 30 / 0 / 0 (2.00) | 70/70 (100%) | 13/13 | 0/22 | 3/3, 0/30 | 46 | $0.0333 | 6.4 s / 12.1 s |
+| A5 | A3 + A4 | 29 / 1 / 0 (1.97) | 84/85 (98.8%) | 13/13 | 0/25 | 3/3, 0/30 | 60 | $0.0412 | 7.8 s / 14.4 s |
+
+Every configuration has Context Evidence Rate 30/30, tool use 33/33 and no errors.
+Wrong-version citations count citations from the other law on questions that name a version.
+
+**A4 at the retrieval level** ([results/retrieval/dev/summary.md](results/retrieval/dev/summary.md)): `hybrid_rerank_pool10` keeps Hit@1 26/30 and has Evidence Hit@3 27/30 (M4: 28/30), losing h05, whose 2013 gold no longer reaches the pool (Hit@20 29/30).
+Its median search time is 2.2 s against 3.6 s for M4 in the same session.
+M4 was re-run alongside so the two times are comparable; its scores are unchanged and its time differs from the 4.0 s in E1 only by run-to-run variation.
+
+**Hypotheses.**
+
+- A3, confirmed: both-law coverage rises from 12/13 to 13/13 (h05 now cites Điều 125 and Điều 171), with no wrong-version citation.
+  It costs searches (57 against 49) and time (11.6 s median).
+- A4, confirmed on quality, partly on time: Evidence Hit@3 stays within one question (27 against 28), and the agent stays at Context Evidence Rate 30/30, because it searches again when needed.
+  Time per search falls by about 40% rather than half, and time per question by 27% (6.4 s against 8.7 s).
+- Both held, so A5 was run and labelled as planned. It is slower than A4 and no better on any measure.
+
+**Dev errors analysed** (cause, change, before and after):
+
+1. h05, an answer from one law version (A1, grade 1).
+   The question names no version; A1 found Điều 125 of the 2013 law, which is no longer in force. Its attempt to search with `year=2024` was refused by the year guard, and it said it found nothing in the 2024 law.
+   Change: A3 allows a per-version search when the question names no version. After it, h05 cites both laws (grade 2), and both-law coverage is 13/13.
+2. Neighbouring-clause retrieval misses (h03, h06 in E1), where the gold sat at rank 4 for M4.
+   In the agent, the model's second search with legal wording brought the right clause into context: Context Evidence Rate is 30/30 for every configuration, against Evidence Hit@3 of 26-28/30 for a single search on the original question.
+3. A0 q08, a mis-citation: the model was shown chunk 0225 (Điều 81 clause 9, force majeure) but cited 0224 for it. The claim is true, but its citation does not support it, so it is labelled unsupported; this is why citations are read, not ID-checked.
+4. A4 h10, a mistyped citation: the model wrote `B-ldd2024_cb363-0149` for the chunk it was shown, `B-ldd2024_cb365-0149` (Điều 138).
+   The citation check dropped the unknown ID as designed, which left a true sentence uncited. The answer itself is right.
+5. A3 and A5 q05, a contradictory opening: the answer begins "Có." ("Yes") and then states the prohibition correctly (grade 1).
+   It appeared only in the two per-version runs and is not a retrieval error; it is a known risk of a one-word lead, recorded as a limit.
+6. Also seen: citing a fragment of Điều 126 (0259) as proof that the article omits residential land (A1, A3), and tool-call markup leaking into one answer (A0 h03).
+
+**Selection, by the rule fixed before labelling.**
+
+1. Gate: all five pass (3/3 abstentions, 0 false abstentions, as A0).
+2. Grounded answer: the best is 2.00 (A0, A4); A1, A3 and A5 are 1.97, within 0.05, so all five tie.
+3. Citations that support the answer: A4 70/70 (100%) is highest (A3 98.8%, A5 98.8%, A1 98.7%, A0 97.2%).
+
+**A4 (`A4_rerank_pool10`) is chosen** and frozen in [results/agent/selection.json](results/agent/selection.json) before any test run.
+It is also the cheapest configuration ($0.0333 for 33 questions) and the fastest after A0 (6.4 s median).
+The margins on dev are small: one grade point and a few citations separate the five, so the test run is the real check.
