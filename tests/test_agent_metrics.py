@@ -1,8 +1,10 @@
 import sys
 import unittest
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'starter'))
 from agent_metrics import aggregate
+
 
 class AgentMetricTests(unittest.TestCase):
     def test_counts_and_errors_are_separate(self):

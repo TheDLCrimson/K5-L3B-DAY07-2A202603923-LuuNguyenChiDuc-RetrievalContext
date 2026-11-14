@@ -1,9 +1,12 @@
 """Parsing of the human review CSV (src/review_sheet.py)."""
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from src import review_sheet
 from src.review_sheet import grade, parse_support
 
 
@@ -22,6 +25,19 @@ class ReviewCsvTest(unittest.TestCase):
         for cell in ("", "3", "1.5"):
             with self.assertRaises(ValueError):
                 grade(cell, "x")
+
+
+class SheetOverwriteTest(unittest.TestCase):
+    def test_existing_labels_leave_the_sheet_and_the_csv_untouched(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "test"
+            out.mkdir()
+            (out / "review_labels.csv").write_text("labels", encoding="utf-8")
+            (out / "review_sheet.md").write_text("sheet", encoding="utf-8")
+            with mock.patch.object(review_sheet, "OUT_DIR", Path(tmp)), self.assertRaises(SystemExit):
+                review_sheet.sheet("test", ["A0_dense"])
+            self.assertEqual((out / "review_labels.csv").read_text(encoding="utf-8"), "labels")
+            self.assertEqual((out / "review_sheet.md").read_text(encoding="utf-8"), "sheet")
 
 
 if __name__ == "__main__":

@@ -70,7 +70,7 @@ Misses at 3: dense q12, h05, h06, h10; bm25 q02, q04, h03, h05, h06, h09, h10; h
 - M3, confirmed: hybrid lifts Hit@1 by 3 and Hit@3 by 1 over dense (q12 moves from rank 4 to 2).
   RRF is worse than the weighted fusion: by using ranks only, it gives BM25's weaker list an equal say, and it loses q02 and h09.
 - M4, mostly confirmed: rerank fixes two of the three Day 6 holdout misses (h05 from rank 16 to 3, h10 from 4 to 1) and lifts q12 to rank 1, for the best Hit@1 (+2 over hybrid) and MRR.
-  It does not fix h06 (it ranks Điều 235 on mediation first, and the right clause of Điều 236 stays at rank 4), and it loses h03 (rank 2 to 4), preferring the transitional provisions of Điều 254 and 257 on recovery and compensation to Điều 91.
+  It does not fix h06 (it ranks Điều 235 on mediation first; the 2013 gold, clause 1 of Điều 203, stays at rank 4 behind other clauses of Điều 203 and 236, and the 2024 gold in Điều 236 clause 1 drops out of the top 5), and it loses h03 (rank 2 to 4), preferring the transitional provisions of Điều 254 and 257 on recovery and compensation to Điều 91.
   No question-chunk pair exceeded the 512-token limit.
 
 **Time and cost.** Rerank scores up to 40 pairs per query and takes about 4.0 s, against 61 ms for hybrid, on a GTX 1650 in fp32.

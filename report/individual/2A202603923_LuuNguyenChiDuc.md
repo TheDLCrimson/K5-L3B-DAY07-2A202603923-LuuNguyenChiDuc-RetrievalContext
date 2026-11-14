@@ -33,8 +33,8 @@ Context Evidence Rate trong bảng này là top 3 đóng gói vào budget, nên 
 | Baseline (M1) | Dense e5 trên pgvector, top 3, filter `year`, 3.300 ký tự | Mạnh với câu diễn đạt lại; trượt ở khoản lân cận | dev | 21/30 (70%) | 26/30 (87%) | 26/30 | 42 ms/câu, $0 |
 | Phương pháp 2 (M2) | BM25 (k1 1,5, b 0,75) trên âm tiết + cặp âm tiết | Ngang dense với câu đúng từ luật, kém với câu diễn đạt lại | dev | 20/30 (67%) | 23/30 (77%) | 23/30 | 15 ms, $0 |
 | Phương pháp 3 (M3) | Hybrid: top 20 mỗi bên, min-max theo câu, 0,7 dense + 0,3 BM25 (RRF k 60: 23/30, 25/30) | Hit@1 cao hơn dense | dev | 24/30 (80%) | 27/30 (90%) | 27/30 | 61 ms, $0 |
-| Cải thiện 1 (M4) | Hợp top 20 hai bên (tối đa 40), rerank `BAAI/bge-reranker-v2-m3` fp32 | Sửa các lỗi khoản lân cận h05, h06, h10 | dev | 26/30 (87%) | 28/30 (93%) | 28/30 | 4,0 s, $0 (GPU GTX 1650) |
-| Cải thiện 2 (M4 pool 10) | Như M4, top 10 mỗi bên | Giảm khoảng nửa thời gian, Hit@3 giữ trong 1 câu | dev | 26/30 (87%) | 27/30 (90%) | 27/30 | 2,2 s (M4 chạy cùng phiên: 3,6 s), $0 |
+| Cải thiện 1 (M4) | Hợp top 20 hai bên (tối đa 40), rerank `BAAI/bge-reranker-v2-m3` fp32 | Sửa các lỗi khoản lân cận h05, h06, h10 | dev | 26/30 (87%) | 28/30 (93%) | 28/30 | 3,6 s (lần chạy đầu ở E1: 4,0 s), $0 (GPU GTX 1650) |
+| Cải thiện 2 (M4 pool 10) | Như M4, top 10 mỗi bên | Giảm khoảng nửa thời gian, Hit@3 giữ trong 1 câu | dev | 26/30 (87%) | 27/30 (90%) | 27/30 | 2,2 s (chạy cùng phiên với M4), $0 |
 | Cấu hình đã chọn | M4 pool 10 | Chốt trên dev trước khi chạy test | test | 9/10 (90%) | 10/10 (100%) | 10/10 | 1,8 s, $0 |
 | Baseline | M1 dense | | test | 7/10 (70%) | 8/10 (80%) | 8/10 | 37 ms, $0 |
 
@@ -88,7 +88,7 @@ Context grade trên 10 câu test có đáp án: A0 có 10 câu mức 2; A4 có 9
 - **Đường dẫn trace, nhãn, lệnh chạy, thời gian và chi phí:** trace retrieval ở [results/retrieval/](../../results/retrieval/); trace agent (prompt, tool, từng lượt gọi model với token, chi phí, thời gian, từng tool call với tham số và kết quả, context cuối, câu trả lời) ở [results/agent/](../../results/agent/).
   Nhãn ở `reviews.json` của từng cấu hình, mỗi nhãn có lý do; test có thêm [review_labels.csv](../../results/agent/test/review_labels.csv) và `context_grades.json`; số liệu tổng hợp bằng `starter/agent_metrics.py` ở `agent_metrics.json`.
   Lệnh: `python -m src.eval_retrieval --split dev`, `python -m src.run_agent --split dev --config A4_rerank_pool10`, test thêm `--final`; đầy đủ ở [src/README.md](../../src/README.md).
-  Chi phí model cho toàn bộ dev và test khoảng 0,24 USD (OpenRouter báo); một câu khoảng 0,001-0,002 USD, 5-12 giây (trung vị).
+  Chi phí model cho toàn bộ dev và test 0,233 USD (tổng `cost_usd` trong các trace dev và test, do OpenRouter báo); một câu khoảng 0,001-0,002 USD, 5-12 giây (trung vị).
 - **Kết quả trước/sau, ví dụ lỗi, đánh đổi và giới hạn:**
   - Rerank cải thiện retrieval rõ nhất (dev Hit@1 21 → 26, test Hit@3 8 → 10), đổi lấy khoảng 2-4 giây mỗi lượt tìm; pool 10 giảm 40% thời gian tìm mà gần như giữ chất lượng.
   - Tìm theo phiên bản (A3) sửa lỗi chỉ trả lời một luật, đổi lấy nhiều lượt tìm hơn (57 so với 49) và thời gian 11,6 giây trung vị.

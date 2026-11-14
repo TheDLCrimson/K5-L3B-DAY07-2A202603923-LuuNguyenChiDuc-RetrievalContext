@@ -1,4 +1,4 @@
-"""Blind human review of agent answers: a reading sheet, a CSV to fill in, and its import.
+"""Human review of agent answers: a reading sheet, a CSV to fill in, and its import.
 
 `sheet` writes results/agent/<split>/review_sheet.md and review_labels.csv for the given
 configurations. The sheet shows, per question, the question, the expected answer (or why
@@ -18,7 +18,7 @@ Labels (BENCHMARK.md):
 
 Run from the repo root:
   python -m src.review_sheet sheet --split test --configs A0_dense,A4_rerank_pool10
-  python -m src.review_sheet import --split test --labelled-by "the author, blind"
+  python -m src.review_sheet import --split test --labelled-by "drafted with AI assistance ...; checked by the author"
 """
 import argparse
 import csv
@@ -39,14 +39,18 @@ def load_runs(split: str, configs: list[str]) -> dict[str, dict[str, dict]]:
 
 
 def sheet(split: str, configs: list[str]) -> None:
+    out = OUT_DIR / split
+    path = out / "review_labels.csv"
+    if path.exists():
+        raise SystemExit(f"{path} exists; not overwriting the sheet or the labels")
     questions = [q for q in json.loads(QUESTIONS_PATH.read_text(encoding="utf-8")) if q["split"] == split]
     chunks = {c["id"]: c for c in load_chunks()}
     runs = load_runs(split, configs)
     lines = [f"# Review sheet: {split}", "",
              "Grade each answer from this sheet only; fill in review_labels.csv next to it.",
-             "Scales: answer 0 wrong or unsupported or refused, 1 partly right, 2 right and complete; "
-             "context 0 no evidence, 1 evidence missing a condition or source, 2 enough evidence and source; "
-             "citation y only if the chunk states what it is cited for.", ""]
+             ("Scales: answer 0 wrong or unsupported or refused, 1 partly right, 2 right and complete; "
+              "context 0 no evidence, 1 evidence missing a condition or source, 2 enough evidence and source; "
+              "citation y only if the chunk states what it is cited for."), ""]
     for q in questions:
         lines += [f"## {q['id']} ({'answerable' if q['answerable'] else 'not answerable from the corpus'})", "",
                   f"**Question:** {q['question']}", ""]
@@ -65,11 +69,7 @@ def sheet(split: str, configs: list[str]) -> None:
         for i, seen_by in shown.items():
             lines += [f"**{context.label(chunks[i])}**  (in the context of: {', '.join(seen_by)})", "",
                       "> " + chunks[i]["text"].replace("\n", "\n> "), ""]
-    out = OUT_DIR / split
     (out / "review_sheet.md").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
-    path = out / "review_labels.csv"
-    if path.exists():
-        raise SystemExit(f"{path} exists; not overwriting labels")
     with path.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n")
         w.writeheader()
