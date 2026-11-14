@@ -86,3 +86,53 @@ The trade-off is 4 s per search; the agent's own model calls take seconds too, s
 
 - h06: the right article, Điều 236, is found, but the clause for parties that do have a certificate sits in a neighbouring chunk.
 - h03: the right chunk sits at rank 4, just outside the top 3.
+
+## E2 - the agent with each retrieval (Part 3)
+
+Written on 14/11/2026 while the first full dev runs were in progress, before any of their results was read.
+
+Agent: [src/agent.py](src/agent.py), model `anthropic/claude-haiku-5.5` through OpenRouter, the provider layer adapted from Day 4.
+Tools: `search_law(query, year?)`, which returns up to 3 chunks not shown before (3,300-character budget per result), and `finish(status, answer, citations)`.
+Stop: `finish`, or 6 model calls (then an abstention, reason `turn_limit`); searches beyond 4 are refused.
+Code guards: `year` is accepted only when the question names that law version; a citation counts only if its chunk was shown in this run.
+The system prompt states general rules only: it has no example drawn from any benchmark question, dev or test.
+
+| ID | Search tool | Hypothesis |
+| --- | --- | --- |
+| A0 | dense (M1) | Baseline. Its Context Evidence Rate can exceed M1's Hit@3 (26/30), because the model may search again with its own legal wording. |
+| A1 | hybrid_rerank (M4) | A higher Context Evidence Rate than A0 and fewer searches per question, since the first search is better; each search costs about 4 s more. |
+
+Measured without labels: Context Evidence Rate, tool use and calls per question, abstentions on unanswerable and on answerable questions, cost and time.
+Answer correctness and citation support are labelled by reading in Part 4, together with the error analysis.
+
+## E2 results
+
+Run on 14/11/2026 on dev (33 questions: 30 answerable, 3 unanswerable); traces in [results/agent/dev/](results/agent/dev/).
+
+| Measure | A0 dense | A1 hybrid_rerank |
+| --- | --- | --- |
+| Status | answered 30, abstain 3, error 0 | answered 30, abstain 3, error 0 |
+| Tool use | 33/33 | 33/33 |
+| Retrieval calls (total; per question 1 / 2 / 3 / 4) | 52 (21 / 7 / 3 / 2) | 49 (22 / 8 / 1 / 2) |
+| Gold in the first search's results | 28/30 | 30/30 |
+| Context Evidence Rate | 30/30 | 30/30 |
+| Answered and cited a chunk holding the gold (ID check only) | 30/30 | 30/30 |
+| Abstained on unanswerable (by status, to be confirmed by reading) | 3/3 | 3/3 |
+| Abstained on answerable | 0/30 | 0/30 |
+| Tokens in / out | 248,906 / 28,725 | 243,243 / 27,013 |
+| Cost for the 33 questions (billed by OpenRouter) | $0.0389 | $0.0375 |
+| Time per question, median / p90 | 4.9 s / 9.6 s | 8.7 s / 18.9 s |
+
+**Hypotheses.**
+
+- A0, confirmed: the agent's context holds the evidence for all 30 questions, against 26/30 for one dense search on the original question (M1).
+  Two things add up: the model's own legal-term query already finds the gold in its first search for 28/30, and it searches again when the first results do not answer.
+  For example, h10 took four dense searches before the definition in Điều 4 came up; h05 found "ổn định lâu dài" on the second.
+- A1, not confirmed on context, because both runs reach the ceiling (30/30).
+  Its first search has the gold for all 30 (A0: 28), and it makes 3 fewer searches in total, but each search costs about 4 s of reranking, so the median question takes 8.7 s against 4.9 s; the cost is the same.
+
+**The year guard was needed.** In 12 search calls (A0: 5, A1: 7) the model set a `year` the question does not name, for example 2024 on h05, which asks about both laws.
+The code refused each one and the model searched again without the filter, as the error message says, so no filter came from anything but the question.
+
+**What this means for Part 4.** On dev the measures that need no reading are at their ceiling for both configurations, so they cannot pick between them.
+The comparison has to come from reading: whether each answer is right and complete, and whether each citation supports it, plus time and cost.

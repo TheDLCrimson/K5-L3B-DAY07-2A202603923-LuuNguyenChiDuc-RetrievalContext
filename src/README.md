@@ -16,6 +16,12 @@ On Windows, set `PYTHONUTF8=1` so console output in Vietnamese does not fail.
 The first run downloads the reranker `BAAI/bge-reranker-v2-m3` (about 2.3 GB); it runs on a GPU if one is available.
 Test needs `--final` and is run once, after the configuration is fixed; hypotheses and results are in [EXPERIMENTS.md](../EXPERIMENTS.md).
 
+## Agent runs
+
+Add `PROVIDER`, `MODEL` and the provider's key to `.env` ([.env.example](../.env.example)); the lab used `openrouter` and `anthropic/claude-haiku-5.5`.
+`python -m src.run_agent --split dev --config A1_rerank` runs one configuration ([CONFIGS](run_agent.py)); `--ids q01,u01` runs a few questions as a smoke test into a separate `_smoke` folder.
+Test needs `--final`. Each run writes `traces.json` in the format `starter/agent_metrics.py` reads, plus `summary.json` and `summary.md`; `results/agent/cases.json` lists every question's split and answerability for that script.
+
 ## Rebuild the exports
 
 The chunk export and the benchmark are committed, so these steps only rebuild them.
@@ -35,8 +41,11 @@ The chunk export and the benchmark are committed, so these steps only rebuild th
 | `retrieval.py` | The four retrieval methods: dense, BM25, hybrid (weighted or RRF), hybrid + cross-encoder rerank |
 | `context.py` | Labels chunks with their citation key and source, and packs them into the 3,300-character budget |
 | `eval_retrieval.py` | Retrieval and context metrics per method; writes `results/retrieval/<split>/` |
+| `providers.py` | Chat Completions client (OpenRouter by default), adapted from the Day 4 lab; reports cost and time per call |
+| `agent.py` | The tool-calling agent: `search_law`, optional `read_neighbors`, `finish`; stop conditions and code guards |
+| `run_agent.py` | Runs one agent configuration on a split; writes traces and automatic metrics to `results/agent/<split>/<config>/` |
 
 ## Tests
 
-`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py) and [tests/test_retrieval.py](../tests/test_retrieval.py).
-They need no database or model.
+`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py), [tests/test_retrieval.py](../tests/test_retrieval.py) and [tests/test_agent.py](../tests/test_agent.py).
+They need no database, model or API key; the agent tests use a scripted model that only exercises the loop.
