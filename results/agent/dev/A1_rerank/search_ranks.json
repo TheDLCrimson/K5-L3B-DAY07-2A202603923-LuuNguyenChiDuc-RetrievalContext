@@ -1,0 +1,3216 @@
+{
+ "split": "dev",
+ "config": "A1_rerank",
+ "retriever": "hybrid_rerank",
+ "replayed_at": "2026-11-14T17:18:21+00:00",
+ "searches": 49,
+ "top3_matches_trace": 49,
+ "shown_matches_trace": 49,
+ "shown_chunks": 146,
+ "shown_below_rank_3": 27,
+ "mismatches": [],
+ "questions": {
+  "q01": [
+   {
+    "query": "hạn mức nhận chuyển quyền sử dụng đất nông nghiệp của hộ gia đình, cá nhân không quá hạn mức giao đất nông nghiệp",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0269",
+      "score": 0.999383,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0266",
+      "score": 0.992335,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0267",
+      "score": 0.984142,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0265",
+      "score": 0.983909,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0268",
+      "score": 0.978892,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0257",
+      "score": 0.974331,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0446",
+      "score": 0.944427,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0160",
+      "score": 0.938467,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q02": [
+   {
+    "query": "hạn mức nhận chuyển quyền sử dụng đất nông nghiệp của hộ gia đình, cá nhân không vượt quá lần hạn mức giao đất nông nghiệp",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0013",
+      "score": 0.998507,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0044",
+      "score": 0.98078,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.952013,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0167",
+      "score": 0.91512,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0212",
+      "score": 0.915043,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.900576,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0176",
+      "score": 0.85419,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0012",
+      "score": 0.845472,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q03": [
+   {
+    "query": "Ủy ban nhân dân cấp xã hòa giải tranh chấp đất đai thời hạn hòa giải xong",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0432",
+      "score": 0.99242,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0433",
+      "score": 0.922145,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0434",
+      "score": 0.798529,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0435",
+      "score": 0.178413,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0444",
+      "score": 0.137244,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0209",
+      "score": 0.130711,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0358",
+      "score": 0.125718,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0128",
+      "score": 0.120238,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q04": [
+   {
+    "query": "hòa giải tranh chấp đất đai Ủy ban nhân dân cấp xã thời hạn hòa giải",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0164",
+      "score": 0.99944,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0163",
+      "score": 0.981542,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0165",
+      "score": 0.931435,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0170",
+      "score": 0.919177,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0171",
+      "score": 0.856514,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0166",
+      "score": 0.847432,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0172",
+      "score": 0.805626,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0183",
+      "score": 0.647964,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q05": [
+   {
+    "query": "cá nhân nhận chuyển nhượng quyền sử dụng đất trồng lúa điều kiện không trực tiếp sản xuất nông nghiệp",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0412",
+      "score": 0.987602,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0415",
+      "score": 0.980593,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0411",
+      "score": 0.895406,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0414",
+      "score": 0.870541,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0293",
+      "score": 0.672526,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0009",
+      "score": 0.64639,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0160",
+      "score": 0.629092,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0446",
+      "score": 0.577531,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q06": [
+   {
+    "query": "nhận chuyển nhượng quyền sử dụng đất trồng lúa vượt hạn mức điều kiện",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0122",
+      "score": 0.981662,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0013",
+      "score": 0.851986,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0077",
+      "score": 0.719813,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0022",
+      "score": 0.612952,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0212",
+      "score": 0.474722,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0117",
+      "score": 0.436466,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0121",
+      "score": 0.422972,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0026",
+      "score": 0.391674,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "phương án sử dụng đất trồng lúa nội dung tổ chức kinh tế nhận chuyển nhượng",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0122",
+      "score": 0.99027,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0121",
+      "score": 0.948172,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0020",
+      "score": 0.827724,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0083",
+      "score": 0.774517,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0060",
+      "score": 0.744228,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0082",
+      "score": 0.665063,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0028",
+      "score": 0.588903,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0123",
+      "score": 0.538811,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q07": [
+   {
+    "query": "thông báo thu hồi đất trước khi ra quyết định thu hồi đất nông nghiệp thời hạn ít nhất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0122",
+      "score": 0.995354,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0238",
+      "score": 0.993882,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb363-0240",
+      "score": 0.804053,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0239",
+      "score": 0.748098,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0245",
+      "score": 0.629628,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0247",
+      "score": 0.51164,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0126",
+      "score": 0.486373,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0176",
+      "score": 0.390568,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q08": [
+   {
+    "query": "thu hồi đất nông nghiệp bị bỏ không sử dụng 12 tháng liên tục đất trồng cây hằng năm",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0224",
+      "score": 0.983321,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0225",
+      "score": 0.785361,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0034",
+      "score": 0.646934,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.495764,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0200",
+      "score": 0.411885,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0001",
+      "score": 0.408924,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0201",
+      "score": 0.35303,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.34987,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q09": [
+   {
+    "query": "thời hạn đăng ký biến động quyền sử dụng đất khi nhận thừa kế",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb365-0120",
+      "score": 0.995162,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0194",
+      "score": 0.991362,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0115",
+      "score": 0.824289,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0190",
+      "score": 0.814804,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0116",
+      "score": 0.718898,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0408",
+      "score": 0.635729,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0119",
+      "score": 0.575786,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0008",
+      "score": 0.413709,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q10": [
+   {
+    "query": "hạn mức giao đất trồng cây hằng năm cho hộ gia đình cá nhân",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0266",
+      "score": 0.997563,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0265",
+      "score": 0.997356,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.991632,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.987127,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0267",
+      "score": 0.982761,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0269",
+      "score": 0.912662,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0273",
+      "score": 0.867538,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0001",
+      "score": 0.855657,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q11": [
+   {
+    "query": "kiểm kê đất đai được thực hiện định kỳ bao lâu một lần",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0050",
+      "score": 0.996531,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0148",
+      "score": 0.992238,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0051",
+      "score": 0.910409,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0153",
+      "score": 0.909715,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0137",
+      "score": 0.829936,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0049",
+      "score": 0.82953,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0151",
+      "score": 0.808636,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0146",
+      "score": 0.698527,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q12": [
+   {
+    "query": "cấp Giấy chứng nhận quyền sử dụng đất cho nhiều người cùng sử dụng đất chung một thửa đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0198",
+      "score": 0.996055,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0122",
+      "score": 0.99559,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0209",
+      "score": 0.980604,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0164",
+      "score": 0.960877,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0127",
+      "score": 0.940452,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0199",
+      "score": 0.861841,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.842957,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.841308,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q13": [
+   {
+    "query": "gia hạn thời gian đưa đất vào sử dụng đối với dự án được giao đất chậm đưa đất vào sử dụng",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0225",
+      "score": 0.977206,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0115",
+      "score": 0.973257,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0258",
+      "score": 0.805285,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0228",
+      "score": 0.664287,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0002",
+      "score": 0.585393,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0004",
+      "score": 0.489662,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0209",
+      "score": 0.463819,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0224",
+      "score": 0.418705,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q14": [
+   {
+    "query": "giải thích thuật ngữ thửa đất là phần diện tích đất được giới hạn bởi ranh giới xác định",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0002",
+      "score": 0.988686,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0013",
+      "score": 0.976975,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.465851,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0130",
+      "score": 0.371635,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0201",
+      "score": 0.322734,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0010",
+      "score": 0.307524,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0202",
+      "score": 0.246765,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0185",
+      "score": 0.229659,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q15": [
+   {
+    "query": "kế hoạch sử dụng đất cấp tỉnh thời kỳ lập kế hoạch",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0159",
+      "score": 0.992533,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0062",
+      "score": 0.99034,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0061",
+      "score": 0.986325,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0165",
+      "score": 0.984804,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0060",
+      "score": 0.984392,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0056",
+      "score": 0.981722,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0177",
+      "score": 0.975152,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0163",
+      "score": 0.972467,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "kỳ kế hoạch sử dụng đất cấp tỉnh là 5 năm",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0159",
+      "score": 0.992935,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0165",
+      "score": 0.992675,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0061",
+      "score": 0.991505,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0164",
+      "score": 0.991211,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0056",
+      "score": 0.989586,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0059",
+      "score": 0.969337,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0168",
+      "score": 0.940485,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0203",
+      "score": 0.938843,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q16": [
+   {
+    "query": "bảng giá đất lần đầu được áp dụng từ ngày; điều chỉnh bảng giá đất theo chu kỳ",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb365-0260",
+      "score": 0.968311,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0223",
+      "score": 0.385114,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0203",
+      "score": 0.127002,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0224",
+      "score": 0.126814,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0258",
+      "score": 0.104538,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0237",
+      "score": 0.096496,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0254",
+      "score": 0.093316,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0259",
+      "score": 0.093094,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q17": [
+   {
+    "query": "hiệu lực thi hành Luật Đất đai áp dụng trước ngày có hiệu lực",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.985393,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0241",
+      "score": 0.9649,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0229",
+      "score": 0.956767,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0242",
+      "score": 0.946643,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0224",
+      "score": 0.930935,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0243",
+      "score": 0.930642,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0236",
+      "score": 0.930062,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0217",
+      "score": 0.910717,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "điều khoản chuyển tiếp hiệu lực thi hành luật đất đai",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.993604,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0244",
+      "score": 0.980912,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0214",
+      "score": 0.97637,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0237",
+      "score": 0.972901,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0241",
+      "score": 0.97049,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0242",
+      "score": 0.970412,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0243",
+      "score": 0.969477,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0213",
+      "score": 0.967869,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "Điều 190 Luật Đất đai 2024 nội dung",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.950329,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0000",
+      "score": 0.844791,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0042",
+      "score": 0.757127,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0048",
+      "score": 0.454348,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0238",
+      "score": 0.344419,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0244",
+      "score": 0.236147,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0051",
+      "score": 0.177691,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0149",
+      "score": 0.159056,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "Điều 248 Luật Đất đai 2024 quy định",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0206",
+      "score": 0.962194,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0000",
+      "score": 0.914386,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0178",
+      "score": 0.758097,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0197",
+      "score": 0.736754,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0244",
+      "score": 0.57281,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0202",
+      "score": 0.567903,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0196",
+      "score": 0.403585,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0133",
+      "score": 0.311848,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q18": [
+   {
+    "query": "thời hạn giao đất, cho thuê đất đối với dự án đầu tư có thời hạn sử dụng đất dài hơn 50 năm",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0002",
+      "score": 0.99779,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0258",
+      "score": 0.996913,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0100",
+      "score": 0.943697,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0001",
+      "score": 0.936792,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0257",
+      "score": 0.924743,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0216",
+      "score": 0.919458,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0073",
+      "score": 0.88456,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0088",
+      "score": 0.881032,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q19": [
+   {
+    "query": "Luật Đất đai hiệu lực thi hành từ ngày",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0449",
+      "score": 0.996443,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0446",
+      "score": 0.947697,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0448",
+      "score": 0.820728,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0105",
+      "score": 0.809009,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0092",
+      "score": 0.727004,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0210",
+      "score": 0.705465,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0106",
+      "score": 0.639706,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0000",
+      "score": 0.63758,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "q20": [
+   {
+    "query": "thửa đất chuẩn định giá đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0013",
+      "score": 0.963855,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0264",
+      "score": 0.95834,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0252",
+      "score": 0.951593,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0255",
+      "score": 0.94178,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0233",
+      "score": 0.917367,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0259",
+      "score": 0.90903,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0256",
+      "score": 0.906566,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0237",
+      "score": 0.877884,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "thửa đất chuẩn vùng giá trị bảng giá đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb365-0259",
+      "score": 0.953666,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0015",
+      "score": 0.90668,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0264",
+      "score": 0.867907,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0013",
+      "score": 0.81597,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0237",
+      "score": 0.275504,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0256",
+      "score": 0.236944,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0252",
+      "score": 0.169416,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0233",
+      "score": 0.147147,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h01": [
+   {
+    "query": "khung giá đất Chính phủ ban hành theo chu kỳ 5 năm",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0234",
+      "score": 0.995467,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0235",
+      "score": 0.969536,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0030",
+      "score": 0.198463,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0233",
+      "score": 0.149956,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0056",
+      "score": 0.139755,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0236",
+      "score": 0.074366,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0059",
+      "score": 0.062479,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0239",
+      "score": 0.059315,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h02": [
+   {
+    "query": "bồi thường khi Nhà nước thu hồi đất không có đất để bồi thường bằng tiền theo giá đất tại thời điểm quyết định thu hồi đất",
+    "filter": 2013,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0152",
+      "score": 0.997114,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0164",
+      "score": 0.975159,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0167",
+      "score": 0.97412,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0166",
+      "score": 0.968125,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0173",
+      "score": 0.89119,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0171",
+      "score": 0.871809,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0162",
+      "score": 0.863125,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0157",
+      "score": 0.848268,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h03": [
+   {
+    "query": "giá đất bồi thường khi Nhà nước thu hồi đất thời điểm xác định giá đất cụ thể",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb365-0256",
+      "score": 0.94154,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0001",
+      "score": 0.933087,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0210",
+      "score": 0.881547,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0226",
+      "score": 0.78206,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0263",
+      "score": 0.764272,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0261",
+      "score": 0.763735,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0262",
+      "score": 0.724784,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0025",
+      "score": 0.672041,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "bồi thường bằng tiền khi không còn đất để bồi thường thu hồi đất",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb365-0001",
+      "score": 0.995452,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0027",
+      "score": 0.983459,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0025",
+      "score": 0.971236,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0026",
+      "score": 0.958089,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0022",
+      "score": 0.945191,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0044",
+      "score": 0.92835,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0045",
+      "score": 0.910101,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0006",
+      "score": 0.907905,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h04": [
+   {
+    "query": "trưng dụng đất hết thời hạn trưng dụng mục đích trưng dụng chưa hoàn thành",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0277",
+      "score": 0.996919,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0278",
+      "score": 0.928329,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb363-0276",
+      "score": 0.810576,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0280",
+      "score": 0.558263,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0275",
+      "score": 0.458221,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0279",
+      "score": 0.334892,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0106",
+      "score": 0.204554,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0005",
+      "score": 0.127555,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h05": [
+   {
+    "query": "thời hạn sử dụng đất ở ổn định lâu dài",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0255",
+      "score": 0.982822,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0263",
+      "score": 0.982324,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0259",
+      "score": 0.982309,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0000",
+      "score": 0.981022,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0007",
+      "score": 0.958956,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0008",
+      "score": 0.958123,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0264",
+      "score": 0.957853,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0027",
+      "score": 0.941657,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "thời hạn sử dụng đất ở ổn định lâu dài hộ gia đình cá nhân",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0261",
+      "score": 0.975998,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0263",
+      "score": 0.970474,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0255",
+      "score": 0.968423,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0257",
+      "score": 0.912132,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0446",
+      "score": 0.80872,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0000",
+      "score": 0.803161,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0259",
+      "score": 0.790985,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0152",
+      "score": 0.78849,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h06": [
+   {
+    "query": "tranh chấp đất đai giữa các bên đều có giấy chứng nhận quyền sử dụng đất thẩm quyền giải quyết Tòa án Ủy ban nhân dân",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0167",
+      "score": 0.995417,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0434",
+      "score": 0.993839,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0168",
+      "score": 0.984364,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0173",
+      "score": 0.982997,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0435",
+      "score": 0.982191,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0170",
+      "score": 0.972474,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0172",
+      "score": 0.970115,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0169",
+      "score": 0.967258,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "thẩm quyền giải quyết tranh chấp đất đai Ủy ban nhân dân cấp xã hòa giải",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0163",
+      "score": 0.999183,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0434",
+      "score": 0.998333,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0432",
+      "score": 0.995337,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0166",
+      "score": 0.991739,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0435",
+      "score": 0.990775,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0164",
+      "score": 0.989285,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0433",
+      "score": 0.986131,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0173",
+      "score": 0.983412,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h07": [
+   {
+    "query": "người sử dụng đất đã bị Nhà nước thu hồi hoặc giao đất cho người khác trước đây, yêu cầu trả lại đất, thời hiệu khiếu nại",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0040",
+      "score": 0.577504,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0042",
+      "score": 0.559437,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0087",
+      "score": 0.539809,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0227",
+      "score": 0.380198,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0346",
+      "score": 0.365095,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0117",
+      "score": 0.358061,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0130",
+      "score": 0.271376,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0034",
+      "score": 0.194885,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h08": [
+   {
+    "query": "đăng ký đất đai bắt buộc đối với người sử dụng đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0189",
+      "score": 0.998192,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0113",
+      "score": 0.997349,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0193",
+      "score": 0.914627,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0190",
+      "score": 0.880846,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0194",
+      "score": 0.851233,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0114",
+      "score": 0.837255,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0408",
+      "score": 0.750947,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0192",
+      "score": 0.719677,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h09": [
+   {
+    "query": "tách thửa đất chưa có giấy chứng nhận quyền sử dụng đất điều kiện",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.986238,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.976085,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.970222,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.961999,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0127",
+      "score": 0.887436,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0225",
+      "score": 0.812783,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0153",
+      "score": 0.763737,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0125",
+      "score": 0.760476,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "điều kiện tách thửa, hợp thửa đất theo Luật Đất đai 2013 đất chưa được cấp Giấy chứng nhận",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.986676,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.96779,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.960339,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.925095,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0154",
+      "score": 0.880603,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0153",
+      "score": 0.88011,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb367-0125",
+      "score": 0.863367,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0220",
+      "score": 0.859968,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "chia, tách quyền sử dụng đất đối với thửa đất có Giấy chứng nhận và chưa có Giấy chứng nhận",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.957386,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.955931,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.883079,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.801077,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0349",
+      "score": 0.741403,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb363-0057",
+      "score": 0.58021,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0152",
+      "score": 0.557507,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0157",
+      "score": 0.549422,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "h10": [
+   {
+    "query": "người sử dụng đất chưa được cấp Giấy chứng nhận đang sử dụng đất ổn định",
+    "filter": 2024,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0016",
+      "score": 0.986679,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb365-0223",
+      "score": 0.938307,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0167",
+      "score": 0.937969,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0149",
+      "score": 0.930505,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0136",
+      "score": 0.923985,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0190",
+      "score": 0.896004,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0175",
+      "score": 0.892641,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0178",
+      "score": 0.890508,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ],
+  "u01": [
+   {
+    "query": "diện tích tối thiểu được tách thửa đối với đất ở tại Hà Nội",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0125",
+      "score": 0.850168,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0297",
+      "score": 0.780216,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.679912,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0207",
+      "score": 0.676107,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0128",
+      "score": 0.648987,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.634872,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0295",
+      "score": 0.604531,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0123",
+      "score": 0.372539,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "Ủy ban nhân dân cấp tỉnh quy định diện tích tối thiểu tách thửa đất ở",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb367-0128",
+      "score": 0.993548,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0125",
+      "score": 0.984134,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0295",
+      "score": 0.9788,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb365-0206",
+      "score": 0.968772,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0297",
+      "score": 0.957099,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0219",
+      "score": 0.869289,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0004",
+      "score": 0.816234,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0208",
+      "score": 0.73913,
+      "shown": false,
+      "already_shown": true
+     }
+    ]
+   }
+  ],
+  "u02": [
+   {
+    "query": "hành vi lấn, chiếm đất đai bị xử phạt vi phạm hành chính",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0114",
+      "score": 0.937074,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0223",
+      "score": 0.93424,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2013-0439",
+      "score": 0.904954,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0176",
+      "score": 0.89155,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb363-0028",
+      "score": 0.857698,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0024",
+      "score": 0.806448,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0440",
+      "score": 0.715406,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0441",
+      "score": 0.674293,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "mức phạt tiền lấn chiếm đất đai vi phạm quy định về sử dụng đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0114",
+      "score": 0.380118,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb363-0223",
+      "score": 0.35116,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0172",
+      "score": 0.337076,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb363-0028",
+      "score": 0.229256,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0170",
+      "score": 0.224152,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0440",
+      "score": 0.221415,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0224",
+      "score": 0.202416,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb365-0173",
+      "score": 0.201223,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "xử phạt vi phạm hành chính về lấn đất, chiếm đất",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2024_cb363-0223",
+      "score": 0.942832,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0114",
+      "score": 0.906151,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb365-0172",
+      "score": 0.811459,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0176",
+      "score": 0.755524,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb365-0175",
+      "score": 0.752364,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb365-0170",
+      "score": 0.690912,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb363-0028",
+      "score": 0.655124,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0439",
+      "score": 0.644674,
+      "shown": false,
+      "already_shown": true
+     }
+    ]
+   },
+   {
+    "query": "mức tiền phạt tối đa đối với hành vi vi phạm pháp luật về đất đai",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0440",
+      "score": 0.808458,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0439",
+      "score": 0.669523,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0176",
+      "score": 0.646896,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0177",
+      "score": 0.554021,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2024_cb367-0179",
+      "score": 0.485475,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0178",
+      "score": 0.415728,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0441",
+      "score": 0.344283,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb363-0028",
+      "score": 0.334063,
+      "shown": false,
+      "already_shown": true
+     }
+    ]
+   }
+  ],
+  "u03": [
+   {
+    "query": "hạn mức giao đất ở tại nông thôn",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0295",
+      "score": 0.991769,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2024_cb367-0058",
+      "score": 0.989709,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.98883,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2013-0266",
+      "score": 0.986664,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0265",
+      "score": 0.984829,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2024_cb367-0010",
+      "score": 0.977789,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2013-0267",
+      "score": 0.968571,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2013-0268",
+      "score": 0.955606,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   },
+   {
+    "query": "Ủy ban nhân dân cấp tỉnh quy định hạn mức đất ở nông thôn cho hộ gia đình cá nhân Nghệ An",
+    "filter": null,
+    "top3_matches_trace": true,
+    "shown_matches_trace": true,
+    "fetched": [
+     {
+      "rank": 1,
+      "id": "B-ldd2013-0295",
+      "score": 0.980589,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 2,
+      "id": "B-ldd2013-0267",
+      "score": 0.960251,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 3,
+      "id": "B-ldd2024_cb367-0011",
+      "score": 0.934592,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 4,
+      "id": "B-ldd2024_cb367-0058",
+      "score": 0.93448,
+      "shown": false,
+      "already_shown": true
+     },
+     {
+      "rank": 5,
+      "id": "B-ldd2013-0265",
+      "score": 0.873196,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 6,
+      "id": "B-ldd2013-0268",
+      "score": 0.858038,
+      "shown": true,
+      "already_shown": false
+     },
+     {
+      "rank": 7,
+      "id": "B-ldd2024_cb365-0176",
+      "score": 0.851841,
+      "shown": false,
+      "already_shown": false
+     },
+     {
+      "rank": 8,
+      "id": "B-ldd2024_cb367-0013",
+      "score": 0.846722,
+      "shown": false,
+      "already_shown": false
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -173,8 +173,35 @@ class AgentTest(unittest.TestCase):
         self.assertEqual(found & {"gold", "expected_answer", "evidence", "answerable", "absence_reason", "filter"}, set())
         self.assertEqual([m["content"] for m in sent if m["role"] == "user"], ["Câu hỏi thật?"])
 
-if __name__ == "__main__":
-    unittest.main()
+    def test_named_version_is_applied_when_the_model_omits_it(self):
+        retriever = FakeRetriever()
+        _, out = run([search(), finish(citations=["B-ldd2024_cb363-0001"], answer="x [B-ldd2024_cb363-0001]")],
+                     question="Theo Luật Đất đai 2024, ...?", retriever=retriever)
+        self.assertEqual(retriever.calls[0][2], 2024)
+        self.assertEqual((out["events"][0]["filter"], out["events"][0]["year_from_question"]), (2024, True))
+        retriever = FakeRetriever()
+        _, out = run([search(), finish()], question="Luật Đất đai 2013 và Luật Đất đai 2024 khác nhau thế nào?",
+                     retriever=retriever)
+        self.assertEqual(retriever.calls[0][2], None)
+        self.assertNotIn("year_from_question", out["events"][0])
+
+    def test_calls_after_finish_in_the_same_reply_are_not_run(self):
+        retriever = FakeRetriever()
+        _, out = run([search() + finish() + search("later")], retriever=retriever)
+        self.assertEqual(([c[0] for c in retriever.calls], out["status"]), (["q"], "answered"))
+        self.assertIn({"event": "call_after_finish", "tool": "search_law"}, out["events"])
+        self.assertEqual(out["context_ids"], ["B-ldd2013-0001", "B-ldd2013-0002", "B-ldd2013-0003"])
+
+    def test_unknown_finish_status_is_named_as_such(self):
+        _, out = run([search(), finish(status="maybe")])
+        self.assertEqual((out["status"], out["reason"], out["citations"]), ("abstain", "bad_status", ["B-ldd2013-0001"]))
+
+    def test_search_event_logs_rank_of_every_fetched_chunk(self):
+        _, out = run([search(), search(), finish()])
+        second = out["events"][1]
+        self.assertEqual([r["rank"] for r in second["results"]], [1, 2, 3, 4])
+        self.assertEqual(second["shown"], ["B-ldd2024_cb363-0001"])
+        self.assertTrue(set(second["shown"]) <= {r["id"] for r in second["results"]})
 
 
 class ScoreTest(unittest.TestCase):
@@ -202,3 +229,7 @@ class ScoreTest(unittest.TestCase):
         s = summarize([one_law, both, filtered])
         self.assertEqual((s["both_laws_cited"]["n"], s["both_laws_cited"]["N"], s["both_laws_missed"]), (1, 2, ["a"]))
         self.assertEqual((s["wrong_version_citations"]["n"], s["wrong_version_citations"]["N"]), (1, 2))
+
+
+if __name__ == "__main__":
+    unittest.main()

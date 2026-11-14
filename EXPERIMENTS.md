@@ -266,3 +266,39 @@ It is not guaranteed: A4's context on test (9/10) is below its own single search
 Abstention on unanswerable questions holds up: 3/3 for every dev configuration and 5 of 6 on test across the two runs, where the one failure refused correctly but added a false claim.
 Reading the citations catches wrong ones that an ID check would pass (for example 0415 in A0 t03, 0411 in A4 tu02).
 Worth doing next: repeated runs per configuration to measure run-to-run variance, a larger test set, and a rule that does not let one exact word ("trồng trọt") trigger a refusal when a quoted clause answers the question.
+
+## E5 - audit after the test run (no new model calls)
+
+After test, every trace of the seven runs (191 question runs: 5 × 33 on dev, 2 × 13 on test) was scanned for behaviour that should not happen.
+There were no errors, no turn-limit stops, no answer to an unanswerable question, no citation outside the context and no citation from the wrong law version.
+
+**Model behaviour, recorded and not fixed.**
+These were found by reading test, so a fix could not be judged on this test ([RULES.md](RULES.md)); they are next steps, not changes.
+
+- 25 refused searches where the model set a `year` the question does not name (dev A0 5, A1 7, A4 3; test A0 3, A4 7).
+  Each refusal costs a model call, and on tu02 and tu03 A4 tried both years one after the other, ignoring the rule in the prompt and in the tool description.
+- t07, t10 and tu02 for A4, as in E4: a query worse than the user's own wording, a refusal that quotes the answer, and a refusal that adds a false claim.
+
+**Code gaps, fixed after test.**
+None was reached by a recorded run, so no recorded result changes; the evidence column is from the scan.
+
+| Gap | Evidence it never happened | Fix in [src/agent.py](src/agent.py) |
+| --- | --- | --- |
+| `finish` and another call in one reply: the later call still ran, so a search's chunks would count in the final context although the model answered before reading them | No reply in the seven runs combines `finish` with another call | Calls after `finish` get an error result and are logged as `call_after_finish` |
+| The question names one version and the model leaves `year` out: the search runs unfiltered and can return the other law | 0 searches without `year` on a question that names a version | The code applies the named version, logged as `year_from_question` |
+| A `finish` status outside the schema was logged as `no_valid_citation`, even with valid citations | The schema enum held in every run | Logged as `bad_status` |
+| Each search fetches 8 chunks, but the trace kept score and rank for the top 3 only, so a chunk shown from rank 4-8 had no rank | 134 of the 957 shown chunks came from rank 4-8 | All 8 are logged; [src/replay_searches.py](src/replay_searches.py) recovers the ranks for the recorded runs |
+
+**Replay of the recorded searches** (`python -m src.replay_searches --all`, no model calls, $0).
+All 321 logged searches replay exactly: the top 3 IDs and scores (within 0.001) and the shown and already-shown chunks match the trace in 321/321, so the retrievers are deterministic and the recovered ranks are the ones the agent saw.
+The ranks are in `results/agent/<split>/<config>/search_ranks.json`.
+For example, A4 cited `B-ldd2024_cb365-0081` on t10; it was shown by the second search from rank 4 (score 0.477), behind chunks already shown.
+
+**Next steps.**
+Each comes from reading test, so each needs a dev run, a new choice and a new test set on articles not used yet.
+
+1. Make the first search the user's question as written, and let the model rewrite after that.
+   On t07 one search with the original question finds Điều 188 clause 3 and the model's own query does not; on dev, though, A4's first search already finds the gold more often (29/30) than one search with the original question (27/30), so dev alone does not show a gain.
+2. Turn a `year` the question does not name into an unfiltered search with a note, instead of an error that costs a model call.
+3. A prompt rule that a quoted clause covering the asked case answers it even when the wording differs (t10), and the same citation check for claims inside a refusal as inside an answer (tu02).
+4. Repeated runs per configuration and a larger test set, to measure the run-to-run variance that E4 points to.

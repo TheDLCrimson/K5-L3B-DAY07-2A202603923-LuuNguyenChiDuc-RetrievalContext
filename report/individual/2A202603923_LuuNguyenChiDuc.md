@@ -61,6 +61,7 @@ Cả năm cấu hình hòa ở bước 2; A4 thắng ở bước 3 (70/70 citati
 - **Tool, số lượt gọi, điều kiện dừng, cách chọn context và xử lý lỗi:** agent tự viết ([src/agent.py](../../src/agent.py)) có hai tool: `search_law(query, year?)` trả tối đa 3 chunk mới trong budget 3.300 ký tự (chunk đã thấy chỉ được liệt kê, không gửi lại), và `finish(status, answer, citations)`.
   Dừng khi gọi `finish`, hoặc sau 6 lượt gọi model (khi đó từ chối với lý do `turn_limit`); lượt tìm thứ 5 trở đi bị từ chối kèm lời nhắc gọi `finish`.
   Kiểm tra bằng code: `year` phải khớp câu hỏi (mô hình đã đặt năm câu hỏi không nêu 12 lần trên dev A0/A1 và đều bị chặn); citation chỉ hợp lệ nếu chunk đã được trả về trong lần chạy, ID sai bị loại và ghi lại, câu trả lời không còn citation hợp lệ thành từ chối.
+  Sau khi chạy test, toàn bộ 191 lần chạy được rà lại; ba lỗ hổng chưa từng xảy ra (gọi tool sau `finish` trong cùng lượt, bỏ `year` khi câu hỏi nêu phiên bản, trạng thái `finish` lạ) được chặn bằng code, và trace nay ghi điểm, hạng của cả 8 chunk mỗi lượt tìm lấy về ([EXPERIMENTS.md](../../EXPERIMENTS.md) E5).
   Lỗi provider hoặc retrieval kết thúc lần chạy với trạng thái `error` và thông điệp, không thử lại ngầm, không thay bằng kết quả giả; trên mọi lần chạy dev và test không có lỗi.
   System prompt chỉ có quy tắc chung, không có ví dụ lấy từ câu nào của benchmark; nội dung chunk được coi là dữ liệu, không phải chỉ dẫn.
 
@@ -86,6 +87,7 @@ Context grade trên 10 câu test có đáp án: A0 có 10 câu mức 2; A4 có 9
 | h05 (A1, dev) | Có đáp án | Lượt `year=2024` bị chặn | Chỉ trả lời theo Luật 2013 | Đáp án 1; A3 sửa thành 2 |
 
 - **Đường dẫn trace, nhãn, lệnh chạy, thời gian và chi phí:** trace retrieval ở [results/retrieval/](../../results/retrieval/); trace agent (prompt, tool, từng lượt gọi model với token, chi phí, thời gian, từng tool call với tham số và kết quả, context cuối, câu trả lời) ở [results/agent/](../../results/agent/).
+  Các lần chạy đã ghi chỉ lưu hạng của top 3 trong 8 chunk mỗi lượt tìm; `search_ranks.json` cạnh mỗi `traces.json` có hạng của cả 8, khôi phục bằng cách chạy lại đúng các lượt tìm đã ghi (không gọi model) và đối chiếu với trace.
   Nhãn ở `reviews.json` của từng cấu hình, mỗi nhãn có lý do; test có thêm [review_labels.csv](../../results/agent/test/review_labels.csv) và `context_grades.json`; số liệu tổng hợp bằng `starter/agent_metrics.py` ở `agent_metrics.json`.
   Lệnh: `python -m src.eval_retrieval --split dev`, `python -m src.run_agent --split dev --config A4_rerank_pool10`, test thêm `--final`; đầy đủ ở [src/README.md](../../src/README.md).
   Chi phí model cho toàn bộ dev và test 0,233 USD (tổng `cost_usd` trong các trace dev và test, do OpenRouter báo); một câu khoảng 0,001-0,002 USD, 5-12 giây (trung vị).
@@ -100,6 +102,10 @@ Context grade trên 10 câu test có đáp án: A0 có 10 câu mức 2; A4 có 9
 
 - **Kết luận:** agent nhiều lượt tìm đưa được evidence vào context nhiều hơn một lượt tìm bằng câu hỏi gốc (dev 30/30 so với 26-28/30), và kiểm tra citation, năm bằng code ngăn được lỗi mà prompt không ngăn được.
   Không có cấu hình agent nào tốt hơn rõ ràng: phần lớn sai số đến từ hành vi của mô hình giữa các lần chạy, nên bước tiếp theo nên là chạy lặp nhiều lần mỗi cấu hình và mở rộng test.
+- **Bước tiếp theo** (đều rút ra từ việc đọc test, nên mỗi thay đổi cần chạy lại dev, chọn lại và một bộ test mới):
+  - lượt tìm đầu dùng nguyên câu hỏi của người dùng (t07: câu hỏi gốc tìm được Điều 188 khoản 3, query mô hình tự viết thì không);
+  - `year` mà câu hỏi không nêu thì tìm không filter kèm ghi chú, thay vì báo lỗi làm mất một lượt gọi model (25 lần bị chặn trên dev và test);
+  - quy tắc trong prompt: khoản luật đã trích bao trùm trường hợp được hỏi thì là câu trả lời dù khác chữ (t10), và kiểm tra citation cho cả khẳng định trong câu từ chối (tu02).
 - **Nguồn:** văn bản luật từ vbpl.vn (đường dẫn và SHA-256 trong manifest Day 6); model `intfloat/multilingual-e5-base` và `BAAI/bge-reranker-v2-m3` (revision ghi trong code); agent `anthropic/claude-haiku-5.5` qua OpenRouter.
 - **Giới hạn:**
   - Cùng một người viết câu hỏi, đáp án và gold, có tra corpus khi viết, nên benchmark nghiêng về các khoản dễ tìm bằng từ khóa; test chỉ 10 câu có đáp án (một câu là 10 điểm phần trăm).

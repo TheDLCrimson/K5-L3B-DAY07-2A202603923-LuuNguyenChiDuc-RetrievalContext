@@ -36,6 +36,11 @@ python -m src.review_sheet import --split test --labelled-by "<who labelled>"
 python starter/agent_metrics.py --cases results/agent/cases.json --traces results/agent/test/A4_rerank_pool10/traces.json --reviews results/agent/test/A4_rerank_pool10/reviews.json --split test --output results/agent/test/A4_rerank_pool10/agent_metrics.json
 ```
 
+## Recover search ranks for recorded runs
+
+Runs recorded before the full logging keep score and rank for the top 3 of the 8 chunks each search fetched.
+`python -m src.replay_searches --all` replays every logged search without calling the model, checks the replay against the trace, and writes `search_ranks.json` next to each `traces.json` ([EXPERIMENTS.md](../EXPERIMENTS.md) E5).
+
 ## Rebuild the exports
 
 The chunk export and the benchmark are committed, so these steps only rebuild them.
@@ -59,8 +64,9 @@ The chunk export and the benchmark are committed, so these steps only rebuild th
 | `agent.py` | The tool-calling agent: `search_law` and `finish`, optional per-version search; stop conditions and code guards |
 | `run_agent.py` | Runs one agent configuration on a split; writes traces and automatic metrics to `results/agent/<split>/<config>/` |
 | `review_sheet.py` | Reading sheet and label CSV for human review; imports the CSV into `reviews.json` and context grades |
+| `replay_searches.py` | Replays logged agent searches to recover score and rank for every fetched chunk; writes `search_ranks.json` |
 
 ## Tests
 
-`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py), [tests/test_retrieval.py](../tests/test_retrieval.py), [tests/test_agent.py](../tests/test_agent.py) and [tests/test_review_sheet.py](../tests/test_review_sheet.py).
+`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py), [tests/test_retrieval.py](../tests/test_retrieval.py), [tests/test_agent.py](../tests/test_agent.py), [tests/test_review_sheet.py](../tests/test_review_sheet.py) and [tests/test_replay.py](../tests/test_replay.py).
 They need no database, model or API key; the agent tests use a scripted model that only exercises the loop.

@@ -13,8 +13,18 @@ Guards in code, not only in the prompt:
   question names that law version. With `per_version` (A3) the model may also search each
   version in turn when the question names none, so it can answer from both laws; a `year`
   that contradicts a version the question names is always refused;
+- when the question names exactly one version and the model leaves `year` out, the search
+  uses that version anyway and the event records `year_from_question`;
 - a citation is valid only if its chunk was shown to the model in this run; invalid ones
-  are dropped and recorded, and an answer left with no valid citation becomes an abstention.
+  are dropped and recorded, and an answer left with no valid citation becomes an abstention;
+- once `finish` is called, later tool calls in the same reply are not run, so the final
+  context holds only chunks the model could read before it answered.
+
+Each search event logs score and rank for every chunk fetched (FETCH_PER_SEARCH), not only
+the top 3, so a chunk shown from a lower rank keeps its rank in the trace. Runs recorded
+before this change log the top 3 only; src/replay_searches.py recovers the rest.
+The last two guards and the full logging were added after the test run; the scan in
+EXPERIMENTS.md E4 shows that no recorded run reached either case.
 
 Errors from the model provider or the retriever end the run with status `error` and the
 message; nothing is retried silently or replaced by a made-up answer.
@@ -125,10 +135,13 @@ class Agent:
                     continue
                 final = None
                 for call in reply["calls"]:
-                    result, done = self._execute(call, question, state)
+                    if final:
+                        state["events"].append({"event": "call_after_finish", "tool": call["name"]})
+                        result = {"error": "đã gọi finish; lời gọi này không được thực hiện"}
+                    else:
+                        result, final = self._execute(call, question, state)
                     messages.append({"role": "tool", "tool_call_id": call["id"],
                                      "content": json.dumps(result, ensure_ascii=False)})
-                    final = done or final
                 if final:
                     return self._result(final, state, start)
             state["events"].append({"event": "turn_limit"})
@@ -175,13 +188,17 @@ class Agent:
         if not isinstance(query, str) or not query.strip():
             state["events"].append({"event": "search_refused", "reason": "empty_query"})
             return {"error": "query rỗng"}
+        from_question = year is None and len(named) == 1
+        if from_question:
+            year = next(iter(named))
         state["searches"] += 1
         start = time.perf_counter()
         results = self.retriever.search(query, FETCH_PER_SEARCH, year)  # RetrievalError ends the run
         packed, repeated = self._show(results, state)
         state["events"].append({"event": "search", "tool": "search_law", "query": query, "filter": year,
+                                **({"year_from_question": True} if from_question else {}),
                                 "ms": round((time.perf_counter() - start) * 1000, 1),
-                                "results": [_brief(r) for r in results[:RESULTS_PER_SEARCH]],
+                                "results": [_brief(r) for r in results],
                                 "shown": [c["id"] for c in packed], "already_shown": repeated})
         return {"results": [{"id": c["id"], "source": context.label(c), "text": c["text"]} for c in packed],
                 "already_shown": repeated}
@@ -196,7 +213,7 @@ class Agent:
             state["events"].append({"event": "invalid_citations", "ids": invalid})
         if status == "answered" and valid:
             return {"status": "answered", "answer": answer, "citations": valid}
-        reason = "model_abstained" if status == "insufficient_evidence" else "no_valid_citation"
+        reason = {"insufficient_evidence": "model_abstained", "answered": "no_valid_citation"}.get(status, "bad_status")
         return {"status": "abstain", "answer": answer or ABSTAIN_TEXT, "citations": valid, "reason": reason}
 
     def _result(self, final: dict, state: dict, start: float) -> dict:
