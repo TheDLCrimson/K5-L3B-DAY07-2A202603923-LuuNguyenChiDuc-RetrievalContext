@@ -1,0 +1,304 @@
+{
+  "split": "dev",
+  "ran_at": "2026-11-14T10:18:05+00:00",
+  "context_budget_chars": 3300,
+  "context_top": 3,
+  "depth": 20,
+  "configs": {
+    "dense": {
+      "method": "dense",
+      "index": "Day 6 pgvector, strategy B, exact cosine",
+      "embedding": "intfloat/multilingual-e5-base",
+      "query_prefix": "query: "
+    },
+    "bm25": {
+      "method": "bm25",
+      "library": "rank_bm25.BM25Okapi",
+      "k1": 1.5,
+      "b": 0.75,
+      "tokens": "lower-cased NFC syllables + adjacent syllable pairs"
+    },
+    "hybrid": {
+      "method": "hybrid",
+      "candidates_per_side": 20,
+      "fusion": "0.7 * minmax(dense) + 0.3 * minmax(bm25)"
+    },
+    "hybrid_rrf": {
+      "method": "hybrid_rrf",
+      "candidates_per_side": 20,
+      "fusion": "sum of 1 / (60 + rank)"
+    },
+    "hybrid_rerank": {
+      "method": "hybrid_rerank",
+      "pool": "union of dense and bm25 top 20",
+      "reranker": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "max_length": 512,
+      "input": "question text, chunk text",
+      "score": "cross-encoder logit"
+    }
+  },
+  "summaries": {
+    "dense": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 21,
+        "N": 30,
+        "rate": 0.7
+      },
+      "evidence_hit_at_3": {
+        "n": 26,
+        "N": 30,
+        "rate": 0.8667
+      },
+      "mrr_at_10": 0.8028,
+      "hit_at_20": {
+        "n": 30,
+        "N": 30,
+        "rate": 1.0
+      },
+      "context_evidence_rate": {
+        "n": 26,
+        "N": 30,
+        "rate": 0.8667
+      },
+      "misses_at_3": [
+        "q12",
+        "h05",
+        "h06",
+        "h10"
+      ],
+      "ms_median": 41.8,
+      "ms_p90": 51.8,
+      "context_chars_max": 3153,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 6,
+          "N": 9,
+          "rate": 0.6667
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 9,
+          "N": 10,
+          "rate": 0.9
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    },
+    "bm25": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 20,
+        "N": 30,
+        "rate": 0.6667
+      },
+      "evidence_hit_at_3": {
+        "n": 23,
+        "N": 30,
+        "rate": 0.7667
+      },
+      "mrr_at_10": 0.7339,
+      "hit_at_20": {
+        "n": 28,
+        "N": 30,
+        "rate": 0.9333
+      },
+      "context_evidence_rate": {
+        "n": 23,
+        "N": 30,
+        "rate": 0.7667
+      },
+      "misses_at_3": [
+        "q02",
+        "q04",
+        "h03",
+        "h05",
+        "h06",
+        "h09",
+        "h10"
+      ],
+      "ms_median": 15.1,
+      "ms_p90": 20.8,
+      "context_chars_max": 3120,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 4,
+          "N": 9,
+          "rate": 0.4444
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 8,
+          "N": 10,
+          "rate": 0.8
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    },
+    "hybrid": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 24,
+        "N": 30,
+        "rate": 0.8
+      },
+      "evidence_hit_at_3": {
+        "n": 27,
+        "N": 30,
+        "rate": 0.9
+      },
+      "mrr_at_10": 0.8611,
+      "hit_at_20": {
+        "n": 30,
+        "N": 30,
+        "rate": 1.0
+      },
+      "context_evidence_rate": {
+        "n": 27,
+        "N": 30,
+        "rate": 0.9
+      },
+      "misses_at_3": [
+        "h05",
+        "h06",
+        "h10"
+      ],
+      "ms_median": 61.0,
+      "ms_p90": 77.0,
+      "context_chars_max": 3162,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 7,
+          "N": 9,
+          "rate": 0.7778
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 9,
+          "N": 10,
+          "rate": 0.9
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    },
+    "hybrid_rrf": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 23,
+        "N": 30,
+        "rate": 0.7667
+      },
+      "evidence_hit_at_3": {
+        "n": 25,
+        "N": 30,
+        "rate": 0.8333
+      },
+      "mrr_at_10": 0.8254,
+      "hit_at_20": {
+        "n": 29,
+        "N": 30,
+        "rate": 0.9667
+      },
+      "context_evidence_rate": {
+        "n": 25,
+        "N": 30,
+        "rate": 0.8333
+      },
+      "misses_at_3": [
+        "q02",
+        "h05",
+        "h06",
+        "h09",
+        "h10"
+      ],
+      "ms_median": 67.6,
+      "ms_p90": 79.1,
+      "context_chars_max": 3061,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 6,
+          "N": 9,
+          "rate": 0.6667
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 8,
+          "N": 10,
+          "rate": 0.8
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    },
+    "hybrid_rerank": {
+      "answerable": 30,
+      "unanswerable_traced": 3,
+      "errors": [],
+      "hit_at_1": {
+        "n": 26,
+        "N": 30,
+        "rate": 0.8667
+      },
+      "evidence_hit_at_3": {
+        "n": 28,
+        "N": 30,
+        "rate": 0.9333
+      },
+      "mrr_at_10": 0.9111,
+      "hit_at_20": {
+        "n": 30,
+        "N": 30,
+        "rate": 1.0
+      },
+      "context_evidence_rate": {
+        "n": 28,
+        "N": 30,
+        "rate": 0.9333
+      },
+      "misses_at_3": [
+        "h03",
+        "h06"
+      ],
+      "ms_median": 4010.8,
+      "ms_p90": 4522.9,
+      "context_chars_max": 3162,
+      "by_type": {
+        "dien_dat_lai": {
+          "n": 7,
+          "N": 9,
+          "rate": 0.7778
+        },
+        "dieu_kien_ngoai_le": {
+          "n": 10,
+          "N": 10,
+          "rate": 1.0
+        },
+        "truc_tiep": {
+          "n": 11,
+          "N": 11,
+          "rate": 1.0
+        }
+      }
+    }
+  }
+}
