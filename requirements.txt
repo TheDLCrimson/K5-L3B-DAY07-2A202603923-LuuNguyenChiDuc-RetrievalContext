@@ -1,0 +1,5 @@
+# Day 6 index: PostgreSQL + pgvector, read with psycopg
+psycopg[binary]==3.3.8
+python-dotenv>=1,<2
+# Query embeddings with the Day 6 model, intfloat/multilingual-e5-base; install torch for your CPU/GPU first
+sentence-transformers>=6.2,<7  # get_embedding_dimension()

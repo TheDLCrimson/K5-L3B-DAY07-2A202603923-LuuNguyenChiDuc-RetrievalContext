@@ -1,0 +1,74 @@
+id,split,kind,source_id,page,detail,chunks,articles
+q01,dev,gold,ldd2013,71,B-ldd2013-0269,1,2013:Điều 130
+q02,dev,gold,ldd2024_cb367,5,B-ldd2024_cb367-0013,1,2024:Điều 177
+q03,dev,gold,ldd2013,112,B-ldd2013-0432,1,2013:Điều 202
+q04,dev,gold,ldd2024_cb367,46,B-ldd2024_cb367-0164,1,2024:Điều 235
+q05,dev,gold,ldd2013,107,B-ldd2013-0412,1,2013:Điều 191
+q06,dev,gold,ldd2024_cb363,42,B-ldd2024_cb363-0122,1,2024:Điều 45
+q07,dev,gold,ldd2013,34,B-ldd2013-0122,1,2013:Điều 67
+q07,dev,gold,ldd2024_cb363,81,B-ldd2024_cb363-0238,1,2024:Điều 85
+q08,dev,gold,ldd2024_cb363,77,B-ldd2024_cb363-0224,1,2024:Điều 81
+q09,dev,gold,ldd2013,51,B-ldd2013-0194,1,2013:Điều 95
+q09,dev,gold,ldd2024_cb365,42,B-ldd2024_cb365-0120,1,2024:Điều 133
+q10,dev,gold,ldd2013,70,B-ldd2013-0265,1,2013:Điều 128 2013:Điều 129
+q10,dev,gold,ldd2024_cb367,4,B-ldd2024_cb367-0010,1,2024:Điều 175 2024:Điều 176
+q11,dev,gold,ldd2013,14,B-ldd2013-0050,1,2013:Điều 34
+q11,dev,gold,ldd2024_cb363,51,B-ldd2024_cb363-0148,1,2024:Điều 57
+q12,dev,gold,ldd2013,52,B-ldd2013-0198,1,2013:Điều 98
+q12,dev,gold,ldd2024_cb365,43,B-ldd2024_cb365-0122,1,2024:Điều 135
+q13,dev,gold,ldd2013,32,B-ldd2013-0115,1,2013:Điều 64
+q13,dev,gold,ldd2024_cb363,77,B-ldd2024_cb363-0225,1,2024:Điều 81
+q14,dev,gold,ldd2013,1,B-ldd2013-0002,1,2013:Điều 3
+q14,dev,gold,ldd2024_cb363,6,B-ldd2024_cb363-0013,1,2024:Điều 3
+q15,dev,gold,ldd2013,15,B-ldd2013-0056,1,2013:Điều 37
+q15,dev,gold,ldd2024_cb363,55,B-ldd2024_cb363-0159,1,2024:Điều 62
+q16,dev,gold,ldd2024_cb365,85,B-ldd2024_cb365-0260,1,2024:Điều 159
+q17,dev,gold,ldd2024_cb367,57,B-ldd2024_cb367-0206,1,2024:Điều 251 2024:Điều 252
+q18,dev,gold,ldd2013,68,B-ldd2013-0258,1,2013:Điều 126
+q18,dev,gold,ldd2024_cb367,2,B-ldd2024_cb367-0002,1,2024:Điều 172
+q19,dev,gold,ldd2013,116,B-ldd2013-0449,1,2013:Điều 211
+q20,dev,gold,ldd2024_cb363,6,B-ldd2024_cb363-0013,1,2024:Điều 3
+h01,dev,gold,ldd2013,61,B-ldd2013-0234,1,2013:Điều 113
+h02,dev,gold,ldd2013,41,B-ldd2013-0152,1,2013:Điều 73 2013:Điều 74
+h03,dev,gold,ldd2024_cb365,1,B-ldd2024_cb365-0001,1,2024:Điều 91
+h04,dev,gold,ldd2024_cb363,92,B-ldd2024_cb363-0277,1,2024:Điều 90
+h05,dev,gold,ldd2013,67,B-ldd2013-0255,1,2013:Điều 124 2013:Điều 125
+h05,dev,gold,ldd2024_cb367,1,B-ldd2024_cb367-0000,1,2024:Điều 170 2024:Điều 171
+h06,dev,gold,ldd2013,113,B-ldd2013-0434,1,2013:Điều 203
+h06,dev,gold,ldd2024_cb367,47,B-ldd2024_cb367-0167,1,2024:Điều 236
+h07,dev,gold,ldd2013,11,B-ldd2013-0040,1,2013:Điều 26
+h07,dev,gold,ldd2024_cb363,16,B-ldd2024_cb363-0042,1,2024:Điều 17
+h08,dev,gold,ldd2013,50,B-ldd2013-0189,1,2013:Điều 94 2013:Điều 95
+h08,dev,gold,ldd2024_cb365,39,B-ldd2024_cb365-0113,1,2024:Điều 130 2024:Điều 131
+h09,dev,gold,ldd2024_cb367,34,B-ldd2024_cb367-0123,1,2024:Điều 220
+h10,dev,gold,ldd2024_cb363,7,B-ldd2024_cb363-0016,1,2024:Điều 4
+u01,dev,absence_term,,,Hà Nội,0,
+u01,dev,absence_term,,,mét vuông,0,
+u01,dev,absence_term,,,diện tích tối thiểu,8,
+u02,dev,absence_term,,,phạt tiền,0,
+u02,dev,absence_term,,,triệu đồng,0,
+u02,dev,absence_term,,,"lấn, chiếm",12,
+u03,dev,absence_term,,,Nghệ An,0,
+u03,dev,absence_term,,,hạn mức giao đất ở,12,
+t01,test,gold,ldd2013,24,B-ldd2013-0088,1,2013:Điều 49
+t02,test,gold,ldd2024_cb363,69,B-ldd2024_cb363-0201,1,2024:Điều 76
+t03,test,gold,ldd2013,29,B-ldd2013-0104,1,2013:Điều 59
+t03,test,gold,ldd2024_cb365,28,B-ldd2024_cb365-0081,1,2024:Điều 123
+t04,test,gold,ldd2024_cb365,83,B-ldd2024_cb365-0255,1,2024:Điều 158
+t05,test,gold,ldd2013,74,B-ldd2013-0280,1,2013:Điều 134
+t05,test,gold,ldd2024_cb367,9,B-ldd2024_cb367-0029,1,2024:Điều 182
+t06,test,gold,ldd2013,91,B-ldd2013-0350,1,2013:Điều 167
+t06,test,gold,ldd2024_cb363,22,B-ldd2024_cb363-0058,1,2024:Điều 27
+t07,test,gold,ldd2013,106,B-ldd2013-0408,1,2013:Điều 188
+t08,test,gold,ldd2024_cb367,32,B-ldd2024_cb367-0115,1,2024:Điều 218
+t09,test,gold,ldd2024_cb363,44,B-ldd2024_cb363-0128,1,2024:Điều 47
+t10,test,gold,ldd2024_cb367,7,B-ldd2024_cb367-0018,1,2024:Điều 179
+tu01,test,absence_term,,,Nguyễn Huệ,0,
+tu01,test,absence_term,,,Hồ Chí Minh,0,
+tu01,test,absence_term,,,Quận 1,0,
+tu01,test,absence_term,,,mét vuông,0,
+tu02,test,absence_term,,,trước bạ,2,
+tu02,test,absence_term,,,thuế suất,0,
+tu02,test,absence_term,,,%,10,
+tu03,test,absence_term,,,thuế suất,0,
+tu03,test,absence_term,,,thuế thu nhập,6,

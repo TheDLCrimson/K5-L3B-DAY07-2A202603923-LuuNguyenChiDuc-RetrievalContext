@@ -1,0 +1,123 @@
+[
+ {
+  "id": "u01", "split": "dev", "type": "thieu_bang_chung",
+  "question": "Diện tích tối thiểu được tách thửa đối với đất ở tại Hà Nội là bao nhiêu mét vuông?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "Both laws leave the minimum plot size for a split to each provincial People's Committee (Luật 2013 Điều 143 khoản 2, Điều 144 khoản 4; Luật 2024 Điều 220 khoản 4) and state no figure; the corpus holds no provincial decision. The 8 chunks with 'diện tích tối thiểu' all delegate or refer to the provincial rule.",
+  "absence_check": [{"term": "Hà Nội", "matches": 0}, {"term": "mét vuông", "matches": 0}, {"term": "diện tích tối thiểu", "matches": 8}]
+ },
+ {
+  "id": "u02", "split": "dev", "type": "thieu_bang_chung",
+  "question": "Hành vi lấn, chiếm đất đai bị phạt tiền tối đa bao nhiêu?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "Both laws forbid encroaching on land (Luật 2013 Điều 12 khoản 1; Luật 2024 Điều 11 khoản 1) and refer to administrative penalties, but no fine amount appears; amounts are set by a Government decree outside the corpus. The 12 chunks with 'lấn, chiếm' cover prohibitions, land recovery and corridor protection, none with an amount.",
+  "absence_check": [{"term": "phạt tiền", "matches": 0}, {"term": "triệu đồng", "matches": 0}, {"term": "lấn, chiếm", "matches": 12}]
+ },
+ {
+  "id": "u03", "split": "dev", "type": "thieu_bang_chung",
+  "question": "Hạn mức giao đất ở tại nông thôn ở tỉnh Nghệ An là bao nhiêu?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "The rural residential allocation limit is set by each provincial People's Committee (Luật 2013 Điều 143 khoản 2; Luật 2024 Điều 195 khoản 2); the laws give no figure and name no province. The 12 chunks with 'hạn mức giao đất ở' define, delegate or refer to the limit.",
+  "absence_check": [{"term": "Nghệ An", "matches": 0}, {"term": "hạn mức giao đất ở", "matches": 12}]
+ },
+ {
+  "id": "t01", "split": "test", "type": "truc_tiep",
+  "question": "Theo Luật Đất đai 2013, diện tích đất ghi trong kế hoạch sử dụng đất hàng năm của cấp huyện phải thu hồi mà sau bao lâu vẫn chưa có quyết định thu hồi thì kế hoạch phải được điều chỉnh, hủy bỏ?",
+  "expected_answer": "Sau 03 năm chưa có quyết định thu hồi đất hoặc chưa được phép chuyển mục đích sử dụng đất thì cơ quan có thẩm quyền phê duyệt kế hoạch sử dụng đất phải điều chỉnh, hủy bỏ và công bố (Điều 49 khoản 3).",
+  "gold": [{"source_id": "ldd2013", "page": 24, "evidence": "mà sau 03 năm chưa có quyết định thu hồi đất hoặc chưa được phép chuyển mục đích sử dụng đất thì cơ quan nhà nước có thẩm quyền phê duyệt kế hoạch sử dụng đất phải điều chỉnh, hủy bỏ"}],
+  "filter": {"year": 2013}
+ },
+ {
+  "id": "t02", "split": "test", "type": "dien_dat_lai",
+  "question": "Nhà tôi nằm trong diện thu hồi theo kế hoạch sử dụng đất hằng năm của huyện nhưng mãi chưa có quyết định thu hồi; theo Luật Đất đai 2024, sau bao lâu thì phần đất đó phải được xem xét điều chỉnh hoặc hủy bỏ?",
+  "expected_answer": "Sau 02 năm liên tục được xác định trong kế hoạch sử dụng đất hằng năm cấp huyện mà chưa có quyết định thu hồi đất hoặc chưa được phép chuyển mục đích; nếu không điều chỉnh, hủy bỏ hoặc không công bố công khai thì người sử dụng đất không bị hạn chế quyền (Điều 76 khoản 7).",
+  "gold": [{"source_id": "ldd2024_cb363", "page": 69, "evidence": "mà sau 02 năm liên tục được xác định trong kế hoạch sử dụng đất hằng năm cấp huyện chưa có quyết định thu hồi đất hoặc chưa được phép chuyển mục đích sử dụng đất"}],
+  "filter": {"year": 2024}
+ },
+ {
+  "id": "t03", "split": "test", "type": "dieu_kien_ngoai_le",
+  "question": "Một cá nhân muốn thuê 1 ha đất nông nghiệp để mở khu thương mại, dịch vụ thì cơ quan nào quyết định cho thuê và cần thêm điều kiện gì?",
+  "expected_answer": "Ủy ban nhân dân cấp huyện quyết định, nhưng vì diện tích từ 0,5 ha trở lên nên phải có văn bản chấp thuận của Ủy ban nhân dân cấp tỉnh trước khi quyết định (Luật 2013 Điều 59 khoản 2 điểm a; Luật 2024 Điều 123 khoản 2 điểm a).",
+  "gold": [
+   {"source_id": "ldd2013", "page": 29, "evidence": "Ủy ban nhân dân cấp huyện quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất trong các trường hợp sau đây: a) Giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất đối với hộ gia đình, cá nhân. Trường hợp cho hộ gia đình, cá nhân thuê đất, cho phép chuyển mục đích sử dụng đất nông nghiệp để sử dụng vào mục đích thương mại, dịch vụ với diện tích từ 0,5 héc ta trở lên thì phải có văn bản chấp thuận của Ủy ban nhân dân cấp tỉnh trước khi quyết định"},
+   {"source_id": "ldd2024_cb365", "page": 28, "evidence": "Ủy ban nhân dân cấp huyện quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất trong các trường hợp sau đây: a) Giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất đối với cá nhân. Trường hợp cho cá nhân thuê đất, cho phép chuyển mục đích sử dụng đất nông nghiệp để sử dụng vào mục đích thương mại, dịch vụ với diện tích từ 0,5 ha trở lên thì phải có văn bản chấp thuận của Ủy ban nhân dân cấp tỉnh trước khi quyết định"}
+  ],
+  "filter": null
+ },
+ {
+  "id": "t04", "split": "test", "type": "dieu_kien_ngoai_le",
+  "question": "Theo Luật Đất đai 2024, muốn định giá đất bằng phương pháp so sánh thì cần tối thiểu bao nhiêu thửa đất tương đồng đã giao dịch?",
+  "expected_answer": "Tối thiểu 03 thửa đất có cùng mục đích sử dụng, tương đồng nhất định về các yếu tố ảnh hưởng đến giá đất, đã chuyển nhượng trên thị trường hoặc trúng đấu giá mà người trúng đấu giá đã hoàn thành nghĩa vụ tài chính (Điều 158 khoản 6 điểm a).",
+  "gold": [{"source_id": "ldd2024_cb365", "page": 83, "evidence": "Phương pháp so sánh được áp dụng để định giá đối với trường hợp có tối thiểu 03 thửa đất có cùng mục đích sử dụng đất"}],
+  "filter": {"year": 2024}
+ },
+ {
+  "id": "t05", "split": "test", "type": "dien_dat_lai",
+  "question": "Doanh nghiệp được Nhà nước cho thuê đất chuyên trồng lúa để xây nhà xưởng thì ngoài tiền thuê đất có phải nộp thêm khoản tiền nào không?",
+  "expected_answer": "Có: phải nộp một khoản tiền để Nhà nước bổ sung diện tích đất chuyên trồng lúa bị mất hoặc tăng hiệu quả sử dụng đất trồng lúa (Luật 2013 Điều 134 khoản 3; Luật 2024 Điều 182 khoản 4 điểm b, trừ dự án sử dụng vốn đầu tư công hoặc vốn nhà nước ngoài đầu tư công).",
+  "gold": [
+   {"source_id": "ldd2013", "page": 74, "evidence": "phải nộp một khoản tiền để Nhà nước bổ sung diện tích đất chuyên trồng lúa nước bị mất hoặc tăng hiệu quả sử dụng đất trồng lúa"},
+   {"source_id": "ldd2024_cb367", "page": 9, "evidence": "Nộp một khoản tiền theo quy định của pháp luật để Nhà nước bổ sung diện tích đất chuyên trồng lúa bị mất hoặc tăng hiệu quả sử dụng đất trồng lúa"}
+  ],
+  "filter": null
+ },
+ {
+  "id": "t06", "split": "test", "type": "dien_dat_lai",
+  "question": "Hai cá nhân mua bán một mảnh đất với nhau thì hợp đồng có bắt buộc phải công chứng không?",
+  "expected_answer": "Có: hợp đồng chuyển nhượng quyền sử dụng đất phải được công chứng hoặc chứng thực; chỉ khi một bên hoặc các bên là tổ chức hoạt động kinh doanh bất động sản thì công chứng, chứng thực theo yêu cầu của các bên (Luật 2013 Điều 167 khoản 3 điểm a, b; Luật 2024 Điều 27 khoản 3 điểm a, b).",
+  "gold": [
+   {"source_id": "ldd2013", "page": 91, "evidence": "Hợp đồng chuyển nhượng, tặng cho, thế chấp, góp vốn bằng quyền sử dụng đất, quyền sử dụng đất và tài sản gắn liền với đất phải được công chứng hoặc chứng thực"},
+   {"source_id": "ldd2024_cb363", "page": 22, "evidence": "Hợp đồng chuyển nhượng, tặng cho, thế chấp, góp vốn bằng quyền sử dụng đất, quyền sử dụng đất và tài sản gắn liền với đất phải được công chứng hoặc chứng thực"}
+  ],
+  "filter": null
+ },
+ {
+  "id": "t07", "split": "test", "type": "truc_tiep",
+  "question": "Theo Luật Đất đai 2013, việc chuyển nhượng quyền sử dụng đất có hiệu lực từ thời điểm nào?",
+  "expected_answer": "Phải đăng ký tại cơ quan đăng ký đất đai và có hiệu lực kể từ thời điểm đăng ký vào Sổ địa chính (Điều 188 khoản 3).",
+  "gold": [{"source_id": "ldd2013", "page": 106, "evidence": "phải đăng ký tại cơ quan đăng ký đất đai và có hiệu lực kể từ thời điểm đăng ký vào Sổ địa chính"}],
+  "filter": {"year": 2013}
+ },
+ {
+  "id": "t08", "split": "test", "type": "truc_tiep",
+  "question": "Theo Luật Đất đai 2024, đất ở có được sử dụng kết hợp để kinh doanh thương mại, dịch vụ không?",
+  "expected_answer": "Có: đất ở được sử dụng kết hợp với mục đích nông nghiệp, thương mại, dịch vụ, công trình sự nghiệp có mục đích kinh doanh (Điều 218 khoản 1 điểm d).",
+  "gold": [{"source_id": "ldd2024_cb367", "page": 32, "evidence": "Đất ở được sử dụng kết hợp với mục đích nông nghiệp, thương mại, dịch vụ, công trình sự nghiệp có mục đích kinh doanh"}],
+  "filter": {"year": 2024}
+ },
+ {
+  "id": "t09", "split": "test", "type": "dieu_kien_ngoai_le",
+  "question": "Theo Luật Đất đai 2024, cá nhân chuyển đổi đất nông nghiệp cho người khác thì được làm trong phạm vi nào, và có phải nộp thuế thu nhập không?",
+  "expected_answer": "Chỉ được chuyển đổi trong cùng đơn vị hành chính cấp tỉnh cho cá nhân khác, và không phải nộp thuế thu nhập từ việc chuyển đổi quyền sử dụng đất và lệ phí trước bạ (Điều 47).",
+  "gold": [{"source_id": "ldd2024_cb363", "page": 44, "evidence": "chỉ được chuyển đổi quyền sử dụng đất nông nghiệp trong cùng đơn vị hành chính cấp tỉnh cho cá nhân khác và không phải nộp thuế thu nhập từ việc chuyển đổi quyền sử dụng đất và lệ phí trước bạ"}],
+  "filter": {"year": 2024}
+ },
+ {
+  "id": "t10", "split": "test", "type": "dien_dat_lai",
+  "question": "Theo Luật Đất đai 2024, người dân thuê đất nông nghiệp công ích của xã để trồng trọt thì mỗi lần được thuê tối đa bao lâu?",
+  "expected_answer": "Không quá 10 năm mỗi lần thuê, cho thuê theo hình thức đấu giá (Điều 179 khoản 3).",
+  "gold": [{"source_id": "ldd2024_cb367", "page": 7, "evidence": "Thời hạn sử dụng đất đối với mỗi lần thuê không quá 10 năm"}],
+  "filter": {"year": 2024}
+ },
+ {
+  "id": "tu01", "split": "test", "type": "thieu_bang_chung",
+  "question": "Theo bảng giá đất áp dụng từ năm 2026, giá đất ở mặt tiền đường Nguyễn Huệ, Quận 1, Thành phố Hồ Chí Minh là bao nhiêu một mét vuông?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "The 2024 law sets who issues land price tables and when they apply (Điều 159), but each provincial People's Council issues its own table; the corpus contains no table and names no street, district or city.",
+  "absence_check": [{"term": "Nguyễn Huệ", "matches": 0}, {"term": "Hồ Chí Minh", "matches": 0}, {"term": "Quận 1", "matches": 0}, {"term": "mét vuông", "matches": 0}]
+ },
+ {
+  "id": "tu02", "split": "test", "type": "thieu_bang_chung",
+  "question": "Khi sang tên sổ đỏ sau khi mua đất, người mua phải nộp lệ phí trước bạ bao nhiêu phần trăm?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "'Lệ phí trước bạ' appears only twice, both as an exemption for swapping farmland (Luật 2013 Điều 190; Luật 2024 Điều 47); the rate is set by fee regulations outside the corpus. None of the 10 chunks with '%' is about a fee or tax rate (foreign-owned firms, the 20% price-frame trigger, the 5% public-use fund, the 50% bank-ownership rule).",
+  "absence_check": [{"term": "trước bạ", "matches": 2}, {"term": "thuế suất", "matches": 0}, {"term": "%", "matches": 10}]
+ },
+ {
+  "id": "tu03", "split": "test", "type": "thieu_bang_chung",
+  "question": "Người bán đất phải nộp thuế thu nhập cá nhân theo thuế suất bao nhiêu phần trăm?",
+  "answerable": false, "expected_behavior": "search_and_abstain", "filter": null,
+  "absence_reason": "The corpus lists income tax from land transfers as a budget revenue and, in Luật 2024 Điều 247, changes only the taxable-income basis (the price in the land price table); the rate is in the Personal Income Tax Law, outside the corpus. A correct answer may give that basis but must not state a rate.",
+  "absence_check": [{"term": "thuế suất", "matches": 0}, {"term": "thuế thu nhập", "matches": 6}]
+ }
+]

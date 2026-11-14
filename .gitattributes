@@ -1,0 +1,2 @@
+# Keep the export byte-for-byte, so its SHA-256 in export_info.json holds on every OS
+data/day6/chunks.json -text

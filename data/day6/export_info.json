@@ -1,0 +1,28 @@
+{
+  "strategy": "B",
+  "rows": 1264,
+  "embedding_model": "intfloat/multilingual-e5-base",
+  "embedding_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+  "dimensions": 768,
+  "postgres": "PostgreSQL 16.16 (Debian 16.16-1.pgdg12+1) on x86_64-pc-linux-gnu",
+  "pgvector": "0.8.7",
+  "day6_repo": "https://github.com/TheDLCrimson/K5-L3B-DAY06-2A202603923-DataIngestion",
+  "day6_commit": "5b5acdc5af86fcd65eac08f3d677eefbeac30c13",
+  "query_prefix": "query: ",
+  "passage_prefix": "passage: ",
+  "chunks": 1264,
+  "sources": [
+    "ldd2013",
+    "ldd2024_cb363",
+    "ldd2024_cb365",
+    "ldd2024_cb367"
+  ],
+  "spanning_a_page_break": 237,
+  "reembed_check": {
+    "chunk_id": "B-ldd2024_cb363-0181",
+    "cosine_to_stored": 1.0
+  },
+  "cross_checked_against_day6_B_jsonl": 1264,
+  "sha256": "4e4b4c576e8f3eef858122c883efbbb364ec3c0270aa9c4e59fd755e8c30b9fd",
+  "exported_at": "2026-11-14T09:34:41+00:00"
+}
