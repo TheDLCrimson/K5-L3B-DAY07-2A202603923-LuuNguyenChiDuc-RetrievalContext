@@ -1,0 +1,139 @@
+[
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "03 years, Điều 49 k3; the k2 note is in 0088.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "02 consecutive years and the no-restriction rule, Điều 76 k7.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true,
+   true,
+   false,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "District decides, provincial approval at 0.5 ha or more, both laws. 0415 (Điều 193) is cited as requiring approval for individuals; the chunk says the approval is for economic organisations.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "At least 03 comparable plots, Điều 158 k6a.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Yes, the rice-land payment in both laws, with the 2024 public-investment exception.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Must be notarised or certified (công chứng hoặc chứng thực), both laws, with the real-estate-business exception.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t07",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Takes effect when registered in the Sổ địa chính, Điều 188 k3.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t08",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Yes, Điều 218 k1d, plus the approved-plan requirement (k4).",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t09",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Within one province, to another individual, no income tax or registration fee, Điều 47.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t10",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "At most 10 years per lease, by auction, Điều 179 k3.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu01",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the price; says the provincial table sets it; every cited chunk states what it is cited for.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu02",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the rate; cited clauses are accurate.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu03",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the rate and gives the taxable-income basis (Điều 247); its pointer to Điều 15 of the PIT law is outside knowledge but states no rate.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ }
+]

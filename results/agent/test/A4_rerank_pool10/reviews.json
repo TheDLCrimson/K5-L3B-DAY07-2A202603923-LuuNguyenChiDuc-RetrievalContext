@@ -1,0 +1,147 @@
+[
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "03 years, Điều 49 k3.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "02 consecutive years, Điều 76 k7; the k8 sentence is in 0202.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "District decides, provincial approval at 0.5 ha or more, both laws; the Điều 122 and 52 additions are stated in 0078 and 0093.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "At least 03 comparable plots, Điều 158 k6a.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Yes, the rice-land payment in both laws, with the 2024 exception; the land-use-change payment sentences are supported by 0229, 0243 and 0076.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Must be notarised or certified, both laws, with the exception.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t07",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "answer_grade": 0,
+  "reason": "Answers when a user may exercise the right (Điều 168) instead of when the transfer takes effect, and says the chunks do not state it; Điều 188 k3 (0408) never reached its context.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t08",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Yes, Điều 218 k1d, plus k4.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t09",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 2,
+  "reason": "Within one province, no income tax or registration fee, Điều 47.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "t10",
+  "citation_support": [
+   true,
+   true
+  ],
+  "answer_grade": 0,
+  "reason": "False abstention: it quotes Điều 179 k3 ('mỗi lần thuê không quá 10 năm') from its context and still refuses, because the clause says sản xuất nông nghiệp rather than trồng trọt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu01",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the price; correct related clauses.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu02",
+  "citation_support": [
+   false,
+   true,
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": false,
+  "reason": "Refuses the rate but says Điều 190 (2013) exempts agricultural transfers (chuyển nhượng) within a commune from the fee; the clause is about swaps (chuyển đổi), so it adds an unsupported claim.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ },
+ {
+  "query_id": "tu03",
+  "citation_support": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "abstention_correct": true,
+  "reason": "Refuses the rate; gives the basis and the swap exemption correctly.",
+  "labelled_by": "drafted with AI assistance by reading each answer against every chunk in its context; checked by the author"
+ }
+]

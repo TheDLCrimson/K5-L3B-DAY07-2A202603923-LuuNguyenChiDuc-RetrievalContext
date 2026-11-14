@@ -1,27 +1,27 @@
 query_id,config,answerable,answer_grade,context_grade,abstention_correct,citation_support,note
-t01,A0_dense,y,,,,B-ldd2013-0088=,
-t01,A4_rerank_pool10,y,,,,B-ldd2013-0088=,
-t02,A0_dense,y,,,,B-ldd2024_cb363-0201=,
-t02,A4_rerank_pool10,y,,,,B-ldd2024_cb363-0201=; B-ldd2024_cb363-0202=,
-t03,A0_dense,y,,,,B-ldd2013-0104=; B-ldd2024_cb365-0081=; B-ldd2013-0415=; B-ldd2024_cb365-0075=; B-ldd2013-0100=,
-t03,A4_rerank_pool10,y,,,,B-ldd2024_cb365-0081=; B-ldd2013-0104=; B-ldd2024_cb365-0075=; B-ldd2024_cb365-0078=; B-ldd2013-0093=,
-t04,A0_dense,y,,,,B-ldd2024_cb365-0255=; B-ldd2024_cb365-0252=,
-t04,A4_rerank_pool10,y,,,,B-ldd2024_cb365-0255=; B-ldd2024_cb365-0252=,
-t05,A0_dense,y,,,,B-ldd2013-0280=; B-ldd2024_cb367-0029=,
-t05,A4_rerank_pool10,y,,,,B-ldd2013-0280=; B-ldd2013-0229=; B-ldd2024_cb367-0029=; B-ldd2024_cb365-0243=; B-ldd2024_cb365-0076=,
-t06,A0_dense,y,,,,B-ldd2024_cb363-0058=; B-ldd2013-0350=; B-ldd2013-0351=,
-t06,A4_rerank_pool10,y,,,,B-ldd2013-0350=; B-ldd2024_cb363-0058=; B-ldd2024_cb363-0059=,
-t07,A0_dense,y,,,,B-ldd2013-0408=; B-ldd2013-0407=; B-ldd2013-0352=,
-t07,A4_rerank_pool10,y,,,,B-ldd2013-0352=; B-ldd2013-0407=; B-ldd2013-0416=,
-t08,A0_dense,y,,,,B-ldd2024_cb367-0115=; B-ldd2024_cb367-0117=,
-t08,A4_rerank_pool10,y,,,,B-ldd2024_cb367-0115=; B-ldd2024_cb367-0117=,
-t09,A0_dense,y,,,,B-ldd2024_cb363-0128=; B-ldd2024_cb367-0013=; B-ldd2024_cb367-0194=,
-t09,A4_rerank_pool10,y,,,,B-ldd2024_cb363-0128=; B-ldd2024_cb363-0088=,
-t10,A0_dense,y,,,,B-ldd2024_cb367-0018=; B-ldd2024_cb365-0081=,
-t10,A4_rerank_pool10,y,,,,B-ldd2024_cb367-0018=; B-ldd2024_cb365-0081=,
-tu01,A0_dense,n,,,,B-ldd2024_cb365-0260=; B-ldd2024_cb365-0259=; B-ldd2024_cb367-0223=,
-tu01,A4_rerank_pool10,n,,,,B-ldd2024_cb365-0260=; B-ldd2024_cb365-0258=; B-ldd2024_cb367-0223=,
-tu02,A0_dense,n,,,,B-ldd2024_cb363-0121=; B-ldd2013-0408=; B-ldd2024_cb365-0182=,
-tu02,A4_rerank_pool10,n,,,,B-ldd2013-0411=; B-ldd2024_cb363-0128=; B-ldd2013-0227=; B-ldd2024_cb365-0236=; B-ldd2024_cb365-0258=,
-tu03,A0_dense,n,,,,B-ldd2024_cb367-0194=; B-ldd2013-0411=; B-ldd2024_cb363-0128=,
-tu03,A4_rerank_pool10,n,,,,B-ldd2024_cb365-0236=; B-ldd2013-0227=; B-ldd2024_cb367-0194=; B-ldd2024_cb365-0258=; B-ldd2013-0411=; B-ldd2024_cb363-0128=,
+t01,A0_dense,y,2,2,,B-ldd2013-0088=y,"03 years, Điều 49 k3; the k2 note is in 0088."
+t01,A4_rerank_pool10,y,2,2,,B-ldd2013-0088=y,"03 years, Điều 49 k3."
+t02,A0_dense,y,2,2,,B-ldd2024_cb363-0201=y,"02 consecutive years and the no-restriction rule, Điều 76 k7."
+t02,A4_rerank_pool10,y,2,2,,B-ldd2024_cb363-0201=y; B-ldd2024_cb363-0202=y,"02 consecutive years, Điều 76 k7; the k8 sentence is in 0202."
+t03,A0_dense,y,2,2,,B-ldd2013-0104=y; B-ldd2024_cb365-0081=y; B-ldd2013-0415=n; B-ldd2024_cb365-0075=y; B-ldd2013-0100=y,"District decides, provincial approval at 0.5 ha or more, both laws. 0415 (Điều 193) is cited as requiring approval for individuals; the chunk says the approval is for economic organisations."
+t03,A4_rerank_pool10,y,2,2,,B-ldd2024_cb365-0081=y; B-ldd2013-0104=y; B-ldd2024_cb365-0075=y; B-ldd2024_cb365-0078=y; B-ldd2013-0093=y,"District decides, provincial approval at 0.5 ha or more, both laws; the Điều 122 and 52 additions are stated in 0078 and 0093."
+t04,A0_dense,y,2,2,,B-ldd2024_cb365-0255=y; B-ldd2024_cb365-0252=y,"At least 03 comparable plots, Điều 158 k6a."
+t04,A4_rerank_pool10,y,2,2,,B-ldd2024_cb365-0255=y; B-ldd2024_cb365-0252=y,"At least 03 comparable plots, Điều 158 k6a."
+t05,A0_dense,y,2,2,,B-ldd2013-0280=y; B-ldd2024_cb367-0029=y,"Yes, the rice-land payment in both laws, with the 2024 public-investment exception."
+t05,A4_rerank_pool10,y,2,2,,B-ldd2013-0280=y; B-ldd2013-0229=y; B-ldd2024_cb367-0029=y; B-ldd2024_cb365-0243=y; B-ldd2024_cb365-0076=y,"Yes, the rice-land payment in both laws, with the 2024 exception; the land-use-change payment sentences are supported by 0229, 0243 and 0076."
+t06,A0_dense,y,2,2,,B-ldd2024_cb363-0058=y; B-ldd2013-0350=y; B-ldd2013-0351=y,"Must be notarised or certified (công chứng hoặc chứng thực), both laws, with the real-estate-business exception."
+t06,A4_rerank_pool10,y,2,2,,B-ldd2013-0350=y; B-ldd2024_cb363-0058=y; B-ldd2024_cb363-0059=y,"Must be notarised or certified, both laws, with the exception."
+t07,A0_dense,y,2,2,,B-ldd2013-0408=y; B-ldd2013-0407=y; B-ldd2013-0352=y,"Takes effect when registered in the Sổ địa chính, Điều 188 k3."
+t07,A4_rerank_pool10,y,0,0,,B-ldd2013-0352=y; B-ldd2013-0407=y; B-ldd2013-0416=y,"Answers when a user may exercise the right (Điều 168) instead of when the transfer takes effect, and says the chunks do not state it; Điều 188 k3 (0408) never reached its context."
+t08,A0_dense,y,2,2,,B-ldd2024_cb367-0115=y; B-ldd2024_cb367-0117=y,"Yes, Điều 218 k1d, plus the approved-plan requirement (k4)."
+t08,A4_rerank_pool10,y,2,2,,B-ldd2024_cb367-0115=y; B-ldd2024_cb367-0117=y,"Yes, Điều 218 k1d, plus k4."
+t09,A0_dense,y,2,2,,B-ldd2024_cb363-0128=y; B-ldd2024_cb367-0013=y; B-ldd2024_cb367-0194=y,"Within one province, to another individual, no income tax or registration fee, Điều 47."
+t09,A4_rerank_pool10,y,2,2,,B-ldd2024_cb363-0128=y; B-ldd2024_cb363-0088=y,"Within one province, no income tax or registration fee, Điều 47."
+t10,A0_dense,y,2,2,,B-ldd2024_cb367-0018=y; B-ldd2024_cb365-0081=y,"At most 10 years per lease, by auction, Điều 179 k3."
+t10,A4_rerank_pool10,y,0,2,,B-ldd2024_cb367-0018=y; B-ldd2024_cb365-0081=y,"False abstention: it quotes Điều 179 k3 ('mỗi lần thuê không quá 10 năm') from its context and still refuses, because the clause says sản xuất nông nghiệp rather than trồng trọt."
+tu01,A0_dense,n,,,y,B-ldd2024_cb365-0260=y; B-ldd2024_cb365-0259=y; B-ldd2024_cb367-0223=y,Refuses the price; says the provincial table sets it; every cited chunk states what it is cited for.
+tu01,A4_rerank_pool10,n,,,y,B-ldd2024_cb365-0260=y; B-ldd2024_cb365-0258=y; B-ldd2024_cb367-0223=y,Refuses the price; correct related clauses.
+tu02,A0_dense,n,,,y,B-ldd2024_cb363-0121=y; B-ldd2013-0408=y; B-ldd2024_cb365-0182=y,Refuses the rate; cited clauses are accurate.
+tu02,A4_rerank_pool10,n,,,n,B-ldd2013-0411=n; B-ldd2024_cb363-0128=y; B-ldd2013-0227=y; B-ldd2024_cb365-0236=y; B-ldd2024_cb365-0258=y,"Refuses the rate but says Điều 190 (2013) exempts agricultural transfers (chuyển nhượng) within a commune from the fee; the clause is about swaps (chuyển đổi), so it adds an unsupported claim."
+tu03,A0_dense,n,,,y,B-ldd2024_cb367-0194=y; B-ldd2013-0411=y; B-ldd2024_cb363-0128=y,Refuses the rate and gives the taxable-income basis (Điều 247); its pointer to Điều 15 of the PIT law is outside knowledge but states no rate.
+tu03,A4_rerank_pool10,n,,,y,B-ldd2024_cb365-0236=y; B-ldd2013-0227=y; B-ldd2024_cb367-0194=y; B-ldd2024_cb365-0258=y; B-ldd2013-0411=y; B-ldd2024_cb363-0128=y,Refuses the rate; gives the basis and the swap exemption correctly.
