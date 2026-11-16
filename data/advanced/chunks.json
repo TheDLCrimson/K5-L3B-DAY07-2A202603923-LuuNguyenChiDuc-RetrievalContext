@@ -141,10 +141,10 @@
   "page": 9,
   "page_label": "ix",
   "bbox": [
-   76.3,
-   110.0,
-   503.5,
-   699.9
+   74.3,
+   108.0,
+   505.5,
+   703.9
   ],
   "label": null,
   "title": "Danh sách từ viết tắt",
@@ -175,10 +175,10 @@
   "page": 10,
   "page_label": "x",
   "bbox": [
-   76.3,
-   78.7,
-   485.0,
-   436.9
+   74.3,
+   76.7,
+   487.0,
+   440.9
   ],
   "label": null,
   "title": "Danh sách từ viết tắt (tiếp)",
@@ -1095,7 +1095,7 @@
   "bbox": [
    58,
    323.1,
-   554.0,
+   568.5,
    669.9
   ],
   "label": "Hình 7",
@@ -1266,12 +1266,12 @@
    58,
    294.9,
    554.0,
-   522.0
+   574.8
   ],
   "label": "Hình 8",
   "title": "Hình 8: Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực",
   "crop": "crops/CCDR-p030-H8.png",
-  "text": "nước biển dâng cao - thiệt hại GDP\n0\n2\n4\n6\n10\n12\n14\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\nThiệt hại GDP, % độ lệch so với đường cơ sở\nRCP 2.6\nRCP 4.5",
+  "text": "nước biển dâng cao - thiệt hại GDP\n0\n2\n4\n6\n10\n12\n14\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\nThiệt hại GDP, % độ lệch so với đường cơ sở\nRCP 2.6\nRCP 4.5\nNguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\nGhi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.",
   "part": null
  },
  {
@@ -1300,12 +1300,12 @@
    70.9,
    211.7,
    544.3,
-   572.8
+   277.3
   ],
   "label": null,
   "title": null,
   "crop": null,
-  "text": "Mô hình xác suất thảm họa được sử dụng để ước lượng tác động kinh tế liên quan đến các hiện tượng khí hậu cực đoan (bão nhiệt đới).27 Trung bình, Việt Nam gánh chịu thiệt hại trực tiếp về tài sản công và tư khoảng 2,4 tỷ USD hàng năm, tương đương 0,8% GDP do các hiện tượng khí hậu cực đoan. Trong 50 năm tới, Việt Nam có 40% xác suất gánh chịu thiệt hại kinh tế do thảm họa khí hậu ở mức trên 2,4% GDP và 20% xác suất gánh chịu thiệt hại lên đến trên 3% GDP. Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam. Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.",
+  "text": "Mô hình xác suất thảm họa được sử dụng để ước lượng tác động kinh tế liên quan đến các hiện tượng khí hậu cực đoan (bão nhiệt đới).27 Trung bình, Việt Nam gánh chịu thiệt hại trực tiếp về tài sản công và tư khoảng 2,4 tỷ USD hàng năm, tương đương 0,8% GDP do các hiện tượng khí hậu cực đoan. Trong 50 năm tới, Việt Nam có 40% xác suất gánh chịu thiệt hại kinh tế do thảm họa khí hậu ở mức trên 2,4% GDP và 20% xác suất gánh chịu thiệt hại lên đến trên 3% GDP.",
   "part": null
  },
  {
@@ -3388,10 +3388,10 @@
   "page": 57,
   "page_label": "47",
   "bbox": [
-   71.1,
-   71.1,
-   540.9,
-   292.1
+   69.1,
+   69.1,
+   542.9,
+   296.1
   ],
   "label": "Bảng 5",
   "title": "Bảng 5: Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040 (tiếp)",
@@ -4054,12 +4054,12 @@
    58,
    207.1,
    554.0,
-   390.5
+   455.9
   ],
   "label": "Hình 16",
   "title": "Hình 16: Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa",
   "crop": "crops/CCDR-p065-H16.png",
-  "text": "gạo\n500\n400\n300\n200\n100\n0\n-100\n-200\n$/tC02e\nlúa nước\nCửu Long\nbằng song Hồng\nChuyển đổi từ trồng\nlúa sang hoa màu\nQuản lý cây trồng tổng\nhợp (ICM) cho lúa\ntưới tiêu vừa phải\nChuyển từ trồng lúa\nsang ngô\ntưới tiêu hạn chế",
+  "text": "gạo\n500\n400\n300\n200\n100\n0\n-100\n-200\n$/tC02e\nChuyển từ trồng lúa\nsang nuôi tôm\nCải tạo đất trồng lúa\nthường thành đất trồng\nlúa nước\nMô hình tưới lúa ướt khô\nxen kẽ (AWD) ở ĐB sông\nCửu Long\nMô hình AWD ở Đồng\nbằng song Hồng\nChuyển đổi từ trồng\nlúa sang hoa màu\nCải thiện quản lý rơm rạ\nQuản lý cây trồng tổng\nhợp (ICM) cho lúa\nMô hình AWD và Hệ thống\nSRI/1M5R ở khu trồng lúa\ntưới tiêu vừa phải\nChuyển từ trồng lúa\nsang ngô\nMô hình AWD và Hệ thống\nSRI/1M5R ở khu trồng lúa\ntưới tiêu hạn chế",
   "part": null
  },
  {
@@ -4088,29 +4088,12 @@
    70.9,
    70.9,
    544.3,
-   442.3
+   189.5
   ],
   "label": null,
   "title": null,
   "crop": null,
-  "text": "nông dân thì những biện pháp giảm phát thải trong ngành mới không có nguy cơ thất bại về trung hạn. Chiến lược khử carbon NZP cho ngành nông nghiệp được thực hiện dựa trên ba biện pháp chính: (i) giảm 14% mức sử dụng phân bón và thuốc trừ sâu để giảm cường độ phát thải trong trồng trọt; (ii) thay đổi thức ăn gia súc, cải thiện sức khỏe đàn gia súc và tập quán chăn nuôi để đạt được mức giảm phát thải 14% trên một đơn vị trong chăn nuôi; và (iii) tăng 50% trợ cấp cho các dịch vụ lâm nghiệp (so với BAU) để kích thích tái trồng rừng và tăng lượng hấp thụ carbon. Để thực hiện được các biện pháp này, Việt Nam cần huy động đầu tư mới đáng kể từ cả khu vực tư nhân và khu vực nhà nước, ước tính khoảng 15,6 tỷ USD trong giai đoạn 2022–2040. Chuyển từ trồng lúa sang nuôi tôm Cải tạo đất trồng lúa thường thành đất trồng Mô hình tưới lúa ướt khô xen kẽ (AWD) ở ĐB sông Mô hình AWD ở Đồng Cải thiện quản lý rơm rạ Mô hình AWD và Hệ thống SRI/1M5R ở khu trồng lúa Mô hình AWD và Hệ thống",
-  "part": null
- },
- {
-  "id": "CCDR-p065-t02",
-  "kind": "text",
-  "page": 65,
-  "page_label": "55",
-  "bbox": [
-   307.8,
-   354.2,
-   436.9,
-   453.9
-  ],
-  "label": null,
-  "title": null,
-  "crop": null,
-  "text": "SRI/1M5R ở khu trồng lúa Các biện pháp",
+  "text": "nông dân thì những biện pháp giảm phát thải trong ngành mới không có nguy cơ thất bại về trung hạn. Chiến lược khử carbon NZP cho ngành nông nghiệp được thực hiện dựa trên ba biện pháp chính: (i) giảm 14% mức sử dụng phân bón và thuốc trừ sâu để giảm cường độ phát thải trong trồng trọt; (ii) thay đổi thức ăn gia súc, cải thiện sức khỏe đàn gia súc và tập quán chăn nuôi để đạt được mức giảm phát thải 14% trên một đơn vị trong chăn nuôi; và (iii) tăng 50% trợ cấp cho các dịch vụ lâm nghiệp (so với BAU) để kích thích tái trồng rừng và tăng lượng hấp thụ carbon. Để thực hiện được các biện pháp này, Việt Nam cần huy động đầu tư mới đáng kể từ cả khu vực tư nhân và khu vực nhà nước, ước tính khoảng 15,6 tỷ USD trong giai đoạn 2022–2040.",
   "part": null
  },
  {
@@ -5921,10 +5904,10 @@
   "page": 91,
   "page_label": "81",
   "bbox": [
-   71.1,
-   101.6,
-   560.0,
-   707.0
+   69.1,
+   99.6,
+   562.0,
+   711.0
   ],
   "label": null,
   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam",
@@ -5938,10 +5921,10 @@
   "page": 91,
   "page_label": "81",
   "bbox": [
-   71.1,
-   101.6,
-   560.0,
-   707.0
+   69.1,
+   99.6,
+   562.0,
+   711.0
   ],
   "label": null,
   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam",
@@ -5972,10 +5955,10 @@
   "page": 92,
   "page_label": "82",
   "bbox": [
-   71.1,
-   71.1,
-   560.0,
-   608.7
+   69.1,
+   69.1,
+   562.0,
+   612.7
   ],
   "label": null,
   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam (tiếp)",
@@ -5989,10 +5972,10 @@
   "page": 92,
   "page_label": "82",
   "bbox": [
-   71.1,
-   71.1,
-   560.0,
-   608.7
+   69.1,
+   69.1,
+   562.0,
+   612.7
   ],
   "label": null,
   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam (tiếp)",
@@ -6057,10 +6040,10 @@
   "page": 94,
   "page_label": "84",
   "bbox": [
-   71.1,
-   154.5,
-   538.6,
-   604.2
+   69.1,
+   152.5,
+   540.6,
+   608.2
   ],
   "label": null,
   "title": "A. Các kịch bản khí hậu toàn cầu và ước tính thiệt hại bằng CGE",
@@ -6074,10 +6057,10 @@
   "page": 94,
   "page_label": "84",
   "bbox": [
-   71.1,
-   154.5,
-   538.6,
-   604.2
+   69.1,
+   152.5,
+   540.6,
+   608.2
   ],
   "label": null,
   "title": "A. Các kịch bản khí hậu toàn cầu và ước tính thiệt hại bằng CGE",
@@ -6108,10 +6091,10 @@
   "page": 95,
   "page_label": "85",
   "bbox": [
-   73.1,
-   118.2,
-   543.1,
-   667.8
+   71.1,
+   116.2,
+   545.1,
+   671.8
   ],
   "label": null,
   "title": "Những thiệt hại chính và kết quả kinh tế vĩ mô từ mô hình CGE",
@@ -6125,10 +6108,10 @@
   "page": 95,
   "page_label": "85",
   "bbox": [
-   73.1,
-   118.2,
-   543.1,
-   667.8
+   71.1,
+   116.2,
+   545.1,
+   671.8
   ],
   "label": null,
   "title": "Những thiệt hại chính và kết quả kinh tế vĩ mô từ mô hình CGE",
@@ -6142,10 +6125,10 @@
   "page": 95,
   "page_label": "85",
   "bbox": [
-   73.1,
-   118.2,
-   543.1,
-   667.8
+   71.1,
+   116.2,
+   545.1,
+   671.8
   ],
   "label": null,
   "title": "Những thiệt hại chính và kết quả kinh tế vĩ mô từ mô hình CGE",
@@ -6227,10 +6210,10 @@
   "page": 97,
   "page_label": "87",
   "bbox": [
-   72.6,
-   99.2,
-   542.6,
-   669.5
+   70.6,
+   97.2,
+   544.6,
+   673.5
   ],
   "label": null,
   "title": "Các kết quả chính về phát thải và kinh tế vĩ mô từ CGE",
@@ -6244,10 +6227,10 @@
   "page": 97,
   "page_label": "87",
   "bbox": [
-   72.6,
-   99.2,
-   542.6,
-   669.5
+   70.6,
+   97.2,
+   544.6,
+   673.5
   ],
   "label": null,
   "title": "Các kết quả chính về phát thải và kinh tế vĩ mô từ CGE",
@@ -6278,10 +6261,10 @@
   "page": 98,
   "page_label": "88",
   "bbox": [
-   71.1,
-   479.1,
-   403.6,
-   607.5
+   69.1,
+   477.1,
+   405.6,
+   611.5
   ],
   "label": null,
   "title": "Bảng không có tiêu đề",
@@ -6397,10 +6380,10 @@
   "page": 100,
   "page_label": "90",
   "bbox": [
-   71.1,
-   100.6,
-   539.8,
-   724.3
+   69.1,
+   98.6,
+   541.8,
+   728.3
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên",
@@ -6414,10 +6397,10 @@
   "page": 100,
   "page_label": "90",
   "bbox": [
-   71.1,
-   100.6,
-   539.8,
-   724.3
+   69.1,
+   98.6,
+   541.8,
+   728.3
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên",
@@ -6448,10 +6431,10 @@
   "page": 101,
   "page_label": "91",
   "bbox": [
-   71.1,
-   70.1,
-   539.8,
-   705.3
+   69.1,
+   68.1,
+   541.8,
+   709.3
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
@@ -6465,10 +6448,10 @@
   "page": 101,
   "page_label": "91",
   "bbox": [
-   71.1,
-   70.1,
-   539.8,
-   705.3
+   69.1,
+   68.1,
+   541.8,
+   709.3
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
@@ -6482,10 +6465,10 @@
   "page": 101,
   "page_label": "91",
   "bbox": [
-   71.1,
-   70.1,
-   539.8,
-   705.3
+   69.1,
+   68.1,
+   541.8,
+   709.3
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
@@ -6499,10 +6482,10 @@
   "page": 102,
   "page_label": "92",
   "bbox": [
-   71.1,
-   70.1,
-   539.8,
-   641.7
+   69.1,
+   68.1,
+   541.8,
+   645.7
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
@@ -6516,10 +6499,10 @@
   "page": 102,
   "page_label": "92",
   "bbox": [
-   71.1,
-   70.1,
-   539.8,
-   641.7
+   69.1,
+   68.1,
+   541.8,
+   645.7
   ],
   "label": null,
   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",

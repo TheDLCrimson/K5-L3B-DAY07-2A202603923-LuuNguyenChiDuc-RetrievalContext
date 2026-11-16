@@ -1,0 +1,1377 @@
+[
+ {
+  "id": "ad-d01",
+  "split": "dev",
+  "group": "bang",
+  "tags": [
+   "so sánh"
+  ],
+  "answerable": true,
+  "question": "Trong Bảng 1 (so sánh phát thải giữa các nước), nước nào có phát thải carbon trên mỗi triệu USD GDP cao nhất và giá trị đó là bao nhiêu?",
+  "expected_answer": "Đông Timor, 4.271,0 tCO2e/triệu $GDP (cao hơn Mông Cổ 4.250,9).",
+  "grading": "Đúng nước và giá trị (4.271,0), đúng cột phát thải carbon tCO2e/triệu $GDP. Chọn Mông Cổ là sai.",
+  "evidence": [
+   {
+    "need": "Hàng Đông Timor, cột Phát thải Carbon (tCO2e/triệu $GDP)",
+    "page": 19,
+    "locator": "Bảng 1, hàng Đông Timor, cột 3",
+    "chunk_ids": [
+     "CCDR-p019-B1"
+    ],
+    "value": "4.271,0",
+    "check_text": [
+     "4.271,0",
+     "4.250,9"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tra đúng hàng và cột của một bảng có đơn vị; hai giá trị gần nhau (Mông Cổ 4.250,9) nên phải so sánh cả cột."
+ },
+ {
+  "id": "ad-d02",
+  "split": "dev",
+  "group": "bang",
+  "tags": [
+   "bảng nhiều trang"
+  ],
+  "answerable": true,
+  "question": "Theo Bảng 5, tổng chi phí ròng (sau khi trừ khoản tiết kiệm chi phí nhiên liệu) tăng bao nhiêu tỷ USD và bao nhiêu phần trăm?",
+  "expected_answer": "Tăng 33 tỷ USD, tương ứng +13%.",
+  "grading": "Cả hai giá trị (+33 tỷ USD; +13%) và đúng hàng \"Tổng chi phí ròng\" (không phải \"Tổng chi phí\" +65 / +56%).",
+  "evidence": [
+   {
+    "need": "Hàng Tổng chi phí ròng của Bảng 5, ở phần bảng tiếp trang sau",
+    "page": 57,
+    "locator": "Bảng 5 (tiếp), hàng 11",
+    "chunk_ids": [
+     "CCDR-p057-B5c"
+    ],
+    "value": "+33; +13%",
+    "check_text": [
+     "+33",
+     "+13%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tra một hàng của bảng nằm ở trang tiếp theo của bảng chính (Bảng 5 chạy từ trang 56 sang 57); có hai hàng tổng gần nhau (+65 và +33)."
+ },
+ {
+  "id": "ad-d03",
+  "split": "dev",
+  "group": "bang",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Trong bảng so sánh lượng khí thải ước tính của Việt Nam theo từng nguồn thông tin (Phụ lục 3), nguồn nào cho ước tính thấp nhất và thấp hơn con số của Chính phủ (NDC cập nhật 2020) bao nhiêu triệu tấn CO2?",
+  "expected_answer": "Climate Transparency (2018): 61 triệu tấn CO2; thấp hơn NDC cập nhật (104,5) 43,5 triệu tấn CO2.",
+  "grading": "Đúng nguồn (61) và đúng hiệu 104,5 − 61 = 43,5.",
+  "evidence": [
+   {
+    "need": "Bảng ước tính lượng khí thải theo nguồn",
+    "page": 98,
+    "locator": "Bảng cuối Phụ lục 3 (không có số hiệu), cột 2",
+    "chunk_ids": [
+     "CCDR-p098-bang"
+    ],
+    "value": "61; 104,5",
+    "check_text": [
+     "104,5",
+     "61"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tra hai ô trong bảng không đánh số rồi tính hiệu."
+ },
+ {
+  "id": "ad-d04",
+  "split": "dev",
+  "group": "anh_so_do",
+  "tags": [
+   "sơ đồ"
+  ],
+  "answerable": true,
+  "question": "Mô hình phát triển mới cho Việt Nam trong Hình 1 gồm hai lộ trình nào?",
+  "expected_answer": "Lộ trình xây dựng khả năng chống chịu và Lộ trình khử carbon.",
+  "grading": "Nêu đủ hai lộ trình, đúng tên.",
+  "evidence": [
+   {
+    "need": "Hai mũi tên bên trái và bên phải của sơ đồ Hình 1",
+    "page": 13,
+    "locator": "Hình 1",
+    "chunk_ids": [
+     "CCDR-p013-H1"
+    ],
+    "value": "Lộ trình xây dựng khả năng chống chịu; Lộ trình khử carbon",
+    "check_text": [
+     "Lộ trình",
+     "khử carbon"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Sơ đồ khái niệm: hai lộ trình nằm ở hai mũi tên cong hai bên, không phải trong một đoạn văn."
+ },
+ {
+  "id": "ad-d05",
+  "split": "dev",
+  "group": "anh_so_do",
+  "tags": [
+   "đếm",
+   "sơ đồ"
+  ],
+  "answerable": true,
+  "question": "Trong sơ đồ Hình 1, danh sách các hành động ở giữa có mấy mục và mục thứ tư là gì?",
+  "expected_answer": "Có 5 mục; mục thứ tư là \"Định giá carbon\".",
+  "grading": "Đúng số mục (5) và đúng mục thứ tư (Định giá carbon).",
+  "evidence": [
+   {
+    "need": "Danh sách gạch đầu dòng giữa hai khối \"Việt Nam hiện nay\" và \"Việt Nam năm 2045\"",
+    "page": 13,
+    "locator": "Hình 1, danh sách giữa",
+    "chunk_ids": [
+     "CCDR-p013-H1"
+    ],
+    "value": "5 mục; thứ tư: Định giá carbon",
+    "check_text": [
+     "Định giá carbon"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Đếm và đọc thứ tự các mục trong một sơ đồ."
+ },
+ {
+  "id": "ad-d06",
+  "split": "dev",
+  "group": "anh_so_do",
+  "tags": [
+   "sơ đồ"
+  ],
+  "answerable": true,
+  "question": "Theo sơ đồ Hình 21, khu vực nào cần nhiều tài chính nhất trong tổng nhu cầu 2022–2040, cần bao nhiêu tỷ USD và tương đương khoảng bao nhiêu phần trăm GDP mỗi năm?",
+  "expected_answer": "Khu vực tư nhân: 184 tỷ USD, khoảng 3,4% GDP mỗi năm (so với khu vực công 130 tỷ USD, bên ngoài 54 tỷ USD).",
+  "grading": "Đúng khu vực (tư nhân), 184 tỷ USD và ~3,4% GDP/năm.",
+  "evidence": [
+   {
+    "need": "Ba ô nguồn tài chính dưới ô nhu cầu tài chính 368 tỷ USD",
+    "page": 77,
+    "locator": "Hình 21, ô KHU VỰC TƯ NHÂN",
+    "chunk_ids": [
+     "CCDR-p077-H21"
+    ],
+    "value": "184 tỷ USD; ~3,4% GDP mỗi năm",
+    "check_text": [
+     "184 tỷ USD",
+     "3,4%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Sơ đồ cây gồm các ô có số; phải so ba ô con."
+ },
+ {
+  "id": "ad-d07",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "tính toán",
+   "đơn vị"
+  ],
+  "answerable": true,
+  "question": "Cộng tất cả các hạng mục trong Hình 3 thì tổng chi phí ước tính do biến đổi khí hậu năm 2020 là bao nhiêu triệu USD, và hạng mục nào lớn nhất?",
+  "expected_answer": "10.903 triệu USD (4.219 + 2.807 + 1.474 + 837 + 518 + 447 + 235 + 218 + 148); lớn nhất là Thủy sản (4.219 triệu USD).",
+  "grading": "Tổng 10.903 (dung sai ±0 vì các số in rõ) và hạng mục lớn nhất là Thủy sản.",
+  "evidence": [
+   {
+    "need": "Chín ô của biểu đồ treemap, mỗi ô ghi giá trị",
+    "page": 17,
+    "locator": "Hình 3",
+    "chunk_ids": [
+     "CCDR-p017-H3"
+    ],
+    "value": "4219; 2807; 1474; 837; 518; 447; 235; 218; 148",
+    "check_text": [
+     "4219",
+     "2807",
+     "1474",
+     "837",
+     "518",
+     "447",
+     "235",
+     "218",
+     "148"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Biểu đồ treemap: đọc chín giá trị rồi cộng; có đơn vị (triệu USD)."
+ },
+ {
+  "id": "ad-d08",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 6, bao nhiêu phần trăm doanh nghiệp cho biết tác động \"Thiếu nguồn cung nguyên liệu đầu vào\" ở mức \"Hầu như không\"?",
+  "expected_answer": "33%.",
+  "grading": "Đúng 33% và đúng hàng \"Thiếu nguồn cung nguyên liệu đầu vào\", mức \"Hầu như không\" (đoạn xanh đậm).",
+  "evidence": [
+   {
+    "need": "Hàng cuối của biểu đồ cột chồng, đoạn đầu (Hầu như không)",
+    "page": 25,
+    "locator": "Hình 6, hàng Thiếu nguồn cung nguyên liệu đầu vào",
+    "chunk_ids": [
+     "CCDR-p025-H6"
+    ],
+    "value": "33",
+    "check_text": [
+     "33"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Biểu đồ cột chồng 100%: phải khớp hàng, màu chú giải và giá trị."
+ },
+ {
+  "id": "ad-d09",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "đọc trục",
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 8, đến năm 2050 thiệt hại GDP theo kịch bản RCP 4.5 và theo kịch bản RCP 2.6 khoảng bao nhiêu phần trăm?",
+  "expected_answer": "RCP 4.5: khoảng 12,3%; RCP 2.6: khoảng 9,9% (RCP 4.5 cao hơn).",
+  "grading": "Biểu đồ không in số: chấp nhận RCP 4.5 trong 11,8–12,8% và RCP 2.6 trong 9,4–10,4%, đúng kịch bản nào cao hơn.",
+  "evidence": [
+   {
+    "need": "Điểm cuối năm 2050 của hai đường RCP 2.6 (xanh đậm) và RCP 4.5 (cam)",
+    "page": 30,
+    "locator": "Hình 8",
+    "chunk_ids": [
+     "CCDR-p030-H8"
+    ],
+    "value": "RCP 4.5 ≈ 12,3; RCP 2.6 ≈ 9,9 (đọc từ trục)",
+    "check_text": [
+     "RCP 4.5",
+     "RCP 2.6"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Biểu đồ đường hai chuỗi không in số; phải đọc giá trị từ trục và gắn đúng chuỗi theo chú giải."
+ },
+ {
+  "id": "ad-d10",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "đọc trục"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 16, biện pháp giảm phát thải từ sản xuất lúa gạo nào có chi phí (USD/tCO2e) cao nhất và mức đó khoảng bao nhiêu?",
+  "expected_answer": "Chuyển từ trồng lúa sang ngô, khoảng 390 USD/tCO2e.",
+  "grading": "Đúng biện pháp; giá trị chấp nhận trong khoảng 350–420 USD/tCO2e (không in nhãn số, đọc từ trục).",
+  "evidence": [
+   {
+    "need": "Cột cao nhất của biểu đồ cột (cột cuối)",
+    "page": 65,
+    "locator": "Hình 16, cột Chuyển từ trồng lúa sang ngô",
+    "chunk_ids": [
+     "CCDR-p065-H16"
+    ],
+    "value": "~390 $/tCO2e (đọc từ trục)",
+    "check_text": [
+     "sang ngô"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Đọc một giá trị từ trục khi biểu đồ không in số; nhãn trục xoay dọc."
+ },
+ {
+  "id": "ad-d11",
+  "split": "dev",
+  "group": "multi_hop",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Nhu cầu tài chính của khu vực tư nhân giai đoạn 2022–2040 (Hình 21) gấp khoảng bao nhiêu lần dư nợ tín dụng xanh đầu năm 2021 (Hình 22)?",
+  "expected_answer": "184 tỷ USD / 14,5 tỷ USD ≈ 12,7 lần.",
+  "grading": "Đúng hai số (184 và 14,5) và tỷ số 12,6–12,8.",
+  "evidence": [
+   {
+    "need": "Khu vực tư nhân: 184 tỷ USD",
+    "page": 77,
+    "locator": "Hình 21",
+    "chunk_ids": [
+     "CCDR-p077-H21"
+    ],
+    "value": "184",
+    "check_text": [
+     "184 tỷ USD"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "Dư nợ tín dụng xanh 2021:Q1: 14,5 tỷ USD",
+    "page": 78,
+    "locator": "Hình 22, biểu đồ trái, cột 2021:Q1",
+    "chunk_ids": [
+     "CCDR-p078-H22"
+    ],
+    "value": "14,5",
+    "check_text": [
+     "14,5"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Kết hợp một sơ đồ ở trang 77 với một biểu đồ ở trang 78 rồi tính tỷ số."
+ },
+ {
+  "id": "ad-d12",
+  "split": "dev",
+  "group": "multi_hop",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Điện từ than năm 2040 trong kịch bản BAU (Hình 13) gấp khoảng bao nhiêu lần điện từ than năm 2020, tính từ Hình 12?",
+  "expected_answer": "Hình 12: 59% × 200 TWh = 118 TWh năm 2020; Hình 13: 550 TWh (BAU 2040); 550 / 118 ≈ 4,7 lần.",
+  "grading": "Hai giá trị đúng (118 và 550 TWh) và tỷ số 4,6–4,7.",
+  "evidence": [
+   {
+    "need": "Than 59% của 200 TWh năm 2020",
+    "page": 54,
+    "locator": "Hình 12, biểu đồ phải",
+    "chunk_ids": [
+     "CCDR-p054-H12"
+    ],
+    "value": "59%; 200 TWh",
+    "check_text": [
+     "59%",
+     "200 TWh"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "BAU 2040, đoạn Than: 550 TWh",
+    "page": 56,
+    "locator": "Hình 13, cột BAU, đoạn xanh đậm",
+    "chunk_ids": [
+     "CCDR-p056-H13"
+    ],
+    "value": "550",
+    "check_text": [
+     "550"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Kết hợp hai biểu đồ ở hai trang khác nhau (54 và 56) và hai năm."
+ },
+ {
+  "id": "ad-d13",
+  "split": "dev",
+  "group": "text",
+  "tags": [
+   "điều kiện"
+  ],
+  "answerable": true,
+  "question": "Năm 2020, ngành năng lượng chiếm khoảng bao nhiêu phần trăm lượng phát thải GHG của cả nước và ngành nào là ngành phát thải lớn thứ hai?",
+  "expected_answer": "Năng lượng khoảng 65%; nông nghiệp là ngành lớn thứ hai, khoảng 19%.",
+  "grading": "Đúng 65%, nông nghiệp và 19%.",
+  "evidence": [
+   {
+    "need": "Đoạn nêu cơ cấu phát thải năm 2020",
+    "page": 18,
+    "locator": "Đoạn đầu trang 8 in (PDF 18)",
+    "chunk_ids": [
+     "CCDR-p018-t01"
+    ],
+    "value": "65%; nông nghiệp 19%",
+    "check_text": [
+     "65%",
+     "19%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tìm điều kiện (năm 2020) và hai số trong một đoạn văn."
+ },
+ {
+  "id": "ad-d14",
+  "split": "dev",
+  "group": "text",
+  "tags": [
+   "tổng hợp"
+  ],
+  "answerable": true,
+  "question": "Thuế Bảo vệ Môi trường hiện hành tương đương bao nhiêu USD/tCO2e đối với than, xăng và dầu diesel?",
+  "expected_answer": "Khoảng 0,5 USD/tCO2e đối với than, 77,60 USD/tCO2e đối với xăng và 32,90 USD/tấn CO2e đối với dầu diesel.",
+  "grading": "Đủ ba giá trị đúng nhiên liệu.",
+  "evidence": [
+   {
+    "need": "Đoạn về thuế carbon hiện tại (EPT)",
+    "page": 24,
+    "locator": "Đoạn thứ hai của mục 2.1",
+    "chunk_ids": [
+     "CCDR-p024-t02"
+    ],
+    "value": "0,5; 77,60; 32,90",
+    "check_text": [
+     "0,5 USD",
+     "77,60",
+     "32,90"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tổng hợp ba giá trị theo ba loại nhiên liệu."
+ },
+ {
+  "id": "ad-d15",
+  "split": "dev",
+  "group": "text",
+  "tags": [
+   "điều kiện"
+  ],
+  "answerable": true,
+  "question": "Việt Nam xếp hạng bao nhiêu theo Sáng kiến Thích ứng Biến đổi Khí hậu Toàn cầu Notre Dame (ND-GAIN) và theo Chỉ số Rủi ro Khí hậu Toàn cầu Germanwatch giai đoạn 2000–2019?",
+  "expected_answer": "Hạng 127 trong 182 quốc gia (ND-GAIN) và hạng 13 trong 180 quốc gia (Germanwatch).",
+  "grading": "Đúng hai hạng và hai tổng số quốc gia.",
+  "evidence": [
+   {
+    "need": "Đoạn nêu xếp hạng dễ bị tổn thương",
+    "page": 16,
+    "locator": "Mục 1.2",
+    "chunk_ids": [
+     "CCDR-p016-t04"
+    ],
+    "value": "127/182; 13/180",
+    "check_text": [
+     "127 trong số 182",
+     "13 trong số 180"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Hai chỉ số khác nhau trong cùng một đoạn."
+ },
+ {
+  "id": "ad-d16",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Bão Yagi năm 2024 đã gây thiệt hại bao nhiêu phần trăm GDP của Việt Nam?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "yagi",
+    "bão yagi"
+   ],
+   "why": "Báo cáo xuất bản 07/2022, trước cơn bão.",
+   "near_topic_in": "p17: thiệt hại 2020 tương đương 3,2% GDP"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-d17",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Giá điện bán lẻ bình quân hiện nay ở Việt Nam là bao nhiêu đồng mỗi kWh?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "đồng/kwh",
+    "giá điện bán lẻ",
+    "đồng một kwh"
+   ],
+   "why": "Báo cáo chỉ nêu thay đổi tương đối của giá điện (ADS cao hơn CPS 26% năm 2040), không nêu giá tuyệt đối.",
+   "near_topic_in": "p56: giá điện ADS cao hơn CPS 26%"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-d18",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Chi phí đầu tư điện gió ngoài khơi ở Việt Nam là bao nhiêu USD cho mỗi MW?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "usd/mw",
+    "usd mỗi mw"
+   ],
+   "why": "Bảng 5 chỉ nêu thay đổi tổng chi phí vốn (tỷ USD), không có đơn giá theo MW.",
+   "near_topic_in": "p57, Bảng 5: gió ngoài khơi +39 tỷ USD"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t01",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "tính toán",
+   "đơn vị"
+  ],
+  "answerable": true,
+  "question": "Theo Bảng 2, lấy tổng nhu cầu tài chính trừ đi nguồn tài chính hiện có thì chênh lệch là bao nhiêu tỷ USD (giá trị tích lũy NPV)?",
+  "expected_answer": "479,2–547,6 trừ 136,9 = 342,3–410,7 tỷ USD (bằng hàng \"Nhu cầu tài chính tăng thêm\").",
+  "grading": "Đúng khoảng 342,3–410,7 tỷ USD; đơn vị tỷ USD theo NPV.",
+  "evidence": [
+   {
+    "need": "Hàng Tổng nhu cầu tài chính và hàng Nguồn tài chính hiện có, cột giá trị tích lũy",
+    "page": 32,
+    "locator": "Bảng 2, cột 2",
+    "chunk_ids": [
+     "CCDR-p032-B2"
+    ],
+    "value": "479,2–547,6; 136,9",
+    "check_text": [
+     "479,2–547,6",
+     "136,9"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tra hai hàng và một cột, có đơn vị và điều kiện (NPV, chiết khấu 6%), rồi trừ."
+ },
+ {
+  "id": "ad-t02",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "nhiều khối"
+  ],
+  "answerable": true,
+  "question": "Trong Bảng 3, với kịch bản NZP có những cải cách hỗ trợ, tác động kinh tế ròng giai đoạn 2031–2040 là bao nhiêu tỷ USD?",
+  "expected_answer": "+19,3 tỷ USD (NPV, chiết khấu 6%).",
+  "grading": "Đúng 19,3 và dấu dương; đúng khối \"NZP với những cải cách hỗ trợ\" (không phải khối NZP, −95,5).",
+  "evidence": [
+   {
+    "need": "Khối NZP với những cải cách hỗ trợ, hàng Tác động kinh tế ròng, cột 2031–2040",
+    "page": 50,
+    "locator": "Bảng 3",
+    "chunk_ids": [
+     "CCDR-p050-B3"
+    ],
+    "value": "19,3",
+    "check_text": [
+     "19,3",
+     "-95,5"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Bảng có hai khối và ba cột thời kỳ; phải chọn đúng khối, hàng và cột."
+ },
+ {
+  "id": "ad-t03",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Theo Bảng 3, các cải cách hỗ trợ làm tác động kinh tế ròng của NZP giai đoạn 2022–2040 tốt hơn bao nhiêu tỷ USD?",
+  "expected_answer": "−1,3 − (−134,9) = 133,6 tỷ USD.",
+  "grading": "Đúng 133,6 tỷ USD (dung sai ±0,1).",
+  "evidence": [
+   {
+    "need": "Tác động kinh tế ròng 2022–2040 của hai khối",
+    "page": 50,
+    "locator": "Bảng 3, cột 2022–2040",
+    "chunk_ids": [
+     "CCDR-p050-B3"
+    ],
+    "value": "-134,9; -1,3",
+    "check_text": [
+     "-134,9",
+     "-1,3"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "So sánh hai khối của một bảng bằng phép trừ với số âm."
+ },
+ {
+  "id": "ad-t04",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "bảng rộng"
+  ],
+  "answerable": true,
+  "question": "Trong bảng kết quả mô hình CGE ở Phụ lục 3 (\"Những thiệt hại chính và kết quả kinh tế vĩ mô\"), GDP bình quân đầu người thực tế đường cơ sở năm 2050 là bao nhiêu và dưới kịch bản RCP 4.5 năm 2050 thấp hơn đường cơ sở bao nhiêu phần trăm?",
+  "expected_answer": "11.095 (đồng đô không đổi 2020); thấp hơn 9,47% dưới RCP 4.5.",
+  "grading": "Đúng 11.095 và −9,47% (cột RCP 4.5, năm 2050, không phải RCP 2.6 −7,95%).",
+  "evidence": [
+   {
+    "need": "Hàng GDP bình quân đầu người thực tế: cột Đường cơ sở 2050 và RCP 4.5 2050",
+    "page": 95,
+    "locator": "Bảng Phụ lục 3 trang 85, nhóm Mức thu nhập",
+    "chunk_ids": [
+     "CCDR-p095-bang-r1"
+    ],
+    "value": "11.095; -9,47",
+    "check_text": [
+     "11.095",
+     "-9,47"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Bảng rộng 12 cột số với ba khối (đường cơ sở, RCP 2.6, RCP 4.5) và bốn năm; phải chọn đúng khối và năm."
+ },
+ {
+  "id": "ad-t05",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "đơn vị"
+  ],
+  "answerable": true,
+  "question": "Theo Bảng 1, Việt Nam phát thải bao nhiêu tCO2e bình quân đầu người và chiếm bao nhiêu phần trăm phát thải toàn cầu?",
+  "expected_answer": "3,8 tCO2e bình quân đầu người; 0,8% phát thải toàn cầu.",
+  "grading": "Đúng 3,8 và 0,8%.",
+  "evidence": [
+   {
+    "need": "Hàng Việt Nam của Bảng 1",
+    "page": 19,
+    "locator": "Bảng 1, hàng Việt Nam",
+    "chunk_ids": [
+     "CCDR-p019-B1"
+    ],
+    "value": "3,8; 0,8%",
+    "check_text": [
+     "Việt Nam|3,8",
+     "0,8%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tra một hàng theo tên nước và hai cột có đơn vị khác nhau."
+ },
+ {
+  "id": "ad-t06",
+  "split": "test",
+  "group": "bang",
+  "tags": [
+   "ma trận"
+  ],
+  "answerable": true,
+  "question": "Trong Bảng 6 (tiêu chí ưu tiên), hành động có mức khẩn cấp Trung bình nhưng tác động Cao được mô tả thế nào?",
+  "expected_answer": "\"Các hành động cần thời gian để hình thành và thực hiện nhưng có thể mang lại tác động lớn\".",
+  "grading": "Đúng ô (hàng Khẩn cấp Trung bình, cột Tác động Cao); nhầm hàng hoặc cột là sai.",
+  "evidence": [
+   {
+    "need": "Ô giao của hàng Khẩn cấp Trung bình và cột Tác động Cao",
+    "page": 84,
+    "locator": "Bảng 6",
+    "chunk_ids": [
+     "CCDR-p084-B6"
+    ],
+    "value": "Các hành động cần thời gian để hình thành và thực hiện nhưng có thể mang lại tác động lớn",
+    "check_text": [
+     "có thể mang lại tác động lớn"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Ma trận 2×2 có tiêu đề hàng và cột; phải xác định đúng ô theo hàng và cột."
+ },
+ {
+  "id": "ad-t07",
+  "split": "test",
+  "group": "anh_so_do",
+  "tags": [
+   "bản đồ"
+  ],
+  "answerable": true,
+  "question": "Trên bản đồ Hình 14, tỉnh nào được ghi chú là tỉnh sản xuất than chính?",
+  "expected_answer": "Quảng Ninh.",
+  "grading": "Đúng Quảng Ninh.",
+  "evidence": [
+   {
+    "need": "Ô ghi \"Quảng Ninh\" cạnh chú thích \"Tỉnh sản xuất than chính\"",
+    "page": 59,
+    "locator": "Hình 14, bên phải bản đồ",
+    "chunk_ids": [
+     "CCDR-p059-H14"
+    ],
+    "value": "Quảng Ninh",
+    "check_text": [
+     "Quảng Ninh",
+     "Tỉnh sản xuất"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Bản đồ có nhãn địa danh và một chú thích; phải gắn chú thích với địa danh."
+ },
+ {
+  "id": "ad-t08",
+  "split": "test",
+  "group": "anh_so_do",
+  "tags": [
+   "bản đồ",
+   "hướng"
+  ],
+  "answerable": true,
+  "question": "Trên bản đồ Hình 14, vùng than nào được vẽ ở xa nhất về phía nam, ở dưới cùng bản đồ?",
+  "expected_answer": "Sông Cả và Nghệ Tĩnh.",
+  "grading": "Đúng \"Sông Cả và Nghệ Tĩnh\" (không phải Sông Đà).",
+  "evidence": [
+   {
+    "need": "Hình elip cam thấp nhất, nhãn Sông Cả và Nghệ Tĩnh",
+    "page": 59,
+    "locator": "Hình 14, góc dưới bên trái",
+    "chunk_ids": [
+     "CCDR-p059-H14"
+    ],
+    "value": "Sông Cả và Nghệ Tĩnh",
+    "check_text": [
+     "Sông Cả"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Câu hỏi về vị trí tương đối (hướng) trên bản đồ."
+ },
+ {
+  "id": "ad-t09",
+  "split": "test",
+  "group": "anh_so_do",
+  "tags": [
+   "bản đồ",
+   "ảnh"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 11 (rủi ro ngập lụt tại các vùng ven biển), dải lãnh thổ nào có màu đậm nhất, tức rủi ro ngập lụt tương đối cao nhất?",
+  "expected_answer": "Dải ven biển miền Trung (Trung Bộ, khoảng từ phía bắc Đà Nẵng đến Nam Trung Bộ).",
+  "grading": "Chấp nhận \"miền Trung / Trung Bộ\"; sai nếu nêu miền Bắc hay Đồng bằng sông Cửu Long.",
+  "evidence": [
+   {
+    "need": "Các tỉnh màu xanh lục đậm nhất trên bản đồ",
+    "page": 42,
+    "locator": "Hình 11",
+    "chunk_ids": [
+     "CCDR-p042-H11"
+    ],
+    "value": "miền Trung",
+    "check_text": [],
+    "visual_only": true
+   }
+  ],
+  "reason": "Đọc thang màu của bản đồ chuyên đề và liên hệ với vị trí địa lý; thông tin chỉ nằm trong ảnh."
+ },
+ {
+  "id": "ad-t10",
+  "split": "test",
+  "group": "anh_so_do",
+  "tags": [
+   "ảnh raster"
+  ],
+  "answerable": true,
+  "question": "Trên bản đồ Hình 10, biển ở phía đông được ghi tên là gì và nước nào được ghi tên ở phía tây bắc?",
+  "expected_answer": "\"BIỂN ĐÔNG\" và \"CAM PU CHIA\".",
+  "grading": "Đúng cả hai nhãn (viết hoa trên bản đồ).",
+  "evidence": [
+   {
+    "need": "Hai nhãn chữ trong ảnh bản đồ",
+    "page": 40,
+    "locator": "Hình 10",
+    "chunk_ids": [
+     "CCDR-p040-H10"
+    ],
+    "value": "BIỂN ĐÔNG; CAM PU CHIA",
+    "check_text": [],
+    "visual_only": true
+   }
+  ],
+  "reason": "Chữ nằm trong ảnh raster nên không có trong văn bản trích từ PDF; phải đọc ảnh."
+ },
+ {
+  "id": "ad-t11",
+  "split": "test",
+  "group": "anh_so_do",
+  "tags": [
+   "ảnh",
+   "màu"
+  ],
+  "answerable": true,
+  "question": "Hình 9 gồm ba bản đồ về ba loại thiên tai. Bản đồ nào dùng thang màu xanh lục?",
+  "expected_answer": "Bản đồ \"Bão lũ\" (bản đồ bên phải).",
+  "grading": "Đúng \"Bão lũ\"; \"Lũ lụt 1.000 năm\" dùng thang xanh dương và \"Lở đất\" thang cam.",
+  "evidence": [
+   {
+    "need": "Ba bản đồ có ba thang màu: cam (Lở đất), xanh dương (Lũ lụt 1.000 năm), xanh lục (Bão lũ)",
+    "page": 37,
+    "locator": "Hình 9",
+    "chunk_ids": [
+     "CCDR-p037-H9"
+    ],
+    "value": "Bão lũ",
+    "check_text": [
+     "Bão lũ"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Phải nhận ra thang màu của từng bản đồ trong ảnh và gắn với tiêu đề."
+ },
+ {
+  "id": "ad-t12",
+  "split": "test",
+  "group": "bieu_do",
+  "tags": [
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Theo Hình 13, phát thải GHG ngành điện năm 2040 của kịch bản CPS và của kịch bản ADS là bao nhiêu triệu tấn CO2e?",
+  "expected_answer": "CPS: 246 triệu tấn CO2e; ADS: 63 triệu tấn CO2e.",
+  "grading": "Đúng hai giá trị và đơn vị triệu tấn CO2e, đúng gắn với từng kịch bản.",
+  "evidence": [
+   {
+    "need": "Nhãn cuối hai đường của biểu đồ đường bên phải",
+    "page": 56,
+    "locator": "Hình 13, biểu đồ phải, năm 2040",
+    "chunk_ids": [
+     "CCDR-p056-H13"
+    ],
+    "value": "246; 63",
+    "check_text": [
+     "246",
+     "63"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Biểu đồ đường hai chuỗi; phải đọc nhãn cuối của từng chuỗi và gắn đúng kịch bản."
+ },
+ {
+  "id": "ad-t13",
+  "split": "test",
+  "group": "bieu_do",
+  "tags": [
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 20, mức thay đổi việc làm năm 2040 của ngành Điện ở kịch bản NZP đã cải cách và của ngành Vận tải ở kịch bản NZP là bao nhiêu phần trăm?",
+  "expected_answer": "Điện, NZP đã cải cách: +23,6%; Vận tải, NZP: −6,3%.",
+  "grading": "Đúng hai giá trị kèm dấu và đúng chuỗi (cột cam cho NZP đã cải cách, cột xanh cho NZP).",
+  "evidence": [
+   {
+    "need": "Cột cam của ngành Điện và cột xanh của ngành Vận tải",
+    "page": 72,
+    "locator": "Hình 20",
+    "chunk_ids": [
+     "CCDR-p072-H20"
+    ],
+    "value": "23,6; -6,3",
+    "check_text": [
+     "23,6",
+     "-6,3"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Biểu đồ cột nhóm với hai chuỗi và giá trị âm; phải chọn đúng chuỗi cho từng ngành."
+ },
+ {
+  "id": "ad-t14",
+  "split": "test",
+  "group": "bieu_do",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Theo Hình 22, dư nợ tín dụng xanh năm 2016 và năm 2019 là bao nhiêu tỷ USD, và tăng thêm bao nhiêu trong giai đoạn đó?",
+  "expected_answer": "2016: 3,7 tỷ USD; 2019: 13,9 tỷ USD; tăng thêm 10,2 tỷ USD.",
+  "grading": "Đúng hai giá trị và hiệu 10,2.",
+  "evidence": [
+   {
+    "need": "Cột 2016 và 2019 của biểu đồ trái",
+    "page": 78,
+    "locator": "Hình 22, biểu đồ trái",
+    "chunk_ids": [
+     "CCDR-p078-H22"
+    ],
+    "value": "3,7; 13,9",
+    "check_text": [
+     "3,7",
+     "13,9"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Đọc hai cột của biểu đồ cột và tính hiệu; có đơn vị tỷ USD."
+ },
+ {
+  "id": "ad-t15",
+  "split": "test",
+  "group": "bieu_do",
+  "tags": [
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 7, năm 2018 (sơ bộ), tỷ trọng sản lượng của doanh nghiệp nhà nước trong ngành phân hóa học và trong ngành xi măng là bao nhiêu phần trăm?",
+  "expected_answer": "Phân hóa học: 94%; xi măng: 35%.",
+  "grading": "Đúng hai giá trị gắn đúng ngành.",
+  "evidence": [
+   {
+    "need": "Nhãn cuối đường Phân hóa học và Xi măng",
+    "page": 26,
+    "locator": "Hình 7, năm 2018 (sơ bộ)",
+    "chunk_ids": [
+     "CCDR-p026-H7"
+    ],
+    "value": "94%; 35%",
+    "check_text": [
+     "94%",
+     "35%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Biểu đồ đường nhiều chuỗi, giá trị nằm ở nhãn cuối từng chuỗi (một số nhãn xuống dòng)."
+ },
+ {
+  "id": "ad-t16",
+  "split": "test",
+  "group": "bieu_do",
+  "tags": [
+   "xu hướng",
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 19, đến năm 2040 nhóm hàng nào có chỉ số giá tăng nhiều nhất so với BAU và nhóm nào giảm sâu nhất?",
+  "expected_answer": "Tăng nhiều nhất: Năng lượng (khoảng +15%); giảm sâu nhất: Y tế (khoảng −1,5%).",
+  "grading": "Đúng hai nhóm (Năng lượng; Y tế); giá trị gần đúng là tùy chọn.",
+  "evidence": [
+   {
+    "need": "Điểm cuối năm 2040 của đường cao nhất (Năng lượng) và thấp nhất (Y tế)",
+    "page": 71,
+    "locator": "Hình 19",
+    "chunk_ids": [
+     "CCDR-p071-H19"
+    ],
+    "value": "Năng lượng; Y tế",
+    "check_text": [
+     "Năng lượng",
+     "Y tế"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Biểu đồ đường 6 chuỗi không in số: phải nhận xu hướng và gắn đúng chuỗi theo màu chú giải."
+ },
+ {
+  "id": "ad-t17",
+  "split": "test",
+  "group": "multi_hop",
+  "tags": [
+   "bảng nhiều trang",
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Trong Bảng 5, cộng các thay đổi chi phí vốn của từng nguồn (than đá, khí đốt, mặt trời, gió trên bờ, gió ngoài khơi, thủy điện và năng lượng tái tạo khác, lưu trữ) thì có khớp với thay đổi chi phí vốn để lưu trữ và phát điện mới không? Nêu tổng.",
+  "expected_answer": "Có: −19 − 8 + 21 + 8 + 39 + 0 + 3 = +44 tỷ USD, khớp hàng \"Chi phí vốn để lưu trữ và phát điện mới\" (+44).",
+  "grading": "Nêu đúng tổng +44 và kết luận khớp; hàng \"thủy điện và tái tạo khác\" ~0 tính bằng 0.",
+  "evidence": [
+   {
+    "need": "Hàng chi phí vốn +44 và các hàng thành phần than đá −19, khí đốt −8",
+    "page": 56,
+    "locator": "Bảng 5, trang 56",
+    "chunk_ids": [
+     "CCDR-p056-B5"
+    ],
+    "value": "+44; -19; -8",
+    "check_text": [
+     "+44",
+     "-19",
+     "-8"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "Các hàng mặt trời, gió, tái tạo khác, lưu trữ ở trang tiếp theo",
+    "page": 57,
+    "locator": "Bảng 5 (tiếp), trang 57",
+    "chunk_ids": [
+     "CCDR-p057-B5c"
+    ],
+    "value": "+21; +8; +39; ~0; +3",
+    "check_text": [
+     "+21",
+     "+8",
+     "+39",
+     "+3"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Bảng 5 nằm trên hai trang; phải gom các hàng ở cả hai trang rồi cộng."
+ },
+ {
+  "id": "ad-t18",
+  "split": "test",
+  "group": "multi_hop",
+  "tags": [
+   "tính toán"
+  ],
+  "answerable": true,
+  "question": "Tính công suất nhiệt điện than năm 2020 từ Hình 12 rồi đối chiếu với con số trong văn bản: hai nguồn cho kết quả thế nào?",
+  "expected_answer": "Hình 12: 30% × 68 GW ≈ 20,4 GW; văn bản nêu công suất nhiệt điện than tăng từ 5 GW (2010) lên 20 GW (2020), tức hai nguồn khớp ở mức ~20 GW.",
+  "grading": "Đúng 68 GW, 30%, kết quả ~20 GW và con số 20 GW trong văn bản.",
+  "evidence": [
+   {
+    "need": "Tổng công suất 68 GW và phần than đá 30%",
+    "page": 54,
+    "locator": "Hình 12, biểu đồ trái",
+    "chunk_ids": [
+     "CCDR-p054-H12"
+    ],
+    "value": "68 GW; 30%",
+    "check_text": [
+     "68 GW",
+     "30%"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "Đoạn nêu công suất nhiệt điện than tăng từ 5 GW năm 2010 lên 20 GW năm 2020",
+    "page": 53,
+    "locator": "Mục 4.3.1",
+    "chunk_ids": [
+     "CCDR-p053-t02"
+    ],
+    "value": "20 GW",
+    "check_text": [
+     "20 GW"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Kết hợp một biểu đồ (trang 54) với một đoạn văn (trang 53) và đối chiếu hai nguồn."
+ },
+ {
+  "id": "ad-t19",
+  "split": "test",
+  "group": "multi_hop",
+  "tags": [
+   "đơn vị"
+  ],
+  "answerable": true,
+  "question": "Khi thực hiện NZP cùng tất cả các biện pháp hỗ trợ, GDP năm 2040 thay đổi bao nhiêu phần trăm (Bảng 4) và mức sản lượng tăng tích lũy giai đoạn 2022–2040 của kịch bản NZP có cải cách là bao nhiêu tỷ USD (Bảng 3)?",
+  "expected_answer": "GDP 2040: +3,3% (Bảng 4); mức sản lượng tăng 2022–2040: 80,1 tỷ USD NPV (Bảng 3).",
+  "grading": "Đúng +3,3% và 80,1 tỷ USD, gắn đúng bảng và đúng hàng.",
+  "evidence": [
+   {
+    "need": "Hàng NZP và tất cả các biện pháp hỗ trợ, GDP 2040",
+    "page": 53,
+    "locator": "Bảng 4",
+    "chunk_ids": [
+     "CCDR-p053-B4"
+    ],
+    "value": "3,3",
+    "check_text": [
+     "3,3"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "Khối NZP với cải cách, hàng Mức sản lượng tăng, cột 2022–2040",
+    "page": 50,
+    "locator": "Bảng 3",
+    "chunk_ids": [
+     "CCDR-p050-B3"
+    ],
+    "value": "80,1",
+    "check_text": [
+     "80,1"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Kết hợp hai bảng ở hai trang khác nhau (50 và 53) với đơn vị khác nhau (% và tỷ USD)."
+ },
+ {
+  "id": "ad-t20",
+  "split": "test",
+  "group": "multi_hop",
+  "tags": [
+   "đơn vị"
+  ],
+  "answerable": true,
+  "question": "Với NZP không có cải cách, lượng phát thải khí nhà kính năm 2040 giảm bao nhiêu phần trăm so với đường cơ sở (Bảng 4), và chỉ số bất bình đẳng Gini năm 2040 thay đổi bao nhiêu so với BAU (Hình 18)?",
+  "expected_answer": "Phát thải giảm 73,6% (−73,6%, Bảng 4); chỉ số Gini giảm 1,1 điểm so với BAU (−1,1, Hình 18).",
+  "grading": "Đúng −73,6% và −1,1, gắn đúng hàng \"NZP không có cải cách\" và đúng cột Bất bình đẳng.",
+  "evidence": [
+   {
+    "need": "Hàng NZP không có cải cách, cột phát thải 2040",
+    "page": 53,
+    "locator": "Bảng 4",
+    "chunk_ids": [
+     "CCDR-p053-B4"
+    ],
+    "value": "-73,6",
+    "check_text": [
+     "-73,6"
+    ],
+    "visual_only": false
+   },
+   {
+    "need": "Cột Bất bình đẳng (chỉ số Gini)",
+    "page": 70,
+    "locator": "Hình 18",
+    "chunk_ids": [
+     "CCDR-p070-H18"
+    ],
+    "value": "-1,1",
+    "check_text": [
+     "-1,1"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Kết hợp một bảng (trang 53) và một biểu đồ cột (trang 70), hai thước đo khác nhau."
+ },
+ {
+  "id": "ad-t21",
+  "split": "test",
+  "group": "text",
+  "tags": [
+   "điều kiện"
+  ],
+  "answerable": true,
+  "question": "Theo dữ liệu vệ tinh, nồng độ bụi PM2.5 trung bình năm trên cả nước cao hơn ngưỡng an toàn của WHO bao nhiêu lần, và ngưỡng đó là bao nhiêu?",
+  "expected_answer": "Cao hơn từ 4 đến 5 lần; ngưỡng an toàn WHO là 10 µg/m3.",
+  "grading": "Đúng 4–5 lần và 10 µg/m3.",
+  "evidence": [
+   {
+    "need": "Đoạn mở đầu mục ô nhiễm không khí",
+    "page": 20,
+    "locator": "Đoạn đầu trang 20",
+    "chunk_ids": [
+     "CCDR-p020-t01"
+    ],
+    "value": "4-5 lần; 10 µg/m3",
+    "check_text": [
+     "4-5 lần",
+     "10 microgam"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Một con số có điều kiện (trung bình cả nước, theo vệ tinh) trong một đoạn văn."
+ },
+ {
+  "id": "ad-t22",
+  "split": "test",
+  "group": "text",
+  "tags": [
+   "điều kiện"
+  ],
+  "answerable": true,
+  "question": "Thiệt hại nông nghiệp do biến đổi khí hậu ở Việt Nam quanh năm 2050 là bao nhiêu phần trăm theo kịch bản RCP8.5?",
+  "expected_answer": "10,6% (so với 7,6% theo RCP2.6 và 7,9% theo RCP4.5).",
+  "grading": "Đúng 10,6% và đúng kịch bản RCP8.5, năm 2050.",
+  "evidence": [
+   {
+    "need": "Đoạn nêu tổn thất theo ba kịch bản RCP quanh năm 2030 và 2050",
+    "page": 34,
+    "locator": "Mục 3.3.1",
+    "chunk_ids": [
+     "CCDR-p034-t01"
+    ],
+    "value": "10,6%",
+    "check_text": [
+     "10,6%"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Phải chọn đúng năm (2050) và đúng kịch bản trong một đoạn có sáu giá trị."
+ },
+ {
+  "id": "ad-t23",
+  "split": "test",
+  "group": "text",
+  "tags": [
+   "tổng hợp"
+  ],
+  "answerable": true,
+  "question": "Ngoài mục tiêu phát thải ròng bằng 0 vào năm 2050, Việt Nam đã đưa ra những cam kết nào tại COP26?",
+  "expected_answer": "Cùng hơn 100 quốc gia cam kết chấm dứt chặt phá rừng; giảm 30% phát thải khí mêtan so với năm 2020 vào năm 2030; chấm dứt đầu tư vào sản xuất nhiệt điện than mới; mở rộng năng lượng tái tạo; dần loại bỏ nhiệt điện than cho tới thập kỷ 2040.",
+  "grading": "Đạt khi nêu đúng ít nhất bốn trong năm cam kết, gồm khí mêtan −30% vào 2030 và chấm dứt đầu tư nhiệt điện than mới.",
+  "evidence": [
+   {
+    "need": "Đoạn nêu các cam kết tại COP26",
+    "page": 23,
+    "locator": "Mục 2.1",
+    "chunk_ids": [
+     "CCDR-p023-t02"
+    ],
+    "value": "rừng; mêtan 30%; chấm dứt nhiệt điện than mới; năng lượng tái tạo; loại bỏ than 2040s",
+    "check_text": [
+     "30% phát thải khí mêtan",
+     "nhiệt điện than mới"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Tổng hợp một danh sách cam kết nằm trong một đoạn văn dài."
+ },
+ {
+  "id": "ad-t24",
+  "split": "test",
+  "group": "text",
+  "tags": [
+   "điều kiện"
+  ],
+  "answerable": true,
+  "question": "Việt Nam hiện nhập khoảng bao nhiêu triệu tấn than mỗi năm (ước tính năm 2022) và nguồn cung trong nước là bao nhiêu?",
+  "expected_answer": "Khoảng 55 triệu tấn than nhập khẩu mỗi năm; khoảng 40 triệu tấn do trong nước cung cấp.",
+  "grading": "Đúng 55 và 40 triệu tấn, gắn đúng nhập khẩu và trong nước.",
+  "evidence": [
+   {
+    "need": "Đoạn nêu lượng than nhập khẩu và trong nước",
+    "page": 58,
+    "locator": "Mục 4.3.1",
+    "chunk_ids": [
+     "CCDR-p058-t02"
+    ],
+    "value": "55; 40",
+    "check_text": [
+     "55 triệu tấn",
+     "40 triệu tấn"
+    ],
+    "visual_only": false
+   }
+  ],
+  "reason": "Hai con số cho hai nguồn, kèm điều kiện năm ước tính."
+ },
+ {
+  "id": "ad-t25",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Tại COP28, Việt Nam đã công bố cam kết mới nào về loại bỏ nhiệt điện than?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "cop28",
+    "cop27"
+   ],
+   "why": "Báo cáo xuất bản 07/2022, trước COP28; chỉ nêu cam kết tại COP26.",
+   "near_topic_in": "p23, p54: cam kết tại COP26 về than"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t26",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Thiệt hại do biến đổi khí hậu năm 2020 của tỉnh Bến Tre là bao nhiêu triệu USD?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "bến tre"
+   ],
+   "why": "Báo cáo chỉ nêu thiệt hại cấp quốc gia và theo hạng mục (Hình 3), không theo tỉnh.",
+   "near_topic_in": "p17, Hình 3: thiệt hại 2020 cấp quốc gia"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t27",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Chi phí thu giữ và lưu trữ carbon (CCS) trong ngành điện là bao nhiêu USD cho mỗi tấn CO2?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "ccs",
+    "chi phí thu giữ",
+    "chi phí lưu trữ các-bon"
+   ],
+   "why": "Báo cáo chỉ nói quy hoạch điện có thể đánh giá tiềm năng thu giữ và lưu trữ carbon và mô hình không tính các công nghệ này; không nêu chi phí.",
+   "near_topic_in": "p55, p61: nhắc tới thu giữ và lưu trữ carbon, không có chi phí"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t28",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Việt Nam hiện có bao nhiêu nhà máy sản xuất hydro xanh đang vận hành?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "hydro",
+    "hydrogen"
+   ],
+   "why": "Báo cáo không đề cập hydro.",
+   "near_topic_in": "p53-58: chuyển đổi ngành năng lượng"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t29",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "Tỷ lệ hộ gia đình ở tỉnh An Giang có nguy cơ rơi vào nghèo do thiên tai là bao nhiêu phần trăm?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "an giang"
+   ],
+   "why": "Báo cáo chỉ nêu tỷ lệ cấp quốc gia (khoảng 10%) và theo vùng, không có An Giang.",
+   "near_topic_in": "p43: khoảng 10% hộ gia đình dễ rơi vào nghèo do khí hậu"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ },
+ {
+  "id": "ad-t30",
+  "split": "test",
+  "group": "thieu_bang_chung",
+  "tags": [],
+  "answerable": false,
+  "question": "VinFast đã bán được bao nhiêu xe điện trong năm 2021?",
+  "expected_behavior": "Từ chối: tài liệu không có thông tin này; không thêm khẳng định vô căn cứ.",
+  "absence_check": {
+   "terms": [
+    "vinfast"
+   ],
+   "why": "Báo cáo chỉ nêu doanh số xe điện cả nước (khoảng 1,9 triệu chiếc năm 2020), không nêu hãng nào hay năm 2021.",
+   "near_topic_in": "p64: doanh số xe điện cả nước 2010-2020"
+  },
+  "reason": "Câu gần chủ đề của báo cáo nhưng thông tin hỏi không có trong tài liệu."
+ }
+]

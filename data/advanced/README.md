@@ -21,9 +21,9 @@ Page numbers below are PDF page indexes (1-103); each chunk also keeps the print
 | --- | --- |
 | Pages indexed | 97 of 103 |
 | Pages excluded | 6: cover (1), title page (3), table of contents (4-7) |
-| Chunks | 385: 335 text, 22 figures, 28 table parts |
+| Chunks | 384: 334 text, 22 figures, 28 table parts |
 | Figure and table regions (crops) | 40: Hình 1-22, Bảng 1-6 (Bảng 5 runs onto the next page), and 12 uncaptioned tables (abbreviations, appendix data and the priority matrix) |
-| Region descriptions | 40, by `anthropic/claude-haiku-5.5`, $0.042 in total |
+| Region descriptions | 40, by `anthropic/claude-haiku-5.5`, $0.041 in total |
 | Index | pgvector table `adv_chunks` in the Day 6 container, `intfloat/multilingual-e5-base` (revision as Day 6), 768-d, exact cosine |
 
 The table of contents is excluded because it repeats every caption and would pull searches to the wrong page.
@@ -46,7 +46,8 @@ Twelve pages are nearly empty (dividers, blank pages, the back cover); their tex
 
 - **Region boundaries:** all 40 crops were viewed against their pages.
   Each holds the whole figure or table from its caption to its source line.
-  Three boundary errors found this way were fixed in the rules: an italic subtitle between caption and chart, axis labels below the plot area, and a map's clip path reaching past the source line (this one has a test).
+  Six boundary errors found this way, while checking crops and again while writing benchmark questions, were fixed in the rules: an italic subtitle between caption and chart, axis labels below the plot area, a map's clip path reaching past the source line (this one has a test), rotated axis labels that start inside the plot and run below it (Hình 8 and 16), series labels hanging past the right edge (Hình 7), and the last row of four tables clipped by a point or two.
+  A script then checks every crop for text cut at its edges: 0 found.
 - **Tables:** Bảng 1 and the first rows of the p95 appendix table were compared with the page images and match, including the report's own "1.08,9" for Malaysia in Bảng 1.
 - **Descriptions:** of 843 numbers in the descriptions, 672 also appear in the text extracted from the same region.
   Most of the other 171 are marked as estimates read off an axis ("khoảng"), or are counts and years; raster figures (Hình 4, 9, 10, 11) have no region text, so none of their numbers can be checked this way.

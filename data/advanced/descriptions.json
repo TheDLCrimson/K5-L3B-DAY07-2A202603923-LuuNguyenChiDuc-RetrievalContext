@@ -191,59 +191,6 @@
    "cost_usd": 0.001110285,
    "ms": 8917.5
   },
-  "crops/CCDR-p026-H7.png": {
-   "ids": [
-    "CCDR-p026-H7"
-   ],
-   "page": 26,
-   "kind": "figure",
-   "title": "Hình 7: Biến thiên tỷ trọng sản lượng của các DNNN trong các ngành công nghiệp sử dụng nhiều",
-   "description": "- **Loại:** Biểu đồ đường nhiều chuỗi. Trục ngang là năm 2005–2018 (sơ bộ), trục dọc là tỷ trọng (%) từ 0% đến 100%.\n- **Nội dung:** Tỷ trọng sản lượng của DNNN trong 8 ngành công nghiệp và vận tải sử dụng nhiều carbon ở Việt Nam. Số liệu của Tổng cục Thống kê tính theo tấn, trừ điện (kWh), vận tải hàng hóa (triệu tấn/km) và vận tải hành khách (triệu người-km). Nguồn: Coste và cộng sự, 2020.\n- **Giá trị in trên hình (2018, sơ bộ):**\n  - Than: 98%\n  - Phân hóa học: 94%\n  - Điện: 85%\n  - Vận tải hàng hóa: 55%\n  - Phân bón NPK: 55%\n  - Xi măng: 35%\n  - Vận chuyển hành khách: 27%\n  - Kim loại: 14%\n- **Giá trị ước lượng (khoảng):**\n  - 2005: Phân hóa học ~99%, Than ~97%, Điện ~94%, Phân bón NPK ~75%, Vận tải hàng hóa ~63%, Xi măng ~63%, Vận chuyển hành khách ~40%, Kim loại ~34%.\n  - Điện: đáy khoảng 70% (2008), đỉnh khoảng 90% (2012).\n  - Vận tải hàng hóa: đỉnh khoảng 72% (2009–2011).\n  - Xi măng: đáy khoảng 43% (2011).\n  - Kim loại: đáy khoảng 13% (2016).\n- **Xu hướng:**\n  - Than ổn định ở mức cao nhất (khoảng 96–98%).\n  - Phân hóa học giữ mức trên 90% nhưng giảm nhẹ sau 2014.\n  - Điện giảm mạnh 2005–2008, tăng đến 2012, sau đó giảm dần.\n  - Vận tải hàng hóa và Phân bón NPK giảm đều trong giai đoạn 2011–2018.\n  - Xi măng, Vận chuyển hành khách và Kim loại giảm dần, Kim loại thấp nhất trong các chuỗi.",
-   "unverified": [
-    "8",
-    "13",
-    "34",
-    "43",
-    "63",
-    "70",
-    "72",
-    "75",
-    "90",
-    "96",
-    "97",
-    "99",
-    "2008",
-    "2009",
-    "2011",
-    "2020"
-   ],
-   "numbers": 31,
-   "model": "anthropic/claude-haiku-5.5",
-   "prompt_version": 1,
-   "cost_usd": 0.001441143,
-   "ms": 11404.0
-  },
-  "crops/CCDR-p030-H8.png": {
-   "ids": [
-    "CCDR-p030-H8"
-   ],
-   "page": 30,
-   "kind": "figure",
-   "title": "Hình 8: Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực",
-   "description": "- **Loại:** Biểu đồ đường, hai chuỗi.\n- **Nội dung:** Ước tính thiệt hại GDP do nhiệt độ và lượng mưa tăng, thay đổi nhiều hơn và mực nước biển dâng cao, theo hai kịch bản RCP 2.6 (đường xanh đậm) và RCP 4.5 (đường cam). Trục tung: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (0–14). Trục hoành: năm 2022–2050.\n- **Giá trị:** Hình không in nhãn số liệu nên các giá trị sau đều là ước lượng từ trục.\n  - RCP 2.6: năm 2022 khoảng 6,8%; năm 2030 khoảng 8,2%; năm 2050 khoảng 10%.\n  - RCP 4.5: năm 2022 khoảng 6,5%; năm 2030 khoảng 8,2%; năm 2050 khoảng 12,4%.\n- **Xu hướng:**\n  - Cả hai kịch bản đều tăng đều theo thời gian.\n  - Hai đường gần như trùng nhau đến khoảng năm 2030–2031.\n  - Sau đó RCP 4.5 tăng nhanh hơn và cao hơn RCP 2.6 rõ rệt từ khoảng 2035 trở đi.\n  - RCP 2.6 gần như đi ngang quanh mức khoảng 8% từ 2030 đến 2035, rồi tăng chậm.\n  - Chênh lệch năm 2050 khoảng 2,4 điểm phần trăm.\n  - Mức cao nhất trên hình là RCP 4.5 năm 2050 (khoảng 12,4%); mức thấp nhất là RCP 4.5 năm 2022 (khoảng 6,5%).",
-   "unverified": [
-    "2.4",
-    "6.5",
-    "6.8",
-    "8.2",
-    "12.4"
-   ],
-   "numbers": 16,
-   "model": "anthropic/claude-haiku-5.5",
-   "prompt_version": 1,
-   "cost_usd": 0.000647262,
-   "ms": 5652.1
-  },
   "crops/CCDR-p032-B2.png": {
    "ids": [
     "CCDR-p032-B2"
@@ -460,30 +407,6 @@
    "prompt_version": 1,
    "cost_usd": 0.001165428,
    "ms": 10043.8
-  },
-  "crops/CCDR-p065-H16.png": {
-   "ids": [
-    "CCDR-p065-H16"
-   ],
-   "page": 65,
-   "kind": "figure",
-   "title": "Hình 16: Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa",
-   "description": "- **Loại:** Biểu đồ cột đơn (cột dọc), có giá trị âm và dương.\n- **Nội dung:** Chi phí giảm phát thải khí nhà kính từ sản xuất lúa gạo, theo từng biện pháp. Trục tung là $/tCO₂e, từ -200 đến 500. Trục hoành ghi tên biện pháp, nhiều nhãn bị cắt ở phần đáy trang nên tên đầy đủ không đọc được hết. Hình không có chú giải màu và không có nhãn số trên cột.\n- **Giá trị (ước lượng từ trục, không được in):**\n  - Chuyển đổi ruộng lúa sang nuôi tôm: khoảng -75.\n  - Chuyển đổi đất trồng lúa nước (nhãn bị cắt): khoảng -40.\n  - Tưới ướt khô xen kẽ (AWD) ở ĐB sông Cửu Long: khoảng -20.\n  - AWD ở Đồng bằng sông Hồng: khoảng -20.\n  - Chuyển đổi từ trồng lúa sang hoa màu: gần 0, không thấy cột rõ.\n  - Quản lý rơm rạ: khoảng 12.\n  - Quản lý cây trồng tổng hợp (ICM) cho lúa: khoảng 18.\n  - Hệ thống canh tác lúa tưới tiêu vừa phải: khoảng 63.\n  - Hệ thống canh tác lúa tưới tiêu hạn chế: khoảng 90.\n  - Chuyển từ trồng lúa sang ngô: khoảng 388, cao nhất.\n- **Xu hướng:** Bốn biện pháp có chi phí âm, tức là tiết kiệm chi phí, trong đó chuyển sang nuôi tôm thấp nhất. Các biện pháp quản lý nước và cây trồng nằm quanh mức 0 đến 90. Chuyển sang ngô có chi phí cao nhất, gấp khoảng bốn lần biện pháp tưới hạn chế đứng sau nó.",
-   "unverified": [
-    "12",
-    "18",
-    "20",
-    "40",
-    "63",
-    "75",
-    "90",
-    "388"
-   ],
-   "numbers": 11,
-   "model": "anthropic/claude-haiku-5.5",
-   "prompt_version": 1,
-   "cost_usd": 0.000903177,
-   "ms": 8357.8
   },
   "crops/CCDR-p065-H17.png": {
    "ids": [
@@ -811,9 +734,91 @@
    "prompt_version": 1,
    "cost_usd": 0.002452626,
    "ms": 17570.0
+  },
+  "crops/CCDR-p030-H8.png": {
+   "ids": [
+    "CCDR-p030-H8"
+   ],
+   "page": 30,
+   "kind": "figure",
+   "title": "Hình 8: Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực",
+   "description": "- **Loại:** Biểu đồ đường, hai chuỗi.\n- **Nội dung:** Hình 8, \"Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực nước biển dâng cao - thiệt hại GDP\". Thể hiện thiệt hại GDP ước tính theo năm, trục tung là \"% độ lệch so với đường cơ sở\", trục hoành là năm 2022–2050. Chú giải: RCP 2.6 (xanh đậm), RCP 4.5 (cam). Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam. Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra.\n- **Giá trị:** Hình không in giá trị số trên đường; các số dưới đây là ước lượng từ trục tung.\n  - RCP 2.6: khoảng 6,7% (2022); khoảng 8,1% (2030); khoảng 8,0% (2032); khoảng 8,5% (2040); khoảng 10,0% (2050).\n  - RCP 4.5: khoảng 6,5% (2022); khoảng 8,1% (2030); khoảng 8,5% (2036); khoảng 9,3% (2040); khoảng 12,4% (2050).\n- **Xu hướng:** Hai đường gần như trùng nhau từ 2022 đến khoảng 2030, cùng ở mức khoảng 8%. Sau 2030, RCP 4.5 tăng nhanh hơn và vượt RCP 2.6 từ khoảng 2031–2032. Đến 2050, RCP 4.5 cao nhất (khoảng 12,4%), RCP 2.6 thấp nhất (khoảng 10%). Cả hai đều tăng đều theo thời gian, không có điểm giảm.",
+   "unverified": [
+    "6.5",
+    "6.7",
+    "8.0",
+    "8.1",
+    "8.5",
+    "9.3",
+    "10.0",
+    "12.4"
+   ],
+   "numbers": 19,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000743688,
+   "ms": 7197.6
+  },
+  "crops/CCDR-p065-H16.png": {
+   "ids": [
+    "CCDR-p065-H16"
+   ],
+   "page": 65,
+   "kind": "figure",
+   "title": "Hình 16: Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa",
+   "description": "- **Loại:** Biểu đồ cột đứng (cột đơn).\n\n- **Nội dung:** Chi phí hiệu quả để giảm phát thải khí nhà kính từ sản xuất lúa gạo, theo 10 biện pháp. Trục tung là $/tCO2e, trải từ -200 đến 500. Trục hoành là \"Các biện pháp\". Không có chú giải màu vì chỉ có một chuỗi dữ liệu.\n\n- **Giá trị:** Biểu đồ không in số liệu trên cột, nên các giá trị dưới đây là ước lượng từ trục.\n  1. Chuyển từ trồng lúa sang nuôi tôm: khoảng -75\n  2. Cải tạo đất trồng lúa thường thành đất trồng lúa nước: khoảng -40\n  3. Mô hình tưới lúa ướt khô xen kẽ (AWD) ở ĐB sông Cửu Long: khoảng -20\n  4. Mô hình AWD ở Đồng bằng sông Hồng: khoảng -18\n  5. Chuyển đổi từ trồng lúa sang hoa màu: gần 0 (không thấy cột rõ)\n  6. Cải thiện quản lý rơm rạ: khoảng 12\n  7. Quản lý cây trồng tổng hợp (ICM) cho lúa: khoảng 18\n  8. Mô hình AWD và Hệ thống SRI/1M5R ở khu trồng lúa tưới tiêu vừa phải: khoảng 63\n  9. Mô hình AWD và Hệ thống SRI/1M5R ở khu trồng lúa tưới tiêu hạn chế: khoảng 90\n  10. Chuyển từ trồng lúa sang ngô: khoảng 390\n\n- **Xu hướng:** Cao nhất là chuyển từ lúa sang ngô (khoảng 390). Thấp nhất là chuyển sang nuôi tôm (khoảng -75). Bốn biện pháp đầu có giá trị âm. Các biện pháp quản lý rơm rạ, ICM và AWD/SRI ở tưới tiêu vừa phải và hạn chế có giá trị dương, tăng dần. Riêng chuyển sang ngô có chi phí cao vượt trội so với các biện pháp còn lại.",
+   "unverified": [
+    "2",
+    "3",
+    "4",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "12",
+    "18",
+    "20",
+    "40",
+    "63",
+    "75",
+    "90",
+    "390"
+   ],
+   "numbers": 21,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000780219,
+   "ms": 6450.9
+  },
+  "crops/CCDR-p026-H7.png": {
+   "ids": [
+    "CCDR-p026-H7"
+   ],
+   "page": 26,
+   "kind": "figure",
+   "title": "Hình 7: Biến thiên tỷ trọng sản lượng của các DNNN trong các ngành công nghiệp sử dụng nhiều",
+   "description": "- **Loại:** Biểu đồ đường, trục tung là tỷ trọng (%) từ 0% đến 100%, trục hoành là năm từ 2005 đến 2018 (sơ bộ).\n\n- **Nội dung:** Tỷ trọng sản lượng của doanh nghiệp nhà nước (DNNN) trong 8 ngành công nghiệp và dịch vụ sử dụng nhiều carbon ở Việt Nam. Chú giải là tên ngành, và giá trị năm 2018 được ghi ngay cạnh mỗi đường. Nguồn: Coste và cộng sự, 2020. Ghi chú: số liệu Tổng cục Thống kê, tính theo tấn; điện theo kWh; vận tải hàng hóa theo triệu tấn/km; vận tải hành khách theo triệu người-km.\n\n- **Giá trị (năm 2018, in trên hình):**\n  - Than: 98%\n  - Phân hóa học: 94%\n  - Điện: 85%\n  - Vận tải hàng hóa: 55%\n  - Phân bón NPK: 55%\n  - Xi măng: 35%\n  - Vận chuyển hành khách: 27%\n  - Kim loại: 14%\n\n- **Giá trị ước lượng từ trục (không in):** Năm 2005, Điện khoảng 94%; Phân bón NPK khoảng 74%; Vận tải hàng hóa và Xi măng khoảng 63%; Vận chuyển hành khách khoảng 40%; Kim loại khoảng 33%; Than khoảng 96%; Phân hóa học khoảng 99%.\n\n- **Xu hướng:**\n  - Than và Phân hóa học luôn gần 100% và giảm rất ít.\n  - Điện giảm mạnh năm 2005–2007 (khoảng 70%), sau đó tăng lên khoảng 90% vào 2012 rồi giảm dần còn 85%.\n  - Phân bón NPK, Vận tải hàng hóa và Xi măng giảm rõ rệt qua thời gian.\n  - Kim loại và Vận chuyển hành khách có tỷ trọng thấp nhất và giảm chậm.",
+   "unverified": [
+    "8",
+    "33",
+    "63",
+    "70",
+    "74",
+    "90",
+    "96",
+    "99",
+    "2007",
+    "2020"
+   ],
+   "numbers": 23,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000930006,
+   "ms": 8524.6
   }
  },
  "system_prompt": "Bạn mô tả hình và bảng trong một báo cáo của Ngân hàng Thế giới để người khác tìm kiếm và đối chiếu.\nViết tiếng Việt, tối đa 220 từ, dạng các dòng ngắn:\n- Loại: (biểu đồ cột chồng, đường, tròn, treemap, bản đồ, sơ đồ, bảng...)\n- Nội dung: hình thể hiện gì, đơn vị, trục, chú giải, kịch bản hoặc nhóm.\n- Giá trị: mọi giá trị được in trên hình, gắn đúng với cột, chuỗi, nhóm hoặc địa danh của nó. Với bảng, nêu cấu trúc hàng, cột và các ô quan trọng; với ma trận, nêu ô nào thuộc hàng, cột nào.\n- Xu hướng: điểm cao nhất, thấp nhất, thay đổi chính.\nChỉ dựa vào hình và phần chữ trích từ hình. Không bịa giá trị: giá trị không được in mà phải ước lượng từ trục thì ghi \"khoảng\". Với bản đồ, nêu các địa danh được ghi và điều gì được đánh dấu ở đâu (hướng so với các địa danh khác).",
- "updated_at": "2026-11-16T03:29:12+00:00",
- "cost_usd": 0.041911
+ "updated_at": "2026-11-16T03:39:21+00:00",
+ "cost_usd": 0.041374
 }

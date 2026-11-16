@@ -127,7 +127,10 @@ def region_for(page, lines, i, next_top, shapes, tables) -> dict[str, Any]:
     if stop < next_top:  # a drawing (e.g. a map's clip path) can reach past the source line
         end = min(end, stop - 1)
     # below the graphics: small-font labels (axes, legends), then source and note lines with their wraps
-    below = sorted((ln for ln in lines if x0 - 5 <= ln["rect"][0] <= x1 and end - 3 <= ln["rect"][1] < next_top),
+    # (rotated axis labels start inside the plot area and run below it, so a label counts when it
+    # reaches past `end`, not only when it starts below it)
+    below = sorted((ln for ln in lines if x0 - 5 <= ln["rect"][0] <= x1 and ln["rect"][3] > end - 3
+                    and ln["rect"][1] < next_top),
                    key=lambda ln: ln["rect"][1])
     in_notes = False
     for line in below:
@@ -139,6 +142,12 @@ def region_for(page, lines, i, next_top, shapes, tables) -> dict[str, Any]:
             end = max(end, r[3])  # a wrapped note line, or an axis label or legend below the graphics
         elif r[1] > end:
             break
+    # text that starts inside the region but runs past its right edge (series labels at the end of a
+    # line chart) widens it too
+    for line in lines:
+        r = line["rect"]
+        if top <= r[1] and r[3] <= end + 2 and r[0] <= right and r[2] > right and line["size"] < BODY_SIZE:
+            right = max(right, r[2])
     # a graphic wider than the text column (a full-bleed image) widens the region, within the page
     rect = (max(left - 2, 20), top, min(right + 2, page.rect.width - 20), min(end + 2, next_top - 1))
     m = CAPTION.match(cap["text"])
@@ -341,6 +350,8 @@ def extract() -> None:
             else:
                 region = {"kind": "table", "label": None, "title": table_title(lines, t[1]), "rect": t}
                 report["uncaptioned_tables"].append({"page": n, "title": region["title"]})
+            x0, y0, x1, y1 = region["rect"]  # table detection boxes sit a point or two inside the last row
+            region["rect"] = (x0 - 2, y0 - 2, x1 + 2, y1 + 4)
             regions.append(region)
         counts = {"text": 0, "figure": 0, "table": 0}
         region_lines = set()

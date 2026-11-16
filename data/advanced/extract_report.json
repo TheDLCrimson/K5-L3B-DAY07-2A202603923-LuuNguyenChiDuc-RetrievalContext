@@ -408,7 +408,7 @@
   },
   "65": {
    "label": "55",
-   "text": 2,
+   "text": 1,
    "figure": 2,
    "table": 0,
    "chars": 1850
@@ -746,8 +746,8 @@
   }
  ],
  "totals": {
-  "chunks": 385,
-  "text": 335,
+  "chunks": 384,
+  "text": 334,
   "figure": 22,
   "table": 28,
   "regions": 40
