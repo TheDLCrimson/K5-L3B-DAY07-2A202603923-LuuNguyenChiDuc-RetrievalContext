@@ -76,7 +76,7 @@ It is graded a pass because the content and citations are right, and recorded as
 **By the rule written in A2.**
 The gate holds for all three, the pass counts tie (18), evidence in context ties (15/15), so step 4 decides: V1 has the lowest cost per question.
 The rule, applied as written, chooses V1.
-The tie says dev cannot tell whether look matters, and the test set has seven evidence items that exist only in the picture.
+The tie says dev cannot tell whether look matters, and the test set has evidence items that exist only in the picture (five flagged `visual_only` in the benchmark: t06, t09, t10, t11, t16; two more, t07 and t08, depend on reading labels and positions on a map).
 
 ## A4 - Amendment after the dev tie (made before any test run)
 
@@ -120,5 +120,74 @@ Every failure is a refusal: V0 and V1 declined to name a colour or an axis value
 
 **What this means, stated plainly.**
 The rule picks V1, but the difference between V1 and V2 on dev is one question out of 23, and it is on the kind of question the look tool exists for.
-The test has 12 evidence items that exist only in the picture.
+The test has five evidence items flagged `visual_only` (t06, t09, t10, t11, t16) and two map questions (t07, t08) whose answer sits in the picture's labels and positions.
 Choosing V1 follows the rule; choosing V2 would follow the evidence about the capability but override a rule written beforehand.
+
+## A6 - Test, run once (16/11/2026)
+
+The choice was committed first (commit 9374d3f, [selection.json](results/advanced/selection.json)): V1 is the chosen configuration and V0 the baseline.
+Test ran once for each, with `--final`, on the 30 questions of [questions.json](data/advanced/benchmark/questions.json), which the author reviewed before the run.
+Labels were drafted by reading each answer against the original page, the crop and every cited chunk, then checked by the author ([review_labels.csv](results/advanced/test/review_labels.csv)).
+
+| Measure | V1 (chosen) | V0 (baseline) |
+| --- | --- | --- |
+| **Pass, all 30** | **26/30 (86.7%)** | **26/30 (86.7%)** |
+| Tables (6) | 6/6 | 6/6 |
+| Text (4) | 4/4 | 4/4 |
+| Multi-hop (4) | 3/4 | 3/4 |
+| Charts (5) | 4/5 | 4/5 |
+| Images and diagrams (5) | 3/5 | 3/5 |
+| No evidence (6) | 6/6 | 6/6 |
+| Failed | t09, t11, t16, t20 | t09, t11, t16, t20 |
+| Failure types | refusal 3, vision 1 | refusal 3, vision 1 |
+| System errors | 0 | 0 |
+| Evidence in the final context (24 answerable) | 24/24 | 24/24 |
+| Cited chunks that support the answer | 53/54 | 50/51 |
+| Cost for 30 questions (per question) | $0.0453 ($0.0015) | $0.0444 ($0.0015) |
+| Time per question, median / p90 | 9.8 s / 21.4 s | 6.3 s / 11.0 s |
+
+**The bonus bar is 27/30 (90%, no rounding). The result is 26/30, one short.**
+
+**The four failures, the same in both configurations.**
+
+- **t09 and t11 (Hình 11 and Hình 9, which area is darkest; which map is green).** Both refused: the extracted text carries no colour, and the agents declined to use the model-written description, which had the right answer. Refusing an answerable question fails.
+- **t16 (Hình 19, which group falls most).** Both said Dịch vụ (about −2.5%) instead of Y tế (about −1.5%). The error comes from the model-written description of the chart, which the agent used without checking the picture. This is the one case where a description was wrong, and neither V0 nor V1 can look at the image.
+- **t20 (Bảng 4 and Hình 18, borderline).** Both gave −73,6% correctly and read −1,1 for Gini from Hình 18, then said they could not confirm the direction, because the report's own text says Gini "tăng nhẹ so với BAU" while Hình 18 shows −1,1. I graded this a fail because the answer does not commit to the value asked for, the same standard as the base lab's t10 (quoted the clause, then refused). If the reviewer decides that stating −1,1 from the figure is enough, both configurations would pass 27/30, exactly 90%. The report contradicts itself here, so this was a weak test item.
+
+**What the failures say.**
+Tables, text and the multi-hop calculations all pass.
+Every failure is a question whose answer is in the picture or whose source contradicts itself.
+`look` was not available to either configuration (V2 had it and was not chosen by the rule), so this test cannot say whether it would have fixed t09, t11 and t16.
+Running V2 on test now would be using test to choose, so it is not part of the claim.
+
+**Harness note.**
+`answer_markup_stripped` fired once per configuration (one answer each had tool-call markup leaked into the text, stripped as designed; the content was graded as written).
+
+## A7 - Conclusions, trade-offs and what to do next
+
+**Result.**
+26 of 30 test questions pass (86,7%), one short of the 27 the bonus needs, for the chosen V1 and for the baseline V0 alike.
+The bonus is not claimed.
+
+**What works.**
+Every table question (6/6), every text question (4/4), the multi-hop calculations that join two pages or two tables (3/4, the miss being the weak t20), and refusals on questions the report cannot answer (6/6) all pass, with no system error and with the evidence in the final context for all 24 answerable questions.
+Crops with a page and a region let every citation be checked against the original.
+
+**What does not.**
+Answers that live in the picture fail when the agent cannot look: two colour questions were refused (t09, t11) and one chart question was answered wrongly from a bad description (t16).
+The description written at index time is a search aid, not evidence, and one of them was wrong; an agent without `look` has no way to find out.
+
+**Trade-offs measured.**
+On dev (23 questions) `look` raised passes from 22 to 23 at 1,6 times the cost per question ($0.0022 against $0.0013) and 1,4 times the time (12,9 s against 9,1 s on the first 18 questions); on test, V1 against V0 cost the same ($0.045 for 30 questions) and took 9,8 s against 6,3 s, with the same pass count.
+Rerank bought no passes on test and about 3 s per question.
+
+**What the evidence does not settle.**
+The rule picked V1 on a one-question difference.
+Whether V2 would have passed t09, t11 and t16 was not tested, because running it on test after the choice would be selecting on test.
+One label (t20) decides the bar, and the item is weak because the report contradicts itself on that value.
+
+**Next steps (each needs new dev questions, a new choice and a new test).**
+1. Use `look` by default for any question about a figure or a map, since the dev data point toward it and the test failures are all picture-bound.
+2. Check a model-written description against the crop before an agent uses a number from it.
+3. Replace test items whose source contradicts itself, and enlarge the test so one question is less than 3,3 points.
+4. Run each configuration several times to measure run-to-run variance.

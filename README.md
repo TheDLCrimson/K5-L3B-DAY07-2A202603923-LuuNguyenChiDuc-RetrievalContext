@@ -34,4 +34,4 @@ Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/i
 
 ## Bài làm · 2A202603923 Lưu Nguyễn Chí Đức
 
-Run guide: [src/README.md](src/README.md) · Day 6 data: [data/day6/README.md](data/day6/README.md) · Benchmark: [benchmark/README.md](benchmark/README.md) · Report: [report/individual/2A202603923_LuuNguyenChiDuc.md](report/individual/2A202603923_LuuNguyenChiDuc.md)
+Run guide: [src/README.md](src/README.md) · Day 6 data: [data/day6/README.md](data/day6/README.md) · Benchmark: [benchmark/README.md](benchmark/README.md) · Report: [report/individual/2A202603923_LuuNguyenChiDuc.md](report/individual/2A202603923_LuuNguyenChiDuc.md) · Advanced challenge (attempted, 26/30 on test, below the 27/30 bar): [EXPERIMENTS_ADVANCED.md](EXPERIMENTS_ADVANCED.md), [data/advanced/README.md](data/advanced/README.md)

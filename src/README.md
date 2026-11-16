@@ -41,6 +41,26 @@ python starter/agent_metrics.py --cases results/agent/cases.json --traces result
 Runs recorded before the full logging keep score and rank for the top 3 of the 8 chunks each search fetched.
 `python -m src.replay_searches --all` replays every logged search without calling the model, checks the replay against the trace, and writes `search_ranks.json` next to each `traces.json` ([EXPERIMENTS.md](../EXPERIMENTS.md) E5).
 
+## Advanced challenge (the 103-page World Bank report)
+
+Needs the Day 6 container, the OpenRouter key in `.env` and, for rerank, a GPU.
+Result and hypotheses: [EXPERIMENTS_ADVANCED.md](../EXPERIMENTS_ADVANCED.md); document and index: [data/advanced/README.md](../data/advanced/README.md); benchmark: [data/advanced/benchmark/README.md](../data/advanced/benchmark/README.md).
+
+```bash
+python -m src.advanced.source           # download the PDF and check its SHA-256 (the PDF is not committed)
+python -m src.advanced.extract          # text, table and figure chunks plus crops -> data/advanced/
+python -m src.advanced.describe         # model-written description of each figure and table crop (cached)
+python -m src.advanced.index build      # embed every chunk into the pgvector table adv_chunks
+python -m src.advanced.verify_benchmark # quotas, evidence chunks, calculations and absence terms
+python -m src.advanced.run_agent --split dev --config V2_rerank_look      # V0_dense, V1_rerank, V2_rerank_look, V3_rerank_look_strong
+python -m src.advanced.review_sheet sheet --split dev --configs V0_dense,V1_rerank,V2_rerank_look
+python -m src.advanced.review_sheet import --split dev --labelled-by "<who labelled>"
+python -m src.advanced.metrics --split dev --configs V0_dense,V1_rerank,V2_rerank_look
+```
+
+Test needs `--final` and only runs the configurations named in `results/advanced/selection.json`; it was run once, for V1 and V0.
+`--ids a,b --folder NAME` runs a subset into its own folder (used for the five dev questions added after the first tie, `--tag _ext` on the sheet and `--extension _ext` on the metrics).
+
 ## Rebuild the exports
 
 The chunk export and the benchmark are committed, so these steps only rebuild them.
@@ -65,8 +85,9 @@ The chunk export and the benchmark are committed, so these steps only rebuild th
 | `run_agent.py` | Runs one agent configuration on a split; writes traces and automatic metrics to `results/agent/<split>/<config>/` |
 | `review_sheet.py` | Reading sheet and label CSV for human review; imports the CSV into `reviews.json` and context grades |
 | `replay_searches.py` | Replays logged agent searches to recover score and rank for every fetched chunk; writes `search_ranks.json` |
+| `advanced/` | The advanced challenge: `source.py` (document, download, hash), `extract.py` (layout to chunks and crops), `describe.py` (vision descriptions), `index.py` (pgvector `adv_chunks`), `agent.py` (search, look, finish), `run_agent.py`, `review_sheet.py`, `metrics.py`, `verify_benchmark.py`, `benchmark_sheet.py` |
 
 ## Tests
 
-`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py), [tests/test_retrieval.py](../tests/test_retrieval.py), [tests/test_agent.py](../tests/test_agent.py), [tests/test_review_sheet.py](../tests/test_review_sheet.py) and [tests/test_replay.py](../tests/test_replay.py).
+`python -m unittest discover -s tests -v` runs the template's tests, [tests/test_benchmark.py](../tests/test_benchmark.py), [tests/test_retrieval.py](../tests/test_retrieval.py), [tests/test_agent.py](../tests/test_agent.py), [tests/test_review_sheet.py](../tests/test_review_sheet.py) and [tests/test_replay.py](../tests/test_replay.py), [tests/test_advanced_extract.py](../tests/test_advanced_extract.py), [tests/test_advanced_benchmark.py](../tests/test_advanced_benchmark.py) and [tests/test_advanced_agent.py](../tests/test_advanced_agent.py).
 They need no database, model or API key; the agent tests use a scripted model that only exercises the loop.

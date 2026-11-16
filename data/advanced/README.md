@@ -49,8 +49,8 @@ Twelve pages are nearly empty (dividers, blank pages, the back cover); their tex
   Six boundary errors found this way, while checking crops and again while writing benchmark questions, were fixed in the rules: an italic subtitle between caption and chart, axis labels below the plot area, a map's clip path reaching past the source line (this one has a test), rotated axis labels that start inside the plot and run below it (Hình 8 and 16), series labels hanging past the right edge (Hình 7), and the last row of four tables clipped by a point or two.
   A script then checks every crop for text cut at its edges: 0 found.
 - **Tables:** Bảng 1 and the first rows of the p95 appendix table were compared with the page images and match, including the report's own "1.08,9" for Malaysia in Bảng 1.
-- **Descriptions:** of 843 numbers in the descriptions, 672 also appear in the text extracted from the same region.
-  Most of the other 171 are marked as estimates read off an axis ("khoảng"), or are counts and years; raster figures (Hình 4, 9, 10, 11) have no region text, so none of their numbers can be checked this way.
+- **Descriptions:** of 848 numbers in the descriptions, 672 also appear in the text extracted from the same region.
+  Most of the other 176 are marked as estimates read off an axis ("khoảng"), or are counts and years; raster figures (Hình 4, 9, 10, 11) have no region text, so none of their numbers can be checked this way.
   Read in full against the crop: Hình 20 (all 18 values correct) and the p100 priority matrix (every action in the right cell, 7 / 4 / 4 / 7 per cell).
 - **Vision model, before indexing:** 11 questions on four figures, answers read by hand: 10 correct.
   The miss was a direction on the Hình 14 map (it named a coal area south-east of Hà Nội as south-west).

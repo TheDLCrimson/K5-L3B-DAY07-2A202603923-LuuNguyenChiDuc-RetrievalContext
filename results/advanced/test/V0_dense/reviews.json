@@ -1,0 +1,383 @@
+[
+ {
+  "query_id": "ad-t01",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "342,3-410,7 tỷ USD (NPV), phép tính 479,2-136,9 và 547,6-136,9 đúng, khớp hàng Nhu cầu tài chính tăng thêm.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t02",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "+19,3 tỷ USD đúng khối NZP với những cải cách hỗ trợ, cột 2031-2040.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t03",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "133,6 tỷ USD (-1,3 - (-134,9)), đúng hai giá trị và phép trừ.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t04",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "11.095 và -9,47% đúng cột RCP 4.5 năm 2050; đơn vị là đồng đô la không đổi 2020 như bảng ghi.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t05",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "3,8 tCO2e và 0,8% đúng hàng Việt Nam của Bảng 1.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t06",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Đúng ô khẩn cấp Trung bình x tác động Cao; phần giải thích thêm đúng với bảng và đoạn dẫn.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t07",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Quảng Ninh.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t08",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Sông Cả và Nghệ Tĩnh, vùng thấp nhất trên bản đồ; nói rõ vị trí lấy từ mô tả hình.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t09",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Từ chối vì chữ trích không nêu màu; mô tả hình có câu trả lời đúng nhưng không được dùng và không nhìn ảnh. Từ chối câu có đáp án là không đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t10",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "BIỂN ĐÔNG và CAM PU CHIA; đúng, nói rõ vị trí lấy từ mô tả hình.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t11",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true
+  ],
+  "reason": "Từ chối vì chữ trích không nêu màu của từng bản đồ; mô tả hình có đáp án đúng (Bão lũ, xanh lục) nhưng không dùng. Không đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t12",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "CPS 246 và ADS 63 triệu tấn CO2e; nhận xét thêm về 74% so với 80% trong văn bản là đúng.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t13",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Điện (NZP đã cải cách) +23,6% và Vận tải (NZP) -6,3%.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t14",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "3,7 và 13,9 tỷ USD, tăng 10,2.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t15",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Phân hóa học 94% và xi măng 35%.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t16",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "vision",
+  "citation_support": [
+   false
+  ],
+  "reason": "Nêu Năng lượng tăng nhiều nhất (đúng) nhưng cho rằng Dịch vụ giảm sâu nhất (-2,5%), sâu hơn Y tế (-1,5%): sai, trên hình Y tế thấp nhất, Dịch vụ khoảng -0,9%. Lỗi lấy từ mô tả hình do model tạo và không được kiểm lại bằng ảnh.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t17",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Tổng -19 - 8 + 21 + 8 + 39 + 0 + 3 = +44, khớp hàng +44; gom đúng hai trang của Bảng 5.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t18",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "68 GW x 30% = 20,4 GW, khớp 20 GW trong văn bản.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t19",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "GDP 2040 +3,3% (Bảng 4) và 80,1 tỷ USD (Bảng 3).",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t20",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Phát thải -73,6% đúng. Với Gini nêu -1,1 theo Hình 18 nhưng rồi nói không thể khẳng định chiều và mức vì đoạn văn ghi Gini 'tăng nhẹ'; không cam kết với giá trị cần trả lời. Đây là ca ranh giới: báo cáo tự mâu thuẫn ở điểm này. Chấm không đạt vì trả lời không đủ; nếu người rà soát coi -1,1 đã đủ thì đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t21",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Cao hơn 4-5 lần, ngưỡng WHO 10 µg/m3.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t22",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "10,6% theo RCP8.5 năm 2050.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t23",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true,
+   true,
+   true
+  ],
+  "reason": "Nêu đủ các cam kết: chấm dứt phá rừng, giảm 30% mêtan vào 2030, chấm dứt đầu tư nhiệt điện than mới, mở rộng tái tạo, loại bỏ than tới 2040s.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t24",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "55 triệu tấn nhập khẩu và 40 triệu tấn trong nước (ước tính 2022).",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t25",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối, nói không có COP28 trong báo cáo, chỉ nêu cam kết COP26 có trong đoạn dẫn.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t26",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Từ chối: báo cáo chỉ có số liệu cả nước và theo hạng mục, không theo tỉnh.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t27",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối: báo cáo nhắc tới CCS nhưng không có chi phí.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t28",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "Từ chối: báo cáo không đề cập hydro.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t29",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Từ chối: chỉ có tỷ lệ cả nước (khoảng 10%), không có An Giang.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-t30",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Từ chối: chỉ có doanh số xe điện cả nước, không có VinFast hay năm 2021.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ }
+]

@@ -7,7 +7,7 @@ The benchmark is in [questions.json](questions.json); [review_sheet.md](review_s
 
 | | Answerable | Without evidence | Total |
 | --- | ---: | ---: | ---: |
-| dev | 15 | 3 | 18 |
+| dev | 20 | 3 | 23 |
 | test | 24 | 6 | 30 |
 
 Answerable test questions, one main group each (a question may carry extra tags):
@@ -15,12 +15,14 @@ Answerable test questions, one main group each (a question may carry extra tags)
 | Group | Test | Dev |
 | --- | ---: | ---: |
 | Bảng | 6 | 3 |
-| Ảnh, sơ đồ | 5 | 3 |
-| Biểu đồ | 5 | 4 |
+| Ảnh, sơ đồ | 5 | 5 |
+| Biểu đồ | 5 | 7 |
 | Multi-hop | 4 | 2 |
 | Text | 4 | 3 |
 
-The split was fixed before any retrieval or agent run of the advanced challenge, and test is run once after the pipeline is chosen on dev.
+The first 18 dev questions and all 30 test questions were fixed before any retrieval or agent run of the advanced challenge.
+Five dev questions (ad-d19 to ad-d23, picture-only answers on figures the test does not use) were added after the first dev runs tied, before any test run; see [EXPERIMENTS_ADVANCED.md](../../../EXPERIMENTS_ADVANCED.md) A4.
+Test was run once after the pipeline was chosen on dev.
 
 ## Fields
 
@@ -36,7 +38,7 @@ The split was fixed before any retrieval or agent run of the advanced challenge,
 - **Gold is never given to the pipeline**: the agent and the retrievers see only the question text.
 - **Checked by script** (`verify_benchmark`): quotas; every evidence chunk exists and is on the stated page; every `check_text` occurs in the chunks; every calculation in an expected answer is recomputed (10 of them); no term of an absent question occurs in the document; no question text repeats.
   The script caught two absence terms that were too broad (the report does mention carbon capture and national EV sales, but gives no cost per tonne and no company figures), which were narrowed to the missing fact.
-- **Checked by eye** on the crops and PDF pages: the 7 visual-only evidence items (values read off an axis, colours, map positions, text inside raster images).
+- **Checked by eye** on the crops and PDF pages: the 12 visual-only evidence items (7 in dev, 5 in test: values read off an axis, colours, positions, text inside raster images).
 - **Dev and test do not share an answer.**
   Some figures appear in both splits with different questions (Hình 12, 13, 21 and 22, Bảng 5), and no dev answer is a component of a test calculation: the dev Bảng 5 question asks for the net total, and the test sum uses the component rows.
 
@@ -51,6 +53,7 @@ Pass rate = passes / 30; the threshold is 27/30, with no rounding.
 
 ## Known limits
 
-- Six questions have values read off an axis or colours read off an image; their tolerance is in `grading`.
+- Twelve evidence items (7 dev, 5 test) are values read off an axis or colours or positions read off an image; their tolerance is in `grading`.
+- ad-t20 asks for the Gini change in Hình 18 (−1,1) while the report's own text says inequality "tăng nhẹ" (rises slightly); the source contradicts itself, which made the item weak and was found only when it was graded.
 - Questions are in Vietnamese on a Vietnamese edition, so the cross-language gap of the base lab does not apply here.
 - The report states that its CGE numbers are model estimates; the benchmark asks for what the report says, not whether it is true.
