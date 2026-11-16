@@ -9,3 +9,6 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# Advanced challenge: the source PDF is downloaded by src/advanced/source.py, not committed
+data/advanced/source/

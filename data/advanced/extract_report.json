@@ -1,0 +1,769 @@
+{
+ "pages": {
+  "2": {
+   "label": null,
+   "text": 3,
+   "figure": 0,
+   "table": 0,
+   "chars": 1673
+  },
+  "8": {
+   "label": "viii",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3828
+  },
+  "9": {
+   "label": "ix",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 844
+  },
+  "10": {
+   "label": "x",
+   "text": 0,
+   "figure": 0,
+   "table": 1,
+   "chars": 620
+  },
+  "11": {
+   "label": "1",
+   "text": 3,
+   "figure": 0,
+   "table": 0,
+   "chars": 1618
+  },
+  "12": {
+   "label": "2",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3948
+  },
+  "13": {
+   "label": "3",
+   "text": 3,
+   "figure": 1,
+   "table": 0,
+   "chars": 2201
+  },
+  "14": {
+   "label": "4",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 83
+  },
+  "15": {
+   "label": "5",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 2351
+  },
+  "16": {
+   "label": "6",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3448
+  },
+  "17": {
+   "label": "7",
+   "text": 3,
+   "figure": 1,
+   "table": 0,
+   "chars": 2399
+  },
+  "18": {
+   "label": "8",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 1950
+  },
+  "19": {
+   "label": "9",
+   "text": 0,
+   "figure": 1,
+   "table": 1,
+   "chars": 846
+  },
+  "20": {
+   "label": "10",
+   "text": 4,
+   "figure": 0,
+   "table": 0,
+   "chars": 2208
+  },
+  "21": {
+   "label": "11",
+   "text": 0,
+   "figure": 0,
+   "table": 0,
+   "chars": 0
+  },
+  "22": {
+   "label": "12",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 126
+  },
+  "23": {
+   "label": "13",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3624
+  },
+  "24": {
+   "label": "14",
+   "text": 7,
+   "figure": 0,
+   "table": 0,
+   "chars": 4381
+  },
+  "25": {
+   "label": "15",
+   "text": 3,
+   "figure": 1,
+   "table": 0,
+   "chars": 3023
+  },
+  "26": {
+   "label": "16",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 2332
+  },
+  "27": {
+   "label": "17",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 532
+  },
+  "28": {
+   "label": "18",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 108
+  },
+  "29": {
+   "label": "19",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3638
+  },
+  "30": {
+   "label": "20",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 2560
+  },
+  "31": {
+   "label": "21",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3856
+  },
+  "32": {
+   "label": "22",
+   "text": 4,
+   "figure": 0,
+   "table": 1,
+   "chars": 3266
+  },
+  "33": {
+   "label": "23",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3339
+  },
+  "34": {
+   "label": "24",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4368
+  },
+  "35": {
+   "label": "25",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4208
+  },
+  "36": {
+   "label": "26",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4010
+  },
+  "37": {
+   "label": "27",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 2250
+  },
+  "38": {
+   "label": "28",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4079
+  },
+  "39": {
+   "label": "29",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3790
+  },
+  "40": {
+   "label": "30",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 3106
+  },
+  "41": {
+   "label": "31",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3846
+  },
+  "42": {
+   "label": "32",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 2988
+  },
+  "43": {
+   "label": "33",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3960
+  },
+  "44": {
+   "label": "34",
+   "text": 7,
+   "figure": 0,
+   "table": 0,
+   "chars": 3892
+  },
+  "45": {
+   "label": "35",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3531
+  },
+  "46": {
+   "label": "36",
+   "text": 2,
+   "figure": 0,
+   "table": 0,
+   "chars": 1571
+  },
+  "47": {
+   "label": "37",
+   "text": 0,
+   "figure": 0,
+   "table": 0,
+   "chars": 0
+  },
+  "48": {
+   "label": "38",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 65
+  },
+  "49": {
+   "label": "39",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4101
+  },
+  "50": {
+   "label": "40",
+   "text": 3,
+   "figure": 0,
+   "table": 1,
+   "chars": 2559
+  },
+  "51": {
+   "label": "41",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3770
+  },
+  "52": {
+   "label": "42",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3910
+  },
+  "53": {
+   "label": "43",
+   "text": 2,
+   "figure": 0,
+   "table": 1,
+   "chars": 2589
+  },
+  "54": {
+   "label": "44",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 2678
+  },
+  "55": {
+   "label": "45",
+   "text": 3,
+   "figure": 0,
+   "table": 0,
+   "chars": 2489
+  },
+  "56": {
+   "label": "46",
+   "text": 3,
+   "figure": 1,
+   "table": 1,
+   "chars": 2443
+  },
+  "57": {
+   "label": "47",
+   "text": 3,
+   "figure": 0,
+   "table": 1,
+   "chars": 2816
+  },
+  "58": {
+   "label": "48",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3568
+  },
+  "59": {
+   "label": "49",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 2487
+  },
+  "60": {
+   "label": "50",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4236
+  },
+  "61": {
+   "label": "51",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3715
+  },
+  "62": {
+   "label": "52",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 2239
+  },
+  "63": {
+   "label": "53",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4372
+  },
+  "64": {
+   "label": "54",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 4116
+  },
+  "65": {
+   "label": "55",
+   "text": 2,
+   "figure": 2,
+   "table": 0,
+   "chars": 1850
+  },
+  "66": {
+   "label": "56",
+   "text": 7,
+   "figure": 0,
+   "table": 0,
+   "chars": 3998
+  },
+  "67": {
+   "label": "57",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3384
+  },
+  "68": {
+   "label": "58",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3849
+  },
+  "69": {
+   "label": "59",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3940
+  },
+  "70": {
+   "label": "60",
+   "text": 2,
+   "figure": 1,
+   "table": 0,
+   "chars": 2109
+  },
+  "71": {
+   "label": "61",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 2571
+  },
+  "72": {
+   "label": "62",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 3099
+  },
+  "73": {
+   "label": "63",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3742
+  },
+  "74": {
+   "label": "64",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3162
+  },
+  "75": {
+   "label": "65",
+   "text": 0,
+   "figure": 0,
+   "table": 0,
+   "chars": 0
+  },
+  "76": {
+   "label": "66",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 43
+  },
+  "77": {
+   "label": "67",
+   "text": 3,
+   "figure": 1,
+   "table": 0,
+   "chars": 2703
+  },
+  "78": {
+   "label": "68",
+   "text": 4,
+   "figure": 1,
+   "table": 0,
+   "chars": 3145
+  },
+  "79": {
+   "label": "69",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 3964
+  },
+  "80": {
+   "label": "70",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 4191
+  },
+  "81": {
+   "label": "71",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 748
+  },
+  "82": {
+   "label": "72",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 63
+  },
+  "83": {
+   "label": "73",
+   "text": 5,
+   "figure": 0,
+   "table": 0,
+   "chars": 3853
+  },
+  "84": {
+   "label": "74",
+   "text": 3,
+   "figure": 0,
+   "table": 1,
+   "chars": 2819
+  },
+  "85": {
+   "label": "75",
+   "text": 7,
+   "figure": 0,
+   "table": 0,
+   "chars": 4320
+  },
+  "86": {
+   "label": "76",
+   "text": 6,
+   "figure": 0,
+   "table": 0,
+   "chars": 4360
+  },
+  "87": {
+   "label": "77",
+   "text": 8,
+   "figure": 0,
+   "table": 0,
+   "chars": 4350
+  },
+  "88": {
+   "label": "78",
+   "text": 4,
+   "figure": 0,
+   "table": 0,
+   "chars": 2427
+  },
+  "89": {
+   "label": "79",
+   "text": 0,
+   "figure": 0,
+   "table": 0,
+   "chars": 0
+  },
+  "90": {
+   "label": "80",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 7
+  },
+  "91": {
+   "label": "81",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 1516
+  },
+  "92": {
+   "label": "82",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 1763
+  },
+  "93": {
+   "label": "83",
+   "text": 2,
+   "figure": 0,
+   "table": 0,
+   "chars": 1798
+  },
+  "94": {
+   "label": "84",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 1622
+  },
+  "95": {
+   "label": "85",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 2678
+  },
+  "96": {
+   "label": "86",
+   "text": 3,
+   "figure": 0,
+   "table": 0,
+   "chars": 2346
+  },
+  "97": {
+   "label": "87",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 2008
+  },
+  "98": {
+   "label": "88",
+   "text": 5,
+   "figure": 0,
+   "table": 1,
+   "chars": 3369
+  },
+  "99": {
+   "label": "89",
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 539
+  },
+  "100": {
+   "label": "90",
+   "text": 1,
+   "figure": 0,
+   "table": 1,
+   "chars": 2521
+  },
+  "101": {
+   "label": "91",
+   "text": 0,
+   "figure": 0,
+   "table": 1,
+   "chars": 2945
+  },
+  "102": {
+   "label": "92",
+   "text": 0,
+   "figure": 0,
+   "table": 1,
+   "chars": 2470
+  },
+  "103": {
+   "label": null,
+   "text": 1,
+   "figure": 0,
+   "table": 0,
+   "chars": 174
+  }
+ },
+ "excluded": {
+  "1": "bìa",
+  "3": "trang tên báo cáo",
+  "4": "mục lục",
+  "5": "mục lục",
+  "6": "mục lục (danh sách hộp, bảng)",
+  "7": "mục lục (danh sách hình)"
+ },
+ "uncaptioned_tables": [
+  {
+   "page": 9,
+   "title": "Danh sách từ viết tắt"
+  },
+  {
+   "page": 91,
+   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam"
+  },
+  {
+   "page": 94,
+   "title": "A. Các kịch bản khí hậu toàn cầu và ước tính thiệt hại bằng CGE"
+  },
+  {
+   "page": 95,
+   "title": "Những thiệt hại chính và kết quả kinh tế vĩ mô từ mô hình CGE"
+  },
+  {
+   "page": 97,
+   "title": "Các kết quả chính về phát thải và kinh tế vĩ mô từ CGE"
+  },
+  {
+   "page": 98,
+   "title": "Bảng không có tiêu đề"
+  },
+  {
+   "page": 100,
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên"
+  }
+ ],
+ "continued_tables": [
+  {
+   "page": 10,
+   "of_page": 9,
+   "title": "Danh sách từ viết tắt (tiếp)"
+  },
+  {
+   "page": 57,
+   "of_page": 56,
+   "title": "Bảng 5: Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040 (tiếp)"
+  },
+  {
+   "page": 92,
+   "of_page": 91,
+   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam (tiếp)"
+  },
+  {
+   "page": 101,
+   "of_page": 100,
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)"
+  },
+  {
+   "page": 102,
+   "of_page": 100,
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)"
+  }
+ ],
+ "totals": {
+  "chunks": 385,
+  "text": 335,
+  "figure": 22,
+  "table": 28,
+  "regions": 40
+ },
+ "sparse_pages": [
+  14,
+  21,
+  22,
+  28,
+  47,
+  48,
+  75,
+  76,
+  82,
+  89,
+  90,
+  103
+ ]
+}

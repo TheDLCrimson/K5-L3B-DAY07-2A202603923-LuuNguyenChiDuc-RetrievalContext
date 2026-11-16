@@ -1,0 +1,819 @@
+{
+ "regions": {
+  "crops/CCDR-p009-bang.png": {
+   "ids": [
+    "CCDR-p009-bang"
+   ],
+   "page": 9,
+   "kind": "table",
+   "title": "Danh sách từ viết tắt",
+   "description": "- Loại: Bảng hai cột (từ viết tắt, nghĩa tiếng Việt), không có số liệu.\n- Nội dung: Danh sách từ viết tắt và giải nghĩa, xếp theo bảng chữ cái từ 1M5R đến IFC. Trang chỉ có bảng này.\n- Giá trị:\n1M5R: Một phải Năm giảm; ADS: Kịch bản khử carbon tăng cường; ASEAN: Hiệp hội các Quốc gia Đông Nam Á; AWD: Xen kẽ ướt và khô; BAU: Hoạt động thông thường; BRT: Xe buýt nhanh; CBAM: Cơ chế điều chỉnh biên giới carbon; CCDR: Báo cáo Quốc gia về Khí hậu và Phát triển; CEA: Phân tích Môi trường Quốc gia; CGE: Mô hình cân bằng tổng thể; CNG: Khí nén tự nhiên; CO2: Ôxit Carbon; COP26: Cuộc họp lần thứ 26 của các Bên tham gia Công ước khung của Liên Hợp Quốc về Biến đổi khí hậu; COVID-19: Dịch Covid 2019; CPS: Kịch bản chính sách hiện đang được đề xuất; EIPs: Các khu công nghiệp sinh thái; EPT: Thuế bảo vệ môi trường; ESCOs: Các công ty dịch vụ năng lượng; ESG: Quản trị-xã hội-môi trường; EV: Xe điện; EVN: Tổng công ty điện lực Việt Nam; FIT: Biểu giá mua điện; GDP: Tổng sản phẩm quốc nội; GHG: Khí nhà kính; GIDD: Mô hình động phân phối thu nhập toàn cầu; HVDC: Dòng điện 1 chiều điện áp cao; IFC: Tập đoàn Tài chính Quốc tế.\n- Xu hướng: Không có số liệu để so sánh. Các mục dài nhất là COP26 và COVID-19 (tiêu đề chỉ ghi \"Dịch Covid 2019\"). Bảng có thể chưa đầy đủ vì chữ trích dừng ở IFC.",
+   "unverified": [],
+   "numbers": 6,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001271457,
+   "ms": 9918.7
+  },
+  "crops/CCDR-p010-bangc.png": {
+   "ids": [
+    "CCDR-p010-bangc"
+   ],
+   "page": 10,
+   "kind": "table",
+   "title": "Danh sách từ viết tắt (tiếp)",
+   "description": "- **Loại:** Bảng hai cột (từ viết tắt và nghĩa tiếng Việt), không có hàng tiêu đề.\n- **Nội dung:** Danh sách từ viết tắt, tiếp nối phần trước, sắp theo thứ tự chữ cái. Cột trái in đậm từ viết tắt; cột phải ghi nghĩa đầy đủ. Bảng có 17 hàng.\n- **Giá trị:**\n  - IFPRI: Viện nghiên cứu Chính sách Thực phẩm Quốc tế\n  - ILO: Tổ chức Lao động Quốc tế\n  - IMF: Quỹ Tiền tệ Quốc tế\n  - IPCC: Ủy ban liên chính phủ về Biến đổi khí hậu\n  - IWT: Giao thông thủy nội địa\n  - LEP: Luật bảo vệ môi trường\n  - MANAGE: Giảm thiểu, thích ứng và các công nghệ mới được áp dụng Cân bằng chung\n  - MIGA: Cơ quan Bảo lãnh đầu tư đa phương\n  - MONRE: Bộ Tài nguyên và Môi trường\n  - MPI: Bộ Kế hoạch và Đầu tư\n  - NAAQS: Quy chuẩn quốc gia về chất lượng không khí xung quanh\n  - NDC: Đóng góp quốc gia tự quyết định\n  - ND-GAIN: Sáng kiến Thích ứng Toàn cầu Notre Dame\n  - NPV: Giá trị hiện tại ròng\n  - NTMs: Các biện pháp phi thuế quan\n  - NZP: Lộ trình phát thải ròng bằng 0\n  - ODA: Hỗ trợ phát triển chính thức\n- **Xu hướng:** Không có số liệu. Thứ tự tăng dần theo chữ cái, từ IFPRI đến ODA. Mỗi từ viết tắt chỉ xuất hiện một lần, không có mục nào bị lặp.",
+   "unverified": [
+    "17"
+   ],
+   "numbers": 2,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000906543,
+   "ms": 7027.3
+  },
+  "crops/CCDR-p013-H1.png": {
+   "ids": [
+    "CCDR-p013-H1"
+   ],
+   "page": 13,
+   "kind": "figure",
+   "title": "Hình 1: Mô hình phát triển mới cho Việt Nam",
+   "description": "- **Loại:** Sơ đồ quy trình (vòng cung hai nhánh), không phải biểu đồ hay bảng.\n- **Nội dung:** Mô hình phát triển mới cho Việt Nam, đi từ hiện trạng đến mục tiêu năm 2045. Hình gồm hai hộp chữ nhật và hai mũi tên cong.\n- **Hộp trên:** \"Việt Nam hiện nay\" (màu xanh đậm).\n- **Hộp dưới:** \"Việt Nam năm 2045\" (màu cam).\n- **Mũi tên trái (xanh rồi cam):** \"Lộ trình xây dựng khả năng chống chịu\", đi từ hộp trên xuống hộp dưới.\n- **Mũi tên phải (xanh rồi cam):** \"Lộ trình khử carbon\", đi từ hộp trên xuống hộp dưới, đầu mũi tên hướng vào hộp dưới.\n- **Chữ ở giữa (năm gạch đầu dòng, nằm giữa hai hộp):**\n  - Xây dựng cơ sở hạ tầng có khả năng chống chịu\n  - Bảo vệ những đối tượng bị tổn thương nhất\n  - Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp\n  - Định giá carbon\n  - Huy động nguồn vốn\n- **Giá trị:** Không có số liệu hay đơn vị đo nào trên hình.\n- **Xu hướng:** Hai lộ trình song song cùng dẫn từ hiện trạng đến năm 2045. Lộ trình chống chịu nằm bên trái, lộ trình khử carbon nằm bên phải. Năm nhóm giải pháp ở giữa áp dụng chung cho cả hai lộ trình, không có thứ tự thời gian hay mức độ được thể hiện.\n- **Nguồn ghi trên hình:** Ngân hàng Thế giới.",
+   "unverified": [],
+   "numbers": 1,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000607068,
+   "ms": 5585.7
+  },
+  "crops/CCDR-p015-H2.png": {
+   "ids": [
+    "CCDR-p015-H2"
+   ],
+   "page": 15,
+   "kind": "figure",
+   "title": "Hình 2: Để trở thành quốc gia thu nhập cao vào năm 2045, Việt Nam cần đạt được tốc độ tăng",
+   "description": "- **Loại:** Biểu đồ đường (nhiều chuỗi), có một đường ngang làm ngưỡng.\n\n- **Nội dung:** GDP bình quân đầu người (USD 2015 cố định) của Hàn Quốc, Thái Lan, Trung Quốc và Việt Nam, so với ngưỡng HIC (quốc gia thu nhập cao). Trục tung từ 0 đến 25.000. Trục hoành là thời gian tương đối từ T đến T+54, với T là năm GDP bình quân đầu người của quốc gia đó bằng mức của Việt Nam năm 1990. Chú giải gồm: Hàn Quốc (1951-2005), Thái Lan (1958-2012), Trung Quốc (1983-2020), Việt Nam (1990-2020), Việt Nam (2021-2045, nét đứt cam) và Ngưỡng HIC (đường ngang xanh đậm). Đường ngưỡng Việt Nam năm 2045 được ghi ở góc phải trên.\n\n- **Giá trị:** Chỉ có nhãn \"Việt Nam năm 2045\" và trục được in rõ. Các giá trị dưới đây là ước lượng từ trục:\n  - Ngưỡng HIC: khoảng 12.700.\n  - Hàn Quốc: khoảng 800 (T); khoảng 4.300 (T+28); khoảng 8.000 (T+36); vượt ngưỡng khoảng T+43; khoảng 21.000 (T+54).\n  - Trung Quốc: khoảng 10.500 (T+36).\n  - Thái Lan: khoảng 3.800 (T+38); khoảng 5.700 (T+54).\n  - Việt Nam (1990-2020): khoảng 2.800 (T+30).\n  - Việt Nam (2021-2045): khoảng 3.500 (T+30); khoảng 5.000 (T+36); khoảng 12.500 (T+54).\n\n- **Xu hướng:** Hàn Quốc tăng nhanh nhất và là quốc gia duy nhất vượt ngưỡng HIC trong biểu đồ, khoảng T+43. Trung Quốc tăng nhanh nhưng chưa tới ngưỡng ở T+36. Thái Lan tăng chậm, có một đoạn giảm nhẹ quanh T+40. Việt Nam (1990-2020) tăng đều nhưng thấp. Đường dự phóng nét đứt của Việt Nam phải tăng nhanh hơn giai đoạn trước để chạm ngưỡng đúng năm 2045 (khoảng T+54), cho thấy cần tốc độ tăng trưởng cao hơn, đúng với tiêu đề hình.",
+   "unverified": [
+    "0",
+    "43",
+    "800",
+    "2800",
+    "3500",
+    "3800",
+    "4300",
+    "5700",
+    "8000",
+    "10500",
+    "12500",
+    "12700",
+    "21000"
+   ],
+   "numbers": 31,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001096425,
+   "ms": 9230.4
+  },
+  "crops/CCDR-p017-H3.png": {
+   "ids": [
+    "CCDR-p017-H3"
+   ],
+   "page": 17,
+   "kind": "figure",
+   "title": "Hình 3: Chi phí ước tính do biến đổi khí hậu năm 2020 (triệu USD)",
+   "description": "- **Loại:** Biểu đồ dạng treemap (ô lồng nhau), diện tích mỗi ô tỷ lệ với giá trị.\n- **Nội dung:** Chi phí ước tính do biến đổi khí hậu năm 2020, đơn vị triệu USD, chia theo 9 nhóm tác động. Không có trục và không có chú giải riêng; mỗi ô ghi tên nhóm và giá trị. Nguồn: Ngân hàng Thế giới, 2021 (chú thích 7). Tiêu đề: \"Hình 3\". Trang 17.\n- **Giá trị:**\n  - Thủy sản: 4219 (ô lớn nhất, góc dưới bên trái)\n  - Năng suất lao động: 2807 (ô lớn thứ hai, bên phải ô Thủy sản, phía trên)\n  - Mực nước biển dâng: 1474 (ô giữa phía trên, bên phải nhóm Năng suất lao động)\n  - Nông nghiệp: 837 (ô bên phải cùng, phía trên)\n  - Chi phí giải nhiệt: 518 (ô xanh dương, phía dưới Mực nước biển dâng)\n  - Thiên tai: 447 (ô hồng, cạnh Chi phí giải nhiệt)\n  - Sức khỏe: 235 (ô tím, bên phải Thiên tai)\n  - Nước: 218 (ô tím nhạt, dưới Nông nghiệp, cạnh Sức khỏe)\n  - Du lịch: 148 (ô xám nhỏ nhất, phía dưới cùng bên phải)\n- **Xu hướng:** Thủy sản có chi phí cao nhất, khoảng gấp 1,5 lần Năng suất lao động và gấp khoảng 28 lần Du lịch. Du lịch có chi phí thấp nhất. Hai nhóm Thủy sản và Năng suất lao động chiếm phần diện tích lớn nhất. Các nhóm Sức khỏe, Nước và Du lịch có chi phí thấp, ô nhỏ.",
+   "unverified": [
+    "1.5",
+    "7",
+    "9",
+    "17",
+    "28",
+    "2021"
+   ],
+   "numbers": 17,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000749826,
+   "ms": 6697.2
+  },
+  "crops/CCDR-p018-H4.png": {
+   "ids": [
+    "CCDR-p018-H4"
+   ],
+   "page": 18,
+   "kind": "figure",
+   "title": "Hình 4: Gia tăng mức phát thải GHG",
+   "description": "- **Loại:** Biểu đồ vùng xếp chồng (stacked area) theo thời gian.\n- **Nội dung:** Phát thải khí nhà kính (GHG) theo nhóm ngành, từ 1990 đến 2018. Trục tung: MtCO₂e, từ -100 đến 400. Trục hoành: Năm, từ 1990 đến 2018. Chú giải gồm 11 nhóm: Điện/Nhiệt; Nông nghiệp; Công trình xây dựng; Quy trình công nghiệp; Giao thông; Chất thải; Khí thải từ các bình áp suất; Cơ sở; Dầu thô; Các loại nhiên liệu khác; Thay đổi mục đích sử dụng đất và lâm nghiệp (LULUCF). LULUCF là nhóm màu hồng tím, có giá trị âm (hấp thụ).\n- **Giá trị:** Hình không in số liệu trên cột hay vùng; các giá trị dưới đây là ước lượng từ trục.\n  - Tổng phát thải năm 1990: khoảng 70 MtCO₂e.\n  - Tổng phát thải năm 2000: khoảng 135–140 MtCO₂e.\n  - Đỉnh năm 2010: khoảng 280 MtCO₂e.\n  - Năm 2011: khoảng 260 MtCO₂e.\n  - Năm 2018: khoảng 380 MtCO₂e, cao nhất trong giai đoạn.\n  - LULUCF: khoảng -70 MtCO₂e (1990–2000); khoảng +160 MtCO₂e vào năm 2001; khoảng -20 MtCO₂e (2011–2014); khoảng -13 MtCO₂e (2017–2018).\n- **Xu hướng:**\n  - Tổng phát thải tăng đều từ 1990 đến 2010, rồi tiếp tục tăng mạnh từ 2014 đến 2018.\n  - Năm 2000–2001 và 2010–2011, LULUCF thay đổi đột ngột, từ âm sang dương rồi ngược lại. Đường nối gần như thẳng đứng, cho thấy có thể do thay đổi phương pháp hoặc dữ liệu, cần đối chiếu nguồn.\n  - Từ 2011 đến 2018, LULUCF chuyển sang giá trị âm nhỏ.\n  - Các nhóm còn lại đóng góp phần phát thải dương, tăng dần theo thời gian. Vì màu các dải khá gần nhau, không thể xác định chắc chắn giá trị từng nhóm trong hình.",
+   "unverified": [
+    "11",
+    "13",
+    "20",
+    "70",
+    "135",
+    "140",
+    "160",
+    "260",
+    "280",
+    "380",
+    "2001",
+    "2011",
+    "2017",
+    "2018"
+   ],
+   "numbers": 20,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001209483,
+   "ms": 11495.3
+  },
+  "crops/CCDR-p019-B1.png": {
+   "ids": [
+    "CCDR-p019-B1"
+   ],
+   "page": 19,
+   "kind": "table",
+   "title": "Bảng 1: So sánh phát thải giữa các nước",
+   "description": "- **Loại:** Bảng (5 cột, 18 hàng), nguồn: Climate Watch.\n\n- **Nội dung:** So sánh phát thải của 17 nước và nhóm OECD. Cột gồm: Nước; phát thải trên đầu người (tCO2e/người); phát thải carbon (tCO2e/triệu $GDP); tổng phát thải (MtCO2e); % phát thải toàn cầu.\n\n- **Giá trị** (theo thứ tự: đầu người | carbon | tổng | %):\n  - Hoa Kỳ: 17,7 | 281,5 | 5.794,3 | 12,0%\n  - Mông Cổ: 17,5 | 4.250,9 | 55,7 | 0,1%\n  - Malaysia: 12,3 | 1.08,9 | 388,1 | 0,8%\n  - OECD: 10,8 | 266,6 | 14.081,8 | 29,8%\n  - Đức: 9,4 | 195,9 | 776,61 | 1,6%\n  - Trung Quốc: 8,4 | 842,5 | 11.705,1 | 23,9%\n  - Papua New Guinea: 7,5 | 2.658,3 | 64,1 | 0,1%\n  - Vương quốc Anh: 6,6 | 154,2 | 441,1 | 0,9%\n  - Indonesia: 6,4 | 1.634,8 | 1.703,9 | 3,6%\n  - Thái Lan: 6,2 | 851,4 | 431,2 | 0,9%\n  - Lào: 5,5 | 2.151,6 | 38,6 | 0,1%\n  - Pháp: 5,4 | 129,6 | 361,4 | 0,7%\n  - Đông Timor: 5,3 | 4.271,0 | 6,7 | 0,0%\n  - Thổ Nhĩ Kỳ: 5 | 603,9 | 422,0 | 1,0%\n  - Myanmar: 4,3 | 3.040,9 | 231,6 | 0,5%\n  - Campuchia: 4,3 | 2.814,1 | 69,2 | 0,1%\n  - Việt Nam: 3,8 | 1.486,2 | 364,4 | 0,8%\n  - Philipin: 2,2 | 677,0 | 234,8 | 0,5%\n\n- **Xu hướng:**\n  - Đầu người cao nhất: Hoa Kỳ (17,7); thấp nhất: Philipin (2,2).\n  - Carbon cao nhất: Đông Timor (4.271,0); thấp nhất: Pháp (129,6).\n  - Tổng phát thải cao nhất: OECD (14.081,8), trong đó Trung Quốc (11.705,1) là nước lớn nhất; thấp nhất: Đông Timor (6,7).\n  - % toàn cầu cao nhất: OECD (29,8%), tiếp theo Trung Quốc (23,9%).\n  - Một số số liệu như \"1.08,9\" (Malaysia) và \"776,61\" (Đức) được in đúng như trong bảng, có thể là lỗi định dạng.",
+   "unverified": [
+    "17",
+    "18"
+   ],
+   "numbers": 68,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001514799,
+   "ms": 10847.1
+  },
+  "crops/CCDR-p019-H5.png": {
+   "ids": [
+    "CCDR-p019-H5"
+   ],
+   "page": 19,
+   "kind": "figure",
+   "title": "Hình 5: Phát thải GHG trên đầu người (tấn/đầu người) (Chấm đỏ là Việt Nam)",
+   "description": "- **Loại:** Biểu đồ phân tán (scatter plot), mỗi chấm là một quốc gia.\n\n- **Nội dung:** Quan hệ giữa GDP trên đầu người (trục hoành, đơn vị không ghi trên hình) và phát thải GHG trên đầu người (trục tung, tấn/đầu người). Chấm đỏ là Việt Nam. Nguồn: ClimateWatch.\n\n- **Giá trị:**\n  - Việt Nam (chấm đỏ): khoảng 2.700 GDP trên đầu người và khoảng 4 tấn GHG/đầu người. Hình không in số liệu.\n  - Điểm phát thải cao nhất: khoảng 31 tấn, ở mức GDP khoảng 24.000.\n  - Điểm GDP cao nhất: khoảng 29.000, phát thải khoảng 7 tấn.\n  - Điểm phát thải cao ở GDP thấp: khoảng 19 tấn, GDP khoảng 500.\n  - Điểm thấp nhất: khoảng 0,5 tấn, GDP khoảng 6.500.\n  - Phần lớn các nước tập trung ở GDP dưới 10.000 và phát thải dưới 10 tấn/đầu người.\n\n- **Xu hướng:**\n  - Mối quan hệ dương nhưng yếu và phân tán: GDP cao hơn thường đi kèm phát thải cao hơn, song không đều.\n  - Việt Nam nằm trong cụm có GDP thấp và phát thải thấp, dưới mức trung bình của nhiều nước cùng mức GDP.\n  - Khi GDP trên khoảng 15.000, các điểm phân bố rộng hơn, phát thải dao động từ khoảng 2 đến 31 tấn.",
+   "unverified": [
+    "0.5",
+    "2",
+    "4",
+    "7",
+    "19",
+    "31",
+    "500",
+    "2700",
+    "6500",
+    "24000",
+    "29000"
+   ],
+   "numbers": 14,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000679437,
+   "ms": 6262.0
+  },
+  "crops/CCDR-p025-H6.png": {
+   "ids": [
+    "CCDR-p025-H6"
+   ],
+   "page": 25,
+   "kind": "figure",
+   "title": "Hình 6: Các tác động của biến đổi khí hậu và rủi ro thiên tai dưới sự quan sát của các doanh",
+   "description": "- **Loại:** Biểu đồ thanh ngang chồng 100% (hình 6), trang PDF 25.\n- **Nội dung:** Tỷ lệ (%) doanh nghiệp báo cáo mức độ tác động của biến đổi khí hậu và rủi ro thiên tai, năm 2019, theo 10 khía cạnh. Trục ngang: 0–100 (%). Chú giải gồm 4 mức: Hầu như không (xanh đậm), Khá ít (xanh nhạt), Tương đối nhiều (cam), Rất nhiều (hồng). Nguồn: VCCI 2020, hình 3.3; khảo sát hơn 10.000 doanh nghiệp.\n- **Giá trị (Hầu như không / Khá ít / Tương đối nhiều / Rất nhiều):**\n  - Giai đoạn kinh doanh sản xuất: 11 / 35 / 38 / 16\n  - Giảm năng suất lao động: 12 / 37 / 38 / 13\n  - Doanh thu sụt giảm: 12 / 37 / 35 / 16\n  - Gián đoạn kênh vận chuyển: 16 / 38 / 33 / 13\n  - Tăng chi phí sản xuất: 16 / 39 / 35 / 9\n  - Trì hoãn mạng lưới phân phối: 24 / 38 / 28 / 10\n  - Giảm chất lượng sản phẩm/dịch vụ: 27 / 36 / 26 / 11\n  - Thiệt hại về cơ sở vật chất: 21 / 45 / 25 / 9\n  - Thiếu hụt nhân lực: 24 / 43 / 25 / 8\n  - Thiếu nguồn cung nguyên liệu đầu vào: 33 / 34 / 24 / 9\n- **Xu hướng:**\n  - Mức \"Hầu như không\" thấp nhất ở hàng đầu tiên (11%) và cao nhất ở hàng cuối (33%).\n  - Các hàng trên (sản xuất, năng suất, doanh thu) có tỷ lệ \"Tương đối nhiều\" và \"Rất nhiều\" cao hơn, còn các hàng dưới (cung ứng, nhân lực, cơ sở vật chất) thường có tỷ lệ \"Hầu như không\" và \"Khá ít\" cao hơn.\n  - \"Rất nhiều\" cao nhất ở 16% (giai đoạn sản xuất và doanh thu sụt giảm), thấp nhất ở 8% (thiếu hụt nhân lực).\n  - \"Tương đối nhiều\" cao nhất ở 38% (giai đoạn sản xuất và giảm năng suất lao động).\n  - \"Khá ít\" cao nhất ở 45% (thiệt hại cơ sở vật chất).",
+   "unverified": [
+    "4",
+    "2020"
+   ],
+   "numbers": 29,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001110285,
+   "ms": 8917.5
+  },
+  "crops/CCDR-p026-H7.png": {
+   "ids": [
+    "CCDR-p026-H7"
+   ],
+   "page": 26,
+   "kind": "figure",
+   "title": "Hình 7: Biến thiên tỷ trọng sản lượng của các DNNN trong các ngành công nghiệp sử dụng nhiều",
+   "description": "- **Loại:** Biểu đồ đường nhiều chuỗi. Trục ngang là năm 2005–2018 (sơ bộ), trục dọc là tỷ trọng (%) từ 0% đến 100%.\n- **Nội dung:** Tỷ trọng sản lượng của DNNN trong 8 ngành công nghiệp và vận tải sử dụng nhiều carbon ở Việt Nam. Số liệu của Tổng cục Thống kê tính theo tấn, trừ điện (kWh), vận tải hàng hóa (triệu tấn/km) và vận tải hành khách (triệu người-km). Nguồn: Coste và cộng sự, 2020.\n- **Giá trị in trên hình (2018, sơ bộ):**\n  - Than: 98%\n  - Phân hóa học: 94%\n  - Điện: 85%\n  - Vận tải hàng hóa: 55%\n  - Phân bón NPK: 55%\n  - Xi măng: 35%\n  - Vận chuyển hành khách: 27%\n  - Kim loại: 14%\n- **Giá trị ước lượng (khoảng):**\n  - 2005: Phân hóa học ~99%, Than ~97%, Điện ~94%, Phân bón NPK ~75%, Vận tải hàng hóa ~63%, Xi măng ~63%, Vận chuyển hành khách ~40%, Kim loại ~34%.\n  - Điện: đáy khoảng 70% (2008), đỉnh khoảng 90% (2012).\n  - Vận tải hàng hóa: đỉnh khoảng 72% (2009–2011).\n  - Xi măng: đáy khoảng 43% (2011).\n  - Kim loại: đáy khoảng 13% (2016).\n- **Xu hướng:**\n  - Than ổn định ở mức cao nhất (khoảng 96–98%).\n  - Phân hóa học giữ mức trên 90% nhưng giảm nhẹ sau 2014.\n  - Điện giảm mạnh 2005–2008, tăng đến 2012, sau đó giảm dần.\n  - Vận tải hàng hóa và Phân bón NPK giảm đều trong giai đoạn 2011–2018.\n  - Xi măng, Vận chuyển hành khách và Kim loại giảm dần, Kim loại thấp nhất trong các chuỗi.",
+   "unverified": [
+    "8",
+    "13",
+    "34",
+    "43",
+    "63",
+    "70",
+    "72",
+    "75",
+    "90",
+    "96",
+    "97",
+    "99",
+    "2008",
+    "2009",
+    "2011",
+    "2020"
+   ],
+   "numbers": 31,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001441143,
+   "ms": 11404.0
+  },
+  "crops/CCDR-p030-H8.png": {
+   "ids": [
+    "CCDR-p030-H8"
+   ],
+   "page": 30,
+   "kind": "figure",
+   "title": "Hình 8: Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực",
+   "description": "- **Loại:** Biểu đồ đường, hai chuỗi.\n- **Nội dung:** Ước tính thiệt hại GDP do nhiệt độ và lượng mưa tăng, thay đổi nhiều hơn và mực nước biển dâng cao, theo hai kịch bản RCP 2.6 (đường xanh đậm) và RCP 4.5 (đường cam). Trục tung: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (0–14). Trục hoành: năm 2022–2050.\n- **Giá trị:** Hình không in nhãn số liệu nên các giá trị sau đều là ước lượng từ trục.\n  - RCP 2.6: năm 2022 khoảng 6,8%; năm 2030 khoảng 8,2%; năm 2050 khoảng 10%.\n  - RCP 4.5: năm 2022 khoảng 6,5%; năm 2030 khoảng 8,2%; năm 2050 khoảng 12,4%.\n- **Xu hướng:**\n  - Cả hai kịch bản đều tăng đều theo thời gian.\n  - Hai đường gần như trùng nhau đến khoảng năm 2030–2031.\n  - Sau đó RCP 4.5 tăng nhanh hơn và cao hơn RCP 2.6 rõ rệt từ khoảng 2035 trở đi.\n  - RCP 2.6 gần như đi ngang quanh mức khoảng 8% từ 2030 đến 2035, rồi tăng chậm.\n  - Chênh lệch năm 2050 khoảng 2,4 điểm phần trăm.\n  - Mức cao nhất trên hình là RCP 4.5 năm 2050 (khoảng 12,4%); mức thấp nhất là RCP 4.5 năm 2022 (khoảng 6,5%).",
+   "unverified": [
+    "2.4",
+    "6.5",
+    "6.8",
+    "8.2",
+    "12.4"
+   ],
+   "numbers": 16,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000647262,
+   "ms": 5652.1
+  },
+  "crops/CCDR-p032-B2.png": {
+   "ids": [
+    "CCDR-p032-B2"
+   ],
+   "page": 32,
+   "kind": "table",
+   "title": "Bảng 2. Ước tính nhu cầu tài chính tăng thêm cho các biện pháp thích ứng, 2022–2050",
+   "description": "- **Loại:** Bảng số liệu (3 cột, 6 hàng dữ liệu, có ghi chú cuối bảng).\n\n- **Nội dung:** Ước tính nhu cầu tài chính tăng thêm cho các biện pháp thích ứng, giai đoạn 2022–2050. Cột 1 là trung bình mỗi năm (% GDP). Cột 2 là giá trị tích lũy (tỷ USD, tính theo NPV). Ghi chú: NPV là giá trị hiện tại thuần; tất cả số liệu dùng tỷ lệ chiết khấu 6%.\n\n- **Giá trị:**\n  - Nhu cầu tài chính tăng thêm: 4,5–5,4 % GDP; 342,3–410,7 tỷ USD.\n  - Tổng nhu cầu tài chính: 6,3–7,2 % GDP; 479,2–547,6 tỷ USD.\n  - Nhu cầu đầu tư cho tài sản tư nhân có khả năng phục hồi: 3,0 % GDP; 228,2 tỷ USD.\n  - Đầu tư mới và bổ sung cơ sở hạ tầng có khả năng phục hồi: 3,0–3,5 % GDP; 228,2–266,2 tỷ USD.\n  - Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng: 0,3–0,7 % GDP; 22,8–53,2 tỷ USD.\n  - Nguồn tài chính hiện có: 1,8 % GDP; 136,9 tỷ USD.\n\n- **Cấu trúc:** Hàng in đậm là tổng cấp cao (nhu cầu tăng thêm, tổng nhu cầu, nguồn hiện có). Ba hàng thụt lề dưới \"Tổng nhu cầu tài chính\" là các thành phần của nhu cầu.\n\n- **Xu hướng:**\n  - Cao nhất: tổng nhu cầu tài chính, 6,3–7,2 % GDP và 479,2–547,6 tỷ USD.\n  - Thấp nhất: hỗ trợ tài chính cho người dân và doanh nghiệp, 0,3–0,7 % GDP và 22,8–53,2 tỷ USD.\n  - Đầu tư hạ tầng và tài sản tư nhân chiếm phần lớn nhu cầu, cùng khoảng 3,0 % GDP mỗi năm.\n  - Nguồn tài chính hiện có là một giá trị cố định (1,8 % GDP; 136,9 tỷ USD), không phải khoảng.",
+   "unverified": [
+    "1",
+    "3"
+   ],
+   "numbers": 24,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001007424,
+   "ms": 8147.8
+  },
+  "crops/CCDR-p037-H9.png": {
+   "ids": [
+    "CCDR-p037-H9"
+   ],
+   "page": 37,
+   "kind": "figure",
+   "title": "Hình 9: Mức độ dễ bị ảnh hưởng khi gặp thiên tai của các tuyến đường có quy mô quốc gia tại Việt",
+   "description": "- **Loại:** Ba bản đồ đơn sắc đặt cạnh nhau (lở đất, lũ lụt 1.000 năm, bão lũ), cùng tỷ lệ và thang đo phần trăm.\n\n- **Nội dung:** Mức độ dễ bị ảnh hưởng khi gặp thiên tai của các tuyến đường quốc gia tại Việt Nam, thể hiện bằng \"Percentage exposure\" (tỷ lệ phơi nhiễm, %). Mỗi bản đồ có chú giải riêng: lở đất màu cam, lũ lụt 1.000 năm màu xanh dương, bão lũ màu xanh lá. Chú giải cũng có mục \"No value\" (xám, không có dữ liệu). Nguồn: Oh và đồng sự (2019), phân tích của Ngân hàng Thế giới. Thanh tỷ lệ \"100 km\" ở góc dưới phải.\n\n- **Giá trị:** Bản đồ không in giá trị số cho từng tuyến hay tỉnh. Chú giải chỉ có các khoảng: 0–10, 10–20, 20–30, 30–40 (hoặc 20–40 theo chữ in mờ), 40–100 (%), và No value. Không thể đọc giá trị cụ thể của từng địa danh.\n\n- **Xu hướng:**\n  - **Lở đất:** Các khoảng cao (màu cam đậm, khoảng 40–100%) tập trung dọc phía tây và trung/nam Trung Bộ, đặc biệt đoạn dọc dãy Trường Sơn và phía nam miền Trung. Vùng núi phía Bắc chủ yếu ở mức thấp (màu nhạt).\n  - **Lũ lụt 1.000 năm:** Điểm đậm rải rác ở đồng bằng sông Hồng và miền Bắc, dải miền Trung, và Tây Nguyên–Nam Bộ. Không có một dải liên tục như lở đất.\n  - **Bão lũ:** Mức cao (màu xanh đậm) tập trung dọc ven biển Bắc Bộ và Bắc–Trung Bộ. Ven biển phía Nam nhạt hơn.",
+   "unverified": [
+    "0",
+    "10",
+    "20",
+    "30",
+    "40",
+    "100"
+   ],
+   "numbers": 8,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.0009999,
+   "ms": 10552.4
+  },
+  "crops/CCDR-p040-H10.png": {
+   "ids": [
+    "CCDR-p040-H10"
+   ],
+   "page": 40,
+   "kind": "figure",
+   "title": "Hình 10: Đồng bằng sông Cửu Long có nguy",
+   "description": "- **Loại:** Bản đồ (bản đồ nền màu xanh, thể hiện mức độ ngập mặn dự báo).\n- **Nội dung:** Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong, tức Đồng bằng sông Cửu Long. Hình không có trục, đơn vị hay thang đo.\n- **Chú giải:** Không thấy bảng chú giải màu trong hình, nên không xác định được mức ngập ứng với từng sắc độ.\n- **Địa danh được ghi:**\n  - \"CAM PU CHIA\" ở góc trên bên trái (phía bắc).\n  - Nhãn ở góc trên bên phải, nằm trong vùng màu be, có thể là TP. Hồ Chí Minh (phía đông bắc).\n  - \"BIỂN ĐÔNG\" ở phía đông nam, dọc bờ biển.\n  - \"CÀ MAU\" ở phần mũi phía nam.\n  - Một số nhãn nhỏ ở phía tây (ven biển, gần vịnh) và phía đông (ven sông, gần cửa sông) không đọc rõ.\n- **Giá trị:** Hình không in con số nào. Không có giá trị định lượng nào được nêu.\n- **Xu hướng:**\n  - Vùng xanh đậm nhất tập trung ở phần phía bắc và đông bắc, gần biên giới Campuchia và dọc các nhánh sông.\n  - Các vùng sáng hơn hoặc trắng xuất hiện chủ yếu ở phần phía tây nam và rải rác ở một số khu vực ven biển.\n  - So sánh mức độ giữa các vùng chỉ mang tính định tính, dựa trên độ đậm nhạt của màu.",
+   "unverified": [],
+   "numbers": 1,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000763587,
+   "ms": 9302.3
+  },
+  "crops/CCDR-p042-H11.png": {
+   "ids": [
+    "CCDR-p042-H11"
+   ],
+   "page": 42,
+   "kind": "figure",
+   "title": "Hình 11: Rủi ro ngập lụt tại các vùng ven",
+   "description": "- **Loại:** Bản đồ tô màu (choropleth) các tỉnh/thành Việt Nam.\n- **Nội dung:** Rủi ro ngập lụt tương đối (Relative Flood Risk) tại các vùng ven biển. Thang màu chia thành 5 nhóm, từ sáng (rủi ro thấp) đến đậm (rủi ro cao). Chú giải nằm bên phải bản đồ, nhãn các khoảng giá trị mờ, khó đọc chính xác.\n- **Giá trị:** Không có giá trị số in trên từng tỉnh. Các địa danh được ghi nhãn bằng chấm xanh dương và hộp chữ:\n  - Hà Nội (miền Bắc, trong đất liền)\n  - Hải Phòng (ven biển Đông Bắc, gần Hà Nội)\n  - Đà Nẵng (miền Trung ven biển)\n  - Hồ Chí Minh (miền Nam)\n  - Cần Thơ (Đồng bằng sông Cửu Long, phía Tây Nam)\n- **Xu hướng:**\n  - Nhóm màu đậm nhất (rủi ro tương đối cao nhất) tập trung thành dải dọc duyên hải miền Trung, phía Nam Đà Nẵng và vùng ven biển Nam Trung Bộ.\n  - Nhóm màu sáng nhất (rủi ro thấp nhất) nằm ở phần lớn Đồng bằng sông Cửu Long quanh Cần Thơ và khu vực TP. Hồ Chí Minh.\n  - Miền Bắc (quanh Hà Nội, Hải Phòng) và nhiều tỉnh vùng núi phía Bắc có màu xanh trung bình đến nhạt.\n  - Đà Nẵng nằm gần rìa phía Bắc của dải màu đậm miền Trung.\n- **Lưu ý:** Bản đồ có phần miễn trừ trách nhiệm của Ngân hàng Thế giới về đường biên giới và tên gọi. Nguồn: Ngân hàng Thế giới.",
+   "unverified": [
+    "5"
+   ],
+   "numbers": 1,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000830313,
+   "ms": 8655.0
+  },
+  "crops/CCDR-p050-B3.png": {
+   "ids": [
+    "CCDR-p050-B3"
+   ],
+   "page": 50,
+   "kind": "table",
+   "title": "Bảng 3. Nhu cầu đầu tư và lợi nhuận đầu ra theo Lộ trình phát thải carbon ròng bằng “0” (NZP)",
+   "description": "- **Loại:** Bảng số liệu, gồm hai khối kịch bản, mỗi khối 3 hàng chỉ tiêu và 3 cột giai đoạn.\n- **Nội dung:** Nhu cầu đầu tư và lợi nhuận đầu ra theo lộ trình phát thải carbon ròng bằng \"0\" (NZP), đơn vị tỷ USD theo NPV, chiết khấu 6%. Khối 1: \"NZP\". Khối 2: \"NZP với những cải cách hỗ trợ\". Cột: 2022–2030, 2031–2040, 2022–2040. Hàng: Nhu cầu đầu tư; Mức sản lượng tăng (tích lũy trong GDP, mô hình CGE); Tác động kinh tế ròng (in nghiêng).\n- **Giá trị** (2022–2030 | 2031–2040 | 2022–2040):\n  - NZP, Nhu cầu đầu tư: 31,8 | 49,5 | 81,3\n  - NZP, Mức sản lượng tăng: -7,6 | -46,0 | -53,7\n  - NZP, Tác động kinh tế ròng: -39,4 | -95,5 | -134,9\n  - NZP có cải cách, Nhu cầu đầu tư: 31,8 | 49,5 | 81,3\n  - NZP có cải cách, Mức sản lượng tăng: 11,3 | 68,7 | 80,1\n  - NZP có cải cách, Tác động kinh tế ròng: -20,5 | 19,3 | -1,3\n- **Xu hướng:**\n  - Nhu cầu đầu tư giống nhau ở hai khối, tăng từ 31,8 lên 49,5 giữa hai giai đoạn.\n  - NZP thuần: sản lượng giảm ở cả hai giai đoạn; tác động ròng âm nhất ở 2031–2040 (-95,5).\n  - Có cải cách: sản lượng tăng ở cả hai giai đoạn (cao nhất 68,7 ở 2031–2040); tác động ròng chuyển dương ở 2031–2040 (19,3) và gần 0 cho cả giai đoạn 2022–2040 (-1,3).\n  - Các số tác động ròng xấp xỉ bằng mức sản lượng tăng trừ nhu cầu đầu tư (ví dụ 11,3 − 31,8 ≈ -20,5).",
+   "unverified": [
+    "1",
+    "2"
+   ],
+   "numbers": 24,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001298781,
+   "ms": 10268.8
+  },
+  "crops/CCDR-p053-B4.png": {
+   "ids": [
+    "CCDR-p053-B4"
+   ],
+   "page": 53,
+   "kind": "table",
+   "title": "Bảng 4. Các chính sách hỗ trợ chính sẽ ảnh hưởng như thế nào đến tác động của NZP đối với phát",
+   "description": "- **Loại:** Bảng số liệu, có hai nhóm cột và bảy hàng kịch bản.\n- **Nội dung:** Phần trăm thay đổi so với đường cơ sở, gồm hai chỉ tiêu: thay đổi mức phát thải khí nhà kính và thay đổi GDP, cùng hai mốc 2030 và 2040. Mỗi hàng là NZP (lộ trình đạt phát thải ròng bằng 0) kết hợp một chính sách hỗ trợ khác nhau. Nguồn: mô hình CGE xây dựng cho CCDR. Ghi chú giải thích phát thải giảm ít hơn một chút khi có biện pháp hỗ trợ vì GDP tăng.\n- **Giá trị** (phát thải 2030 / 2040 | GDP 2030 / 2040):\n  - NZP không có cải cách: -42,8 / -73,6 | -0,6 / -2,2\n  - NZP và giảm ô nhiễm không khí: -42,2 / -73,4 | 0,8 / -1,0\n  - NZP và tăng khả năng cạnh tranh (in \"NPZ\" trong bảng): -42,7 / -71,8 | 0,9 / -0,6\n  - NZP và tăng hiệu quả năng lượng: -41,9 / -72,1 | 0,5 / 0,2\n  - NZP và cải thiện sự dịch chuyển lao động: -43,0 / -71,8 | -0,2 / -0,2\n  - NZP và hạn chế lấn át các khoản đầu tư khác: -43,1 / -73,5 | -0,5 / -0,9\n  - NZP và tất cả các biện pháp hỗ trợ: -40,2 / -71,9 | 1,7 / 3,3\n- **Xu hướng:**\n  - Phát thải giảm nhiều nhất năm 2040 ở \"NZP không có cải cách\" (-73,6). Năm 2030, mức giảm ít nhất ở \"tất cả các biện pháp hỗ trợ\" (-40,2).\n  - GDP cao nhất ở \"tất cả các biện pháp hỗ trợ\" (1,7 năm 2030; 3,3 năm 2040). Thấp nhất là \"NZP không có cải cách\" (-2,2 năm 2040).\n  - Năm 2040, chỉ \"tất cả các biện pháp\" và \"tăng hiệu quả năng lượng\" (0,2) có GDP dương. Các kịch bản còn lại đều âm.",
+   "unverified": [
+    "0"
+   ],
+   "numbers": 25,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001157409,
+   "ms": 8887.6
+  },
+  "crops/CCDR-p054-H12.png": {
+   "ids": [
+    "CCDR-p054-H12"
+   ],
+   "page": 54,
+   "kind": "figure",
+   "title": "Hình 12: Ngành điện Việt Nam phụ thuộc rất nhiều vào than",
+   "description": "- **Loại:** Hai biểu đồ tròn (donut), đặt cạnh nhau. Có chú giải chung ở dưới.\n- **Nội dung:**\n  - Trái: công suất lắp đặt theo loại hình nhiên liệu hóa thạch, năm 2020, tổng 68 GW ở giữa.\n  - Phải: điện năng sản xuất từ nhiên liệu hóa thạch, năm 2020, tổng 200 TWh ở giữa.\n  - Chú giải: Khí đốt (be), Năng lượng tái tạo (cam), Thủy điện (xanh đậm), Than đá (xanh nhạt).\n  - Nguồn: Ngân hàng Thế giới, dựa trên dữ liệu của Bộ Công Thương và EVN.\n- **Giá trị:**\n  - Trái (công suất):\n    - Than đá: 30%\n    - Thủy điện: 30%\n    - Năng lượng tái tạo: 25%\n    - Khí đốt: 13%\n    - Lát nhỏ màu hồng không có nhãn và không có trong chú giải; suy ra khoảng 2% từ tổng.\n  - Phải (điện năng):\n    - Than đá: 59%\n    - Thủy điện: 20%\n    - Khí đốt: 17%\n    - Hai lát nhỏ không có nhãn (cam và hồng) cộng lại khoảng 4%; lát cam khoảng 3%, lát hồng khoảng 1%, ước lượng từ hình.\n- **Xu hướng:**\n  - Than đá có tỷ trọng cao nhất ở cả hai biểu đồ, nhưng chênh lệch lớn: 30% công suất nhưng 59% sản lượng điện.\n  - Thủy điện bằng than về công suất (30%) nhưng chỉ đạt 20% sản lượng.\n  - Năng lượng tái tạo chiếm 25% công suất nhưng gần như không đóng góp sản lượng trong nhóm này (lát nhỏ, khoảng 3%).\n  - Khí đốt: 13% công suất, 17% sản lượng.\n  - Hình chỉ có một năm (2020), không có chuỗi thời gian.",
+   "unverified": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "numbers": 13,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000897336,
+   "ms": 7843.9
+  },
+  "crops/CCDR-p056-H13.png": {
+   "ids": [
+    "CCDR-p056-H13"
+   ],
+   "page": 56,
+   "kind": "figure",
+   "title": "Hình 13: So sánh nguồn điện và phát thải GHG giữa CPS và ADS",
+   "description": "- **Loại:** Biểu đồ cột chồng (trái) và biểu đồ đường (phải).\n\n- **Nội dung:** Bên trái so sánh sản lượng điện năm 2040 (TWh) theo nguồn cho ba kịch bản: BAU, CPS và ADS. Chú giải gồm 12 nguồn: Truyền tải liên vùng, Thủy điện tích năng, Sinh khối, Mặt trời, Gió ngoài khơi, Gió gần bờ, Thủy điện, Dầu, Khí, Than, Lưu trữ, Hạt nhân. Bên phải thể hiện phát thải GHG ngành điện (triệu tấn CO2e) giai đoạn 2020–2040 cho hai kịch bản CPS và ADS, trục hoành là năm, trục tung từ 0 đến 300.\n\n- **Giá trị:**\n  - Tổng sản lượng (TWh): BAU 922; CPS 788; ADS 812.\n  - Cột BAU: Than 550; Khí 106.\n  - Cột CPS: Than 276; Khí 188.\n  - Cột ADS: Khí 124; nhãn 26 nằm ở đoạn nhỏ phía dưới cùng, có thể là Than hoặc Lưu trữ (khó xác định chắc chắn từ hình).\n  - Phát thải 2040: CPS 246; ADS 63.\n  - Phát thải 2020 của cả hai đường khoảng 100 (ước lượng từ trục).\n  - Đỉnh CPS khoảng 275 vào khoảng 2034 (ước lượng từ trục).\n  - Đỉnh ADS khoảng 150 vào khoảng 2030 (ước lượng từ trục).\n\n- **Xu hướng:**\n  - Tổng sản lượng cao nhất ở BAU (922) và thấp nhất ở CPS (788).\n  - Than giảm mạnh từ 550 (BAU) xuống 276 (CPS) và còn 26 (ADS).\n  - Khí tăng từ 106 (BAU) lên 188 (CPS), rồi 124 (ADS).\n  - Phát thải CPS tăng gần như liên tục, có một nhịp giảm khoảng 2035, rồi về 246 năm 2040.\n  - Phát thải ADS tăng nhẹ đến khoảng 2030, sau đó giảm đều và xuống 63 năm 2040.",
+   "unverified": [
+    "12",
+    "275",
+    "2035"
+   ],
+   "numbers": 23,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000888921,
+   "ms": 7539.6
+  },
+  "crops/CCDR-p056-B5.png": {
+   "ids": [
+    "CCDR-p056-B5"
+   ],
+   "page": 56,
+   "kind": "table",
+   "title": "Bảng 5: Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040",
+   "description": "- **Loại:** Bảng số liệu, 3 cột và 5 hàng (kể cả hàng tiêu đề).\n- **Nội dung:** Bảng trình bày nhu cầu đầu tư và chi phí kinh tế, tính theo NPV, là độ chênh lệch giữa kịch bản cơ sở CPS và kịch bản tăng tốc khử carbon ADS, giai đoạn 2022–2040.\n- **Cột:** Cột đầu không có tiêu đề (chứa tên chỉ tiêu); cột \"tỷ USD\"; cột \"Thay đổi\" (tỷ lệ phần trăm).\n- **Hàng:**\n  - Chi phí vốn để lưu trữ và phát điện mới: +44 tỷ USD; +52%.\n  - \"Trong đó:\" (hàng tiêu đề phụ, không có giá trị).\n  - Than đá (thuộc chi phí trên): -19 tỷ USD; -72%.\n  - Khí đốt (thuộc chi phí trên): -8 tỷ USD; -42%.\n- **Xu hướng:**\n  - Chi phí vốn cho lưu trữ và phát điện mới là mục duy nhất tăng, +44 tỷ USD (+52%).\n  - Than đá giảm nhiều nhất theo tỷ lệ (-72%) và theo giá trị tuyệt đối trong hai nhóm được liệt kê (-19 tỷ USD).\n  - Khí đốt giảm -8 tỷ USD (-42%).\n  - Bảng không ghi giá trị tổng hợp của hàng \"Trong đó\" và không có số liệu cho các nguồn khác ngoài than đá và khí đốt.",
+   "unverified": [
+    "3"
+   ],
+   "numbers": 10,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000549153,
+   "ms": 5422.8
+  },
+  "crops/CCDR-p057-B5c.png": {
+   "ids": [
+    "CCDR-p057-B5c"
+   ],
+   "page": 57,
+   "kind": "table",
+   "title": "Bảng 5: Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040 (tiếp)",
+   "description": "- **Loại:** Bảng (phần tiếp theo của Bảng 5), gồm tên hàng, cột giá trị và cột phần trăm.\n- **Nội dung:** Nhu cầu đầu tư và chi phí kinh tế trong kịch bản tăng tốc khử carbon (ADS), 2022–2040. Tiêu đề cột và đơn vị không có trong chữ trích. Cột giá trị là mức thay đổi tuyệt đối; cột phần trăm là mức thay đổi tương đối.\n- **Giá trị:**\n  - Mặt trời: +21; +429%\n  - Gió (trên bờ): +8; +55%\n  - Gió (ngoài khơi): +39; +402%\n  - Thủy điện và năng lượng tái tạo khác: ~0; +4%\n  - Lưu trữ (ắc quy và thủy điện tích năng): +3; không có sẵn\n  - Chi phí nâng cấp và mở rộng mạng lưới: +13; +52%\n  - Chi phí vận hành và bảo trì thay đổi: +2; +40%\n  - Chi phí vận hành và bảo trì cố định: +6; +12%\n  - Tổng chi phí: +65; 56% (dấu của phần trăm không rõ trong chữ trích)\n  - Trừ khoản tiết kiệm chi phí nhiên liệu: -32; -31%\n  - Tổng chi phí ròng: +33; +13%\n  - Chi phí thiệt hại môi trường địa phương: -14; -40%\n  - Chi phí thiệt hại môi trường toàn cầu: -40; -37%\n- **Xu hướng:**\n  - Mặt trời có mức tăng phần trăm cao nhất (+429%), còn gió ngoài khơi có mức tăng tuyệt đối lớn nhất (+39).\n  - Thủy điện và năng lượng tái tạo khác gần như không đổi (~0).\n  - Tiết kiệm nhiên liệu (-32) làm giảm tổng chi phí +65 xuống còn +33 ròng.\n  - Hai khoản thiệt hại môi trường giảm (-14 địa phương, -40 toàn cầu).\n  - Các hàng phía trên của bảng không có trong trang này nên không thể kiểm tra đầy đủ tổng chi phí.",
+   "unverified": [],
+   "numbers": 25,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000919809,
+   "ms": 7404.8
+  },
+  "crops/CCDR-p059-H14.png": {
+   "ids": [
+    "CCDR-p059-H14"
+   ],
+   "page": 59,
+   "kind": "figure",
+   "title": "Hình 14: Sản xuất than nội địa của Việt Nam tập trung ở các vùng núi phía Bắc",
+   "description": "- **Loại:** Bản đồ địa lý Việt Nam (miền Bắc và Bắc Trung Bộ), có các vùng tô màu cam dạng elip và các ký hiệu điểm.\n\n- **Nội dung:** Thể hiện vị trí các vùng sản xuất than nội địa. Vùng cam là khu vực sản xuất, các địa danh được ghi bằng chữ. Chú giải: hình tròn đỏ đánh dấu Hòn Gai và Cẩm Phả; hộp viền xanh \"Quảng Ninh\" kèm chú thích \"Tỉnh sản xuất than chính\". Không có trục hay đơn vị đo.\n\n- **Giá trị:** Không có số liệu nào được in trên hình.\n\n- **Địa danh và vị trí:**\n  - Sông Đà: elip dài nhất, chạy chéo từ tây bắc xuống nam phía tây Hà Nội.\n  - Đồng bằng sông Hồng: elip lớn ngay phía nam và đông nam Hà Nội (chữ \"Hà Nội\" có chấm đen đánh dấu thủ đô).\n  - Thái Nguyên và Na Dương: nằm ở phía đông bắc Hà Nội, Na Dương là elip nhỏ hơn ở xa hơn về phía đông bắc.\n  - Hòn Gai và Cẩm Phả: nằm ở phía đông, sát vùng ven biển Quảng Ninh.\n  - Quảng Ninh: tỉnh ven biển đông bắc, được đánh dấu là tỉnh sản xuất than chính.\n  - Sông Cả và Nghệ Tĩnh: elip ở phía nam, thuộc Bắc Trung Bộ.\n\n- **Xu hướng:** Hình không có chuỗi thời gian nên không có xu hướng. Về phân bố, các vùng sản xuất tập trung ở miền núi phía Bắc, mật độ cao nhất ở Quảng Ninh và các vùng ven đồng bằng sông Hồng. Vùng Sông Cả và Nghệ Tĩnh tách biệt, nằm xa về phía nam.",
+   "unverified": [],
+   "numbers": 0,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000947529,
+   "ms": 9162.6
+  },
+  "crops/CCDR-p062-H15.png": {
+   "ids": [
+    "CCDR-p062-H15"
+   ],
+   "page": 62,
+   "kind": "figure",
+   "title": "Hình 15. Giảm phát thải CO2 vào năm 2030 trong kịch bản giảm nhẹ, so với BAU",
+   "description": "- **Loại:** Biểu đồ diện tích xếp chồng (stacked area).\n\n- **Nội dung:** Thể hiện mức giảm phát thải CO2 (nghìn tấn) so với kịch bản BAU, theo từng năm từ 2014 đến 2030, do 12 biện pháp đóng góp. Trục ngang là năm. Trục dọc là \"Nghìn tấn CO2\", có giá trị âm (từ 0 đến -25.000), nên vùng càng xuống sâu thì mức giảm càng lớn. Chú giải nằm trong hình, gồm: 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới; 1.3 Cải thiện hệ số tải trọng xe tải; 2.1 Mở rộng hệ thống xe buýt; 2.2 Mở rộng xe buýt BRT; 2.3 Tàu điện ngầm; 3.1/3.2 Chuyển từ đường bộ sang ĐTNĐ/ven biển; 3.3 Chuyển sang đường sắt; 4.1 Nhiên liệu sinh học (E5); 4.2 Xe máy điện; 4.3 Xe buýt CNG; 4.4 Ô tô điện và xe buýt điện.\n\n- **Giá trị:** Hình không in nhãn số liệu trên từng vùng. Các mốc trục dọc in: 0; -5.000; -10.000; -15.000; -20.000; -25.000. Ước lượng từ trục: tổng mức giảm năm 2030 khoảng -19.500 nghìn tấn CO2. Lớp trên cùng (1.1) đạt khoảng -4.300 vào 2030. Lớp 4.2 (xe máy điện) là dải dày, khoảng -13.500 đến -17.800 vào 2030.\n\n- **Xu hướng:** Từ 2014 đến khoảng 2017, mức giảm gần bằng 0. Từ khoảng 2018, tất cả biện pháp bắt đầu giảm phát thải và mức giảm tăng nhanh sau 2024. Đến 2030, tổng giảm sâu nhất (khoảng -19.500). Các dải lớn nhất vào cuối kỳ là 4.2 (xe máy điện) và 1.1 (tiết kiệm nhiên liệu). Các biện pháp như 2.2 BRT và 4.3 CNG chỉ đóng góp rất nhỏ.\n\n- **Trang PDF:** 62. **Nguồn:** Ngân hàng Thế giới.",
+   "unverified": [
+    "0",
+    "12",
+    "62",
+    "2017",
+    "4300",
+    "13500",
+    "17800",
+    "19500"
+   ],
+   "numbers": 31,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001165428,
+   "ms": 10043.8
+  },
+  "crops/CCDR-p065-H16.png": {
+   "ids": [
+    "CCDR-p065-H16"
+   ],
+   "page": 65,
+   "kind": "figure",
+   "title": "Hình 16: Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa",
+   "description": "- **Loại:** Biểu đồ cột đơn (cột dọc), có giá trị âm và dương.\n- **Nội dung:** Chi phí giảm phát thải khí nhà kính từ sản xuất lúa gạo, theo từng biện pháp. Trục tung là $/tCO₂e, từ -200 đến 500. Trục hoành ghi tên biện pháp, nhiều nhãn bị cắt ở phần đáy trang nên tên đầy đủ không đọc được hết. Hình không có chú giải màu và không có nhãn số trên cột.\n- **Giá trị (ước lượng từ trục, không được in):**\n  - Chuyển đổi ruộng lúa sang nuôi tôm: khoảng -75.\n  - Chuyển đổi đất trồng lúa nước (nhãn bị cắt): khoảng -40.\n  - Tưới ướt khô xen kẽ (AWD) ở ĐB sông Cửu Long: khoảng -20.\n  - AWD ở Đồng bằng sông Hồng: khoảng -20.\n  - Chuyển đổi từ trồng lúa sang hoa màu: gần 0, không thấy cột rõ.\n  - Quản lý rơm rạ: khoảng 12.\n  - Quản lý cây trồng tổng hợp (ICM) cho lúa: khoảng 18.\n  - Hệ thống canh tác lúa tưới tiêu vừa phải: khoảng 63.\n  - Hệ thống canh tác lúa tưới tiêu hạn chế: khoảng 90.\n  - Chuyển từ trồng lúa sang ngô: khoảng 388, cao nhất.\n- **Xu hướng:** Bốn biện pháp có chi phí âm, tức là tiết kiệm chi phí, trong đó chuyển sang nuôi tôm thấp nhất. Các biện pháp quản lý nước và cây trồng nằm quanh mức 0 đến 90. Chuyển sang ngô có chi phí cao nhất, gấp khoảng bốn lần biện pháp tưới hạn chế đứng sau nó.",
+   "unverified": [
+    "12",
+    "18",
+    "20",
+    "40",
+    "63",
+    "75",
+    "90",
+    "388"
+   ],
+   "numbers": 11,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000903177,
+   "ms": 8357.8
+  },
+  "crops/CCDR-p065-H17.png": {
+   "ids": [
+    "CCDR-p065-H17"
+   ],
+   "page": 65,
+   "kind": "figure",
+   "title": "Hình 17: Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ chăn nuôi",
+   "description": "- **Loại:** Biểu đồ cột đứng (cột đơn).\n- **Nội dung:** Hình 17 so sánh chi phí của các biện pháp giảm phát thải khí nhà kính từ chăn nuôi. Trục tung là $/tCO₂e (từ -200 đến 800). Trục hoành là các biện pháp. Hình không có chú giải và không in giá trị trên cột.\n- **Giá trị (ước lượng từ trục, không in trên hình):**\n  - Khẩu phần hỗn hợp hoàn chỉnh dành cho bò sữa (TMR): khoảng -140\n  - Bổ sung chế độ ăn uống cho bò nuôi lấy thịt (TMR): khoảng -100\n  - Ủ chất thải của lợn: khoảng 0 (không thấy cột)\n  - Thu khí ga sinh học từ chất thải chăn nuôi lợn (TMR): khoảng 0 (không thấy cột)\n  - Xử lý chất thải gia súc khác (TMR): khoảng +20\n  - Cải thiện chất lượng khẩu phần ăn cho gia súc nhỏ (TMR): khoảng +145\n  - Cải thiện chất lượng khẩu phần ăn cho bò nuôi lấy thịt: khoảng +150\n  - Cải thiện chất lượng khẩu phần ăn cho bò sữa: khoảng +310\n  - Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR): khoảng +725\n- **Xu hướng:**\n  - Cao nhất: cải thiện khẩu phần ăn cho trâu nuôi lấy thịt (TMR), khoảng +725 $/tCO₂e.\n  - Thấp nhất: khẩu phần hỗn hợp cho bò sữa (TMR), khoảng -140 $/tCO₂e.\n  - Hai biện pháp có chi phí âm (tiết kiệm chi phí) là khẩu phần hỗn hợp cho bò sữa và bổ sung chế độ ăn cho bò nuôi lấy thịt.\n  - Các biện pháp cải thiện khẩu phần ăn có chi phí tăng dần từ gia súc nhỏ, bò nuôi thịt, bò sữa đến trâu nuôi thịt.",
+   "unverified": [
+    "20",
+    "100",
+    "140",
+    "145",
+    "150",
+    "310",
+    "725"
+   ],
+   "numbers": 11,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000933768,
+   "ms": 7186.4
+  },
+  "crops/CCDR-p070-H18.png": {
+   "ids": [
+    "CCDR-p070-H18"
+   ],
+   "page": 70,
+   "kind": "figure",
+   "title": "Hình 18: Tác động của NZP đối với tình trạng đói nghèo, an ninh kinh tế và bất bình đẳng (sai lệch",
+   "description": "- **Loại:** Biểu đồ cột đơn, dọc, có ba cột âm.\n- **Nội dung:** Sai lệch so với kịch bản phát triển thông thường (BAU) vào năm 2040 của ba chỉ số về tác động của NZP: mức nghèo ($3,20/ngày), kinh tế không ổn định ($5,50/ngày) và bất bình đẳng (chỉ số Gini). Trục tung là \"Sai số so với kịch bản phát triển thông thường (BAU)\", không có đơn vị ghi rõ. Trục hoành liệt kê ba nhóm chỉ số. Nguồn: Ngân hàng Thế giới.\n- **Giá trị:**\n  - Mức nghèo ($3,20): -0,1\n  - Kinh tế không ổn định ($5,50): -0,1\n  - Bất bình đẳng (Chỉ số Gini): -1,1\n  - Trục tung có các vạch: 0; -0,3; -0,6; -0,9; -1,2.\n- **Xu hướng:** Cả ba cột đều âm, nghĩa là NZP làm giảm các chỉ số so với BAU. Cột bất bình đẳng (Gini) giảm mạnh nhất, khoảng gấp mười lần hai cột còn lại. Mức nghèo và kinh tế không ổn định có mức giảm nhỏ và bằng nhau.",
+   "unverified": [],
+   "numbers": 10,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.00054153,
+   "ms": 4891.3
+  },
+  "crops/CCDR-p071-H19.png": {
+   "ids": [
+    "CCDR-p071-H19"
+   ],
+   "page": 71,
+   "kind": "figure",
+   "title": "Hình 19: Chỉ số giá theo nhóm hàng hóa, 2022–2040 (% lệch so với BAU)",
+   "description": "- **Loại:** Biểu đồ đường.\n- **Nội dung:** Chỉ số giá theo sáu nhóm hàng hóa, 2022–2040, đo bằng % lệch so với kịch bản BAU. Trục tung từ -5,00 đến 20,00. Trục hoành là năm. Chú giải gồm: Năng lượng, Công nghiệp, Dịch vụ, Vận tải, Lương thực, Y tế. Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE cho Việt Nam.\n- **Giá trị:** Biểu đồ không in giá trị nào, nên các số dưới đây là ước lượng từ trục.\n  - Năng lượng: khoảng 3,8 (2022), khoảng 3,3 (2024), khoảng 5,3 (2030), khoảng 7,0 (2035), khoảng 14,9 (2040).\n  - Vận tải: khoảng 0,4 (2022), khoảng 1,2 (2026), khoảng 2,8 (2033), khoảng 4,8 (2040).\n  - Y tế: khoảng 0 (2022), khoảng -0,5 (2030), khoảng -1,5 (2040).\n  - Dịch vụ: gần 0 đến khoảng 2030, giảm dần sau 2035, khoảng -2,5 (2040).\n  - Lương thực: gần 0 trong suốt giai đoạn.\n  - Công nghiệp: gần 0 trong suốt giai đoạn, bị các đường khác che khuất phần lớn.\n- **Xu hướng:**\n  - Năng lượng cao nhất và tăng mạnh nhất, nhất là từ 2035 trở đi.\n  - Vận tải tăng đều, đứng thứ hai.\n  - Y tế và Dịch vụ giảm dần, xuống dưới mức BAU.\n  - Lương thực và Công nghiệp gần như không đổi so với BAU.\n  - Năm 2031 có một lần giảm nhẹ ở Năng lượng.",
+   "unverified": [
+    "0",
+    "0.4",
+    "0.5",
+    "1.2",
+    "1.5",
+    "2.5",
+    "2.8",
+    "3.3",
+    "3.8",
+    "4.8",
+    "5.3",
+    "7.0",
+    "14.9"
+   ],
+   "numbers": 23,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000822888,
+   "ms": 7119.6
+  },
+  "crops/CCDR-p072-H20.png": {
+   "ids": [
+    "CCDR-p072-H20"
+   ],
+   "page": 72,
+   "kind": "figure",
+   "title": "Hình 20: Những thay đổi về việc làm theo lĩnh vực vào năm 2040",
+   "description": "- **Loại:** Biểu đồ cột nhóm (hai chuỗi cột cho mỗi lĩnh vực).\n- **Nội dung:** Thể hiện mức thay đổi việc làm theo lĩnh vực vào năm 2040. Trục tung là \"% chuyển việc (độ lệch so với BAU)\", thang từ -9,4 đến 28,1. Chú giải: NZP (cột xanh dương) và NZP đã cải cách (cột cam). Trục hoành gồm 9 nhóm: Điện, Khai thác mỏ, Vận tải, Xây dựng, Công nghiệp, Dịch vụ, Thương mại, Nông nghiệp, Không hoạt động.\n- **Giá trị (NZP / NZP đã cải cách):**\n  - Điện: 0 / 23,6\n  - Khai thác mỏ: 2,2 / 18,4\n  - Vận tải: -6,3 / 7,9\n  - Xây dựng: 1,7 / 9,8\n  - Công nghiệp: -0,4 / 7,4\n  - Dịch vụ: 0,1 / 12,4\n  - Thương mại: 0,4 / -5,4\n  - Nông nghiệp: 0 / -5,4\n  - Không hoạt động: 0,1 / -0,7\n- **Xu hướng:**\n  - Mức tăng cao nhất là Điện (23,6) ở kịch bản NZP đã cải cách; kế đến là Khai thác mỏ (18,4) và Dịch vụ (12,4).\n  - Mức giảm thấp nhất là Thương mại và Nông nghiệp (cùng -5,4) ở kịch bản NZP đã cải cách.\n  - Ở kịch bản NZP, Vận tải giảm mạnh nhất (-6,3), còn Khai thác mỏ tăng cao nhất (2,2).\n  - Kịch bản NZP đã cải cách cho mức thay đổi lớn hơn nhiều và phần lớn lĩnh vực đều tăng so với BAU, trừ Thương mại, Nông nghiệp và Không hoạt động.\n- **Nguồn:** Ước tính của chuyên gia Ngân hàng Thế giới.",
+   "unverified": [
+    "0",
+    "9"
+   ],
+   "numbers": 18,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000968319,
+   "ms": 7961.6
+  },
+  "crops/CCDR-p077-H21.png": {
+   "ids": [
+    "CCDR-p077-H21"
+   ],
+   "page": 77,
+   "kind": "figure",
+   "title": "Hình 21. Nhu cầu và các nguồn tài chính tiềm năng giai đoạn 2022–2040",
+   "description": "- **Loại:** Sơ đồ phân cấp (sơ đồ khối), một hộp trên nối với ba hộp dưới.\n\n- **Nội dung:** Thể hiện tổng nhu cầu tài chính giai đoạn 2022–2040 và cách chia thành ba nguồn tài chính tiềm năng. Hộp trên là \"Nhu cầu tài chính\", kèm hai mục tiêu: khả năng chống chịu và khử carbon. Ba hộp dưới là Khu vực tư nhân, Khu vực công và Bên ngoài. Ghi chú dưới hình: NPV chiết khấu ở tỷ lệ 6%.\n\n- **Giá trị:**\n  - Nhu cầu tài chính: 368 tỷ USD.\n  - Khả năng chống chịu: 4,7% GDP mỗi năm.\n  - Khử carbon: 2,1% GDP mỗi năm.\n  - Khu vực tư nhân: 184 tỷ USD, khoảng 3,4% GDP mỗi năm.\n  - Khu vực công: 130 tỷ USD, khoảng 2,4% GDP mỗi năm.\n  - Bên ngoài: 54 tỷ USD, khoảng 1% GDP mỗi năm.\n\n- **Xu hướng:**\n  - Khu vực tư nhân chiếm nguồn lớn nhất (184 tỷ USD).\n  - Bên ngoài là nguồn nhỏ nhất (54 tỷ USD).\n  - Tổng ba nguồn bằng nhu cầu: 184 + 130 + 54 = 368 tỷ USD (phép cộng từ các số in trên hình).\n  - Mục tiêu khả năng chống chịu (4,7% GDP/năm) lớn hơn mục tiêu khử carbon (2,1% GDP/năm).",
+   "unverified": [],
+   "numbers": 12,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000604494,
+   "ms": 5189.7
+  },
+  "crops/CCDR-p078-H22.png": {
+   "ids": [
+    "CCDR-p078-H22"
+   ],
+   "page": 78,
+   "kind": "figure",
+   "title": "Hình 22: Dư nợ cho vay tư nhân về vấn đề khí hậu và tín dụng xanh từ 2016 đến 2019 (tỷ USD)",
+   "description": "- **Loại:** Hai biểu đồ cột. Bên trái là cột đơn; bên phải là cột nhóm.\n- **Nội dung:** Dư nợ tín dụng xanh (tỷ USD), giai đoạn 2016 đến 2021:Q1 (trái). Dư nợ tín dụng xanh theo ba lĩnh vực: Nông nghiệp xanh, Năng lượng tái tạo xanh, Khác (bao gồm quản lý nước, lâm nghiệp bền vững) vào 2019, 2020 và 2020:Q1 (phải). Chú giải nằm dưới biểu đồ phải. Nguồn: FiinResearch và NHNN.\n- **Giá trị in trên hình (biểu đồ trái):**\n  - 2016: 3,7\n  - 2017: 7,8\n  - 2018: 10,3\n  - 2019: 13,9\n  - 2020: 14,5\n  - 2021:Q1: 14,5\n- **Giá trị biểu đồ phải:** Không in số trên cột. Trục tung có các mốc 0, 38, 75, 113, 150, 188. Giá trị ước lượng từ trục:\n  - 2019: Nông nghiệp xanh khoảng 140; Năng lượng tái tạo xanh khoảng 50; Khác khoảng 120.\n  - 2020: Nông nghiệp xanh khoảng 130; Năng lượng tái tạo xanh khoảng 100; Khác khoảng 100.\n  - 2020:Q1: Nông nghiệp xanh khoảng 125; Năng lượng tái tạo xanh khoảng 115; Khác khoảng 80.\n- **Xu hướng:**\n  - Biểu đồ trái: dư nợ tăng liên tục từ 3,7 (2016) lên 13,9 (2019), rồi đạt 14,5 vào 2020; 2021:Q1 đi ngang ở mức 14,5. Mức tăng mạnh nhất là 2016–2017 (khoảng 4,1 tỷ USD).\n  - Biểu đồ phải: Nông nghiệp xanh là nhóm lớn nhất ở cả ba thời điểm. Năng lượng tái tạo xanh tăng mạnh từ 2019 (khoảng 50) lên 2020:Q1 (khoảng 115), trong khi nhóm Khác giảm dần từ khoảng 120 xuống khoảng 80.",
+   "unverified": [
+    "0",
+    "4.1",
+    "50",
+    "80",
+    "100",
+    "115",
+    "120",
+    "125",
+    "130",
+    "140"
+   ],
+   "numbers": 27,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001000989,
+   "ms": 8781.3
+  },
+  "crops/CCDR-p084-B6.png": {
+   "ids": [
+    "CCDR-p084-B6"
+   ],
+   "page": 84,
+   "kind": "table",
+   "title": "Bảng 6: Tiêu chí ưu tiên",
+   "description": "- **Loại:** Bảng ma trận 2×2 (tiêu chí ưu tiên).\n- **Nội dung:** Phân loại hành động theo hai tiêu chí. Cột là \"Tác động\" (Cao, Trung bình). Hàng là \"Khẩn cấp\" (Cao, Trung bình), kèm định nghĩa: \"Trì hoãn hành động làm tăng chi phí đạt cùng mục tiêu\" (Cao) và \"Chậm trễ hành động không làm tăng chi phí đạt cùng mục tiêu\" (Trung bình). Bảng không có số liệu.\n- **Giá trị (nội dung từng ô):**\n  - Hàng Khẩn cấp Cao, cột Tác động Cao: hành động không thể trì hoãn, tác động lớn và ngay lập tức (\"thắng nhanh\").\n  - Hàng Khẩn cấp Cao, cột Tác động Trung bình: hành động có thể cần kế hoạch dài hạn, huy động ủng hộ chính trị và nguồn tài chính.\n  - Hàng Khẩn cấp Trung bình, cột Tác động Cao: hành động cần thời gian hình thành và thực hiện nhưng có thể mang lại tác động lớn.\n  - Hàng Khẩn cấp Trung bình, cột Tác động Trung bình: hành động cần thời gian hình thành và thực hiện; tác động có thể không chắc chắn.\n- **Định nghĩa cột Tác động:** Cao là hành động có tác động tức thì và tạo điều kiện đạt các mục tiêu phát triển khác. Trung bình là hành động mà tác động sẽ xảy ra trong vài thập kỷ.\n- **Xu hướng:** Ô ưu tiên cao nhất là góc trên bên trái (Khẩn cấp Cao, Tác động Cao). Ô ưu tiên thấp nhất là góc dưới bên phải (Khẩn cấp Trung bình, Tác động Trung bình).",
+   "unverified": [
+    "2"
+   ],
+   "numbers": 1,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000784179,
+   "ms": 5963.5
+  },
+  "crops/CCDR-p092-bangc.png": {
+   "ids": [
+    "CCDR-p092-bangc-r1",
+    "CCDR-p092-bangc-r2"
+   ],
+   "page": 92,
+   "kind": "table",
+   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam (tiếp)",
+   "description": "- **Loại:** Bảng dữ liệu (Phụ lục 1, tiếp), trang 92.\n- **Nội dung:** Dữ liệu khí hậu và phát triển của Việt Nam. Cột: Chỉ tiêu, Đơn vị, ba cặp giá trị–năm (cột \"#\" không có tiêu đề), Nguồn. Có một hàng nhóm \"Tiêu thụ năng lượng và ngành điện\".\n- **Giá trị:**\n  - Kịch bản BAU (triệu tấn CO2e): 528,4 (2020); 726,2 (2025); 927,9 (2030). Nguồn: VN NDC.\n  - Mục tiêu 9% dưới BAU, vô điều kiện: 673 (2025); 844 (2030).\n  - Mục tiêu 27% dưới BAU, có điều kiện: 677 (2030).\n  - Điện bình quân đầu người (kWh): 128 (1990); 613 (2005); 2745 (2020).\n  - Tổng điện tiêu thụ (TWh): 8,68 (1990); 51,36 (2005); 267,18 (2020).\n  - Năng lượng tái tạo (%): 80,34; 87,69; 84,78 (cùng mốc 1990, 2005, 2020).\n  - Nhiên liệu hóa thạch (%): 19,66; 12,31; 15,22 (cùng mốc).\n  - Cường độ năng lượng trên GDP (kWh): 0,94 (1990); 1,33 (2005); 1,5 (2016).\n  - Cường độ năng lượng sơ cấp (MJ/USD 2011 PPP GDP): 7,55 (1990); 6,02 (2005); 5,95 (2015).\n  - Sản xuất điện (TJ), mốc 1990; 2006; 2018:\n    - Than: 93.058; 371.918; 1.560.577.\n    - Khí tự nhiên: 113; 214.433; 348.091.\n    - Dầu: 113.489; 490.421; 884.442.\n    - Sinh học và chất thải: 522.123; 618.246; 345.922.\n    - Thủy điện: 19.328; 73.469; 238.021.\n  - Tái tạo không gồm thủy điện (GWh): 0 (1990); 65 (2006); 181 (2015).\n  - Tiếp cận tài chính (%): 21,37 (2011); 30,95 (2014); 30,80 (2017).\n  - Hiệu quả Chính phủ (xếp hạng phần trăm): 40,00 (2000); 47,06 (2005); 61,54 (2020).\n  - Ổn định chính trị (xếp hạng phần trăm): 62,96 (2000); 62,14 (2005); 44,81 (2020).\n- **Xu hướng:** Kịch bản BAU tăng liên tục. Điện bình quân đầu người và tổng điện tiêu thụ tăng mạnh. Tỷ trọng tái tạo cao nhất ở 2005 (87,69%) và giảm nhẹ sau đó. Sản xuất điện từ than và dầu tăng mạnh nhất. Ổn định chính trị giảm nhiều nhất, từ 62,96 xuống 44,81.",
+   "unverified": [
+    "92",
+    "19328",
+    "73469",
+    "113489",
+    "238021",
+    "345922",
+    "490421",
+    "522123",
+    "618246",
+    "884442"
+   ],
+   "numbers": 69,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001653894,
+   "ms": 12284.9
+  },
+  "crops/CCDR-p094-bang.png": {
+   "ids": [
+    "CCDR-p094-bang-r1",
+    "CCDR-p094-bang-r2"
+   ],
+   "page": 94,
+   "kind": "table",
+   "title": "A. Các kịch bản khí hậu toàn cầu và ước tính thiệt hại bằng CGE",
+   "description": "- **Loại:** Bảng 3 cột × 5 hàng (cột đầu là nhãn hàng; ba cột còn lại là ba kịch bản).\n\n- **Nội dung:** So sánh ba kịch bản khí hậu toàn cầu và các giả định chính. Tiêu đề: \"Các kịch bản khí hậu toàn cầu: Các giả định và kết quả\".\n  - Cột 1, \"Những bất ngờ xấu về khí hậu (trường hợp bi quan)\".\n  - Cột 2, \"Kết quả khí hậu trung gian (trường hợp trung gian)\".\n  - Cột 3, \"Tình trạng ấm lên có giới hạn (trường hợp lạc quan)\".\n  - Hàng: Kịch bản; Chính sách khí hậu; Ứng phó khí hậu; Mức độ ấm lên toàn cầu; Những yếu tố khác.\n\n- **Giá trị:**\n  - Kịch bản: Cột 1 là CMIP5: RCP8.5 và CMIP6: SSP3-7.0; cột 2 là CMIP5: RCP4.5 và CMIP6: SSP2-4.5; cột 3 là CMIP5: RCP2.6 và CMIP6: SSP1-1.9.\n  - Chính sách khí hậu: cột 1 \"Ít đạt được các cam kết hiện tại\"; cột 2 \"Đạt được các cam kết hiện tại và các mục tiêu năm 2030\"; cột 3 \"Tham vọng toàn cầu cao, đạt nhiều thành tựu trong khử và cô lập carbon\".\n  - Ứng phó khí hậu: cột 1 \"Nhạy cảm cao; khả năng khuếch đại qua giảm bồn carbon tự nhiên\"; cột 2 \"Nhạy cảm trung bình\"; cột 3 \"Nhạy cảm thấp\".\n  - Mức ấm lên toàn cầu vào 2100: cột 1 khoảng 4°C; cột 2 tăng 2–3°C; cột 3 tăng dưới 2°C.\n  - Mực nước biển dâng trung bình toàn cầu vào 2100: cột 1 cao hơn 100 cm; cột 2 là 50 cm; cột 3 là 30 cm.\n  - Các yếu tố khác: cột 1 gồm cường độ bão lớn tăng, bón phân CO₂ bị hạn chế và thiệt hại năng suất cây trồng ở phạm vi cao hơn, điểm giới hạn trong hệ sinh thái chính; cột 2 gồm bón phân CO₂ gây thiệt hại năng suất hạn chế (và lợi ích ở một số vùng), một số khả năng phục hồi của hệ sinh thái chính; cột 3 gồm bón phân CO₂ gây thiệt hại năng suất hạn chế (và lợi ích ở một số vùng), khả năng phục hồi của hệ sinh thái chính tốt.\n\n- **Xu hướng:** Từ cột lạc quan sang bi quan, mức ấm lên và mực nước biển dâng tăng dần (từ dưới 2°C và 30 cm đến khoảng 4°C và trên 100 cm). Mức nhạy cảm khí hậu tăng từ thấp đến cao, và các tác động tiêu cực như thiệt hại mùa màng và hệ sinh thái cũng nghiêm trọng hơn.",
+   "unverified": [],
+   "numbers": 16,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000991089,
+   "ms": 7999.1
+  },
+  "crops/CCDR-p095-bang.png": {
+   "ids": [
+    "CCDR-p095-bang-r1",
+    "CCDR-p095-bang-r2",
+    "CCDR-p095-bang-r3"
+   ],
+   "page": 95,
+   "kind": "table",
+   "title": "Những thiệt hại chính và kết quả kinh tế vĩ mô từ mô hình CGE",
+   "description": "- **Loại:** Bảng số liệu nhiều nhóm hàng, gồm 3 khối cột: Đường cơ sở (2022, 2030, 2040, 2050), RCP 2.6 và RCP 4.5 (sai số so với đường cơ sở, %, cùng 4 mốc năm).\n- **Nội dung:** Kết quả mô hình CGE về tăng trưởng, tiêu dùng, cơ cấu GDP, cán cân, tài khóa, khí thải, thiệt hại do biến đổi khí hậu và các mục ghi nhớ (dân số, đơn vị triệu người/triệu dân).\n- **Giá trị chính:**\n  - GDP thực tế tăng trưởng trung bình (%): đường cơ sở 7,29; 5,45; 4,41; 4,24. RCP 2.6: -0,23; -0,35; -0,08; -0,03. RCP 4.5: -0,18; -0,39; -0,19; -0,15.\n  - GDP bình quân đầu người thực tế (đồng 2020): đường cơ sở 3.329; 5.162; 7.588; 11.095. RCP 2.6: -2,81; -6,39; -7,49; -7,95. RCP 4.5: -2,59; -6,19; -8,02; -9,47.\n  - Tiêu dùng hộ gia đình bình quân đầu người (đồng 2020): đường cơ sở 2.150; 3.305; 4.871; 7.111. RCP 2.6: -2,93; -7,60; -8,91; -9,39. RCP 4.5: -2,74; -7,37; -9,45; -11,02.\n  - Lượng khí thải (triệu tấn CO2): đường cơ sở 436; 691; 1.106; 1.695. RCP 2.6: -4,18; -15,90; -16,95; -12,36. RCP 4.5: -3,86; -15,57; -18,99; -18,08.\n  - Tổng thiệt hại (% GDP), chỉ có ở hai kịch bản: RCP 2.6: 6,46; 8,14; 7,80; 7,36. RCP 4.5: 6,26; 8,08; 8,72; 9,36.\n  - Thiệt hại lũ lụt (% GDP), RCP 4.5: 2,31; 2,68; 3,42; 4,00.\n  - Dân số (triệu dân): 99; 106; 113; 118. Dân số trong độ tuổi lao động (triệu người): 68; 70; 71; 72.\n  - Trả lãi, nợ công, nợ nước ngoài: ghi N.A.\n- **Xu hướng:** Tổng thiệt hại tăng theo thời gian ở RCP 4.5 (lên 9,36% GDP năm 2050), còn RCP 2.6 đạt đỉnh 8,14% GDP năm 2030. Sai số GDP bình quân đầu người và tiêu dùng giảm mạnh nhất ở RCP 4.5 năm 2050 (tiêu dùng -11,02%). Thiệt hại nông nghiệp giảm dần ở RCP 2.6 (3,85% năm 2030 xuống 2,25% năm 2050), trong khi thiệt hại lũ lụt tăng đều ở cả hai kịch bản.",
+   "unverified": [
+    "3",
+    "4",
+    "1106",
+    "1695"
+   ],
+   "numbers": 80,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001563309,
+   "ms": 10618.9
+  },
+  "crops/CCDR-p097-bang.png": {
+   "ids": [
+    "CCDR-p097-bang-r1",
+    "CCDR-p097-bang-r2"
+   ],
+   "page": 97,
+   "kind": "table",
+   "title": "Các kết quả chính về phát thải và kinh tế vĩ mô từ CGE",
+   "description": "**Loại:** Bảng số liệu nhiều hàng, chia ba nhóm cột: Đường cơ sở (giá trị thực, 2022/2030/2040), Phát thải ròng bằng 0 và Phát thải ròng bằng 0 kèm cải cách (sai số so với đường cơ sở, %, cùng ba năm).\n\n**Nội dung:** So sánh kịch bản CGE về tăng trưởng, tiêu dùng, đầu tư, cơ cấu ngành, cán cân, tài khóa, phát thải, thiệt hại và dân số. Mục \"Thiệt hại\" và các dòng trả lãi, nợ công, nợ nước ngoài ghi \"NA/N.A\". Dân số ở hai kịch bản sau để \"-\".\n\n**Giá trị chính (cơ sở / ΔNet0 / ΔNet0+cải cách):**\n- GDP thực tế tăng trưởng TB (%): 7,29 / 5,45 / 4,41; 0,03 / -0,08 / -0,26; 1,25 / 0,12 / 0,21.\n- GDP bình quân đầu người thực tế (đồng đô không đổi 2020): 3.329 / 5.162 / 7.588; 0,03 / -0,67 / -2,32; -0,29 / 0,95 / 2,90.\n- Tiêu dùng hộ gia đình bình quân đầu người: 2.149 / 3.300 / 4.873; -0,03 / -0,96 / -3,12; -0,80 / 1,02 / 2,99.\n- Nông nghiệp (% GDP): 13,51 / 11,97 / 10,80; 0,01 / 0,10 / 0,22; -0,38 / -0,91 / -1,02.\n- Lượng khí thải (triệu tấn CO2): 440 / 725 / 1.123,3; -6,39 / -42,89 / -73,65; -6,91 / -41,53 / -70,08.\n- Thâm hụt ngân sách (% GDP): 0,39 / 0,91 / 1,01; -0,25 / 0,33 / 0,64; -0,33 / 0,16 / 0,53.\n- Dân số (triệu người): 99 / 106 / 113. Dân số trong độ tuổi lao động: 68 / 70 / 71.\n\n**Xu hướng:** Phát thải cơ sở tăng gần gấp đôi từ 2022 đến 2040. Kịch bản phát thải ròng bằng 0 giảm mạnh nhất vào 2040 (khoảng -74%). GDP bình quân đầu người và tiêu dùng giảm nhẹ trong kịch bản ròng bằng 0 đến 2040, nhưng tăng trong kịch bản kèm cải cách. Ngành nông nghiệp giảm tỷ trọng ở cả ba kịch bản.",
+   "unverified": [
+    "74"
+   ],
+   "numbers": 62,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.00137709,
+   "ms": 10158.0
+  },
+  "crops/CCDR-p098-bang.png": {
+   "ids": [
+    "CCDR-p098-bang"
+   ],
+   "page": 98,
+   "kind": "table",
+   "title": "Bảng không có tiêu đề",
+   "description": "Loại: Bảng hai cột, năm hàng dữ liệu cộng một hàng tiêu đề.\n\nNội dung: So sánh lượng khí thải ước tính của Việt Nam (khí CO2) theo từng nguồn thông tin. Cột 1: Nguồn thông tin (kèm năm công bố). Cột 2: Lượng khí thải ước tính, đơn vị triệu tấn CO2 phát thải. Không có chú giải hay tiêu đề bảng.\n\nGiá trị:\n- Chính phủ Việt Nam/NDC cập nhật (2020): 104,5\n- Dự thảo Nghiên cứu thông tin nền (2020): 104,5\n- FAO (2019): 72,74\n- Climate Watch (WRI) (2018): 71\n- Climate Transparency (2018): 61\n\nXu hướng: Hai nguồn năm 2020 (Chính phủ/NDC và Dự thảo Nghiên cứu thông tin nền) có giá trị cao nhất và bằng nhau, 104,5. Giá trị thấp nhất là Climate Transparency (2018), 61. Các nguồn khác nằm giữa: FAO (2019) 72,74 và Climate Watch (2018) 71. Chênh lệch giữa cao nhất và thấp nhất khoảng 43,5 triệu tấn CO2.",
+   "unverified": [
+    "1",
+    "43.5"
+   ],
+   "numbers": 10,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.000326799,
+   "ms": 3351.4
+  },
+  "crops/CCDR-p100-bang.png": {
+   "ids": [
+    "CCDR-p100-bang-r1",
+    "CCDR-p100-bang-r2"
+   ],
+   "page": 100,
+   "kind": "table",
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên",
+   "description": "- **Loại:** Bảng ma trận 2×2 (hàng: mức khẩn cấp; cột: mức tác động).\n- **Nội dung:** Phụ lục 4, \"Ma trận tác động khẩn cấp-ưu tiên\", trang 100. Tiêu đề nhóm trên cùng là \"LỘ TRÌNH XÂY DỰNG KHẢ NĂNG CHỐNG CHỊU\". Cột \"Tác động\" gồm \"Cao\" và \"Trung bình\". Hàng gộp dọc bên trái là \"Khẩn cấp\", với hai mức \"Cao\" và \"Trung bình\". Không có đơn vị số.\n- **Giá trị (ô theo hàng, cột):**\n  - Khẩn cấp Cao × Tác động Cao (7 mục):\n    - Khẩn trương chương trình phối hợp đầu tư cấp vùng tại ĐBSCL.\n    - Chương trình đầu tư tích hợp về khả năng chống chịu ven biển.\n    - Cải tạo hoặc nâng cấp hạ tầng thủy lợi.\n    - Trồng và tái trồng rừng, trọng tâm rừng ngập mặn.\n    - Chương trình lưới an sinh xã hội thích ứng.\n    - Thúc đẩy thị trường đất đai, sửa đổi luật đất đai.\n    - Nâng cấp đường sá và ngành điện theo tiêu chuẩn chống chịu khí hậu.\n  - Khẩn cấp Cao × Tác động Trung bình (4 mục):\n    - Bù đắp thiếu hụt đầu tư công ở ĐBSCL.\n    - Chuyển trợ cấp đầu vào nông nghiệp sang hỗ trợ sản xuất có khả năng chống chịu.\n    - Đầu tư CNTT, kỹ thuật số cho dự báo và cảnh báo sớm.\n    - Tái phân bổ sinh thái để hạn chế mở rộng nông nghiệp vào rừng.\n  - Khẩn cấp Trung bình × Tác động Cao (4 mục):\n    - Tăng cường chính sách chống chịu của ngành công nghiệp.\n    - Mở rộng công cụ bảo hiểm và phòng ngừa rủi ro.\n    - Cải thiện tiếp cận tài chính cho nông nghiệp quy mô nhỏ.\n    - Bắt buộc đánh giá rủi ro khí hậu cho quyết định đầu tư công.\n  - Khẩn cấp Trung bình × Tác động Trung bình (7 mục):\n    - Hỗ trợ đầu tư quy mô lớn vào nông nghiệp qua trang trại hợp tác.\n    - Quan hệ đối tác công-tư trong nghiên cứu nông nghiệp thông minh.\n    - Cách tiếp cận quản lý tài sản vòng đời cho hạ tầng.\n    - Biện pháp an toàn sinh học cho gia súc.\n    - Lập mô hình đầu tư cho khu vực chịu ảnh hưởng di cư do khí hậu.\n    - Lập mô hình địa điểm và kênh giao dịch thay thế.\n    - Quản lý rừng bền vững có sự tham gia của người dân.\n- **Xu hướng:** Ô nhiều mục nhất là Khẩn cấp Cao × Tác động Cao (7) và Khẩn cấp Trung bình × Tác động Trung bình (7). Ô ít nhất là Khẩn cấp Cao × Tác động Trung bình và Khẩn cấp Trung bình × Tác động Cao (4 mỗi ô). Các mục có mức khẩn cấp Cao tập trung ở hàng trên.",
+   "unverified": [
+    "2",
+    "7",
+    "100"
+   ],
+   "numbers": 4,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001537668,
+   "ms": 13001.7
+  },
+  "crops/CCDR-p101-bangc.png": {
+   "ids": [
+    "CCDR-p101-bangc-r1",
+    "CCDR-p101-bangc-r2",
+    "CCDR-p101-bangc-r3"
+   ],
+   "page": 101,
+   "kind": "table",
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
+   "description": "- **Loại:** Bảng nhiều ô, có ô gộp dọc (nhãn \"Khẩn cấp\") và ô gộp ngang (tiêu đề \"LỘ TRÌNH KHỬ CARBON\").\n- **Nội dung:** Phụ lục 4 (tiếp), trang 101, liệt kê các hành động khử carbon theo mức ưu tiên. Hàng là mức \"Cao\" và \"Trung bình\" (cùng nhóm \"Khẩn cấp\"). Cột trái và cột phải là hai nhóm hành động. Không có trục, đơn vị hay chú giải số liệu.\n- **Giá trị:** Không có số liệu trong bảng.\n  - *Cao, cột trái:* (1) giảm ô nhiễm không khí Hà Nội, mục tiêu WHO 2030; (2) hoàn thiện PDP8 theo COP26; (3) đầu tư tư nhân vào năng lượng tái tạo bằng đấu giá; (4) mở rộng định giá carbon; (5) tiêu chuẩn tiết kiệm nhiên liệu xe động cơ đốt trong; (6) công nghệ AWD, IoT trong lúa gạo; (7) giảm cường độ carbon trong thương mại quốc tế.\n  - *Cao, cột phải:* (1) quy hoạch hệ thống điện cải tiến; (2) tăng năng lực lưới điện; (3) đẩy nhanh tiết kiệm năng lượng; (4) hỗ trợ xe điện; (5) nhập khẩu công nghệ sạch.\n  - *Trung bình, cột trái:* (1) mở rộng giao thông công cộng; (2) chương trình kỹ năng cho lao động bị mất việc; (3) chương trình hỗ trợ DNVVN và khởi nghiệp; (4) chuyển vận tải hàng hóa từ đường bộ sang đường thủy.\n  - *Trung bình, cột phải:* (1) chuyển chi tiêu nông nghiệp sang giống và công nghệ ít phát thải; (2) giảm phát thải chăn nuôi; (3) đặt nhu cầu điện từ xe điện phù hợp khử carbon ngành điện; (4) khung chính sách cho khu vực tư nhân trong giao thông; (5) khí tự nhiên làm nhiên liệu chuyển tiếp; (6) mở rộng bể chứa carbon.\n- **Xu hướng:** Nhóm \"Cao\" có nhiều hành động hơn ở cột trái (7 so với 5 ở cột phải). Nhóm \"Trung bình\" có số hành động ngang nhau ở hai cột (4 và 6) và tập trung nhiều hơn vào nông nghiệp, chăn nuôi và khung chính sách.",
+   "unverified": [
+    "1",
+    "2",
+    "3",
+    "5",
+    "6",
+    "7",
+    "101"
+   ],
+   "numbers": 11,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001355409,
+   "ms": 10188.9
+  },
+  "crops/CCDR-p102-bangc.png": {
+   "ids": [
+    "CCDR-p102-bangc-r1",
+    "CCDR-p102-bangc-r2"
+   ],
+   "page": 102,
+   "kind": "table",
+   "title": "Phụ lục  4. Ma trận tác động khẩn cấp-Ưu tiên (tiếp)",
+   "description": "- **Loại:** Bảng (ma trận) hai cấp, không có biểu đồ hay số liệu.\n- **Nội dung:** Phụ lục 4, phần tiếp theo, về \"Ma trận tác động khẩn cấp-Ưu tiên\". Tiêu đề nhóm \"HÀNH ĐỘNG XUYÊN SUỐT\" nằm trên cùng, gộp hai cột nội dung. Cột dọc bên trái ghi \"Khẩn cấp\". Cột giữa ghi mức ưu tiên: \"Cao\" và \"Trung bình\". Hai cột nội dung bên phải mô tả từng hành động.\n- **Giá trị:**\n  - Hàng \"Cao\", cột trái (4 hành động): tăng cường chức năng Ủy ban Quốc gia về Biến đổi Khí hậu; thiết lập khung thể chế cho chương trình khí hậu quốc gia và khu vực (Đại đô thị Đồng bằng sông Cửu Long, TP.HCM, Hà Nội); thiết lập quỹ khí hậu cho các cam kết COP26; kết nối hỗ trợ Chính phủ tới DNNN.\n  - Hàng \"Cao\", cột phải (5 hành động): giám sát khung xanh hóa ngành ngân hàng của NHNN; truyền thông khí hậu, kể cả trong trường học; quy định thứ cấp cho PPP; đẩy nhanh cổ phần hóa DNNN; tạo sân chơi bình đẳng cho nhà đầu tư tư nhân.\n  - Hàng \"Trung bình\", cột trái (3 hành động): phân loại xanh và tiêu chí tín dụng xanh; thị trường trái phiếu xanh và miễn thuế; chương trình kỹ năng quốc gia cho ngành xanh/sạch.\n  - Hàng \"Trung bình\", cột phải (7 hành động): theo dõi chi tiêu khí hậu; lồng ghép rủi ro khí hậu vào Luật Mua sắm công; hệ thống tài khoản kinh tế-môi trường và MRV; điều chỉnh chiến lược nợ và chi tiêu công trung hạn; đào tạo xanh cho tổ chức tài chính; huy động tài chính ưu đãi; cho phép tổ chức tài chính nước ngoài đăng ký thế chấp bất động sản.\n- **Xu hướng:** Không có số liệu. Mức \"Cao\" có 9 hành động, nhiều hơn mức \"Trung bình\" (10 hành động, tổng 10 ô nội dung ở cột trái và phải tính theo trên). Hành động thuộc mức \"Cao\" tập trung vào thể chế, tài chính công và doanh nghiệp nhà nước. Mức \"Trung bình\" tập trung vào công cụ tài chính xanh, kỹ năng và đào tạo.",
+   "unverified": [
+    "3",
+    "5",
+    "7",
+    "9",
+    "10"
+   ],
+   "numbers": 7,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.001434708,
+   "ms": 11822.2
+  },
+  "crops/CCDR-p091-bang.png": {
+   "ids": [
+    "CCDR-p091-bang-r1",
+    "CCDR-p091-bang-r2"
+   ],
+   "page": 91,
+   "kind": "table",
+   "title": "Phụ lục 1. Dữ liệu Khí hậu và Phát triển chính của Việt Nam",
+   "description": "**Loại:** Bảng số liệu, gồm hai phần: \"Bối cảnh kinh tế vĩ mô hiện nay\" và \"Giảm nhẹ biến đổi khí hậu\" (nhóm con \"Phát thải khí nhà kính\").\n\n**Nội dung:** Cột gồm Đơn vị, ba mốc (1990, 2005, mốc mới nhất), Nguồn. Mỗi hàng là một chỉ số.\n\n**Giá trị** (1990 | 2005 | mới nhất):\n\n*Kinh tế*\n- GDP bình quân đầu người, tăng trưởng (%): 5,1 | 7,5 | 2,9 (2020), WDI\n- Năng suất lao động, tăng (%): - | - | 6,9 (2020), OECD\n- Kinh tế phi chính thức (% GDP): 23,0 | 15,2 | 11,6 (2018), WBG\n- Thất nghiệp (% lao động): 1,8 (1991) | 2,1 | 2,2 (2020)\n- Cán cân vãng lai (% GDP): - | -0,9 | -5,5 (2020)\n- Trợ cấp nhiên liệu hóa thạch (USD/người): 0,9 (2015) | 5,1 (2017) | 2,8 (2019)\n- Xuất khẩu than (triệu tấn non): 2.910 | 15.138 | 982 (2020)\n- Xuất khẩu dầu (triệu thùng/ngày): 53,0 | 361,0 | 67,0 (2020)\n\n*Phát thải (Climatewatch, 2018 cho mốc cuối; đơn vị triệu tấn CO₂e trừ khi ghi khác)*\n- Bình quân đầu người (tấn/người): 0,3 | 1,1 | 2,7\n- Tổng, gồm LUCF: 1,17 | 207,64 | 364,43\n- Nông nghiệp: 46,34 | 65,9 | 70,99\n- Xây dựng: 1,97 | 9,88 | 15,79\n- Điện/nhiệt: 4,88 | 24,28 | 109,13\n- Khí thải thoát ra: 0,66 | 12,85 | 18,66\n- Quy trình công nghiệp: 1,06 | 13,15 | 37,13\n- Chế biến, chế tạo/xây dựng: 5,66 | 24,06 | 63,91\n- Đ",
+   "unverified": [],
+   "numbers": 51,
+   "model": "anthropic/claude-haiku-5.5",
+   "prompt_version": 1,
+   "cost_usd": 0.002452626,
+   "ms": 17570.0
+  }
+ },
+ "system_prompt": "Bạn mô tả hình và bảng trong một báo cáo của Ngân hàng Thế giới để người khác tìm kiếm và đối chiếu.\nViết tiếng Việt, tối đa 220 từ, dạng các dòng ngắn:\n- Loại: (biểu đồ cột chồng, đường, tròn, treemap, bản đồ, sơ đồ, bảng...)\n- Nội dung: hình thể hiện gì, đơn vị, trục, chú giải, kịch bản hoặc nhóm.\n- Giá trị: mọi giá trị được in trên hình, gắn đúng với cột, chuỗi, nhóm hoặc địa danh của nó. Với bảng, nêu cấu trúc hàng, cột và các ô quan trọng; với ma trận, nêu ô nào thuộc hàng, cột nào.\n- Xu hướng: điểm cao nhất, thấp nhất, thay đổi chính.\nChỉ dựa vào hình và phần chữ trích từ hình. Không bịa giá trị: giá trị không được in mà phải ước lượng từ trục thì ghi \"khoảng\". Với bản đồ, nêu các địa danh được ghi và điều gì được đánh dấu ở đâu (hướng so với các địa danh khác).",
+ "updated_at": "2026-11-16T03:29:12+00:00",
+ "cost_usd": 0.041911
+}
