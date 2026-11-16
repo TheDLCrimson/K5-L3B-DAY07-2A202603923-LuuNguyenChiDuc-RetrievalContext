@@ -1,0 +1,55 @@
+query_id,config,answerable,pass,failure,citation_support,note
+ad-d01,V0_dense,y,y,,CCDR-p019-B1=y,"Đông Timor 4.271,0, cao hơn Mông Cổ 4.250,9; đúng cột và đơn vị."
+ad-d01,V1_rerank,y,y,,CCDR-p019-B1=y,"Đông Timor 4.271,0, cao hơn Mông Cổ 4.250,9; đúng cột và đơn vị."
+ad-d01,V2_rerank_look,y,y,,CCDR-p019-B1=y,"Đông Timor 4.271,0, cao hơn Mông Cổ 4.250,9; đúng cột và đơn vị."
+ad-d02,V0_dense,y,y,,CCDR-p057-B5c=y; CCDR-p056-t01=y,+33 tỷ USD và +13% ở hàng Tổng chi phí ròng; không nhầm với hàng +65.
+ad-d02,V1_rerank,y,y,,CCDR-p057-B5c=y; CCDR-p056-t01=y,+33 tỷ USD và +13% ở hàng Tổng chi phí ròng; không nhầm với hàng +65.
+ad-d02,V2_rerank_look,y,y,,CCDR-p057-B5c=y; CCDR-p056-t01=y,+33 tỷ USD và +13% ở hàng Tổng chi phí ròng; không nhầm với hàng +65.
+ad-d03,V0_dense,y,y,,CCDR-p098-bang=y; CCDR-p098-t04=y,"Climate Transparency 61; hiệu 104,5 - 61 = 43,5."
+ad-d03,V1_rerank,y,y,,CCDR-p098-bang=y,"Climate Transparency 61; hiệu 104,5 - 61 = 43,5."
+ad-d03,V2_rerank_look,y,y,,CCDR-p098-bang=y; CCDR-p098-t04=y,"Climate Transparency 61; hiệu 104,5 - 61 = 43,5."
+ad-d04,V0_dense,y,y,,CCDR-p013-H1=y,Nêu đủ hai lộ trình: xây dựng khả năng chống chịu và khử carbon.
+ad-d04,V1_rerank,y,y,,CCDR-p013-H1=y; CCDR-p012-t02=y,Nêu đủ hai lộ trình: xây dựng khả năng chống chịu và khử carbon.
+ad-d04,V2_rerank_look,y,y,,CCDR-p013-H1=y; CCDR-p012-t02=y,Nêu đủ hai lộ trình: xây dựng khả năng chống chịu và khử carbon.
+ad-d05,V0_dense,y,y,,CCDR-p013-H1=y,5 mục; mục thứ tư là Định giá carbon.
+ad-d05,V1_rerank,y,y,,CCDR-p013-H1=y,5 mục; mục thứ tư là Định giá carbon.
+ad-d05,V2_rerank_look,y,y,,CCDR-p013-H1=y,5 mục; mục thứ tư là Định giá carbon.
+ad-d06,V0_dense,y,y,,CCDR-p077-H21=y,"Khu vực tư nhân, 184 tỷ USD, khoảng 3,4% GDP mỗi năm."
+ad-d06,V1_rerank,y,y,,CCDR-p077-H21=y,"Khu vực tư nhân, 184 tỷ USD, khoảng 3,4% GDP mỗi năm."
+ad-d06,V2_rerank_look,y,y,,CCDR-p077-H21=y,"Khu vực tư nhân, 184 tỷ USD, khoảng 3,4% GDP mỗi năm."
+ad-d07,V0_dense,y,y,,CCDR-p017-H3=y,"Tổng 10.903 triệu USD, Thủy sản 4.219 lớn nhất; đúng phép cộng chín ô."
+ad-d07,V1_rerank,y,y,,CCDR-p017-H3=y; CCDR-p017-t01=y,"Tổng 10.903 triệu USD, Thủy sản 4.219 lớn nhất; đúng phép cộng chín ô."
+ad-d07,V2_rerank_look,y,y,,CCDR-p017-H3=y; CCDR-p017-t01=y,"Tổng 10.903 triệu USD, Thủy sản 4.219 lớn nhất; đúng phép cộng chín ô."
+ad-d08,V0_dense,y,y,,CCDR-p025-H6=y,"33%, đúng hàng và mức Hầu như không."
+ad-d08,V1_rerank,y,y,,CCDR-p025-H6=y,"33%, đúng hàng và mức Hầu như không."
+ad-d08,V2_rerank_look,y,y,,CCDR-p025-H6=y,"33%, đúng hàng và mức Hầu như không."
+ad-d09,V0_dense,y,y,,CCDR-p030-H8=y; CCDR-p030-t03=y; CCDR-p029-t02=y,"RCP 4.5 khoảng 12,3-12,4% và RCP 2.6 khoảng 9,8-10%, trong dung sai; có dẫn cả đoạn văn nêu 9,8/12,3."
+ad-d09,V1_rerank,y,y,,CCDR-p030-t03=y; CCDR-p029-t02=y; CCDR-p030-H8=y,"RCP 4.5 khoảng 12,3-12,4% và RCP 2.6 khoảng 9,8-10%, trong dung sai; có dẫn cả đoạn văn nêu 9,8/12,3."
+ad-d09,V2_rerank_look,y,y,,CCDR-p030-t03=y; CCDR-p030-H8=y; CCDR-p029-t02=y,"RCP 4.5 khoảng 12,3-12,4% và RCP 2.6 khoảng 9,8-10%, trong dung sai; có dẫn cả đoạn văn nêu 9,8/12,3."
+ad-d10,V0_dense,y,y,,CCDR-p065-H16=y,"Chuyển từ trồng lúa sang ngô, khoảng 390 USD/tCO2e, nói rõ là ước lượng từ trục."
+ad-d10,V1_rerank,y,y,,CCDR-p065-H16=y,"Chuyển từ trồng lúa sang ngô, khoảng 390 USD/tCO2e, nói rõ là ước lượng từ trục."
+ad-d10,V2_rerank_look,y,y,,CCDR-p065-H16=y,"Chuyển từ trồng lúa sang ngô, khoảng 390 USD/tCO2e, nói rõ là ước lượng từ trục."
+ad-d11,V0_dense,y,y,,CCDR-p077-H21=y; CCDR-p077-t02=y; CCDR-p078-H22=y,"184 / 14,5 = 12,7; có chú thích hai số khác bản chất, không làm sai kết quả."
+ad-d11,V1_rerank,y,y,,CCDR-p077-H21=y; CCDR-p078-H22=y,"184 / 14,5 = 12,7; có chú thích hai số khác bản chất, không làm sai kết quả."
+ad-d11,V2_rerank_look,y,y,,CCDR-p077-H21=y; CCDR-p078-H22=y,"184 / 14,5 = 12,7; có chú thích hai số khác bản chất, không làm sai kết quả."
+ad-d12,V0_dense,y,y,,CCDR-p054-H12=y; CCDR-p056-H13=y,"118 TWh (59% x 200) và 550 TWh, tỷ số 4,7 (4,66)."
+ad-d12,V1_rerank,y,y,,CCDR-p054-H12=y; CCDR-p056-H13=y,"118 TWh (59% x 200) và 550 TWh, tỷ số 4,7 (4,66)."
+ad-d12,V2_rerank_look,y,y,,CCDR-p056-H13=y; CCDR-p054-H12=y; CCDR-p053-t02=y,"118 TWh (59% x 200) và 550 TWh, tỷ số 4,7 (4,66)."
+ad-d13,V0_dense,y,y,,CCDR-p018-t01=y; CCDR-p064-t04=y,"Năng lượng khoảng 65%, nông nghiệp lớn thứ hai khoảng 19%."
+ad-d13,V1_rerank,y,y,,CCDR-p018-t01=y; CCDR-p064-t04=y,"Năng lượng khoảng 65%, nông nghiệp lớn thứ hai khoảng 19%. Lưu ý: chuỗi trả lời có thêm đoạn mã đánh dấu công cụ (</answer> <parameter name=""citations"">...) rò vào cuối; nội dung đúng nên tính đạt, nhưng là lỗi định dạng của mô hình."
+ad-d13,V2_rerank_look,y,y,,CCDR-p018-t01=y; CCDR-p064-t04=y,"Năng lượng khoảng 65%, nông nghiệp lớn thứ hai khoảng 19%."
+ad-d14,V0_dense,y,y,,CCDR-p024-t02=y,"0,5 / 77,60 / 32,90 USD/tCO2e đúng nhiên liệu."
+ad-d14,V1_rerank,y,y,,CCDR-p024-t02=y,"0,5 / 77,60 / 32,90 USD/tCO2e đúng nhiên liệu."
+ad-d14,V2_rerank_look,y,y,,CCDR-p024-t02=y,"0,5 / 77,60 / 32,90 USD/tCO2e đúng nhiên liệu."
+ad-d15,V0_dense,y,y,,CCDR-p016-t04=y,127/182 (ND-GAIN) và 13/180 (Germanwatch).
+ad-d15,V1_rerank,y,y,,CCDR-p016-t04=y,127/182 (ND-GAIN) và 13/180 (Germanwatch).
+ad-d15,V2_rerank_look,y,y,,CCDR-p016-t04=y,127/182 (ND-GAIN) và 13/180 (Germanwatch).
+ad-d16,V0_dense,n,y,,CCDR-p030-t02=y; CCDR-p017-t01=y,"Từ chối, nêu báo cáo xuất bản trước sự kiện; số liệu chung dẫn kèm được nói rõ không phải của bão Yagi."
+ad-d16,V1_rerank,n,y,,CCDR-p030-t02=y; CCDR-p095-bang-r3=y,"Từ chối, nêu báo cáo xuất bản trước sự kiện; số liệu chung dẫn kèm được nói rõ không phải của bão Yagi."
+ad-d16,V2_rerank_look,n,y,,CCDR-p030-t02=y,"Từ chối, nêu báo cáo xuất bản trước sự kiện; số liệu chung dẫn kèm được nói rõ không phải của bão Yagi."
+ad-d17,V0_dense,n,y,,CCDR-p056-t03=y; CCDR-p060-t05=y,"Từ chối; chỉ nêu thay đổi tương đối 26% / 16% và vai trò EVN, có trong đoạn dẫn."
+ad-d17,V1_rerank,n,y,,CCDR-p092-bangc-r1=y; CCDR-p060-t05=y,"Từ chối; chỉ nêu thay đổi tương đối 26% / 16% và vai trò EVN, có trong đoạn dẫn."
+ad-d17,V2_rerank_look,n,y,,CCDR-p056-t03=y; CCDR-p060-t05=y; CCDR-p092-bangc-r2=y,"Từ chối; chỉ nêu thay đổi tương đối 26% / 16% và vai trò EVN, có trong đoạn dẫn."
+ad-d18,V0_dense,n,y,,CCDR-p057-B5c=y; CCDR-p056-B5=y; CCDR-p059-t01=y; CCDR-p059-t03=y,"Từ chối; nói rõ +39 tỷ USD là tổng thay đổi chi phí vốn, không phải đơn giá USD/MW."
+ad-d18,V1_rerank,n,y,,CCDR-p057-B5c=y; CCDR-p056-B5=y,"Từ chối; nói rõ +39 tỷ USD là tổng thay đổi chi phí vốn, không phải đơn giá USD/MW."
+ad-d18,V2_rerank_look,n,y,,CCDR-p057-B5c=y; CCDR-p056-t01=y; CCDR-p055-t02=y,"Từ chối; nói rõ +39 tỷ USD là tổng thay đổi chi phí vốn, không phải đơn giá USD/MW."

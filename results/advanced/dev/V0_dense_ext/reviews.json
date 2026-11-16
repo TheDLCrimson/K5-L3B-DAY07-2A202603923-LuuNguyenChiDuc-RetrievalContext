@@ -1,0 +1,63 @@
+[
+ {
+  "query_id": "ad-d19",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true
+  ],
+  "reason": "Từ chối dù chính câu trả lời nêu mô tả hình ước lượng khoảng 5.700; không tự nhìn hình nên không dám đưa số. Từ chối câu có đáp án là không đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d20",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Cải thiện khẩu phần cho trâu nuôi lấy thịt (TMR), khoảng 725 USD/tCO2e; nói rõ là ước lượng từ trục.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d21",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Nêu đúng hai biện pháp âm (bò sữa khoảng -140, bò thịt khoảng -100); hai cột gần 0 không đưa vào danh sách.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d22",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "LULUCF; lập luận từ chú giải và hàng LULUCF năm 1990 là -71,38 (đoạn trích p091 đúng), nói rõ chưa xác nhận bằng màu.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d23",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true
+  ],
+  "reason": "Liệt kê đủ 12 chú giải nhưng từ chối vì chữ trích không cho biết màu nào là lớp nào; không dùng ảnh. Từ chối câu có đáp án là không đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ }
+]

@@ -1,0 +1,229 @@
+[
+ {
+  "query_id": "ad-d01",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đông Timor 4.271,0, cao hơn Mông Cổ 4.250,9; đúng cột và đơn vị.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d02",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "+33 tỷ USD và +13% ở hàng Tổng chi phí ròng; không nhầm với hàng +65.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d03",
+  "group": "bang",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Climate Transparency 61; hiệu 104,5 - 61 = 43,5.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d04",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Nêu đủ hai lộ trình: xây dựng khả năng chống chịu và khử carbon.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d05",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "5 mục; mục thứ tư là Định giá carbon.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d06",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Khu vực tư nhân, 184 tỷ USD, khoảng 3,4% GDP mỗi năm.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d07",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Tổng 10.903 triệu USD, Thủy sản 4.219 lớn nhất; đúng phép cộng chín ô.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d08",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "33%, đúng hàng và mức Hầu như không.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d09",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "reason": "RCP 4.5 khoảng 12,3-12,4% và RCP 2.6 khoảng 9,8-10%, trong dung sai; có dẫn cả đoạn văn nêu 9,8/12,3.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d10",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Chuyển từ trồng lúa sang ngô, khoảng 390 USD/tCO2e, nói rõ là ước lượng từ trục.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d11",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "184 / 14,5 = 12,7; có chú thích hai số khác bản chất, không làm sai kết quả.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d12",
+  "group": "multi_hop",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "118 TWh (59% x 200) và 550 TWh, tỷ số 4,7 (4,66).",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d13",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Năng lượng khoảng 65%, nông nghiệp lớn thứ hai khoảng 19%. Lưu ý: chuỗi trả lời có thêm đoạn mã đánh dấu công cụ (</answer> <parameter name=\"citations\">...) rò vào cuối; nội dung đúng nên tính đạt, nhưng là lỗi định dạng của mô hình.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d14",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "0,5 / 77,60 / 32,90 USD/tCO2e đúng nhiên liệu.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d15",
+  "group": "text",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "127/182 (ND-GAIN) và 13/180 (Germanwatch).",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d16",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối, nêu báo cáo xuất bản trước sự kiện; số liệu chung dẫn kèm được nói rõ không phải của bão Yagi.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d17",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối; chỉ nêu thay đổi tương đối 26% / 16% và vai trò EVN, có trong đoạn dẫn.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d18",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối; nói rõ +39 tỷ USD là tổng thay đổi chi phí vốn, không phải đơn giá USD/MW.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ }
+]

@@ -42,6 +42,7 @@ FETCH_PER_SEARCH = 8
 BUDGET_CHARS = 3300  # per chunk, including its label
 ABSTAIN_TEXT = "Không đủ bằng chứng trong các đoạn đã tìm để trả lời câu hỏi này."
 CITATION = re.compile(r"\[(CCDR-p\d{3}-[A-Za-z0-9-]+)\]")
+MARKUP = re.compile(r"\s*</?(?:answer|parameter|antml)[^>]*>.*$", re.DOTALL)  # tool-call markup the model can leak into text
 KIND_VI = {"text": "văn bản", "table": "bảng", "figure": "hình"}
 
 SYSTEM_PROMPT = """Bạn là trợ lý tra cứu báo cáo "Việt Nam: Báo cáo về Khí hậu và Phát triển" (Ngân hàng Thế giới, 07/2022, 103 trang, gồm văn bản, bảng và hình).
@@ -239,6 +240,10 @@ class AdvAgent:
 
     def _finish(self, args: dict, state: dict) -> dict:
         status, answer = args.get("status"), args.get("answer") or ""
+        leaked = MARKUP.search(answer)
+        if leaked:  # a model sometimes writes the rest of its own tool call into the answer text
+            state["events"].append({"event": "answer_markup_stripped", "removed": leaked.group(0)[:200]})
+            answer = answer[:leaked.start()].rstrip()
         listed = [c for c in args.get("citations") or [] if isinstance(c, str)]
         cited = list(dict.fromkeys(listed + CITATION.findall(answer)))
         valid = [c for c in cited if c in state["shown"]]

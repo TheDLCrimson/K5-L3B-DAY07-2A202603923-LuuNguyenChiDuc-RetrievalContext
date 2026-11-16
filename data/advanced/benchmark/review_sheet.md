@@ -3,7 +3,7 @@
 Check every question against the original PDF page, not only against this sheet.
 Each question has one main group; the answer, the grading rule and the evidence must agree with the page.
 
-## dev: 18 questions
+## dev: 23 questions
 
 ### ad-d01 (Bảng, so sánh)
 
@@ -237,6 +237,81 @@ Each question has one main group; the answer, the grading rule and the evidence 
   - PDF trang 16 (số trang in: 6); vị trí: Mục 1.2; giá trị: 127/182; 13/180
   - chunk: CCDR-p016-t04
   - đoạn: "Việt Nam là một trong số những quốc gia dễ bị tổn thương nhất bởi biến đổi khí hậu trên thế giới, xếp hạng 127 trong số 182 quốc gia theo Sáng kiến Thích ứng Biến đổi Khí hậu Toàn cầu Notre Dame (ND- GAIN) và đứng thứ 13 trong số 180 quố"
+
+### ad-d19 (Biểu đồ, đọc trục, chú giải)
+
+**Câu hỏi:** Trong Hình 2, đến cuối giai đoạn (khoảng T+54) đường của Thái Lan đạt GDP bình quân đầu người khoảng bao nhiêu USD (USD 2015 cố định)?
+
+**Đáp án:** Khoảng 5.500 USD (đường Thái Lan 1958-2012 kết thúc ở cuối trục thời gian).
+
+**Cách chấm:** Chấp nhận 4.800-6.200 USD; hình không in số, đọc từ trục tung.
+
+**Lý do thuộc nhóm:** Biểu đồ đường 5 chuỗi không in số: phải gắn đúng chuỗi theo chú giải và đọc giá trị từ trục.
+
+- **Evidence:** Điểm cuối của đường Thái Lan (1958-2012)
+  - PDF trang 15 (số trang in: 5); vị trí: Hình 2; giá trị: ~5.500 (đọc từ trục)
+  - chunk: CCDR-p015-H2; **chỉ kiểm tra được bằng mắt trên hình**
+  - ![CCDR-p015-H2](../crops/CCDR-p015-H2.png)
+
+### ad-d20 (Biểu đồ, đọc trục)
+
+**Câu hỏi:** Trong Hình 17, biện pháp giảm phát thải từ chăn nuôi nào có chi phí cao nhất và mức đó khoảng bao nhiêu USD/tCO2e?
+
+**Đáp án:** Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR), khoảng 725 USD/tCO2e.
+
+**Cách chấm:** Đúng biện pháp; giá trị chấp nhận 650-800 USD/tCO2e (không in nhãn số).
+
+**Lý do thuộc nhóm:** Giá trị chỉ có trong hình (không in số, không có trong văn bản); nhãn trục xoay dọc.
+
+- **Evidence:** Cột cao nhất (cột cuối) của biểu đồ cột
+  - PDF trang 65 (số trang in: 55); vị trí: Hình 17, cột ngoài cùng bên phải; giá trị: ~725 $/tCO2e (đọc từ trục)
+  - chunk: CCDR-p065-H17; **chỉ kiểm tra được bằng mắt trên hình**
+  - ![CCDR-p065-H17](../crops/CCDR-p065-H17.png)
+
+### ad-d21 (Biểu đồ, đọc trục)
+
+**Câu hỏi:** Trong Hình 17, những biện pháp nào có chi phí âm (tiết kiệm chi phí)?
+
+**Đáp án:** Khẩu phần hỗn hợp hoàn chỉnh dành cho bò sữa (TMR) và bổ sung chế độ ăn uống cho bò nuôi lấy thịt (TMR).
+
+**Cách chấm:** Nêu đủ hai biện pháp; thêm biện pháp khác là sai.
+
+**Lý do thuộc nhóm:** Phải nhận ra cột nằm dưới trục 0 và gắn với nhãn xoay dọc; thông tin chỉ có trong hình.
+
+- **Evidence:** Hai cột đầu nằm dưới trục 0
+  - PDF trang 65 (số trang in: 55); vị trí: Hình 17, hai cột bên trái; giá trị: khẩu phần hỗn hợp bò sữa; bổ sung chế độ ăn bò thịt
+  - chunk: CCDR-p065-H17; **chỉ kiểm tra được bằng mắt trên hình**
+  - ![CCDR-p065-H17](../crops/CCDR-p065-H17.png)
+
+### ad-d22 (Ảnh, sơ đồ, màu, ảnh raster)
+
+**Câu hỏi:** Trong Hình 4, phần diện tích nằm dưới trục 0 trong giai đoạn 1990-2000 thuộc ngành nào theo chú giải?
+
+**Đáp án:** Thay đổi mục đích sử dụng đất và lâm nghiệp (LULUCF).
+
+**Cách chấm:** Đúng ngành; nhầm với Điện/Nhiệt hoặc một ngành phát thải khác là sai.
+
+**Lý do thuộc nhóm:** Ảnh raster: phải khớp màu vùng với màu trong chú giải (nhiều sắc tím gần nhau).
+
+- **Evidence:** Vùng màu tím nhạt dưới trục 0, khớp màu chú giải cuối
+  - PDF trang 18 (số trang in: 8); vị trí: Hình 4; giá trị: Thay đổi mục đích sử dụng đất và lâm nghiệp
+  - chunk: CCDR-p018-H4; **chỉ kiểm tra được bằng mắt trên hình**
+  - ![CCDR-p018-H4](../crops/CCDR-p018-H4.png)
+
+### ad-d23 (Ảnh, sơ đồ, màu, chú giải)
+
+**Câu hỏi:** Trong Hình 15, lớp màu xanh dương đậm nằm trên cùng, sát trục 0 vào năm 2030, là biện pháp nào theo chú giải?
+
+**Đáp án:** 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới.
+
+**Cách chấm:** Đúng biện pháp 1.1; nhầm với 3.1/3.2 (xanh dương sáng hơn) là sai.
+
+**Lý do thuộc nhóm:** Biểu đồ vùng xếp chồng với 12 chú giải: phải khớp màu lớp với màu chú giải, thông tin không có trong văn bản.
+
+- **Evidence:** Lớp xanh dương đậm trên cùng, khớp ô vuông cuối chú giải
+  - PDF trang 62 (số trang in: 52); vị trí: Hình 15; giá trị: 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới
+  - chunk: CCDR-p062-H15; **chỉ kiểm tra được bằng mắt trên hình**
+  - ![CCDR-p062-H15](../crops/CCDR-p062-H15.png)
 
 ### ad-d16 (Thiếu bằng chứng)
 

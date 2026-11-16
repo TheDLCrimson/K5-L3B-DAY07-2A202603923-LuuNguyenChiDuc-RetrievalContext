@@ -1,0 +1,62 @@
+[
+ {
+  "query_id": "ad-d19",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Look đọc đường Thái Lan khoảng 5.700 USD tại T+54, trong dung sai, nói rõ là ước lượng.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d20",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng biện pháp, khoảng 720-725 USD/tCO2e (look đọc 720), trong dung sai 650-800.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d21",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng hai biện pháp âm (khoảng -140 và -90 đến -100) sau khi nhìn từng cột.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d22",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Look thấy vùng tím hồng dưới trục 0 và khớp với chú giải LULUCF, khoảng -70 đến -75 MtCO2e.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d23",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Look nhìn ảnh, thấy lớp xanh dương đậm sát trục 0 là 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới; giá trị khoảng -4.200 nghìn tấn CO2 là ước lượng.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ }
+]

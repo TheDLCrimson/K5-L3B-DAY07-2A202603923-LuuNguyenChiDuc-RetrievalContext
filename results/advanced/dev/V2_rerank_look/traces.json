@@ -1,0 +1,5493 @@
+[
+ {
+  "query_id": "ad-d01",
+  "split": "dev",
+  "group": "bang",
+  "answerable": true,
+  "question": "Trong Bảng 1 (so sánh phát thải giữa các nước), nước nào có phát thải carbon trên mỗi triệu USD GDP cao nhất và giá trị đó là bao nhiêu?",
+  "status": "answered",
+  "answer": "Đông Timor có phát thải carbon cao nhất trong Bảng 1: 4.271,0 tCO2e trên triệu USD GDP [CCDR-p019-B1]. Mông Cổ đứng ngay sau với 4.250,9 [CCDR-p019-B1]. Lưu ý: giá trị của Malaysia in là \"1.08,9\" trong bảng, có thể là lỗi định dạng, nhưng không ảnh hưởng đến kết luận về nước cao nhất.",
+  "citations": [
+   "CCDR-p019-B1"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p019-B1",
+    "page": 19,
+    "page_label": "9",
+    "bbox": [
+     58,
+     72.6,
+     554.0,
+     412.6
+    ],
+    "crop": "crops/CCDR-p019-B1.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Bảng 1 so sánh phát thải giữa các nước carbon trên triệu USD GDP",
+    "ms": 10790.4,
+    "results": [
+     {
+      "id": "CCDR-p019-B1",
+      "score": 0.995644,
+      "rank": 1,
+      "page": 19,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p019-H5",
+      "score": 0.784751,
+      "rank": 2,
+      "page": 19,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.420076,
+      "rank": 3,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p018-t02",
+      "score": 0.333561,
+      "rank": 4,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.209323,
+      "rank": 5,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.188925,
+      "rank": 6,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p097-bang-r1",
+      "score": 0.099813,
+      "rank": 7,
+      "page": 97,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p024-t01",
+      "score": 0.073302,
+      "rank": 8,
+      "page": 24,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p019-B1",
+     "CCDR-p019-H5",
+     "CCDR-p098-bang"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p019-B1",
+    "question": "Cột \"Phát thải Carbon (tCO2e/triệu $GDP)\": đọc giá trị của tất cả các nước, đặc biệt là Mông Cổ, Papua New Guinea, Đông Timor, Lào, Campuchia, Myanmar. Nước nào có giá trị cao nhất?",
+    "answer": "**Nước có giá trị cao nhất: Đông Timor, 4.271,0 tCO₂e/triệu $GDP.** Mông Cổ đứng ngay sau với 4.250,9.\n\nGiá trị của các nước trong cột \"Phát thải Carbon (tCO₂e/triệu $GDP)\":\n\n- Đông Timor: 4.271,0\n- Mông Cổ: 4.250,9\n- Myanmar: 3.040,9\n- Papua New Guinea: 2.658,3\n- Campuchia: 2.814,1\n- Lào: 2.151,6\n- Indonesia: 1.634,8\n- Việt Nam: 1.486,2\n- Malaysia: \"1.08,9\" (số in trên hình không rõ ràng, có thể là lỗi in)\n- Thái Lan: 851,4\n- Trung Quốc: 842,5\n- Philipin: 677,0\n- Thổ Nhĩ Kỳ: 603,9\n- OECD: 266,6\n- Hoa Kỳ: 281,5\n- Vương quốc Anh: 154,2\n- Đức: 195,9\n- Pháp: 129,6",
+    "ms": 5362.5
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1657.0,
+    "usage": {
+     "prompt_tokens": 1859,
+     "completion_tokens": 81,
+     "total_tokens": 1940,
+     "cost": 0.000224136,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002264,
+      "upstream_inference_prompt_cost": 0.0001859,
+      "upstream_inference_completions_cost": 4.05e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2525.3,
+    "usage": {
+     "prompt_tokens": 5606,
+     "completion_tokens": 338,
+     "total_tokens": 5944,
+     "cost": 0.000722304,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007296,
+      "upstream_inference_prompt_cost": 0.0005606,
+      "upstream_inference_completions_cost": 0.000169
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": "Bảng 1 có ảnh, nên tôi đọc trực tiếp từ ảnh để kiểm tra các số cột carbon trước khi kết luận."
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2118.0,
+    "usage": {
+     "prompt_tokens": 6396,
+     "completion_tokens": 274,
+     "total_tokens": 6670,
+     "cost": 0.000768834,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007766,
+      "upstream_inference_prompt_cost": 0.0006396,
+      "upstream_inference_completions_cost": 0.000137
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p019-B1",
+    "question": "Cột \"Phát thải Carbon (tCO2e/triệu $GDP)\": đọc giá trị của tất cả các nước, đặc biệt là Mông Cổ, Papua New Guinea, Đông Timor, Lào, Campuchia, Myanmar. Nước nào có giá trị cao nhất?",
+    "answer": "**Nước có giá trị cao nhất: Đông Timor, 4.271,0 tCO₂e/triệu $GDP.** Mông Cổ đứng ngay sau với 4.250,9.\n\nGiá trị của các nước trong cột \"Phát thải Carbon (tCO₂e/triệu $GDP)\":\n\n- Đông Timor: 4.271,0\n- Mông Cổ: 4.250,9\n- Myanmar: 3.040,9\n- Papua New Guinea: 2.658,3\n- Campuchia: 2.814,1\n- Lào: 2.151,6\n- Indonesia: 1.634,8\n- Việt Nam: 1.486,2\n- Malaysia: \"1.08,9\" (số in trên hình không rõ ràng, có thể là lỗi in)\n- Thái Lan: 851,4\n- Trung Quốc: 842,5\n- Philipin: 677,0\n- Thổ Nhĩ Kỳ: 603,9\n- OECD: 266,6\n- Hoa Kỳ: 281,5\n- Vương quốc Anh: 154,2\n- Đức: 195,9\n- Pháp: 129,6",
+    "ms": 5362.5,
+    "usage": {
+     "prompt_tokens": 1415,
+     "completion_tokens": 896,
+     "total_tokens": 2311,
+     "cost": 0.000583605,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005895,
+      "upstream_inference_prompt_cost": 0.0001415,
+      "upstream_inference_completions_cost": 0.000448
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 505,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p019-B1",
+   "CCDR-p019-H5",
+   "CCDR-p098-bang"
+  ],
+  "looked_ids": [
+   "CCDR-p019-B1"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 15276,
+  "completion_tokens": 1589,
+  "cost_usd": 0.002299,
+  "ms": 22455.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d02",
+  "split": "dev",
+  "group": "bang",
+  "answerable": true,
+  "question": "Theo Bảng 5, tổng chi phí ròng (sau khi trừ khoản tiết kiệm chi phí nhiên liệu) tăng bao nhiêu tỷ USD và bao nhiêu phần trăm?",
+  "status": "answered",
+  "answer": "Theo Bảng 5 (kịch bản tăng tốc khử carbon ADS, 2022–2040, giá trị NPV so với kịch bản CPS), tổng chi phí ròng sau khi trừ tiết kiệm chi phí nhiên liệu tăng khoảng 33 tỷ USD, tương ứng +13%. Cụ thể: tổng chi phí +65 tỷ USD (56%), trừ tiết kiệm nhiên liệu −32 tỷ USD (−31%) [CCDR-p057-B5c]. Đoạn văn bản cũng nêu nhu cầu đầu tư thuần ước 33 tỷ USD, tương ứng mức biến động 13% [CCDR-p056-t01].",
+  "citations": [
+   "CCDR-p057-B5c",
+   "CCDR-p056-t01"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p057-B5c",
+    "page": 57,
+    "page_label": "47",
+    "bbox": [
+     69.1,
+     69.1,
+     542.9,
+     296.1
+    ],
+    "crop": "crops/CCDR-p057-B5c.png"
+   },
+   {
+    "id": "CCDR-p056-t01",
+    "page": 56,
+    "page_label": "46",
+    "bbox": [
+     70.9,
+     315.1,
+     544.3,
+     445.6
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Bảng 5 tổng chi phí ròng sau khi trừ tiết kiệm chi phí nhiên liệu",
+    "ms": 3944.0,
+    "results": [
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.915191,
+      "rank": 1,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t01",
+      "score": 0.691955,
+      "rank": 2,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.574479,
+      "rank": 3,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p031-t02",
+      "score": 0.026807,
+      "rank": 4,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.020722,
+      "rank": 5,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p050-t01",
+      "score": 0.01825,
+      "rank": 6,
+      "page": 50,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p050-B3",
+      "score": 0.017424,
+      "rank": 7,
+      "page": 50,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p101-bangc-r3",
+      "score": 0.014806,
+      "rank": 8,
+      "page": 101,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p057-B5c",
+     "CCDR-p056-t01",
+     "CCDR-p056-B5"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p057-B5c",
+    "question": "Đọc chính xác giá trị (tỷ USD) và phần trăm ở hàng \"Tổng chi phí ròng\" và hàng \"Tổng chi phí\", \"trừ khoản tiết kiệm chi phí nhiên liệu\".",
+    "answer": "**Tổng chi phí ròng:** +33 tỷ USD, tương ứng +13%.\n\n**Tổng chi phí:** +65 tỷ USD, tương ứng 56%.\n\n**Khoản trừ \"tiết kiệm chi phí nhiên liệu\":** -32 tỷ USD, tương ứng -31%.\n\nHình không in đơn vị tỷ USD; đơn vị này theo câu hỏi và tiêu đề bảng.",
+    "ms": 3254.8
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1448.6,
+    "usage": {
+     "prompt_tokens": 1866,
+     "completion_tokens": 89,
+     "total_tokens": 1955,
+     "cost": 0.000228789,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002311,
+      "upstream_inference_prompt_cost": 0.0001866,
+      "upstream_inference_completions_cost": 4.45e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2763.1,
+    "usage": {
+     "prompt_tokens": 4954,
+     "completion_tokens": 283,
+     "total_tokens": 5237,
+     "cost": 0.000630531,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006369,
+      "upstream_inference_prompt_cost": 0.0004954,
+      "upstream_inference_completions_cost": 0.0001415
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2347.4,
+    "usage": {
+     "prompt_tokens": 5439,
+     "completion_tokens": 370,
+     "total_tokens": 5809,
+     "cost": 0.000721611,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007289,
+      "upstream_inference_prompt_cost": 0.0005439,
+      "upstream_inference_completions_cost": 0.000185
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p057-B5c",
+    "question": "Đọc chính xác giá trị (tỷ USD) và phần trăm ở hàng \"Tổng chi phí ròng\" và hàng \"Tổng chi phí\", \"trừ khoản tiết kiệm chi phí nhiên liệu\".",
+    "answer": "**Tổng chi phí ròng:** +33 tỷ USD, tương ứng +13%.\n\n**Tổng chi phí:** +65 tỷ USD, tương ứng 56%.\n\n**Khoản trừ \"tiết kiệm chi phí nhiên liệu\":** -32 tỷ USD, tương ứng -31%.\n\nHình không in đơn vị tỷ USD; đơn vị này theo câu hỏi và tiêu đề bảng.",
+    "ms": 3254.8,
+    "usage": {
+     "prompt_tokens": 1087,
+     "completion_tokens": 338,
+     "total_tokens": 1425,
+     "cost": 0.000274923,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002777,
+      "upstream_inference_prompt_cost": 0.0001087,
+      "upstream_inference_completions_cost": 0.000169
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 180,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p057-B5c",
+   "CCDR-p056-t01",
+   "CCDR-p056-B5"
+  ],
+  "looked_ids": [
+   "CCDR-p057-B5c"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 13346,
+  "completion_tokens": 1080,
+  "cost_usd": 0.001856,
+  "ms": 13759.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d03",
+  "split": "dev",
+  "group": "bang",
+  "answerable": true,
+  "question": "Trong bảng so sánh lượng khí thải ước tính của Việt Nam theo từng nguồn thông tin (Phụ lục 3), nguồn nào cho ước tính thấp nhất và thấp hơn con số của Chính phủ (NDC cập nhật 2020) bao nhiêu triệu tấn CO2?",
+  "status": "answered",
+  "answer": "Nguồn cho ước tính thấp nhất là Climate Transparency (2018): 61 triệu tấn CO2 [CCDR-p098-bang]. Con số của Chính phủ (NDC cập nhật 2020) là 104,5 triệu tấn CO2 [CCDR-p098-bang]. Như vậy, ước tính của Climate Transparency thấp hơn 43,5 triệu tấn CO2 (104,5 − 61 = 43,5) [CCDR-p098-bang]. Lưu ý: bảng này không có tiêu đề ghi \"Phụ lục 3\" trong phần đã truy xuất; nó nằm ở trang PDF 98, trong phần bàn về chênh lệch giữa số liệu quốc gia báo cáo và cơ sở dữ liệu công khai. Đoạn văn cùng trang giải thích rằng 104,5 triệu tấn CO2e trong NDC là số dự báo của kịch bản BAU 2020 dựa trên mức phát thải nông nghiệp thực tế năm 2014 [CCDR-p098-t04].",
+  "citations": [
+   "CCDR-p098-bang",
+   "CCDR-p098-t04"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p098-bang",
+    "page": 98,
+    "page_label": "88",
+    "bbox": [
+     69.1,
+     477.1,
+     405.6,
+     611.5
+    ],
+    "crop": "crops/CCDR-p098-bang.png"
+   },
+   {
+    "id": "CCDR-p098-t04",
+    "page": 98,
+    "page_label": "88",
+    "bbox": [
+     70.9,
+     417.1,
+     544.1,
+     662.5
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Phụ lục 3 so sánh ước tính lượng khí thải Việt Nam theo nguồn NDC cập nhật 2020",
+    "ms": 3645.3,
+    "results": [
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.996845,
+      "rank": 1,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p018-t01",
+      "score": 0.790347,
+      "rank": 2,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p019-B1",
+      "score": 0.74009,
+      "rank": 3,
+      "page": 19,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.609801,
+      "rank": 4,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p019-H5",
+      "score": 0.514894,
+      "rank": 5,
+      "page": 19,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.419571,
+      "rank": 6,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.319108,
+      "rank": 7,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p091-bang-r2",
+      "score": 0.307352,
+      "rank": 8,
+      "page": 91,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p098-bang",
+     "CCDR-p018-t01",
+     "CCDR-p019-B1"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "bảng so sánh ước tính phát thải CO2 Việt Nam các nguồn dữ liệu",
+    "ms": 3327.6,
+    "results": [
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.999534,
+      "rank": 1,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p019-B1",
+      "score": 0.948626,
+      "rank": 2,
+      "page": 19,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p098-t04",
+      "score": 0.921665,
+      "rank": 3,
+      "page": 98,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p019-H5",
+      "score": 0.909805,
+      "rank": 4,
+      "page": 19,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p091-bang-r2",
+      "score": 0.80919,
+      "rank": 5,
+      "page": 91,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p018-t01",
+      "score": 0.801296,
+      "rank": 6,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.758222,
+      "rank": 7,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.739967,
+      "rank": 8,
+      "page": 92,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p098-t04",
+     "CCDR-p019-H5",
+     "CCDR-p091-bang-r2"
+    ],
+    "already_shown": [
+     "CCDR-p098-bang",
+     "CCDR-p019-B1",
+     "CCDR-p018-t01"
+    ]
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p098-bang",
+    "question": "Đọc chính xác các giá trị cột \"Lượng khí thải ước tính (triệu tấn CO2 phát thải)\" cho từng nguồn thông tin, đặc biệt là dòng Chính phủ/NDC cập nhật (2020) và dòng có giá trị thấp nhất.",
+    "answer": "Bảng gồm 5 nguồn, cột \"Lượng khí thải ước tính (triệu tấn CO2 phát thải)\":\n\n- Chính phủ Việt Nam/NDC cập nhật (2020): **104,5 triệu tấn CO2**\n- Dự thảo Nghiên cứu thông tin nền (2020): **104,5 triệu tấn CO2**\n- FAO (2019): **72,74 triệu tấn CO2**\n- Climate Watch (WRI) (2018): **71 triệu tấn CO2**\n- Climate Transparency (2018): **61 triệu tấn CO2** (giá trị thấp nhất)",
+    "ms": 2529.5
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1721.5,
+    "usage": {
+     "prompt_tokens": 1900,
+     "completion_tokens": 174,
+     "total_tokens": 2074,
+     "cost": 0.00027423,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000277,
+      "upstream_inference_prompt_cost": 0.00019,
+      "upstream_inference_completions_cost": 8.7e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2573.3,
+    "usage": {
+     "prompt_tokens": 8878,
+     "completion_tokens": 249,
+     "total_tokens": 9127,
+     "cost": 0.001002177,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010123,
+      "upstream_inference_prompt_cost": 0.0008878,
+      "upstream_inference_completions_cost": 0.0001245
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4218.3,
+    "usage": {
+     "prompt_tokens": 9394,
+     "completion_tokens": 649,
+     "total_tokens": 10043,
+     "cost": 0.001251261,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0012639,
+      "upstream_inference_prompt_cost": 0.0009394,
+      "upstream_inference_completions_cost": 0.0003245
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 156,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p098-bang",
+    "question": "Đọc chính xác các giá trị cột \"Lượng khí thải ước tính (triệu tấn CO2 phát thải)\" cho từng nguồn thông tin, đặc biệt là dòng Chính phủ/NDC cập nhật (2020) và dòng có giá trị thấp nhất.",
+    "answer": "Bảng gồm 5 nguồn, cột \"Lượng khí thải ước tính (triệu tấn CO2 phát thải)\":\n\n- Chính phủ Việt Nam/NDC cập nhật (2020): **104,5 triệu tấn CO2**\n- Dự thảo Nghiên cứu thông tin nền (2020): **104,5 triệu tấn CO2**\n- FAO (2019): **72,74 triệu tấn CO2**\n- Climate Watch (WRI) (2018): **71 triệu tấn CO2**\n- Climate Transparency (2018): **61 triệu tấn CO2** (giá trị thấp nhất)",
+    "ms": 2529.5,
+    "usage": {
+     "prompt_tokens": 725,
+     "completion_tokens": 224,
+     "total_tokens": 949,
+     "cost": 0.000182655,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001845,
+      "upstream_inference_prompt_cost": 7.25e-05,
+      "upstream_inference_completions_cost": 0.000112
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p098-bang",
+   "CCDR-p018-t01",
+   "CCDR-p019-B1",
+   "CCDR-p098-t04",
+   "CCDR-p019-H5",
+   "CCDR-p091-bang-r2"
+  ],
+  "looked_ids": [
+   "CCDR-p098-bang"
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 20897,
+  "completion_tokens": 1296,
+  "cost_usd": 0.00271,
+  "ms": 18017.5,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d04",
+  "split": "dev",
+  "group": "anh_so_do",
+  "answerable": true,
+  "question": "Mô hình phát triển mới cho Việt Nam trong Hình 1 gồm hai lộ trình nào?",
+  "status": "answered",
+  "answer": "Hình 1 thể hiện mô hình phát triển mới cho Việt Nam, đi từ \"Việt Nam hiện nay\" đến \"Việt Nam năm 2045\", kết hợp hai lộ trình: (1) lộ trình xây dựng khả năng chống chịu (khí hậu) và (2) lộ trình khử carbon [CCDR-p013-H1]. Báo cáo nêu mô hình này kết hợp hai lộ trình nhằm cân bằng mục tiêu phát triển với rủi ro khí hậu gia tăng [CCDR-p012-t02]. Năm nhóm giải pháp nằm giữa hai lộ trình gồm: xây dựng cơ sở hạ tầng có khả năng chống chịu, bảo vệ những đối tượng bị tổn thương nhất, cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp, định giá carbon, và huy động nguồn vốn [CCDR-p013-H1].",
+  "citations": [
+   "CCDR-p013-H1",
+   "CCDR-p012-t02"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p013-H1",
+    "page": 13,
+    "page_label": "3",
+    "bbox": [
+     58,
+     75.7,
+     554.0,
+     313.3
+    ],
+    "crop": "crops/CCDR-p013-H1.png"
+   },
+   {
+    "id": "CCDR-p012-t02",
+    "page": 12,
+    "page_label": "2",
+    "bbox": [
+     70.9,
+     204.9,
+     544.3,
+     365.4
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 1 mô hình phát triển mới cho Việt Nam hai lộ trình",
+    "ms": 2865.8,
+    "results": [
+     {
+      "id": "CCDR-p013-H1",
+      "score": 0.997785,
+      "rank": 1,
+      "page": 13,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p012-t02",
+      "score": 0.981098,
+      "rank": 2,
+      "page": 12,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p015-t01",
+      "score": 0.756028,
+      "rank": 3,
+      "page": 15,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p029-t01",
+      "score": 0.711724,
+      "rank": 4,
+      "page": 29,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p016-t03",
+      "score": 0.173833,
+      "rank": 5,
+      "page": 16,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p014-t01",
+      "score": 0.149824,
+      "rank": 6,
+      "page": 14,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p015-t02",
+      "score": 0.128012,
+      "rank": 7,
+      "page": 15,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p071-H19",
+      "score": 0.071924,
+      "rank": 8,
+      "page": 71,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p013-H1",
+     "CCDR-p012-t02",
+     "CCDR-p015-t01"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1549.5,
+    "usage": {
+     "prompt_tokens": 1826,
+     "completion_tokens": 78,
+     "total_tokens": 1904,
+     "cost": 0.000219384,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002216,
+      "upstream_inference_prompt_cost": 0.0001826,
+      "upstream_inference_completions_cost": 3.9e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3340.3,
+    "usage": {
+     "prompt_tokens": 4274,
+     "completion_tokens": 585,
+     "total_tokens": 4859,
+     "cost": 0.000712701,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007199,
+      "upstream_inference_prompt_cost": 0.0004274,
+      "upstream_inference_completions_cost": 0.0002925
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p013-H1",
+   "CCDR-p012-t02",
+   "CCDR-p015-t01"
+  ],
+  "looked_ids": [],
+  "searches": 1,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 6100,
+  "completion_tokens": 663,
+  "cost_usd": 0.000932,
+  "ms": 7755.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d05",
+  "split": "dev",
+  "group": "anh_so_do",
+  "answerable": true,
+  "question": "Trong sơ đồ Hình 1, danh sách các hành động ở giữa có mấy mục và mục thứ tư là gì?",
+  "status": "answered",
+  "answer": "Danh sách ở giữa Hình 1 có 5 mục: (1) xây dựng cơ sở hạ tầng có khả năng chống chịu; (2) bảo vệ những đối tượng bị tổn thương nhất; (3) cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp; (4) định giá carbon; (5) huy động nguồn vốn. Mục thứ tư là \"Định giá carbon\" [CCDR-p013-H1].",
+  "citations": [
+   "CCDR-p013-H1"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p013-H1",
+    "page": 13,
+    "page_label": "3",
+    "bbox": [
+     58,
+     75.7,
+     554.0,
+     313.3
+    ],
+    "crop": "crops/CCDR-p013-H1.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 1 sơ đồ các hành động",
+    "ms": 3084.7,
+    "results": [
+     {
+      "id": "CCDR-p013-H1",
+      "score": 0.129853,
+      "rank": 1,
+      "page": 13,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p084-t03",
+      "score": 0.119143,
+      "rank": 2,
+      "page": 84,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p084-B6",
+      "score": 0.082056,
+      "rank": 3,
+      "page": 84,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p101-bangc-r3",
+      "score": 0.080024,
+      "rank": 4,
+      "page": 101,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p033-t04",
+      "score": 0.064829,
+      "rank": 5,
+      "page": 33,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p051-t01",
+      "score": 0.064765,
+      "rank": 6,
+      "page": 51,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p102-bangc-r1",
+      "score": 0.05941,
+      "rank": 7,
+      "page": 102,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p012-t02",
+      "score": 0.058287,
+      "rank": 8,
+      "page": 12,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p013-H1",
+     "CCDR-p084-t03",
+     "CCDR-p084-B6"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p013-H1",
+    "question": "Đếm số gạch đầu dòng ở giữa hai hộp \"Việt Nam hiện nay\" và \"Việt Nam năm 2045\". Đọc đúng nội dung từng mục theo thứ tự từ trên xuống.",
+    "answer": "Có 5 gạch đầu dòng giữa hai hộp \"Việt Nam hiện nay\" và \"Việt Nam năm 2045\", theo thứ tự từ trên xuống:\n\n1. Xây dựng cơ sở hạ tầng có khả năng chống chịu\n2. Bảo vệ những đối tượng bị tổn thương nhất\n3. Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp\n4. Định giá carbon\n5. Huy động nguồn vốn",
+    "ms": 2399.4
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1293.0,
+    "usage": {
+     "prompt_tokens": 1832,
+     "completion_tokens": 63,
+     "total_tokens": 1895,
+     "cost": 0.000212553,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002147,
+      "upstream_inference_prompt_cost": 0.0001832,
+      "upstream_inference_completions_cost": 3.15e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2394.8,
+    "usage": {
+     "prompt_tokens": 4757,
+     "completion_tokens": 272,
+     "total_tokens": 5029,
+     "cost": 0.000605583,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006117,
+      "upstream_inference_prompt_cost": 0.0004757,
+      "upstream_inference_completions_cost": 0.000136
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 112,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1962.8,
+    "usage": {
+     "prompt_tokens": 5254,
+     "completion_tokens": 269,
+     "total_tokens": 5523,
+     "cost": 0.000653301,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006599,
+      "upstream_inference_prompt_cost": 0.0005254,
+      "upstream_inference_completions_cost": 0.0001345
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p013-H1",
+    "question": "Đếm số gạch đầu dòng ở giữa hai hộp \"Việt Nam hiện nay\" và \"Việt Nam năm 2045\". Đọc đúng nội dung từng mục theo thứ tự từ trên xuống.",
+    "answer": "Có 5 gạch đầu dòng giữa hai hộp \"Việt Nam hiện nay\" và \"Việt Nam năm 2045\", theo thứ tự từ trên xuống:\n\n1. Xây dựng cơ sở hạ tầng có khả năng chống chịu\n2. Bảo vệ những đối tượng bị tổn thương nhất\n3. Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp\n4. Định giá carbon\n5. Huy động nguồn vốn",
+    "ms": 2399.4,
+    "usage": {
+     "prompt_tokens": 1095,
+     "completion_tokens": 180,
+     "total_tokens": 1275,
+     "cost": 0.000197505,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001995,
+      "upstream_inference_prompt_cost": 0.0001095,
+      "upstream_inference_completions_cost": 9e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p013-H1",
+   "CCDR-p084-t03",
+   "CCDR-p084-B6"
+  ],
+  "looked_ids": [
+   "CCDR-p013-H1"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 12938,
+  "completion_tokens": 784,
+  "cost_usd": 0.001669,
+  "ms": 11136.2,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d06",
+  "split": "dev",
+  "group": "anh_so_do",
+  "answerable": true,
+  "question": "Theo sơ đồ Hình 21, khu vực nào cần nhiều tài chính nhất trong tổng nhu cầu 2022–2040, cần bao nhiêu tỷ USD và tương đương khoảng bao nhiêu phần trăm GDP mỗi năm?",
+  "status": "answered",
+  "answer": "Theo Hình 21, khu vực tư nhân là nguồn tài chính lớn nhất: 184 tỷ USD cho cả giai đoạn 2022–2040 (NPV chiết khấu 6%), tương đương khoảng 3,4% GDP mỗi năm [CCDR-p077-H21]. Để so sánh, khu vực công là 130 tỷ USD (~2,4% GDP/năm) và bên ngoài là 54 tỷ USD (~1% GDP/năm). Ba nguồn này cộng lại bằng tổng nhu cầu 368 tỷ USD [CCDR-p077-H21]. Lưu ý: con số 184 tỷ USD là tổng cho cả giai đoạn; tỷ lệ % GDP là mức trung bình mỗi năm.",
+  "citations": [
+   "CCDR-p077-H21"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p077-H21",
+    "page": 77,
+    "page_label": "67",
+    "bbox": [
+     58,
+     501.0,
+     554.0,
+     693.9
+    ],
+    "crop": "crops/CCDR-p077-H21.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 21 nhu cầu tài chính khí hậu theo khu vực 2022–2040",
+    "ms": 3481.9,
+    "results": [
+     {
+      "id": "CCDR-p077-H21",
+      "score": 0.998068,
+      "rank": 1,
+      "page": 77,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.836322,
+      "rank": 2,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p031-t01",
+      "score": 0.780971,
+      "rank": 3,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p077-t02",
+      "score": 0.748979,
+      "rank": 4,
+      "page": 77,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.672812,
+      "rank": 5,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p032-B2",
+      "score": 0.59541,
+      "rank": 6,
+      "page": 32,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p050-B3",
+      "score": 0.555126,
+      "rank": 7,
+      "page": 50,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p079-t05",
+      "score": 0.425154,
+      "rank": 8,
+      "page": 79,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p077-H21",
+     "CCDR-p057-B5c",
+     "CCDR-p031-t01"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p077-H21",
+    "question": "Đọc chính xác các con số: tổng nhu cầu tài chính, và số tỷ USD cùng % GDP mỗi năm của khu vực tư nhân, khu vực công và bên ngoài.",
+    "answer": "**Tổng nhu cầu tài chính:** 368 tỷ USD (giai đoạn 2022–2040, NPV chiết khấu ở tỷ lệ 6%). Ngoài ra, hình ghi khả năng chống chịu 4,7% GDP mỗi năm và khử carbon 2,1% GDP mỗi năm.\n\n**Phân bổ theo nguồn:**\n\n| Nguồn | Số tiền | % GDP mỗi năm |\n|---|---|---|\n| Khu vực tư nhân | 184 tỷ USD | ~3,4% |\n| Khu vực công | 130 tỷ USD | ~2,4% |\n| Bên ngoài | 54 tỷ USD | ~1% |\n\nBa nguồn cộng lại bằng 368 tỷ USD.\n\nHình không ghi số tỷ USD theo từng năm. Các con số 184, 130 và 54 tỷ USD là tổng cho cả giai đoạn, còn cột % GDP là mức trung bình mỗi năm.",
+    "ms": 4872.2
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1437.2,
+    "usage": {
+     "prompt_tokens": 1884,
+     "completion_tokens": 80,
+     "total_tokens": 1964,
+     "cost": 0.000226116,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002284,
+      "upstream_inference_prompt_cost": 0.0001884,
+      "upstream_inference_completions_cost": 4e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2931.1,
+    "usage": {
+     "prompt_tokens": 5177,
+     "completion_tokens": 333,
+     "total_tokens": 5510,
+     "cost": 0.000677358,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006842,
+      "upstream_inference_prompt_cost": 0.0005177,
+      "upstream_inference_completions_cost": 0.0001665
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 183,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2662.8,
+    "usage": {
+     "prompt_tokens": 5913,
+     "completion_tokens": 379,
+     "total_tokens": 6292,
+     "cost": 0.000772992,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007808,
+      "upstream_inference_prompt_cost": 0.0005913,
+      "upstream_inference_completions_cost": 0.0001895
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p077-H21",
+    "question": "Đọc chính xác các con số: tổng nhu cầu tài chính, và số tỷ USD cùng % GDP mỗi năm của khu vực tư nhân, khu vực công và bên ngoài.",
+    "answer": "**Tổng nhu cầu tài chính:** 368 tỷ USD (giai đoạn 2022–2040, NPV chiết khấu ở tỷ lệ 6%). Ngoài ra, hình ghi khả năng chống chịu 4,7% GDP mỗi năm và khử carbon 2,1% GDP mỗi năm.\n\n**Phân bổ theo nguồn:**\n\n| Nguồn | Số tiền | % GDP mỗi năm |\n|---|---|---|\n| Khu vực tư nhân | 184 tỷ USD | ~3,4% |\n| Khu vực công | 130 tỷ USD | ~2,4% |\n| Bên ngoài | 54 tỷ USD | ~1% |\n\nBa nguồn cộng lại bằng 368 tỷ USD.\n\nHình không ghi số tỷ USD theo từng năm. Các con số 184, 130 và 54 tỷ USD là tổng cho cả giai đoạn, còn cột % GDP là mức trung bình mỗi năm.",
+    "ms": 4872.2,
+    "usage": {
+     "prompt_tokens": 991,
+     "completion_tokens": 713,
+     "total_tokens": 1704,
+     "cost": 0.000451044,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0004556,
+      "upstream_inference_prompt_cost": 9.91e-05,
+      "upstream_inference_completions_cost": 0.0003565
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 357,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p077-H21",
+   "CCDR-p057-B5c",
+   "CCDR-p031-t01"
+  ],
+  "looked_ids": [
+   "CCDR-p077-H21"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 13965,
+  "completion_tokens": 1505,
+  "cost_usd": 0.002128,
+  "ms": 15386.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d07",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Cộng tất cả các hạng mục trong Hình 3 thì tổng chi phí ước tính do biến đổi khí hậu năm 2020 là bao nhiêu triệu USD, và hạng mục nào lớn nhất?",
+  "status": "answered",
+  "answer": "Tổng các hạng mục trong Hình 3 là 10.903 triệu USD (năm 2020), tức khoảng 10,9 tỷ USD. Các giá trị đọc từ hình: Thủy sản 4.219; Năng suất lao động 2.807; Mực nước biển dâng 1.474; Nông nghiệp 837; Chi phí giải nhiệt 518; Thiên tai 447; Sức khỏe 235; Nước 218; Du lịch 148 (triệu USD). Phép cộng: 4219 + 2807 + 1474 + 837 + 518 + 447 + 235 + 218 + 148 = 10.903 [CCDR-p017-H3]. Hạng mục lớn nhất là Thủy sản, với 4.219 triệu USD [CCDR-p017-H3]. Lưu ý: văn bản ghi thiệt hại năm 2020 khoảng 10 tỷ USD, tương đương 3,2% GDP; con số này làm tròn khác với tổng 10,9 tỷ trong hình [CCDR-p017-t01].",
+  "citations": [
+   "CCDR-p017-H3",
+   "CCDR-p017-t01"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p017-H3",
+    "page": 17,
+    "page_label": "7",
+    "bbox": [
+     58,
+     311.1,
+     554.0,
+     549.3
+    ],
+    "crop": "crops/CCDR-p017-H3.png"
+   },
+   {
+    "id": "CCDR-p017-t01",
+    "page": 17,
+    "page_label": "7",
+    "bbox": [
+     70.9,
+     70.9,
+     544.3,
+     188.3
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 3 chi phí ước tính do biến đổi khí hậu năm 2020 triệu USD",
+    "ms": 2915.7,
+    "results": [
+     {
+      "id": "CCDR-p017-H3",
+      "score": 0.999249,
+      "rank": 1,
+      "page": 17,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p017-t01",
+      "score": 0.826436,
+      "rank": 2,
+      "page": 17,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p031-t01",
+      "score": 0.602125,
+      "rank": 3,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p031-t02",
+      "score": 0.589365,
+      "rank": 4,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p030-t01",
+      "score": 0.343938,
+      "rank": 5,
+      "page": 30,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p020-t02",
+      "score": 0.268605,
+      "rank": 6,
+      "page": 20,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p086-t05",
+      "score": 0.234541,
+      "rank": 7,
+      "page": 86,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.087592,
+      "rank": 8,
+      "page": 25,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p017-H3",
+     "CCDR-p017-t01",
+     "CCDR-p031-t01"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p017-H3",
+    "question": "Đọc giá trị (triệu USD) của từng ô trong treemap: Thủy sản, Năng suất lao động, Mực nước biển dâng, Nông nghiệp, Chi phí giải nhiệt, Thiên tai, Sức khỏe, Nước, Du lịch. Ghi đúng số trên từng ô.",
+    "answer": "Giá trị in trên từng ô (triệu USD, năm 2020):\n\n- Thủy sản: 4219\n- Năng suất lao động: 2807\n- Mực nước biển dâng: 1474\n- Nông nghiệp: 837\n- Chi phí giải nhiệt: 518\n- Thiên tai: 447\n- Sức khỏe: 235\n- Nước: 218\n- Du lịch: 148",
+    "ms": 2045.0
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1364.4,
+    "usage": {
+     "prompt_tokens": 1867,
+     "completion_tokens": 83,
+     "total_tokens": 1950,
+     "cost": 0.000225918,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002282,
+      "upstream_inference_prompt_cost": 0.0001867,
+      "upstream_inference_completions_cost": 4.15e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2026.1,
+    "usage": {
+     "prompt_tokens": 4210,
+     "completion_tokens": 235,
+     "total_tokens": 4445,
+     "cost": 0.000533115,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005385,
+      "upstream_inference_prompt_cost": 0.000421,
+      "upstream_inference_completions_cost": 0.0001175
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3176.0,
+    "usage": {
+     "prompt_tokens": 4630,
+     "completion_tokens": 631,
+     "total_tokens": 5261,
+     "cost": 0.000770715,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007785,
+      "upstream_inference_prompt_cost": 0.000463,
+      "upstream_inference_completions_cost": 0.0003155
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 143,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p017-H3",
+    "question": "Đọc giá trị (triệu USD) của từng ô trong treemap: Thủy sản, Năng suất lao động, Mực nước biển dâng, Nông nghiệp, Chi phí giải nhiệt, Thiên tai, Sức khỏe, Nước, Du lịch. Ghi đúng số trên từng ô.",
+    "answer": "Giá trị in trên từng ô (triệu USD, năm 2020):\n\n- Thủy sản: 4219\n- Năng suất lao động: 2807\n- Mực nước biển dâng: 1474\n- Nông nghiệp: 837\n- Chi phí giải nhiệt: 518\n- Thiên tai: 447\n- Sức khỏe: 235\n- Nước: 218\n- Du lịch: 148",
+    "ms": 2045.0,
+    "usage": {
+     "prompt_tokens": 1143,
+     "completion_tokens": 140,
+     "total_tokens": 1283,
+     "cost": 0.000182457,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001843,
+      "upstream_inference_prompt_cost": 0.0001143,
+      "upstream_inference_completions_cost": 7e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p017-H3",
+   "CCDR-p017-t01",
+   "CCDR-p031-t01"
+  ],
+  "looked_ids": [
+   "CCDR-p017-H3"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 11850,
+  "completion_tokens": 1089,
+  "cost_usd": 0.001712,
+  "ms": 11528.8,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d08",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 6, bao nhiêu phần trăm doanh nghiệp cho biết tác động \"Thiếu nguồn cung nguyên liệu đầu vào\" ở mức \"Hầu như không\"?",
+  "status": "answered",
+  "answer": "Khoảng 33% doanh nghiệp cho biết tác động \"Thiếu nguồn cung nguyên liệu đầu vào\" ở mức \"Hầu như không\" (khảo sát năm 2019, đơn vị: % doanh nghiệp báo cáo). Các mức còn lại của hàng này là 34% (Khá ít), 24% (Tương đối nhiều) và 9% (Rất nhiều) [CCDR-p025-H6].",
+  "citations": [
+   "CCDR-p025-H6"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p025-H6",
+    "page": 25,
+    "page_label": "15",
+    "bbox": [
+     58,
+     180.1,
+     554.0,
+     488.1
+    ],
+    "crop": "crops/CCDR-p025-H6.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 6 tác động thiếu nguồn cung nguyên liệu đầu vào doanh nghiệp",
+    "ms": 2986.4,
+    "results": [
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.984453,
+      "rank": 1,
+      "page": 25,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p024-t05",
+      "score": 0.079698,
+      "rank": 2,
+      "page": 24,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p016-t03",
+      "score": 0.021319,
+      "rank": 3,
+      "page": 16,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p025-t01",
+      "score": 0.018677,
+      "rank": 4,
+      "page": 25,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p100-bang-r1",
+      "score": 0.017771,
+      "rank": 5,
+      "page": 100,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p084-B6",
+      "score": 0.013652,
+      "rank": 6,
+      "page": 84,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p096-t01",
+      "score": 0.012064,
+      "rank": 7,
+      "page": 96,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p051-t03",
+      "score": 0.01001,
+      "rank": 8,
+      "page": 51,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p025-H6",
+     "CCDR-p024-t05",
+     "CCDR-p016-t03"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p025-H6",
+    "question": "Với hàng \"Thiếu nguồn cung nguyên liệu đầu vào\" (hàng cuối cùng), cột \"Hầu như không\" (màu xanh đậm) hiển thị giá trị phần trăm bao nhiêu? Đọc chính xác trên thanh.",
+    "answer": "Hàng \"Thiếu nguồn cung nguyên liệu đầu vào\", cột \"Hầu như không\" (màu xanh đậm) có giá trị **33%** doanh nghiệp báo cáo.",
+    "ms": 2637.4
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1264.2,
+    "usage": {
+     "prompt_tokens": 1860,
+     "completion_tokens": 86,
+     "total_tokens": 1946,
+     "cost": 0.00022671,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000229,
+      "upstream_inference_prompt_cost": 0.000186,
+      "upstream_inference_completions_cost": 4.3e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2645.9,
+    "usage": {
+     "prompt_tokens": 4659,
+     "completion_tokens": 412,
+     "total_tokens": 5071,
+     "cost": 0.000665181,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006719,
+      "upstream_inference_prompt_cost": 0.0004659,
+      "upstream_inference_completions_cost": 0.000206
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 236,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2161.8,
+    "usage": {
+     "prompt_tokens": 5182,
+     "completion_tokens": 258,
+     "total_tokens": 5440,
+     "cost": 0.000640728,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006472,
+      "upstream_inference_prompt_cost": 0.0005182,
+      "upstream_inference_completions_cost": 0.000129
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p025-H6",
+    "question": "Với hàng \"Thiếu nguồn cung nguyên liệu đầu vào\" (hàng cuối cùng), cột \"Hầu như không\" (màu xanh đậm) hiển thị giá trị phần trăm bao nhiêu? Đọc chính xác trên thanh.",
+    "answer": "Hàng \"Thiếu nguồn cung nguyên liệu đầu vào\", cột \"Hầu như không\" (màu xanh đậm) có giá trị **33%** doanh nghiệp báo cáo.",
+    "ms": 2637.4,
+    "usage": {
+     "prompt_tokens": 1318,
+     "completion_tokens": 74,
+     "total_tokens": 1392,
+     "cost": 0.000167112,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001688,
+      "upstream_inference_prompt_cost": 0.0001318,
+      "upstream_inference_completions_cost": 3.7e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p025-H6",
+   "CCDR-p024-t05",
+   "CCDR-p016-t03"
+  ],
+  "looked_ids": [
+   "CCDR-p025-H6"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 13019,
+  "completion_tokens": 830,
+  "cost_usd": 0.0017,
+  "ms": 11697.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d09",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 8, đến năm 2050 thiệt hại GDP theo kịch bản RCP 4.5 và theo kịch bản RCP 2.6 khoảng bao nhiêu phần trăm?",
+  "status": "answered",
+  "answer": "Đến năm 2050, theo báo cáo, thiệt hại GDP khoảng 9,8% theo kịch bản RCP 2.6 và khoảng 12,3% theo kịch bản RCP 4.5 so với đường cơ sở [CCDR-p030-t03]. Hình 8 không in số liệu; khi ước lượng từ trục tung, RCP 2.6 khoảng 10% và RCP 4.5 khoảng 12,4% [CCDR-p030-H8]. Phần văn bản cũng nêu mức tối đa 9,9% (RCP 2.6) và 12,4% (RCP 4.5) [CCDR-p029-t02].",
+  "citations": [
+   "CCDR-p030-t03",
+   "CCDR-p030-H8",
+   "CCDR-p029-t02"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p030-t03",
+    "page": 30,
+    "page_label": "20",
+    "bbox": [
+     70.9,
+     586.6,
+     544.3,
+     665.2
+    ],
+    "crop": null
+   },
+   {
+    "id": "CCDR-p030-H8",
+    "page": 30,
+    "page_label": "20",
+    "bbox": [
+     58,
+     294.9,
+     554.0,
+     574.8
+    ],
+    "crop": "crops/CCDR-p030-H8.png"
+   },
+   {
+    "id": "CCDR-p029-t02",
+    "page": 29,
+    "page_label": "19",
+    "bbox": [
+     70.9,
+     262.9,
+     544.3,
+     393.4
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 8 thiệt hại GDP đến năm 2050 kịch bản RCP 4.5 RCP 2.6",
+    "ms": 2975.6,
+    "results": [
+     {
+      "id": "CCDR-p030-H8",
+      "score": 0.997604,
+      "rank": 1,
+      "page": 30,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p029-t02",
+      "score": 0.996086,
+      "rank": 2,
+      "page": 29,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p030-t03",
+      "score": 0.994024,
+      "rank": 3,
+      "page": 30,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p095-bang-r3",
+      "score": 0.915663,
+      "rank": 4,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p034-t01",
+      "score": 0.905447,
+      "rank": 5,
+      "page": 34,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p029-t03",
+      "score": 0.873999,
+      "rank": 6,
+      "page": 29,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p095-bang-r1",
+      "score": 0.787983,
+      "rank": 7,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p094-bang-r1",
+      "score": 0.741259,
+      "rank": 8,
+      "page": 94,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p030-H8",
+     "CCDR-p029-t02",
+     "CCDR-p030-t03"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p030-H8",
+    "question": "Đọc giá trị thiệt hại GDP (% độ lệch so với đường cơ sở) của RCP 2.6 (xanh đậm) và RCP 4.5 (cam) tại năm 2050. Ước lượng từ trục tung.",
+    "answer": "Năm 2050, ước lượng từ trục tung:\n\n- **RCP 2.6 (xanh đậm):** khoảng 10% độ lệch so với đường cơ sở.\n- **RCP 4.5 (cam):** khoảng 12,4% độ lệch so với đường cơ sở.\n\nHình không in số liệu cụ thể, nên đây chỉ là giá trị ước lượng.",
+    "ms": 2922.4
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1341.8,
+    "usage": {
+     "prompt_tokens": 1860,
+     "completion_tokens": 90,
+     "total_tokens": 1950,
+     "cost": 0.00022869,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000231,
+      "upstream_inference_prompt_cost": 0.000186,
+      "upstream_inference_completions_cost": 4.5e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1959.7,
+    "usage": {
+     "prompt_tokens": 4222,
+     "completion_tokens": 251,
+     "total_tokens": 4473,
+     "cost": 0.000542223,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005477,
+      "upstream_inference_prompt_cost": 0.0004222,
+      "upstream_inference_completions_cost": 0.0001255
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2640.4,
+    "usage": {
+     "prompt_tokens": 4650,
+     "completion_tokens": 426,
+     "total_tokens": 5076,
+     "cost": 0.00067122,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000678,
+      "upstream_inference_prompt_cost": 0.000465,
+      "upstream_inference_completions_cost": 0.000213
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p030-H8",
+    "question": "Đọc giá trị thiệt hại GDP (% độ lệch so với đường cơ sở) của RCP 2.6 (xanh đậm) và RCP 4.5 (cam) tại năm 2050. Ước lượng từ trục tung.",
+    "answer": "Năm 2050, ước lượng từ trục tung:\n\n- **RCP 2.6 (xanh đậm):** khoảng 10% độ lệch so với đường cơ sở.\n- **RCP 4.5 (cam):** khoảng 12,4% độ lệch so với đường cơ sở.\n\nHình không in số liệu cụ thể, nên đây chỉ là giá trị ước lượng.",
+    "ms": 2922.4,
+    "usage": {
+     "prompt_tokens": 1242,
+     "completion_tokens": 294,
+     "total_tokens": 1536,
+     "cost": 0.000268488,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002712,
+      "upstream_inference_prompt_cost": 0.0001242,
+      "upstream_inference_completions_cost": 0.000147
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 156,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p030-H8",
+   "CCDR-p029-t02",
+   "CCDR-p030-t03"
+  ],
+  "looked_ids": [
+   "CCDR-p030-H8"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 11974,
+  "completion_tokens": 1061,
+  "cost_usd": 0.001711,
+  "ms": 11841.6,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d10",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 16, biện pháp giảm phát thải từ sản xuất lúa gạo nào có chi phí (USD/tCO2e) cao nhất và mức đó khoảng bao nhiêu?",
+  "status": "answered",
+  "answer": "Biện pháp có chi phí cao nhất trong Hình 16 là \"Chuyển từ trồng lúa sang ngô\", với chi phí khoảng 390 USD/tCO2e (giá trị ước lượng từ trục tung, vì hình không in số trên cột) [CCDR-p065-H16]. Biện pháp cao thứ hai là AWD và SRI/1M5R ở khu tưới tiêu hạn chế, khoảng 90 USD/tCO2e [CCDR-p065-H16].",
+  "citations": [
+   "CCDR-p065-H16"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p065-H16",
+    "page": 65,
+    "page_label": "55",
+    "bbox": [
+     58,
+     207.1,
+     554.0,
+     455.9
+    ],
+    "crop": "crops/CCDR-p065-H16.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 16 đường cong chi phí giảm phát thải sản xuất lúa gạo",
+    "ms": 2865.9,
+    "results": [
+     {
+      "id": "CCDR-p065-H16",
+      "score": 0.991105,
+      "rank": 1,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p064-t05",
+      "score": 0.810688,
+      "rank": 2,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p066-t07",
+      "score": 0.505393,
+      "rank": 3,
+      "page": 66,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p066-t04",
+      "score": 0.345908,
+      "rank": 4,
+      "page": 66,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.04625,
+      "rank": 5,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p064-t04",
+      "score": 0.031498,
+      "rank": 6,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p065-H17",
+      "score": 0.022699,
+      "rank": 7,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p066-t03",
+      "score": 0.018233,
+      "rank": 8,
+      "page": 66,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p065-H16",
+     "CCDR-p064-t05",
+     "CCDR-p066-t07"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p065-H16",
+    "question": "Đọc giá trị chi phí ($/tCO2e) của cột cao nhất (nhãn 'Chuyển từ trồng lúa sang ngô' hoặc biện pháp nào khác) và ước lượng mức trên trục tung. Liệt kê các cột có giá trị dương lớn nhất.",
+    "answer": "**Cột cao nhất:** \"Chuyển từ trồng lúa sang ngô\" có chi phí khoảng **390 $/tCO₂e**. Giá trị này là ước lượng từ trục tung, vì hình không in nhãn số.\n\n**Các cột có giá trị dương lớn nhất (ước lượng, theo thứ tự giảm dần):**\n1. Chuyển từ trồng lúa sang ngô: khoảng 390 $/tCO₂e\n2. Mô hình AWD và SRI/1M5R ở khu trồng lúa tưới tiêu hạn chế: khoảng 90 $/tCO₂e\n3. Mô hình AWD và SRI/1M5R ở khu trồng lúa tưới tiêu vừa phải: khoảng 65 $/tCO₂e\n\nCác cột dương nhỏ hơn là Quản lý cây trồng tổng hợp (ICM) cho lúa (khoảng 18) và Cải thiện quản lý rơm rạ (khoảng 12).",
+    "ms": 4580.9
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1376.5,
+    "usage": {
+     "prompt_tokens": 1859,
+     "completion_tokens": 79,
+     "total_tokens": 1938,
+     "cost": 0.000223146,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002254,
+      "upstream_inference_prompt_cost": 0.0001859,
+      "upstream_inference_completions_cost": 3.95e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2074.8,
+    "usage": {
+     "prompt_tokens": 4292,
+     "completion_tokens": 228,
+     "total_tokens": 4520,
+     "cost": 0.000537768,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005432,
+      "upstream_inference_prompt_cost": 0.0004292,
+      "upstream_inference_completions_cost": 0.000114
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 42,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2224.5,
+    "usage": {
+     "prompt_tokens": 4919,
+     "completion_tokens": 279,
+     "total_tokens": 5198,
+     "cost": 0.000625086,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006314,
+      "upstream_inference_prompt_cost": 0.0004919,
+      "upstream_inference_completions_cost": 0.0001395
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p065-H16",
+    "question": "Đọc giá trị chi phí ($/tCO2e) của cột cao nhất (nhãn 'Chuyển từ trồng lúa sang ngô' hoặc biện pháp nào khác) và ước lượng mức trên trục tung. Liệt kê các cột có giá trị dương lớn nhất.",
+    "answer": "**Cột cao nhất:** \"Chuyển từ trồng lúa sang ngô\" có chi phí khoảng **390 $/tCO₂e**. Giá trị này là ước lượng từ trục tung, vì hình không in nhãn số.\n\n**Các cột có giá trị dương lớn nhất (ước lượng, theo thứ tự giảm dần):**\n1. Chuyển từ trồng lúa sang ngô: khoảng 390 $/tCO₂e\n2. Mô hình AWD và SRI/1M5R ở khu trồng lúa tưới tiêu hạn chế: khoảng 90 $/tCO₂e\n3. Mô hình AWD và SRI/1M5R ở khu trồng lúa tưới tiêu vừa phải: khoảng 65 $/tCO₂e\n\nCác cột dương nhỏ hơn là Quản lý cây trồng tổng hợp (ICM) cho lúa (khoảng 18) và Cải thiện quản lý rơm rạ (khoảng 12).",
+    "ms": 4580.9,
+    "usage": {
+     "prompt_tokens": 1185,
+     "completion_tokens": 721,
+     "total_tokens": 1906,
+     "cost": 0.00047421,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000479,
+      "upstream_inference_prompt_cost": 0.0001185,
+      "upstream_inference_completions_cost": 0.0003605
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 367,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p065-H16",
+   "CCDR-p064-t05",
+   "CCDR-p066-t07"
+  ],
+  "looked_ids": [
+   "CCDR-p065-H16"
+  ],
+  "searches": 1,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 12255,
+  "completion_tokens": 1307,
+  "cost_usd": 0.00186,
+  "ms": 13123.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d11",
+  "split": "dev",
+  "group": "multi_hop",
+  "answerable": true,
+  "question": "Nhu cầu tài chính của khu vực tư nhân giai đoạn 2022–2040 (Hình 21) gấp khoảng bao nhiêu lần dư nợ tín dụng xanh đầu năm 2021 (Hình 22)?",
+  "status": "answered",
+  "answer": "Khoảng 12,7 lần. Nhu cầu tài chính từ khu vực tư nhân giai đoạn 2022–2040 là 184 tỷ USD (NPV chiết khấu 6%, tương đương ~3,4% GDP mỗi năm) [CCDR-p077-H21]. Dư nợ tín dụng xanh đầu năm 2021 là 14,5 tỷ USD (giá trị 2020 và 2021:Q1 đều là 14,5 tỷ USD) [CCDR-p078-H22]. Phép tính: 184 / 14,5 ≈ 12,7. Lưu ý: đây là phép so sánh gần đúng, vì con số 184 tỷ USD là giá trị hiện tại thuần của dòng nhu cầu nhiều năm, còn dư nợ là số dư tại một thời điểm.",
+  "citations": [
+   "CCDR-p077-H21",
+   "CCDR-p078-H22"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p077-H21",
+    "page": 77,
+    "page_label": "67",
+    "bbox": [
+     58,
+     501.0,
+     554.0,
+     693.9
+    ],
+    "crop": "crops/CCDR-p077-H21.png"
+   },
+   {
+    "id": "CCDR-p078-H22",
+    "page": 78,
+    "page_label": "68",
+    "bbox": [
+     58,
+     521.8,
+     554.0,
+     726.3
+    ],
+    "crop": "crops/CCDR-p078-H22.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "nhu cầu tài chính khu vực tư nhân giai đoạn 2022–2040",
+    "ms": 2639.7,
+    "results": [
+     {
+      "id": "CCDR-p077-H21",
+      "score": 0.998747,
+      "rank": 1,
+      "page": 77,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p032-B2",
+      "score": 0.948501,
+      "rank": 2,
+      "page": 32,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p031-t01",
+      "score": 0.936561,
+      "rank": 3,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p031-t03",
+      "score": 0.909256,
+      "rank": 4,
+      "page": 31,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p065-t01",
+      "score": 0.834205,
+      "rank": 5,
+      "page": 65,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p050-B3",
+      "score": 0.792462,
+      "rank": 6,
+      "page": 50,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.784075,
+      "rank": 7,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p083-t05",
+      "score": 0.637302,
+      "rank": 8,
+      "page": 83,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p077-H21",
+     "CCDR-p032-B2",
+     "CCDR-p031-t01"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "dư nợ tín dụng xanh đầu năm 2021",
+    "ms": 2461.0,
+    "results": [
+     {
+      "id": "CCDR-p078-H22",
+      "score": 0.990839,
+      "rank": 1,
+      "page": 78,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p079-t01",
+      "score": 0.064118,
+      "rank": 2,
+      "page": 79,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p078-t02",
+      "score": 0.051429,
+      "rank": 3,
+      "page": 78,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p077-t03",
+      "score": 0.033161,
+      "rank": 4,
+      "page": 77,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p079-t06",
+      "score": 0.024735,
+      "rank": 5,
+      "page": 79,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p078-t03",
+      "score": 0.016462,
+      "rank": 6,
+      "page": 78,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p079-t02",
+      "score": 0.011859,
+      "rank": 7,
+      "page": 79,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p039-t03",
+      "score": 0.008924,
+      "rank": 8,
+      "page": 39,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p078-H22",
+     "CCDR-p079-t01",
+     "CCDR-p078-t02"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p078-H22",
+    "question": "Đọc giá trị dư nợ tín dụng xanh (tỷ USD) của biểu đồ cột bên trái cho các năm 2020 và 2021:Q1. Cho biết giá trị nào tương ứng với mốc nào.",
+    "answer": "Biểu đồ cột bên trái (Dư nợ tín dụng xanh):\n\n- Năm 2020: 14,5 tỷ USD\n- Năm 2021:Q1: 14,5 tỷ USD",
+    "ms": 1905.1
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1479.5,
+    "usage": {
+     "prompt_tokens": 1873,
+     "completion_tokens": 143,
+     "total_tokens": 2016,
+     "cost": 0.000256212,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002588,
+      "upstream_inference_prompt_cost": 0.0001873,
+      "upstream_inference_completions_cost": 7.15e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3163.4,
+    "usage": {
+     "prompt_tokens": 7911,
+     "completion_tokens": 410,
+     "total_tokens": 8321,
+     "cost": 0.000986139,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009961,
+      "upstream_inference_prompt_cost": 0.0007911,
+      "upstream_inference_completions_cost": 0.000205
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 248,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3395.8,
+    "usage": {
+     "prompt_tokens": 8434,
+     "completion_tokens": 485,
+     "total_tokens": 8919,
+     "cost": 0.001075041,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010859,
+      "upstream_inference_prompt_cost": 0.0008434,
+      "upstream_inference_completions_cost": 0.0002425
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 75,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p078-H22",
+    "question": "Đọc giá trị dư nợ tín dụng xanh (tỷ USD) của biểu đồ cột bên trái cho các năm 2020 và 2021:Q1. Cho biết giá trị nào tương ứng với mốc nào.",
+    "answer": "Biểu đồ cột bên trái (Dư nợ tín dụng xanh):\n\n- Năm 2020: 14,5 tỷ USD\n- Năm 2021:Q1: 14,5 tỷ USD",
+    "ms": 1905.1,
+    "usage": {
+     "prompt_tokens": 1059,
+     "completion_tokens": 75,
+     "total_tokens": 1134,
+     "cost": 0.000141966,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001434,
+      "upstream_inference_prompt_cost": 0.0001059,
+      "upstream_inference_completions_cost": 3.75e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p077-H21",
+   "CCDR-p032-B2",
+   "CCDR-p031-t01",
+   "CCDR-p078-H22",
+   "CCDR-p079-t01",
+   "CCDR-p078-t02"
+  ],
+  "looked_ids": [
+   "CCDR-p078-H22"
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 1,
+  "prompt_tokens": 19277,
+  "completion_tokens": 1113,
+  "cost_usd": 0.002459,
+  "ms": 15046.1,
+  "context_hit": true,
+  "first_search_hit": false,
+  "cited_gold": true,
+  "evidence_items": 2,
+  "evidence_items_in_context": 2
+ },
+ {
+  "query_id": "ad-d12",
+  "split": "dev",
+  "group": "multi_hop",
+  "answerable": true,
+  "question": "Điện từ than năm 2040 trong kịch bản BAU (Hình 13) gấp khoảng bao nhiêu lần điện từ than năm 2020, tính từ Hình 12?",
+  "status": "answered",
+  "answer": "Khoảng 4,7 lần (ước tính).\n\n- Điện than năm 2040 trong kịch bản BAU (Hình 13): 550 TWh, đọc trực tiếp từ nhãn trên phần Than của cột BAU [CCDR-p056-H13].\n- Điện than năm 2020 (Hình 12): Than đá chiếm 59% trong tổng 200 TWh điện từ nhiên liệu hóa thạch, tức khoảng 0,59 × 200 ≈ 118 TWh [CCDR-p054-H12]. Báo cáo cũng nêu nhiệt điện than chiếm 59% sản lượng điện năm 2020 [CCDR-p053-t02].\n- Phép tính: 550 / 118 ≈ 4,7.\n\nLưu ý: con số 118 TWh là suy ra từ tỷ trọng 59% nhân với 200 TWh, không phải nhãn trực tiếp trong hình.",
+  "citations": [
+   "CCDR-p056-H13",
+   "CCDR-p054-H12",
+   "CCDR-p053-t02"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p056-H13",
+    "page": 56,
+    "page_label": "46",
+    "bbox": [
+     58,
+     68.9,
+     554.0,
+     290.9
+    ],
+    "crop": "crops/CCDR-p056-H13.png"
+   },
+   {
+    "id": "CCDR-p054-H12",
+    "page": 54,
+    "page_label": "44",
+    "bbox": [
+     58,
+     153.9,
+     554.0,
+     428.6
+    ],
+    "crop": "crops/CCDR-p054-H12.png"
+   },
+   {
+    "id": "CCDR-p053-t02",
+    "page": 53,
+    "page_label": "43",
+    "bbox": [
+     70.9,
+     597.2,
+     544.3,
+     715.9
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 13 điện từ than kịch bản BAU 2040",
+    "ms": 3630.1,
+    "results": [
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.971921,
+      "rank": 1,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p054-t02",
+      "score": 0.692822,
+      "rank": 2,
+      "page": 54,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p054-t03",
+      "score": 0.526352,
+      "rank": 3,
+      "page": 54,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p071-H19",
+      "score": 0.503783,
+      "rank": 4,
+      "page": 71,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p072-H20",
+      "score": 0.392964,
+      "rank": 5,
+      "page": 72,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p070-H18",
+      "score": 0.180701,
+      "rank": 6,
+      "page": 70,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.166432,
+      "rank": 7,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p049-t05",
+      "score": 0.11693,
+      "rank": 8,
+      "page": 49,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p056-H13",
+     "CCDR-p054-t02",
+     "CCDR-p054-t03"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 12 sản lượng điện theo nguồn than 2020",
+    "ms": 3192.6,
+    "results": [
+     {
+      "id": "CCDR-p054-H12",
+      "score": 0.996058,
+      "rank": 1,
+      "page": 54,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p053-t02",
+      "score": 0.861199,
+      "rank": 2,
+      "page": 53,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.714877,
+      "rank": 3,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p026-H7",
+      "score": 0.306043,
+      "rank": 4,
+      "page": 26,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p054-t02",
+      "score": 0.239117,
+      "rank": 5,
+      "page": 54,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p058-t02",
+      "score": 0.137731,
+      "rank": 6,
+      "page": 58,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.117145,
+      "rank": 7,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p053-t01",
+      "score": 0.113825,
+      "rank": 8,
+      "page": 53,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p054-H12",
+     "CCDR-p053-t02",
+     "CCDR-p026-H7"
+    ],
+    "already_shown": [
+     "CCDR-p056-H13",
+     "CCDR-p054-t02"
+    ]
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p056-H13",
+    "question": "Cột BAU (sản lượng điện năm 2040, TWh): giá trị của phần Than (màu/chú giải Than) là bao nhiêu? Đọc chính xác số nhãn trên phần than của cột BAU.",
+    "answer": "Phần Than (màu xanh đậm) của cột BAU có nhãn **550 TWh**.",
+    "ms": 1903.6
+   },
+   {
+    "event": "look",
+    "tool": "look",
+    "chunk_id": "CCDR-p054-H12",
+    "question": "Biểu đồ tròn bên phải (điện năng sản xuất từ nhiên liệu hóa thạch 2020, 200 TWh): tỷ trọng phần Than đá là bao nhiêu phần trăm? Và tổng 200 TWh nằm ở đâu?",
+    "answer": "**Than đá chiếm 59%** trong biểu đồ tròn bên phải (điện năng sản xuất từ nhiên liệu hóa thạch, 2020).\n\n**Tổng 200 TWh** được ghi ở chính giữa vòng tròn bên phải, tức là tổng của cả biểu đồ.",
+    "ms": 3919.9
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1440.8,
+    "usage": {
+     "prompt_tokens": 1852,
+     "completion_tokens": 136,
+     "total_tokens": 1988,
+     "cost": 0.000250668,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002532,
+      "upstream_inference_prompt_cost": 0.0001852,
+      "upstream_inference_completions_cost": 6.8e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3524.2,
+    "usage": {
+     "prompt_tokens": 7402,
+     "completion_tokens": 599,
+     "total_tokens": 8001,
+     "cost": 0.001029303,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010397,
+      "upstream_inference_prompt_cost": 0.0007402,
+      "upstream_inference_completions_cost": 0.0002995
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 270,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "look",
+     "look"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4277.6,
+    "usage": {
+     "prompt_tokens": 8259,
+     "completion_tokens": 597,
+     "total_tokens": 8856,
+     "cost": 0.001113156,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0011244,
+      "upstream_inference_prompt_cost": 0.0008259,
+      "upstream_inference_completions_cost": 0.0002985
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 142,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [
+   {
+    "chunk_id": "CCDR-p056-H13",
+    "question": "Cột BAU (sản lượng điện năm 2040, TWh): giá trị của phần Than (màu/chú giải Than) là bao nhiêu? Đọc chính xác số nhãn trên phần than của cột BAU.",
+    "answer": "Phần Than (màu xanh đậm) của cột BAU có nhãn **550 TWh**.",
+    "ms": 1903.6,
+    "usage": {
+     "prompt_tokens": 1064,
+     "completion_tokens": 36,
+     "total_tokens": 1100,
+     "cost": 0.000123156,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001244,
+      "upstream_inference_prompt_cost": 0.0001064,
+      "upstream_inference_completions_cost": 1.8e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   },
+   {
+    "chunk_id": "CCDR-p054-H12",
+    "question": "Biểu đồ tròn bên phải (điện năng sản xuất từ nhiên liệu hóa thạch 2020, 200 TWh): tỷ trọng phần Than đá là bao nhiêu phần trăm? Và tổng 200 TWh nằm ở đâu?",
+    "answer": "**Than đá chiếm 59%** trong biểu đồ tròn bên phải (điện năng sản xuất từ nhiên liệu hóa thạch, 2020).\n\n**Tổng 200 TWh** được ghi ở chính giữa vòng tròn bên phải, tức là tổng của cả biểu đồ.",
+    "ms": 3919.9,
+    "usage": {
+     "prompt_tokens": 1231,
+     "completion_tokens": 232,
+     "total_tokens": 1463,
+     "cost": 0.000236709,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002391,
+      "upstream_inference_prompt_cost": 0.0001231,
+      "upstream_inference_completions_cost": 0.000116
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 121,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "model": "anthropic/claude-haiku-5.5"
+   }
+  ],
+  "context_ids": [
+   "CCDR-p056-H13",
+   "CCDR-p054-t02",
+   "CCDR-p054-t03",
+   "CCDR-p054-H12",
+   "CCDR-p053-t02",
+   "CCDR-p026-H7"
+  ],
+  "looked_ids": [
+   "CCDR-p056-H13",
+   "CCDR-p054-H12"
+  ],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 2,
+  "prompt_tokens": 19808,
+  "completion_tokens": 1600,
+  "cost_usd": 0.002753,
+  "ms": 21892.1,
+  "context_hit": true,
+  "first_search_hit": false,
+  "cited_gold": true,
+  "evidence_items": 2,
+  "evidence_items_in_context": 2
+ },
+ {
+  "query_id": "ad-d13",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Năm 2020, ngành năng lượng chiếm khoảng bao nhiêu phần trăm lượng phát thải GHG của cả nước và ngành nào là ngành phát thải lớn thứ hai?",
+  "status": "answered",
+  "answer": "Năm 2020, ngành năng lượng chiếm khoảng 65% lượng phát thải GHG của cả nước [CCDR-p018-t01]. Ngành phát thải lớn thứ hai là nông nghiệp, chiếm khoảng 19% tổng phát thải năm 2020 [CCDR-p018-t01][CCDR-p064-t04].",
+  "citations": [
+   "CCDR-p018-t01",
+   "CCDR-p064-t04"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p018-t01",
+    "page": 18,
+    "page_label": "8",
+    "bbox": [
+     70.9,
+     70.9,
+     544.3,
+     581.9
+    ],
+    "crop": null
+   },
+   {
+    "id": "CCDR-p064-t04",
+    "page": 64,
+    "page_label": "54",
+    "bbox": [
+     70.9,
+     475.8,
+     544.3,
+     567.4
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "phát thải GHG năm 2020 theo ngành năng lượng phần trăm tổng phát thải",
+    "ms": 2762.5,
+    "results": [
+     {
+      "id": "CCDR-p018-t01",
+      "score": 0.995822,
+      "rank": 1,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.941567,
+      "rank": 2,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.863962,
+      "rank": 3,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p018-t02",
+      "score": 0.764402,
+      "rank": 4,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.764061,
+      "rank": 5,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.726044,
+      "rank": 6,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p064-t04",
+      "score": 0.696435,
+      "rank": 7,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p053-t02",
+      "score": 0.542209,
+      "rank": 8,
+      "page": 53,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p018-t01",
+     "CCDR-p056-H13",
+     "CCDR-p018-H4"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "cơ cấu phát thải khí nhà kính theo lĩnh vực năm 2020 Việt Nam",
+    "ms": 2501.5,
+    "results": [
+     {
+      "id": "CCDR-p064-t04",
+      "score": 0.994494,
+      "rank": 1,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-t01",
+      "score": 0.979296,
+      "rank": 2,
+      "page": 18,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p053-t02",
+      "score": 0.96725,
+      "rank": 3,
+      "page": 53,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.926867,
+      "rank": 4,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p098-t05",
+      "score": 0.917092,
+      "rank": 5,
+      "page": 98,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.899656,
+      "rank": 6,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p049-t05",
+      "score": 0.83047,
+      "rank": 7,
+      "page": 49,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p052-t04",
+      "score": 0.7938,
+      "rank": 8,
+      "page": 52,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p064-t04",
+     "CCDR-p053-t02",
+     "CCDR-p098-t05"
+    ],
+    "already_shown": [
+     "CCDR-p018-t01",
+     "CCDR-p018-H4"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1776.9,
+    "usage": {
+     "prompt_tokens": 1859,
+     "completion_tokens": 164,
+     "total_tokens": 2023,
+     "cost": 0.000265221,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002679,
+      "upstream_inference_prompt_cost": 0.0001859,
+      "upstream_inference_completions_cost": 8.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2783.5,
+    "usage": {
+     "prompt_tokens": 6710,
+     "completion_tokens": 279,
+     "total_tokens": 6989,
+     "cost": 0.000802395,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008105,
+      "upstream_inference_prompt_cost": 0.000671,
+      "upstream_inference_completions_cost": 0.0001395
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 38,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p018-t01",
+   "CCDR-p056-H13",
+   "CCDR-p018-H4",
+   "CCDR-p064-t04",
+   "CCDR-p053-t02",
+   "CCDR-p098-t05"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 8569,
+  "completion_tokens": 443,
+  "cost_usd": 0.001068,
+  "ms": 9824.7,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d14",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Thuế Bảo vệ Môi trường hiện hành tương đương bao nhiêu USD/tCO2e đối với than, xăng và dầu diesel?",
+  "status": "answered",
+  "answer": "Theo báo cáo, thuế carbon hiện hành ở Việt Nam là Thuế Bảo vệ Môi trường (EPT), với mức tương đương khoảng: than ~0,5 USD/tCO2e; xăng 77,60 USD/tCO2e; dầu diesel 32,90 USD/tCO2e. Báo cáo nhận định các mức này thấp hơn hầu hết các quốc gia và quá thấp để khuyến khích khử carbon quy mô lớn [CCDR-p024-t02].",
+  "citations": [
+   "CCDR-p024-t02"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p024-t02",
+    "page": 24,
+    "page_label": "14",
+    "bbox": [
+     70.9,
+     170.2,
+     544.3,
+     404.8
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Thuế Bảo vệ Môi trường than xăng dầu diesel USD/tCO2e",
+    "ms": 3035.2,
+    "results": [
+     {
+      "id": "CCDR-p024-t02",
+      "score": 0.995654,
+      "rank": 1,
+      "page": 24,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p049-t04",
+      "score": 0.982222,
+      "rank": 2,
+      "page": 49,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.085414,
+      "rank": 3,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.080151,
+      "rank": 4,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p071-t02",
+      "score": 0.065607,
+      "rank": 5,
+      "page": 71,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p083-t05",
+      "score": 0.019665,
+      "rank": 6,
+      "page": 83,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.016735,
+      "rank": 7,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p068-t04",
+      "score": 0.014982,
+      "rank": 8,
+      "page": 68,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p024-t02",
+     "CCDR-p049-t04",
+     "CCDR-p009-bang"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1294.1,
+    "usage": {
+     "prompt_tokens": 1842,
+     "completion_tokens": 81,
+     "total_tokens": 1923,
+     "cost": 0.000222453,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002247,
+      "upstream_inference_prompt_cost": 0.0001842,
+      "upstream_inference_completions_cost": 4.05e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2499.8,
+    "usage": {
+     "prompt_tokens": 4586,
+     "completion_tokens": 401,
+     "total_tokens": 4987,
+     "cost": 0.000652509,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0006591,
+      "upstream_inference_prompt_cost": 0.0004586,
+      "upstream_inference_completions_cost": 0.0002005
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 115,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p024-t02",
+   "CCDR-p049-t04",
+   "CCDR-p009-bang"
+  ],
+  "looked_ids": [],
+  "searches": 1,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 6428,
+  "completion_tokens": 482,
+  "cost_usd": 0.000875,
+  "ms": 6829.3,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d15",
+  "split": "dev",
+  "group": "text",
+  "answerable": true,
+  "question": "Việt Nam xếp hạng bao nhiêu theo Sáng kiến Thích ứng Biến đổi Khí hậu Toàn cầu Notre Dame (ND-GAIN) và theo Chỉ số Rủi ro Khí hậu Toàn cầu Germanwatch giai đoạn 2000–2019?",
+  "status": "answered",
+  "answer": "Việt Nam xếp hạng 127 trong số 182 quốc gia theo Sáng kiến Thích ứng Biến đổi Khí hậu Toàn cầu Notre Dame (ND-GAIN), và đứng thứ 13 trong số 180 quốc gia theo Chỉ số Rủi ro Khí hậu Toàn cầu Germanwatch giai đoạn 2000–2019 [CCDR-p016-t04]. Lưu ý: thứ hạng 13 theo Germanwatch là vị trí cao, tức mức rủi ro khí hậu cao (nằm trong nhóm bị ảnh hưởng nhiều), theo cách báo cáo mô tả Việt Nam là một trong những nước dễ bị tổn thương nhất.",
+  "citations": [
+   "CCDR-p016-t04"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p016-t04",
+    "page": 16,
+    "page_label": "6",
+    "bbox": [
+     70.9,
+     328.8,
+     544.3,
+     503.6
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "xếp hạng ND-GAIN Germanwatch Chỉ số Rủi ro Khí hậu Toàn cầu Việt Nam",
+    "ms": 4114.6,
+    "results": [
+     {
+      "id": "CCDR-p016-t04",
+      "score": 0.997006,
+      "rank": 1,
+      "page": 16,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p083-t03",
+      "score": 0.370477,
+      "rank": 2,
+      "page": 83,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.303228,
+      "rank": 3,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p019-H5",
+      "score": 0.27577,
+      "rank": 4,
+      "page": 19,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p026-t02",
+      "score": 0.266691,
+      "rank": 5,
+      "page": 26,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p091-bang-r2",
+      "score": 0.08336,
+      "rank": 6,
+      "page": 91,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.06543,
+      "rank": 7,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.055941,
+      "rank": 8,
+      "page": 25,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p016-t04",
+     "CCDR-p083-t03",
+     "CCDR-p098-bang"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Chỉ số Rủi ro Khí hậu Toàn cầu 2000–2019 Việt Nam xếp hạng",
+    "ms": 4062.3,
+    "results": [
+     {
+      "id": "CCDR-p016-t04",
+      "score": 0.997851,
+      "rank": 1,
+      "page": 16,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.656665,
+      "rank": 2,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.647434,
+      "rank": 3,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p011-t02",
+      "score": 0.498899,
+      "rank": 4,
+      "page": 11,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p026-t02",
+      "score": 0.481482,
+      "rank": 5,
+      "page": 26,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p019-B1",
+      "score": 0.463032,
+      "rank": 6,
+      "page": 19,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p038-t06",
+      "score": 0.347338,
+      "rank": 7,
+      "page": 38,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p083-t03",
+      "score": 0.334459,
+      "rank": 8,
+      "page": 83,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p092-bangc-r2",
+     "CCDR-p011-t02",
+     "CCDR-p026-t02"
+    ],
+    "already_shown": [
+     "CCDR-p016-t04",
+     "CCDR-p098-bang",
+     "CCDR-p083-t03"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1693.4,
+    "usage": {
+     "prompt_tokens": 1901,
+     "completion_tokens": 185,
+     "total_tokens": 2086,
+     "cost": 0.000279774,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002826,
+      "upstream_inference_prompt_cost": 0.0001901,
+      "upstream_inference_completions_cost": 9.25e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2778.8,
+    "usage": {
+     "prompt_tokens": 7123,
+     "completion_tokens": 412,
+     "total_tokens": 7535,
+     "cost": 0.000909117,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009183,
+      "upstream_inference_prompt_cost": 0.0007123,
+      "upstream_inference_completions_cost": 0.000206
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p016-t04",
+   "CCDR-p083-t03",
+   "CCDR-p098-bang",
+   "CCDR-p092-bangc-r2",
+   "CCDR-p011-t02",
+   "CCDR-p026-t02"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 9024,
+  "completion_tokens": 597,
+  "cost_usd": 0.001189,
+  "ms": 12649.4,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d16",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Bão Yagi năm 2024 đã gây thiệt hại bao nhiêu phần trăm GDP của Việt Nam?",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để trả lời. Báo cáo được công bố vào tháng 7/2022, nên không đề cập đến bão Yagi năm 2024 và không có số liệu thiệt hại GDP của cơn bão này. Hai lần tìm kiếm không thấy nội dung nào về Yagi.\n\nChỉ có các số liệu tổng quát về thiệt hại do khí hậu cực đoan (bao gồm bão nhiệt đới) do báo cáo ước tính: trung bình Việt Nam chịu thiệt hại trực tiếp khoảng 2,4 tỷ USD mỗi năm, tương đương 0,8% GDP [CCDR-p030-t02]. Đây là mức trung bình dài hạn, không phải thiệt hại của riêng bão Yagi.",
+  "citations": [
+   "CCDR-p030-t02"
+  ],
+  "reason": "model_abstained",
+  "citations_at": [
+   {
+    "id": "CCDR-p030-t02",
+    "page": 30,
+    "page_label": "20",
+    "bbox": [
+     70.9,
+     211.7,
+     544.3,
+     277.3
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "bão Yagi thiệt hại GDP",
+    "ms": 3151.0,
+    "results": [
+     {
+      "id": "CCDR-p030-t02",
+      "score": 0.176787,
+      "rank": 1,
+      "page": 30,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p041-t05",
+      "score": 0.101369,
+      "rank": 2,
+      "page": 41,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p095-bang-r3",
+      "score": 0.058278,
+      "rank": 3,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p030-t03",
+      "score": 0.036911,
+      "rank": 4,
+      "page": 30,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p030-H8",
+      "score": 0.033241,
+      "rank": 5,
+      "page": 30,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p017-t01",
+      "score": 0.023084,
+      "rank": 6,
+      "page": 17,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p036-t06",
+      "score": 0.013174,
+      "rank": 7,
+      "page": 36,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p029-t02",
+      "score": 0.012821,
+      "rank": 8,
+      "page": 29,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p030-t02",
+     "CCDR-p041-t05",
+     "CCDR-p095-bang-r3"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Yagi 2024 bão số 3 thiệt hại",
+    "ms": 3191.3,
+    "results": [
+     {
+      "id": "CCDR-p095-bang-r3",
+      "score": 0.02118,
+      "rank": 1,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p036-t06",
+      "score": 0.009063,
+      "rank": 2,
+      "page": 36,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p094-bang-r1",
+      "score": 0.005437,
+      "rank": 3,
+      "page": 94,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p030-t02",
+      "score": 0.005408,
+      "rank": 4,
+      "page": 30,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p030-H8",
+      "score": 0.004502,
+      "rank": 5,
+      "page": 30,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p094-bang-r2",
+      "score": 0.003231,
+      "rank": 6,
+      "page": 94,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p095-bang-r1",
+      "score": 0.003095,
+      "rank": 7,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.002877,
+      "rank": 8,
+      "page": 25,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p036-t06",
+     "CCDR-p094-bang-r1",
+     "CCDR-p030-H8"
+    ],
+    "already_shown": [
+     "CCDR-p095-bang-r3",
+     "CCDR-p030-t02"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1436.0,
+    "usage": {
+     "prompt_tokens": 1832,
+     "completion_tokens": 99,
+     "total_tokens": 1931,
+     "cost": 0.000230373,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002327,
+      "upstream_inference_prompt_cost": 0.0001832,
+      "upstream_inference_completions_cost": 4.95e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1890.4,
+    "usage": {
+     "prompt_tokens": 4685,
+     "completion_tokens": 165,
+     "total_tokens": 4850,
+     "cost": 0.00054549,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000551,
+      "upstream_inference_prompt_cost": 0.0004685,
+      "upstream_inference_completions_cost": 8.25e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2909.6,
+    "usage": {
+     "prompt_tokens": 8743,
+     "completion_tokens": 389,
+     "total_tokens": 9132,
+     "cost": 0.001058112,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0010688,
+      "upstream_inference_prompt_cost": 0.0008743,
+      "upstream_inference_completions_cost": 0.0001945
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p030-t02",
+   "CCDR-p041-t05",
+   "CCDR-p095-bang-r3",
+   "CCDR-p036-t06",
+   "CCDR-p094-bang-r1",
+   "CCDR-p030-H8"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 0,
+  "prompt_tokens": 15260,
+  "completion_tokens": 653,
+  "cost_usd": 0.001834,
+  "ms": 12578.8
+ },
+ {
+  "query_id": "ad-d17",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Giá điện bán lẻ bình quân hiện nay ở Việt Nam là bao nhiêu đồng mỗi kWh?",
+  "status": "abstain",
+  "answer": "Sau bốn lần tìm kiếm, các đoạn tìm được không nêu giá điện bán lẻ bình quân hiện nay (đồng/kWh) ở Việt Nam, nên không thể trả lời con số cụ thể. Các đoạn liên quan chỉ cho thấy: kịch bản ADS (khử carbon tăng cường) làm giá điện bình quân cao hơn 26% so với CPS vào năm 2040 và cao hơn 16% trong giai đoạn 2020–2040 [CCDR-p056-t03]; báo cáo nhấn mạnh cần cải cách giá điện để phản ánh chi phí cung ứng [CCDR-p060-t05]. Đoạn về tiêu thụ điện bình quân đầu người năm 2020 là 2.745 kWh (không phải giá) [CCDR-p092-bangc-r2]. Để có giá bán lẻ bình quân, cần tra cứu nguồn khác (ví dụ biểu giá điện của EVN/Bộ Công Thương).",
+  "citations": [
+   "CCDR-p056-t03",
+   "CCDR-p060-t05",
+   "CCDR-p092-bangc-r2"
+  ],
+  "reason": "model_abstained",
+  "citations_at": [
+   {
+    "id": "CCDR-p056-t03",
+    "page": 56,
+    "page_label": "46",
+    "bbox": [
+     70.9,
+     459.2,
+     544.3,
+     576.8
+    ],
+    "crop": null
+   },
+   {
+    "id": "CCDR-p060-t05",
+    "page": 60,
+    "page_label": "50",
+    "bbox": [
+     82.2,
+     447.2,
+     544.3,
+     586.3
+    ],
+    "crop": null
+   },
+   {
+    "id": "CCDR-p092-bangc-r2",
+    "page": 92,
+    "page_label": "82",
+    "bbox": [
+     69.1,
+     69.1,
+     562.0,
+     612.7
+    ],
+    "crop": "crops/CCDR-p092-bangc.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "giá điện bán lẻ bình quân đồng mỗi kWh",
+    "ms": 3135.6,
+    "results": [
+     {
+      "id": "CCDR-p095-bang-r1",
+      "score": 0.02311,
+      "rank": 1,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.019369,
+      "rank": 2,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p097-bang-r1",
+      "score": 0.015215,
+      "rank": 3,
+      "page": 97,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.008848,
+      "rank": 4,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t03",
+      "score": 0.008484,
+      "rank": 5,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p060-t05",
+      "score": 0.008107,
+      "rank": 6,
+      "page": 60,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p054-H12",
+      "score": 0.005903,
+      "rank": 7,
+      "page": 54,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.005677,
+      "rank": 8,
+      "page": 9,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p095-bang-r1",
+     "CCDR-p092-bangc-r1",
+     "CCDR-p097-bang-r1"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "giá điện bán lẻ bình quân cent/kWh Việt Nam biểu giá điện",
+    "ms": 3103.9,
+    "results": [
+     {
+      "id": "CCDR-p071-H19",
+      "score": 0.07827,
+      "rank": 1,
+      "page": 71,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p059-t02",
+      "score": 0.056775,
+      "rank": 2,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.05174,
+      "rank": 3,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t03",
+      "score": 0.025106,
+      "rank": 4,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p060-t05",
+      "score": 0.019791,
+      "rank": 5,
+      "page": 60,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.01947,
+      "rank": 6,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p059-t04",
+      "score": 0.014825,
+      "rank": 7,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p026-H7",
+      "score": 0.012924,
+      "rank": 8,
+      "page": 26,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p071-H19",
+     "CCDR-p059-t02",
+     "CCDR-p009-bang"
+    ],
+    "already_shown": [
+     "CCDR-p092-bangc-r1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "giá điện bán lẻ trung bình Việt Nam so sánh khu vực cents per kWh",
+    "ms": 4302.0,
+    "results": [
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.010384,
+      "rank": 1,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t03",
+      "score": 0.010086,
+      "rank": 2,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p092-bangc-r2",
+      "score": 0.007663,
+      "rank": 3,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.007253,
+      "rank": 4,
+      "page": 92,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p016-t02",
+      "score": 0.0051,
+      "rank": 5,
+      "page": 16,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p059-t02",
+      "score": 0.004365,
+      "rank": 6,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p054-H12",
+      "score": 0.003151,
+      "rank": 7,
+      "page": 54,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p060-t05",
+      "score": 0.002255,
+      "rank": 8,
+      "page": 60,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p056-t03",
+     "CCDR-p092-bangc-r2",
+     "CCDR-p016-t02"
+    ],
+    "already_shown": [
+     "CCDR-p009-bang",
+     "CCDR-p092-bangc-r1",
+     "CCDR-p059-t02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "giá điện bình quân hiện nay đồng/kWh EVN biểu giá bán lẻ điện",
+    "ms": 3906.5,
+    "results": [
+     {
+      "id": "CCDR-p071-H19",
+      "score": 0.045503,
+      "rank": 1,
+      "page": 71,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p060-t05",
+      "score": 0.042061,
+      "rank": 2,
+      "page": 60,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.041705,
+      "rank": 3,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p059-t02",
+      "score": 0.02373,
+      "rank": 4,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-t03",
+      "score": 0.018989,
+      "rank": 5,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p059-t04",
+      "score": 0.012626,
+      "rank": 6,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p054-H12",
+      "score": 0.012433,
+      "rank": 7,
+      "page": 54,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p092-bangc-r1",
+      "score": 0.012021,
+      "rank": 8,
+      "page": 92,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p060-t05",
+     "CCDR-p059-t04",
+     "CCDR-p054-H12"
+    ],
+    "already_shown": [
+     "CCDR-p071-H19",
+     "CCDR-p009-bang",
+     "CCDR-p059-t02",
+     "CCDR-p056-t03",
+     "CCDR-p092-bangc-r1"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1495.0,
+    "usage": {
+     "prompt_tokens": 1833,
+     "completion_tokens": 71,
+     "total_tokens": 1904,
+     "cost": 0.000216612,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002188,
+      "upstream_inference_prompt_cost": 0.0001833,
+      "upstream_inference_completions_cost": 3.55e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1878.4,
+    "usage": {
+     "prompt_tokens": 8684,
+     "completion_tokens": 80,
+     "total_tokens": 8764,
+     "cost": 0.000899316,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009084,
+      "upstream_inference_prompt_cost": 0.0008684,
+      "upstream_inference_completions_cost": 4e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2118.8,
+    "usage": {
+     "prompt_tokens": 12137,
+     "completion_tokens": 81,
+     "total_tokens": 12218,
+     "cost": 0.001241658,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0012542,
+      "upstream_inference_prompt_cost": 0.0012137,
+      "upstream_inference_completions_cost": 4.05e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2033.3,
+    "usage": {
+     "prompt_tokens": 15120,
+     "completion_tokens": 150,
+     "total_tokens": 15270,
+     "cost": 0.00157113,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.001587,
+      "upstream_inference_prompt_cost": 0.001512,
+      "upstream_inference_completions_cost": 7.5e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3621.9,
+    "usage": {
+     "prompt_tokens": 17427,
+     "completion_tokens": 497,
+     "total_tokens": 17924,
+     "cost": 0.001971288,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0019912,
+      "upstream_inference_prompt_cost": 0.0017427,
+      "upstream_inference_completions_cost": 0.0002485
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p095-bang-r1",
+   "CCDR-p092-bangc-r1",
+   "CCDR-p097-bang-r1",
+   "CCDR-p071-H19",
+   "CCDR-p059-t02",
+   "CCDR-p009-bang",
+   "CCDR-p056-t03",
+   "CCDR-p092-bangc-r2",
+   "CCDR-p016-t02",
+   "CCDR-p060-t05",
+   "CCDR-p059-t04",
+   "CCDR-p054-H12"
+  ],
+  "looked_ids": [],
+  "searches": 4,
+  "model_calls": 5,
+  "look_calls": 0,
+  "prompt_tokens": 55201,
+  "completion_tokens": 879,
+  "cost_usd": 0.0059,
+  "ms": 25596.3
+ },
+ {
+  "query_id": "ad-d18",
+  "split": "dev",
+  "group": "thieu_bang_chung",
+  "answerable": false,
+  "question": "Chi phí đầu tư điện gió ngoài khơi ở Việt Nam là bao nhiêu USD cho mỗi MW?",
+  "status": "abstain",
+  "answer": "Các đoạn đã tìm không nêu chi phí đầu tư điện gió ngoài khơi tính bằng USD/MW (hoặc USD/kW). Không tìm thấy bảng hay giả định nào về đơn giá này.\n\nThông tin liên quan có trong báo cáo: \n- Trong kịch bản tăng tốc khử carbon (ADS), 2022–2040, chi phí tổng tăng thêm cho điện gió ngoài khơi là +39 tỷ USD (+402%) so với kịch bản cơ sở; đây là tổng chi phí theo giai đoạn, không phải đơn giá theo MW [CCDR-p057-B5c]. \n- Tổng chi phí toàn hệ thống ước 65 tỷ USD, chi phí ròng sau tiết kiệm nhiên liệu 33 tỷ USD [CCDR-p056-t01].\n- Điện gió ngoài khơi được nêu là một nguồn tái tạo chủ đạo trong quy hoạch đến 2040 [CCDR-p055-t02].\n\nĐể có đơn giá USD/MW cần tra phụ lục hoặc bảng giả định công nghệ của báo cáo, mà chưa có trong kết quả tìm kiếm.",
+  "citations": [
+   "CCDR-p057-B5c",
+   "CCDR-p056-t01",
+   "CCDR-p055-t02"
+  ],
+  "reason": "model_abstained",
+  "citations_at": [
+   {
+    "id": "CCDR-p057-B5c",
+    "page": 57,
+    "page_label": "47",
+    "bbox": [
+     69.1,
+     69.1,
+     542.9,
+     296.1
+    ],
+    "crop": "crops/CCDR-p057-B5c.png"
+   },
+   {
+    "id": "CCDR-p056-t01",
+    "page": 56,
+    "page_label": "46",
+    "bbox": [
+     70.9,
+     315.1,
+     544.3,
+     445.6
+    ],
+    "crop": null
+   },
+   {
+    "id": "CCDR-p055-t02",
+    "page": 55,
+    "page_label": "45",
+    "bbox": [
+     93.5,
+     272.7,
+     521.5,
+     456.9
+    ],
+    "crop": null
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "chi phí đầu tư điện gió ngoài khơi USD/MW",
+    "ms": 2854.7,
+    "results": [
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.159271,
+      "rank": 1,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t01",
+      "score": 0.053779,
+      "rank": 2,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.010857,
+      "rank": 3,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p059-t03",
+      "score": 0.010402,
+      "rank": 4,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p085-t06",
+      "score": 0.005379,
+      "rank": 5,
+      "page": 85,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p050-t01",
+      "score": 0.005007,
+      "rank": 6,
+      "page": 50,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p096-t03",
+      "score": 0.003939,
+      "rank": 7,
+      "page": 96,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.002793,
+      "rank": 8,
+      "page": 56,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p057-B5c",
+     "CCDR-p056-t01",
+     "CCDR-p056-B5"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "giả định chi phí vốn điện gió ngoài khơi trên mỗi kW hoặc MW",
+    "ms": 2648.5,
+    "results": [
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.440414,
+      "rank": 1,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p059-t03",
+      "score": 0.028735,
+      "rank": 2,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p096-t02",
+      "score": 0.024587,
+      "rank": 3,
+      "page": 96,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.019761,
+      "rank": 4,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.017356,
+      "rank": 5,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p055-t02",
+      "score": 0.013738,
+      "rank": 6,
+      "page": 55,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p059-t02",
+      "score": 0.012582,
+      "rank": 7,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p057-t02",
+      "score": 0.01077,
+      "rank": 8,
+      "page": 57,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p059-t03",
+     "CCDR-p096-t02",
+     "CCDR-p056-H13"
+    ],
+    "already_shown": [
+     "CCDR-p057-B5c",
+     "CCDR-p056-B5"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "điện gió ngoài khơi chi phí đầu tư giả định USD/kW công suất lắp đặt",
+    "ms": 2890.9,
+    "results": [
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.273343,
+      "rank": 1,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-t01",
+      "score": 0.055478,
+      "rank": 2,
+      "page": 56,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p055-t02",
+      "score": 0.031831,
+      "rank": 3,
+      "page": 55,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p059-t03",
+      "score": 0.030864,
+      "rank": 4,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.021888,
+      "rank": 5,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p096-t03",
+      "score": 0.017903,
+      "rank": 6,
+      "page": 96,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.011601,
+      "rank": 7,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p059-t02",
+      "score": 0.00994,
+      "rank": 8,
+      "page": 59,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p055-t02",
+     "CCDR-p096-t03",
+     "CCDR-p059-t02"
+    ],
+    "already_shown": [
+     "CCDR-p057-B5c",
+     "CCDR-p056-t01",
+     "CCDR-p059-t03",
+     "CCDR-p056-B5",
+     "CCDR-p056-H13"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "bảng giả định chi phí công nghệ phát điện gió ngoài khơi vốn đầu tư ban đầu",
+    "ms": 2849.3,
+    "results": [
+     {
+      "id": "CCDR-p057-B5c",
+      "score": 0.708649,
+      "rank": 1,
+      "page": 57,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-B5",
+      "score": 0.261646,
+      "rank": 2,
+      "page": 56,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p096-t03",
+      "score": 0.055014,
+      "rank": 3,
+      "page": 96,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p059-t03",
+      "score": 0.022478,
+      "rank": 4,
+      "page": 59,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.015085,
+      "rank": 5,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p086-t05",
+      "score": 0.009338,
+      "rank": 6,
+      "page": 86,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p055-t02",
+      "score": 0.007384,
+      "rank": 7,
+      "page": 55,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p085-t06",
+      "score": 0.006782,
+      "rank": 8,
+      "page": 85,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p086-t05",
+     "CCDR-p085-t06"
+    ],
+    "already_shown": [
+     "CCDR-p057-B5c",
+     "CCDR-p056-B5",
+     "CCDR-p096-t03",
+     "CCDR-p059-t03",
+     "CCDR-p056-H13",
+     "CCDR-p055-t02"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1259.3,
+    "usage": {
+     "prompt_tokens": 1834,
+     "completion_tokens": 72,
+     "total_tokens": 1906,
+     "cost": 0.000217206,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0002194,
+      "upstream_inference_prompt_cost": 0.0001834,
+      "upstream_inference_completions_cost": 3.6e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1584.2,
+    "usage": {
+     "prompt_tokens": 4905,
+     "completion_tokens": 109,
+     "total_tokens": 5014,
+     "cost": 0.00053955,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000545,
+      "upstream_inference_prompt_cost": 0.0004905,
+      "upstream_inference_completions_cost": 5.45e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 26,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1563.3,
+    "usage": {
+     "prompt_tokens": 7524,
+     "completion_tokens": 84,
+     "total_tokens": 7608,
+     "cost": 0.000786456,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0007944,
+      "upstream_inference_prompt_cost": 0.0007524,
+      "upstream_inference_completions_cost": 4.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2139.0,
+    "usage": {
+     "prompt_tokens": 9176,
+     "completion_tokens": 142,
+     "total_tokens": 9318,
+     "cost": 0.000978714,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009886,
+      "upstream_inference_prompt_cost": 0.0009176,
+      "upstream_inference_completions_cost": 7.1e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3879.8,
+    "usage": {
+     "prompt_tokens": 10457,
+     "completion_tokens": 568,
+     "total_tokens": 11025,
+     "cost": 0.001316403,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0013297,
+      "upstream_inference_prompt_cost": 0.0010457,
+      "upstream_inference_completions_cost": 0.000284
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p057-B5c",
+   "CCDR-p056-t01",
+   "CCDR-p056-B5",
+   "CCDR-p059-t03",
+   "CCDR-p096-t02",
+   "CCDR-p056-H13",
+   "CCDR-p055-t02",
+   "CCDR-p096-t03",
+   "CCDR-p059-t02",
+   "CCDR-p086-t05",
+   "CCDR-p085-t06"
+  ],
+  "looked_ids": [],
+  "searches": 4,
+  "model_calls": 5,
+  "look_calls": 0,
+  "prompt_tokens": 33896,
+  "completion_tokens": 975,
+  "cost_usd": 0.003838,
+  "ms": 21669.5
+ }
+]

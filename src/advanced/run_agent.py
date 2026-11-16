@@ -173,6 +173,7 @@ def main() -> None:
     parser.add_argument("--config", required=True, choices=sorted(CONFIGS))
     parser.add_argument("--ids", help="comma-separated question ids for a smoke test (written to a _smoke folder)")
     parser.add_argument("--final", action="store_true", help="required for test")
+    parser.add_argument("--folder", help="output folder name under the split (default: the config name, or <config>_smoke with --ids)")
     args = parser.parse_args()
     if args.split == "test" and not args.final:
         raise SystemExit("test is run once, after the choice is frozen: pass --final")
@@ -192,7 +193,7 @@ def main() -> None:
         print(f"  {q['id']}: {out['status']} ({out['searches']} searches, {out['look_calls']} looks, "
               f"{out['ms'] / 1000:.1f} s, ${out['cost_usd']:.4f})")
     write_outputs(args.split, args.config, agent, rows, CONFIGS[args.config],
-                  f"{args.config}_smoke" if args.ids else args.config)
+                  args.folder or (f"{args.config}_smoke" if args.ids else args.config))
 
 
 if __name__ == "__main__":

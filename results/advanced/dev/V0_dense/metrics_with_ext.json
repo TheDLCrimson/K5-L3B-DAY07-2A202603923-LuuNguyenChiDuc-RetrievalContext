@@ -1,0 +1,77 @@
+{
+ "config": "V0_dense",
+ "split": "dev",
+ "pass_rate": {
+  "n": 21,
+  "N": 23,
+  "rate": 0.913
+ },
+ "pass_by_group": {
+  "anh_so_do": {
+   "n": 4,
+   "N": 5,
+   "rate": 0.8
+  },
+  "bang": {
+   "n": 3,
+   "N": 3,
+   "rate": 1.0
+  },
+  "bieu_do": {
+   "n": 6,
+   "N": 7,
+   "rate": 0.8571
+  },
+  "multi_hop": {
+   "n": 2,
+   "N": 2,
+   "rate": 1.0
+  },
+  "text": {
+   "n": 3,
+   "N": 3,
+   "rate": 1.0
+  },
+  "thieu_bang_chung": {
+   "n": 3,
+   "N": 3,
+   "rate": 1.0
+  }
+ },
+ "pass_answerable": {
+  "n": 18,
+  "N": 20,
+  "rate": 0.9
+ },
+ "pass_no_evidence": {
+  "n": 3,
+  "N": 3,
+  "rate": 1.0
+ },
+ "errors": 0,
+ "false_abstention": {
+  "n": 2,
+  "N": 20,
+  "rate": 0.1
+ },
+ "citation_support": {
+  "n": 37,
+  "N": 37,
+  "rate": 1.0
+ },
+ "failure_types": {
+  "refusal": 2
+ },
+ "failed": [
+  "ad-d19",
+  "ad-d23"
+ ],
+ "cost_usd": 0.03566,
+ "cost_per_question_usd": 0.00155,
+ "ms_median": 6337.4,
+ "context_evidence_rate": {
+  "n": 20,
+  "N": 20,
+  "rate": 1.0
+ }
+}

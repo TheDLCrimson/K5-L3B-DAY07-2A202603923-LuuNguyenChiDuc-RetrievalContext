@@ -1,0 +1,85 @@
+{
+ "chosen": "V1_rerank",
+ "baseline_for_test": "V0_dense",
+ "rule": [
+  "gate: all 3 no-evidence dev questions refused with no unsupported claim",
+  "highest number of passes out of the dev questions; a difference of one question is a tie",
+  "then the higher share of answerable questions with every evidence item in the final context",
+  "then lower cost per question, then lower median time"
+ ],
+ "applied": "dev = 23 questions (18 first runs + 5 picture-only questions added after the first tie, see EXPERIMENTS_ADVANCED.md A4). All three pass the gate; passes 21 / 22 / 23, so V2 and V1 are tied (V0 is two below); evidence in context ties at 20/20; V1 has the lower cost per question, so V1 is chosen.",
+ "dev": {
+  "V0_dense": {
+   "pass": {
+    "n": 21,
+    "N": 23,
+    "rate": 0.913
+   },
+   "failed": [
+    "ad-d19",
+    "ad-d23"
+   ],
+   "failure_types": {
+    "refusal": 2
+   },
+   "citation_support": {
+    "n": 37,
+    "N": 37,
+    "rate": 1.0
+   },
+   "context_evidence_rate": {
+    "n": 20,
+    "N": 20,
+    "rate": 1.0
+   },
+   "cost_per_question_usd": 0.00155
+  },
+  "V1_rerank": {
+   "pass": {
+    "n": 22,
+    "N": 23,
+    "rate": 0.9565
+   },
+   "failed": [
+    "ad-d23"
+   ],
+   "failure_types": {
+    "refusal": 1
+   },
+   "citation_support": {
+    "n": 35,
+    "N": 35,
+    "rate": 1.0
+   },
+   "context_evidence_rate": {
+    "n": 20,
+    "N": 20,
+    "rate": 1.0
+   },
+   "cost_per_question_usd": 0.00134
+  },
+  "V2_rerank_look": {
+   "pass": {
+    "n": 23,
+    "N": 23,
+    "rate": 1.0
+   },
+   "failed": [],
+   "failure_types": {},
+   "citation_support": {
+    "n": 37,
+    "N": 37,
+    "rate": 1.0
+   },
+   "context_evidence_rate": {
+    "n": 20,
+    "N": 20,
+    "rate": 1.0
+   },
+   "cost_per_question_usd": 0.00216
+  }
+ },
+ "known_trade_off": "V2 (look) passed 23/23 and V1 22/23 on dev; the one question separating them is a picture-only one. The choice follows the rule written before the runs, not the dev trend.",
+ "decided_at": "2026-11-16T05:05:29+00:00",
+ "note": "fixed on dev before any test run; test is run once for V1_rerank and for V0_dense"
+}

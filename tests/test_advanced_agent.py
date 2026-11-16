@@ -129,6 +129,12 @@ class AdvAgentTest(unittest.TestCase):
         self.assertEqual((out["status"], out["answer"]), ("error", None))
         self.assertIn("connection refused", out["reason"])
 
+    def test_leaked_tool_call_markup_is_stripped_from_the_answer(self):
+        junk = 'Có [CCDR-p018-t01]</answer> <parameter name="citations">["CCDR-p018-t01"]'
+        _, _, out = run([search(), finish(answer=junk)])
+        self.assertEqual((out["status"], out["answer"]), ("answered", "Có [CCDR-p018-t01]"))
+        self.assertEqual([e["event"] for e in out["events"]][:2], ["search", "answer_markup_stripped"])
+
     def test_prompt_and_tools_hold_no_benchmark_content(self):
         agent, _, _ = run([search(), finish()])
         bench = json.loads((ROOT / "data" / "advanced" / "benchmark" / "questions.json").read_text(encoding="utf-8"))

@@ -1,0 +1,1237 @@
+[
+ {
+  "query_id": "ad-d19",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 2, đến cuối giai đoạn (khoảng T+54) đường của Thái Lan đạt GDP bình quân đầu người khoảng bao nhiêu USD (USD 2015 cố định)?",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để nêu con số chính xác. Hình 2 (trang 15) có đường \"Thái Lan (1958-2012)\" và trục GDP bình quân đầu người (USD 2015 cố định) từ 0 đến 25.000, nên đường này kết thúc ở khoảng T+54. Tuy nhiên, phần chữ trích từ hình chỉ có nhãn và trục, không có giá trị số tại T+54. Mô tả do model tạo (không phải bằng chứng) ước lượng khoảng 5.700 USD, nhưng con số này chỉ là ước lượng từ trục và chưa được đối chiếu với hình. Các đoạn khác tìm được (bảng CGE, bảng tài chính) không nêu GDP bình quân đầu người của Thái Lan. Muốn có số chính xác, cần xem trực tiếp hình 2 trong báo cáo gốc hoặc dữ liệu nguồn của Chỉ số phát triển thế giới.",
+  "citations": [
+   "CCDR-p015-H2"
+  ],
+  "reason": "model_abstained",
+  "citations_at": [
+   {
+    "id": "CCDR-p015-H2",
+    "page": 15,
+    "page_label": "5",
+    "bbox": [
+     58,
+     251.0,
+     554.0,
+     563.7
+    ],
+    "crop": "crops/CCDR-p015-H2.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 2 GDP bình quân đầu người Thái Lan USD 2015 cố định",
+    "ms": 20054.2,
+    "results": [
+     {
+      "id": "CCDR-p015-H2",
+      "score": 0.855988,
+      "rank": 1,
+      "page": 15,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p097-bang-r1",
+      "score": 0.84012,
+      "rank": 2,
+      "page": 97,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p095-bang-r1",
+      "score": 0.839027,
+      "rank": 3,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p077-H21",
+      "score": 0.835281,
+      "rank": 4,
+      "page": 77,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p032-B2",
+      "score": 0.830033,
+      "rank": 5,
+      "page": 32,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p095-bang-r2",
+      "score": 0.829463,
+      "rank": 6,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p019-B1",
+      "score": 0.826531,
+      "rank": 7,
+      "page": 19,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p097-bang-r2",
+      "score": 0.826423,
+      "rank": 8,
+      "page": 97,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p015-H2",
+     "CCDR-p097-bang-r1",
+     "CCDR-p095-bang-r1"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Thái Lan GDP bình quân đầu người tăng trưởng so với ngưỡng thu nhập cao T+54",
+    "ms": 37.3,
+    "results": [
+     {
+      "id": "CCDR-p015-H2",
+      "score": 0.85162,
+      "rank": 1,
+      "page": 15,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p095-bang-r1",
+      "score": 0.834688,
+      "rank": 2,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p097-bang-r1",
+      "score": 0.833049,
+      "rank": 3,
+      "page": 97,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p077-H21",
+      "score": 0.832827,
+      "rank": 4,
+      "page": 77,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p032-B2",
+      "score": 0.828746,
+      "rank": 5,
+      "page": 32,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p095-bang-r2",
+      "score": 0.824171,
+      "rank": 6,
+      "page": 95,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p097-bang-r2",
+      "score": 0.819342,
+      "rank": 7,
+      "page": 97,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p070-H18",
+      "score": 0.814392,
+      "rank": 8,
+      "page": 70,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p077-H21",
+     "CCDR-p032-B2",
+     "CCDR-p095-bang-r2"
+    ],
+    "already_shown": [
+     "CCDR-p015-H2",
+     "CCDR-p095-bang-r1",
+     "CCDR-p097-bang-r1"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1876.1,
+    "usage": {
+     "prompt_tokens": 1586,
+     "completion_tokens": 79,
+     "total_tokens": 1665,
+     "cost": 0.000196119,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001981,
+      "upstream_inference_prompt_cost": 0.0001586,
+      "upstream_inference_completions_cost": 3.95e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 2805.6,
+    "usage": {
+     "prompt_tokens": 7829,
+     "completion_tokens": 342,
+     "total_tokens": 8171,
+     "cost": 0.000944361,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009539,
+      "upstream_inference_prompt_cost": 0.0007829,
+      "upstream_inference_completions_cost": 0.000171
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 252,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4150.6,
+    "usage": {
+     "prompt_tokens": 13223,
+     "completion_tokens": 672,
+     "total_tokens": 13895,
+     "cost": 0.001641717,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0016583,
+      "upstream_inference_prompt_cost": 0.0013223,
+      "upstream_inference_completions_cost": 0.000336
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 217,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p015-H2",
+   "CCDR-p097-bang-r1",
+   "CCDR-p095-bang-r1",
+   "CCDR-p077-H21",
+   "CCDR-p032-B2",
+   "CCDR-p095-bang-r2"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 0,
+  "prompt_tokens": 22638,
+  "completion_tokens": 1093,
+  "cost_usd": 0.002782,
+  "ms": 28924.3,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d20",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 17, biện pháp giảm phát thải từ chăn nuôi nào có chi phí cao nhất và mức đó khoảng bao nhiêu USD/tCO2e?",
+  "status": "answered",
+  "answer": "Trong Hình 17, biện pháp có chi phí cao nhất là cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR), khoảng 725 USD/tCO2e. [CCDR-p065-H17] Đây là giá trị ước lượng từ trục tung (trục từ -200 đến 800 USD/tCO2e), vì hình không in số liệu trên cột. [CCDR-p065-H17]",
+  "citations": [
+   "CCDR-p065-H17"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p065-H17",
+    "page": 65,
+    "page_label": "55",
+    "bbox": [
+     58,
+     482.7,
+     554.0,
+     703.3
+    ],
+    "crop": "crops/CCDR-p065-H17.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 17 biện pháp giảm phát thải chăn nuôi chi phí USD/tCO2e",
+    "ms": 124.1,
+    "results": [
+     {
+      "id": "CCDR-p065-H17",
+      "score": 0.891955,
+      "rank": 1,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p064-t05",
+      "score": 0.86949,
+      "rank": 2,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p065-H16",
+      "score": 0.85959,
+      "rank": 3,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.857939,
+      "rank": 4,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p048-t01",
+      "score": 0.849082,
+      "rank": 5,
+      "page": 48,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.846953,
+      "rank": 6,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p101-bangc-r2",
+      "score": 0.846855,
+      "rank": 7,
+      "page": 101,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p083-t04",
+      "score": 0.846273,
+      "rank": 8,
+      "page": 83,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p065-H17",
+     "CCDR-p064-t05",
+     "CCDR-p065-H16"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1608.9,
+    "usage": {
+     "prompt_tokens": 1576,
+     "completion_tokens": 84,
+     "total_tokens": 1660,
+     "cost": 0.000197604,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001996,
+      "upstream_inference_prompt_cost": 0.0001576,
+      "upstream_inference_completions_cost": 4.2e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 3531.0,
+    "usage": {
+     "prompt_tokens": 5108,
+     "completion_tokens": 608,
+     "total_tokens": 5716,
+     "cost": 0.000806652,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0008148,
+      "upstream_inference_prompt_cost": 0.0005108,
+      "upstream_inference_completions_cost": 0.000304
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 179,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": "Trong Hình 17, biện pháp có chi phí cao nhất là **cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR)**, khoảng **725 USD/tCO2e**. [CCDR-p065-H17]\n\nCon số này là ước lượng từ trục tung, vì hình không in giá trị trên cột. Trục chạy từ -200 đến 800 USD/tCO2e. [CCDR-p065-H17]"
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p065-H17",
+   "CCDR-p064-t05",
+   "CCDR-p065-H16"
+  ],
+  "looked_ids": [],
+  "searches": 1,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 6684,
+  "completion_tokens": 692,
+  "cost_usd": 0.001004,
+  "ms": 5264.2,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d21",
+  "split": "dev",
+  "group": "bieu_do",
+  "answerable": true,
+  "question": "Trong Hình 17, những biện pháp nào có chi phí âm (tiết kiệm chi phí)?",
+  "status": "answered",
+  "answer": "Theo Hình 17 (các biện pháp giảm phát thải khí nhà kính từ chăn nuôi, đơn vị $/tCO2e), có hai biện pháp có chi phí âm, tức tiết kiệm chi phí:\n1. Khẩu phần hỗn hợp hoàn chỉnh dành cho bò sữa (TMR), ước lượng khoảng -140 $/tCO2e [CCDR-p065-H17].\n2. Bổ sung chế độ ăn uống cho bò nuôi lấy thịt (TMR), ước lượng khoảng -100 $/tCO2e [CCDR-p065-H17].\n\nLưu ý: hình không in giá trị trên cột; các con số trên là ước lượng từ trục tung, chỉ mang tính tương đối. Việc ghép nhãn với từng cột cũng dựa trên thứ tự nhãn trích từ hình nên cần đối chiếu lại với hình gốc. Các biện pháp còn lại (ủ chất thải lợn, thu khí sinh học từ chất thải lợn) gần bằng 0, và các biện pháp cải thiện khẩu phần ăn đều có chi phí dương [CCDR-p065-H17].",
+  "citations": [
+   "CCDR-p065-H17"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p065-H17",
+    "page": 65,
+    "page_label": "55",
+    "bbox": [
+     58,
+     482.7,
+     554.0,
+     703.3
+    ],
+    "crop": "crops/CCDR-p065-H17.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 17 đường cong chi phí biên giảm phát thải chi phí âm",
+    "ms": 119.1,
+    "results": [
+     {
+      "id": "CCDR-p065-H17",
+      "score": 0.860811,
+      "rank": 1,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.848617,
+      "rank": 2,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p064-t05",
+      "score": 0.844662,
+      "rank": 3,
+      "page": 64,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p048-t01",
+      "score": 0.842076,
+      "rank": 4,
+      "page": 48,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p065-H16",
+      "score": 0.842069,
+      "rank": 5,
+      "page": 65,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.839146,
+      "rank": 6,
+      "page": 25,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.836243,
+      "rank": 7,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p062-t01",
+      "score": 0.833773,
+      "rank": 8,
+      "page": 62,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p065-H17",
+     "CCDR-p062-H15",
+     "CCDR-p064-t05"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1437.3,
+    "usage": {
+     "prompt_tokens": 1547,
+     "completion_tokens": 76,
+     "total_tokens": 1623,
+     "cost": 0.000190773,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001927,
+      "upstream_inference_prompt_cost": 0.0001547,
+      "upstream_inference_completions_cost": 3.8e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 4780.7,
+    "usage": {
+     "prompt_tokens": 5195,
+     "completion_tokens": 772,
+     "total_tokens": 5967,
+     "cost": 0.000896445,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0009055,
+      "upstream_inference_prompt_cost": 0.0005195,
+      "upstream_inference_completions_cost": 0.000386
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 247,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p065-H17",
+   "CCDR-p062-H15",
+   "CCDR-p064-t05"
+  ],
+  "looked_ids": [],
+  "searches": 1,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 6742,
+  "completion_tokens": 848,
+  "cost_usd": 0.001087,
+  "ms": 6337.4,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d22",
+  "split": "dev",
+  "group": "anh_so_do",
+  "answerable": true,
+  "question": "Trong Hình 4, phần diện tích nằm dưới trục 0 trong giai đoạn 1990-2000 thuộc ngành nào theo chú giải?",
+  "status": "answered",
+  "answer": "Theo chú giải của Hình 4 (Gia tăng mức phát thải GHG, trang 18), nhóm duy nhất có khả năng nằm dưới trục 0 là \"Thay đổi mục đích sử dụng đất và lâm nghiệp\" (LULUCF). Chú giải liệt kê nhóm này cùng 10 nhóm khác, và trục tung có đơn vị MtCO2e từ -100 đến 400 [CCDR-p018-H4]. Bảng Phụ lục 1 cho thấy LULUCF năm 1990 là -71,38 triệu tấn CO2e, tức là giá trị âm (hấp thụ) [CCDR-p091-bang-r2]. Lưu ý: văn bản trích từ hình không gắn rõ màu từng dải với nhãn, nên việc xác định dải dưới trục 0 là LULUCF là suy luận từ chú giải và số liệu bảng, chưa được xác nhận trực tiếp từ màu sắc trong hình. Tôi cũng không tìm thấy số liệu riêng cho năm 2000 của nhóm này.",
+  "citations": [
+   "CCDR-p018-H4",
+   "CCDR-p091-bang-r2"
+  ],
+  "citations_at": [
+   {
+    "id": "CCDR-p018-H4",
+    "page": 18,
+    "page_label": "8",
+    "bbox": [
+     50.6,
+     166.9,
+     579.6,
+     521.0
+    ],
+    "crop": "crops/CCDR-p018-H4.png"
+   },
+   {
+    "id": "CCDR-p091-bang-r2",
+    "page": 91,
+    "page_label": "81",
+    "bbox": [
+     69.1,
+     99.6,
+     562.0,
+     711.0
+    ],
+    "crop": "crops/CCDR-p091-bang.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 4 diện tích dưới trục 0 giai đoạn 1990-2000 ngành",
+    "ms": 118.9,
+    "results": [
+     {
+      "id": "CCDR-p101-bangc-r2",
+      "score": 0.841733,
+      "rank": 1,
+      "page": 101,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p053-t01",
+      "score": 0.837621,
+      "rank": 2,
+      "page": 53,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p077-H21",
+      "score": 0.837243,
+      "rank": 3,
+      "page": 77,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.836757,
+      "rank": 4,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.836233,
+      "rank": 5,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p101-bangc-r3",
+      "score": 0.835446,
+      "rank": 6,
+      "page": 101,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p072-H20",
+      "score": 0.835256,
+      "rank": 7,
+      "page": 72,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p100-bang-r2",
+      "score": 0.833158,
+      "rank": 8,
+      "page": 100,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p101-bangc-r2",
+     "CCDR-p053-t01",
+     "CCDR-p077-H21"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 4 chú giải biểu đồ đóng góp tăng trưởng phát thải khí nhà kính theo ngành 1990-2000",
+    "ms": 126.2,
+    "results": [
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.876116,
+      "rank": 1,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p053-B4",
+      "score": 0.864645,
+      "rank": 2,
+      "page": 53,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p091-bang-r2",
+      "score": 0.861025,
+      "rank": 3,
+      "page": 91,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.850599,
+      "rank": 4,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.849541,
+      "rank": 5,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p053-t01",
+      "score": 0.849349,
+      "rank": 6,
+      "page": 53,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p078-H22",
+      "score": 0.848538,
+      "rank": 7,
+      "page": 78,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p065-H17",
+      "score": 0.847097,
+      "rank": 8,
+      "page": 65,
+      "kind": "figure"
+     }
+    ],
+    "shown": [
+     "CCDR-p018-H4",
+     "CCDR-p053-B4",
+     "CCDR-p091-bang-r2"
+    ],
+    "already_shown": [
+     "CCDR-p053-t01"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "answered",
+    "reason": null
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1286.0,
+    "usage": {
+     "prompt_tokens": 1566,
+     "completion_tokens": 81,
+     "total_tokens": 1647,
+     "cost": 0.000195129,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0001971,
+      "upstream_inference_prompt_cost": 0.0001566,
+      "upstream_inference_completions_cost": 4.05e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 1871.0,
+    "usage": {
+     "prompt_tokens": 5298,
+     "completion_tokens": 114,
+     "total_tokens": 5412,
+     "cost": 0.000580932,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0005868,
+      "upstream_inference_prompt_cost": 0.0005298,
+      "upstream_inference_completions_cost": 5.7e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 16,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 5576.2,
+    "usage": {
+     "prompt_tokens": 10490,
+     "completion_tokens": 1027,
+     "total_tokens": 11517,
+     "cost": 0.001546875,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0015625,
+      "upstream_inference_prompt_cost": 0.001049,
+      "upstream_inference_completions_cost": 0.0005135
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 523,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p101-bangc-r2",
+   "CCDR-p053-t01",
+   "CCDR-p077-H21",
+   "CCDR-p018-H4",
+   "CCDR-p053-B4",
+   "CCDR-p091-bang-r2"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 3,
+  "look_calls": 0,
+  "prompt_tokens": 17354,
+  "completion_tokens": 1222,
+  "cost_usd": 0.002323,
+  "ms": 8978.8,
+  "context_hit": true,
+  "first_search_hit": false,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ },
+ {
+  "query_id": "ad-d23",
+  "split": "dev",
+  "group": "anh_so_do",
+  "answerable": true,
+  "question": "Trong Hình 15, lớp màu xanh dương đậm nằm trên cùng, sát trục 0 vào năm 2030, là biện pháp nào theo chú giải?",
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng để xác định lớp màu xanh dương đậm trên cùng sát trục 0 năm 2030 là biện pháp nào. Hình 15 (Giảm phát thải CO2 vào năm 2030 trong kịch bản giảm nhẹ, so với BAU) có chú giải gồm 12 biện pháp: 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới; 1.3 Cải thiện hệ số tải trọng xe tải; 2.1 Mở rộng hệ thống xe buýt; 2.2 Mở rộng xe buýt BRT; 2.3 Triển khai hệ thống tàu điện ngầm; 3.1/3.2 Chuyển đổi phương thức từ đường bộ sang ĐTNĐ/ven biển; 3.3 Chuyển đổi sang đường sắt; 4.1 Khuyến khích nhiên liệu sinh học (E5); 4.2 Khuyến khích xe máy điện; 4.3 Khuyến khích xe buýt CNG; 4.4 Khuyến khích ô tô điện và xe buýt điện [CCDR-p062-H15]. Tuy nhiên, văn bản trích từ hình không cho biết màu của từng lớp cũng như thứ tự xếp chồng tương ứng với chú giải, nên không xác định được lớp nào là lớp xanh dương đậm trên cùng. Phần mô tả do model tạo của hình có nêu lớp trên cùng là 1.1, nhưng đây không phải chữ trích từ hình và chưa được kiểm chứng, nên không dùng làm căn cứ. Cần xem trực tiếp hình để đối chiếu màu sắc và thứ tự lớp.",
+  "citations": [
+   "CCDR-p062-H15"
+  ],
+  "reason": "model_abstained",
+  "citations_at": [
+   {
+    "id": "CCDR-p062-H15",
+    "page": 62,
+    "page_label": "52",
+    "bbox": [
+     58,
+     355.4,
+     554.0,
+     655.2
+    ],
+    "crop": "crops/CCDR-p062-H15.png"
+   }
+  ],
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "Hình 15",
+    "ms": 123.4,
+    "results": [
+     {
+      "id": "CCDR-p076-t01",
+      "score": 0.830458,
+      "rank": 1,
+      "page": 76,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.827876,
+      "rank": 2,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p013-H1",
+      "score": 0.821495,
+      "rank": 3,
+      "page": 13,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p025-H6",
+      "score": 0.819333,
+      "rank": 4,
+      "page": 25,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p082-t01",
+      "score": 0.817407,
+      "rank": 5,
+      "page": 82,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p040-H10",
+      "score": 0.816834,
+      "rank": 6,
+      "page": 40,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p014-t01",
+      "score": 0.815982,
+      "rank": 7,
+      "page": 14,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.815266,
+      "rank": 8,
+      "page": 9,
+      "kind": "table"
+     }
+    ],
+    "shown": [
+     "CCDR-p076-t01",
+     "CCDR-p062-H15",
+     "CCDR-p013-H1"
+    ],
+    "already_shown": []
+   },
+   {
+    "event": "search",
+    "tool": "search_doc",
+    "query": "biểu đồ cột xếp chồng 2030 giảm phát thải biện pháp chú giải",
+    "ms": 124.0,
+    "results": [
+     {
+      "id": "CCDR-p062-H15",
+      "score": 0.863322,
+      "rank": 1,
+      "page": 62,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p098-bang",
+      "score": 0.851609,
+      "rank": 2,
+      "page": 98,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p053-B4",
+      "score": 0.849201,
+      "rank": 3,
+      "page": 53,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p056-H13",
+      "score": 0.84695,
+      "rank": 4,
+      "page": 56,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p055-t01",
+      "score": 0.844977,
+      "rank": 5,
+      "page": 55,
+      "kind": "text"
+     },
+     {
+      "id": "CCDR-p018-H4",
+      "score": 0.843997,
+      "rank": 6,
+      "page": 18,
+      "kind": "figure"
+     },
+     {
+      "id": "CCDR-p009-bang",
+      "score": 0.843078,
+      "rank": 7,
+      "page": 9,
+      "kind": "table"
+     },
+     {
+      "id": "CCDR-p023-t05",
+      "score": 0.842961,
+      "rank": 8,
+      "page": 23,
+      "kind": "text"
+     }
+    ],
+    "shown": [
+     "CCDR-p098-bang",
+     "CCDR-p053-B4",
+     "CCDR-p056-H13"
+    ],
+    "already_shown": [
+     "CCDR-p062-H15"
+    ]
+   },
+   {
+    "event": "finish",
+    "status": "abstain",
+    "reason": "model_abstained"
+   }
+  ],
+  "turns": [
+   {
+    "finish": "tool_calls",
+    "ms": 1516.2,
+    "usage": {
+     "prompt_tokens": 1570,
+     "completion_tokens": 130,
+     "total_tokens": 1700,
+     "cost": 0.00021978,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.000222,
+      "upstream_inference_prompt_cost": 0.000157,
+      "upstream_inference_completions_cost": 6.5e-05
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "search_doc",
+     "search_doc"
+    ],
+    "text": null
+   },
+   {
+    "finish": "tool_calls",
+    "ms": 6555.1,
+    "usage": {
+     "prompt_tokens": 8279,
+     "completion_tokens": 1298,
+     "total_tokens": 9577,
+     "cost": 0.001462131,
+     "is_byok": false,
+     "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost_details": {
+      "upstream_inference_cost": 0.0014769,
+      "upstream_inference_prompt_cost": 0.0008279,
+      "upstream_inference_completions_cost": 0.000649
+     },
+     "completion_tokens_details": {
+      "reasoning_tokens": 567,
+      "image_tokens": 0,
+      "audio_tokens": 0
+     }
+    },
+    "tool_calls": [
+     "finish"
+    ],
+    "text": null
+   }
+  ],
+  "looks": [],
+  "context_ids": [
+   "CCDR-p076-t01",
+   "CCDR-p062-H15",
+   "CCDR-p013-H1",
+   "CCDR-p098-bang",
+   "CCDR-p053-B4",
+   "CCDR-p056-H13"
+  ],
+  "looked_ids": [],
+  "searches": 2,
+  "model_calls": 2,
+  "look_calls": 0,
+  "prompt_tokens": 9849,
+  "completion_tokens": 1428,
+  "cost_usd": 0.001682,
+  "ms": 8319.1,
+  "context_hit": true,
+  "first_search_hit": true,
+  "cited_gold": true,
+  "evidence_items": 1,
+  "evidence_items_in_context": 1
+ }
+]

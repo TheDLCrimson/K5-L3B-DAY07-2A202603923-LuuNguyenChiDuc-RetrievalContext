@@ -1,0 +1,63 @@
+[
+ {
+  "query_id": "ad-d19",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Khoảng 5.700 USD, trong dung sai 4.800-6.200 và nói rõ là ước lượng từ trục; giá trị lấy từ mô tả của hình chứ model chưa nhìn ảnh, nhưng khớp với hình.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d20",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng biện pháp, khoảng 725 USD/tCO2e, ước lượng từ trục.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d21",
+  "group": "bieu_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "Đúng hai biện pháp âm; nêu rõ hai cột gần 0 không chắc là âm nên không đưa vào.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d22",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": true,
+  "failure": null,
+  "citation_support": [
+   true
+  ],
+  "reason": "LULUCF, nêu rõ phần màu lấy từ mô tả hình; kết quả đúng và đoạn dẫn đúng.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ },
+ {
+  "query_id": "ad-d23",
+  "group": "anh_so_do",
+  "answerable": true,
+  "pass": false,
+  "failure": "refusal",
+  "citation_support": [
+   true,
+   true
+  ],
+  "reason": "Từ chối vì chữ trích không gắn màu với biện pháp; mô tả ước lượng lớp trên cùng là 1.1 nhưng không được dùng làm bằng chứng. Không đạt.",
+  "labelled_by": "drafted with AI assistance by reading each answer against the evidence, the crop and every cited chunk; checked by the author"
+ }
+]

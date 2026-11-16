@@ -41,6 +41,84 @@ The chosen configuration is run on test whatever its dev result is, and the pass
 The bonus is claimed only if it passes at least 27 of the 30 test questions, with no rounding.
 If a test failure leads to a change, the test set is replaced with new questions before any score is reported.
 
-## A3 - Dev results
+## A3 - Dev results (V0, V1, V2; first run of each)
 
-To be written after the dev runs.
+Run on 16/11/2026 with the agent and benchmark as committed.
+A first attempt overlapped two runs and a reranker load failed with a Windows memory error (paging file); the stale run was stopped, the dev folder deleted and all three configurations re-run once, in order.
+Labels were drafted by reading every answer against the evidence, the crop and every cited chunk (reasons in [review_labels.csv](results/advanced/dev/review_labels.csv)), then checked by the author.
+
+| Measure | V0 dense | V1 hybrid + rerank | V2 V1 + look |
+| --- | --- | --- | --- |
+| Pass, all 18 (by reading) | 18/18 | 18/18 | 18/18 |
+| Pass by group (table, image or diagram, chart, multi-hop, text, no evidence) | 3, 3, 4, 2, 3, 3 of the same | same | same |
+| Refuses the 3 no-evidence questions without an unsupported claim | 3/3 | 3/3 | 3/3 |
+| Evidence in the final context (answerable) | 15/15 | 15/15 | 15/15 |
+| Evidence in the first search | 13/15 | 13/15 | 13/15 |
+| Answers citing every evidence item | 15/15 | 15/15 | 15/15 |
+| Searches per question (1 / 2 / 3 / 4) | 8 / 6 / 3 / 1 | 11 / 6 / 0 / 1 | 10 / 6 / 0 / 2 |
+| Looks per question (0 / 1 / 2) | all 0 | all 0 | 7 / 10 / 1 |
+| Model calls per question (mean) | 2.44 | 2.28 | 3.00 |
+| System errors | 0 | 0 | 0 |
+| Cost for 18 questions (per question) | $0.0268 ($0.0015) | $0.0238 ($0.0013) | $0.0385 ($0.0021) |
+| Time per question, median / p90 | 6.0 s / 13.2 s | 9.1 s / 16.3 s | 12.9 s / 22.8 s |
+
+**What the dev set shows.**
+All three pass every dev question, so dev cannot separate them.
+The look tool was used on 11 of the 15 answerable questions and every look agreed with the crop, but the other two configurations answered the same questions correctly from the extracted text.
+That is because the report repeats most chart values in its own text (for example Hình 8's 9,8% and 12,3% are in a paragraph), and because vector charts carry their labels as text.
+So the dev questions do not contain the case the look tool is for: a value that exists only in the picture.
+Two of the 15 answerable dev questions read a value off an axis (ad-d09, ad-d10) and both were answered from description or text.
+
+**One defect found.**
+V1 on ad-d13 returned a correct answer with tool-call markup leaked into the answer string (`</answer> <parameter name="citations">...`).
+It is graded a pass because the content and citations are right, and recorded as a model formatting fault.
+
+**By the rule written in A2.**
+The gate holds for all three, the pass counts tie (18), evidence in context ties (15/15), so step 4 decides: V1 has the lowest cost per question.
+The rule, applied as written, chooses V1.
+The tie says dev cannot tell whether look matters, and the test set has seven evidence items that exist only in the picture.
+
+## A4 - Amendment after the dev tie (made before any test run)
+
+The first dev runs tied, so step 4 of the rule (cost) alone would have decided, and dev had no question that only a picture can answer.
+Decision of the author, taken after seeing that result and before running anything on test:
+
+- add five dev questions whose answer exists only in the picture, on figures the test does not use (ad-d19 to ad-d23: Hình 2, 15, 17 and 4; each was checked against the extracted text and its answer is not there);
+- run V0, V1 and V2 once on those five, label them the same way, and apply the rule from A2 unchanged to the 23 dev questions (the 18 first runs plus the 5 new ones);
+- the test set is not touched.
+
+Another change made at the same time, found in the first run: the harness strips tool-call markup that a model writes into the answer text (event `answer_markup_stripped`), with a unit test.
+It changes how an answer string is cleaned, not what the model is asked or shown, so the 18 first-run answers are kept as they are.
+
+## A5 - Dev results with the extension (23 questions) and the rule applied
+
+The five new questions ran once for each of V0, V1 and V2 with the harness that strips leaked markup; labels are in [review_labels_ext.csv](results/advanced/dev/review_labels_ext.csv), drafted by reading and checked by the author.
+
+| Question (picture-only answer) | V0 dense | V1 hybrid + rerank | V2 V1 + look |
+| --- | --- | --- | --- |
+| ad-d19 Hình 2, end of Thailand's line (axis read) | refused (fail) | 5,700, pass (from the description, matches the picture) | 5,700 after looking, pass |
+| ad-d20 Hình 17, highest bar | pass | pass | pass |
+| ad-d21 Hình 17, negative bars | pass | pass | pass |
+| ad-d22 Hình 4, sector below zero (colour to legend) | pass (legend and a table row) | pass | pass (looked) |
+| ad-d23 Hình 15, top layer (colour to legend) | refused (fail) | refused (fail) | pass (looked) |
+
+| All 23 dev questions | V0 | V1 | V2 |
+| --- | --- | --- | --- |
+| Pass | 21/23 | 22/23 | 23/23 |
+| Failures | ad-d19, ad-d23 (both refusals) | ad-d23 (refusal) | none |
+| Evidence in the final context | 20/20 | 20/20 | 20/20 |
+| Cited chunks that support the answer | 37/37 | 35/35 | 37/37 |
+| Cost per question | $0.00155 | $0.00134 | $0.00216 |
+
+Every failure is a refusal: V0 and V1 declined to name a colour or an axis value that the extracted text does not carry, where V2 looked at the picture and answered.
+
+**By the rule written in A2, applied as written.**
+1. The gate holds for all three (3/3 no-evidence questions refused, nothing unsupported).
+2. Pass counts are 21, 22 and 23; configurations within one question of the best count as tied, so V2 and V1 are tied and V0 (two below) is out.
+3. Evidence in context ties at 20/20.
+4. Cost per question decides between the two: V1 is cheaper than V2, so **the rule chooses V1**.
+
+**What this means, stated plainly.**
+The rule picks V1, but the difference between V1 and V2 on dev is one question out of 23, and it is on the kind of question the look tool exists for.
+The test has 12 evidence items that exist only in the picture.
+Choosing V1 follows the rule; choosing V2 would follow the evidence about the capability but override a rule written beforehand.

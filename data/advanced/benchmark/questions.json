@@ -468,6 +468,149 @@
   "reason": "Hai chỉ số khác nhau trong cùng một đoạn."
  },
  {
+  "id": "ad-d19",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "đọc trục",
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 2, đến cuối giai đoạn (khoảng T+54) đường của Thái Lan đạt GDP bình quân đầu người khoảng bao nhiêu USD (USD 2015 cố định)?",
+  "expected_answer": "Khoảng 5.500 USD (đường Thái Lan 1958-2012 kết thúc ở cuối trục thời gian).",
+  "grading": "Chấp nhận 4.800-6.200 USD; hình không in số, đọc từ trục tung.",
+  "evidence": [
+   {
+    "need": "Điểm cuối của đường Thái Lan (1958-2012)",
+    "page": 15,
+    "locator": "Hình 2",
+    "chunk_ids": [
+     "CCDR-p015-H2"
+    ],
+    "value": "~5.500 (đọc từ trục)",
+    "check_text": [
+     "Thái Lan"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Biểu đồ đường 5 chuỗi không in số: phải gắn đúng chuỗi theo chú giải và đọc giá trị từ trục."
+ },
+ {
+  "id": "ad-d20",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "đọc trục"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 17, biện pháp giảm phát thải từ chăn nuôi nào có chi phí cao nhất và mức đó khoảng bao nhiêu USD/tCO2e?",
+  "expected_answer": "Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR), khoảng 725 USD/tCO2e.",
+  "grading": "Đúng biện pháp; giá trị chấp nhận 650-800 USD/tCO2e (không in nhãn số).",
+  "evidence": [
+   {
+    "need": "Cột cao nhất (cột cuối) của biểu đồ cột",
+    "page": 65,
+    "locator": "Hình 17, cột ngoài cùng bên phải",
+    "chunk_ids": [
+     "CCDR-p065-H17"
+    ],
+    "value": "~725 $/tCO2e (đọc từ trục)",
+    "check_text": [
+     "trâu"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Giá trị chỉ có trong hình (không in số, không có trong văn bản); nhãn trục xoay dọc."
+ },
+ {
+  "id": "ad-d21",
+  "split": "dev",
+  "group": "bieu_do",
+  "tags": [
+   "đọc trục"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 17, những biện pháp nào có chi phí âm (tiết kiệm chi phí)?",
+  "expected_answer": "Khẩu phần hỗn hợp hoàn chỉnh dành cho bò sữa (TMR) và bổ sung chế độ ăn uống cho bò nuôi lấy thịt (TMR).",
+  "grading": "Nêu đủ hai biện pháp; thêm biện pháp khác là sai.",
+  "evidence": [
+   {
+    "need": "Hai cột đầu nằm dưới trục 0",
+    "page": 65,
+    "locator": "Hình 17, hai cột bên trái",
+    "chunk_ids": [
+     "CCDR-p065-H17"
+    ],
+    "value": "khẩu phần hỗn hợp bò sữa; bổ sung chế độ ăn bò thịt",
+    "check_text": [
+     "bò sữa"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Phải nhận ra cột nằm dưới trục 0 và gắn với nhãn xoay dọc; thông tin chỉ có trong hình."
+ },
+ {
+  "id": "ad-d22",
+  "split": "dev",
+  "group": "anh_so_do",
+  "tags": [
+   "màu",
+   "ảnh raster"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 4, phần diện tích nằm dưới trục 0 trong giai đoạn 1990-2000 thuộc ngành nào theo chú giải?",
+  "expected_answer": "Thay đổi mục đích sử dụng đất và lâm nghiệp (LULUCF).",
+  "grading": "Đúng ngành; nhầm với Điện/Nhiệt hoặc một ngành phát thải khác là sai.",
+  "evidence": [
+   {
+    "need": "Vùng màu tím nhạt dưới trục 0, khớp màu chú giải cuối",
+    "page": 18,
+    "locator": "Hình 4",
+    "chunk_ids": [
+     "CCDR-p018-H4"
+    ],
+    "value": "Thay đổi mục đích sử dụng đất và lâm nghiệp",
+    "check_text": [
+     "Thay đổi mục đích sử dụng đất và lâm nghiệp"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Ảnh raster: phải khớp màu vùng với màu trong chú giải (nhiều sắc tím gần nhau)."
+ },
+ {
+  "id": "ad-d23",
+  "split": "dev",
+  "group": "anh_so_do",
+  "tags": [
+   "màu",
+   "chú giải"
+  ],
+  "answerable": true,
+  "question": "Trong Hình 15, lớp màu xanh dương đậm nằm trên cùng, sát trục 0 vào năm 2030, là biện pháp nào theo chú giải?",
+  "expected_answer": "1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới.",
+  "grading": "Đúng biện pháp 1.1; nhầm với 3.1/3.2 (xanh dương sáng hơn) là sai.",
+  "evidence": [
+   {
+    "need": "Lớp xanh dương đậm trên cùng, khớp ô vuông cuối chú giải",
+    "page": 62,
+    "locator": "Hình 15",
+    "chunk_ids": [
+     "CCDR-p062-H15"
+    ],
+    "value": "1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới",
+    "check_text": [
+     "1.1 Tiết kiệm nhiên liệu"
+    ],
+    "visual_only": true
+   }
+  ],
+  "reason": "Biểu đồ vùng xếp chồng với 12 chú giải: phải khớp màu lớp với màu chú giải, thông tin không có trong văn bản."
+ },
+ {
   "id": "ad-d16",
   "split": "dev",
   "group": "thieu_bang_chung",

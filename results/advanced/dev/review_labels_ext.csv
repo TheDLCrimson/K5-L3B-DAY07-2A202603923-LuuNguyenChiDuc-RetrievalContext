@@ -1,0 +1,16 @@
+query_id,config,answerable,pass,failure,citation_support,note
+ad-d19,V0_dense_ext,y,n,refusal,CCDR-p015-H2=y,Từ chối dù chính câu trả lời nêu mô tả hình ước lượng khoảng 5.700; không tự nhìn hình nên không dám đưa số. Từ chối câu có đáp án là không đạt.
+ad-d19,V1_rerank_ext,y,y,,CCDR-p015-H2=y,"Khoảng 5.700 USD, trong dung sai 4.800-6.200 và nói rõ là ước lượng từ trục; giá trị lấy từ mô tả của hình chứ model chưa nhìn ảnh, nhưng khớp với hình."
+ad-d19,V2_rerank_look_ext,y,y,,CCDR-p015-H2=y,"Look đọc đường Thái Lan khoảng 5.700 USD tại T+54, trong dung sai, nói rõ là ước lượng."
+ad-d20,V0_dense_ext,y,y,,CCDR-p065-H17=y,"Cải thiện khẩu phần cho trâu nuôi lấy thịt (TMR), khoảng 725 USD/tCO2e; nói rõ là ước lượng từ trục."
+ad-d20,V1_rerank_ext,y,y,,CCDR-p065-H17=y,"Đúng biện pháp, khoảng 725 USD/tCO2e, ước lượng từ trục."
+ad-d20,V2_rerank_look_ext,y,y,,CCDR-p065-H17=y,"Đúng biện pháp, khoảng 720-725 USD/tCO2e (look đọc 720), trong dung sai 650-800."
+ad-d21,V0_dense_ext,y,y,,CCDR-p065-H17=y,"Nêu đúng hai biện pháp âm (bò sữa khoảng -140, bò thịt khoảng -100); hai cột gần 0 không đưa vào danh sách."
+ad-d21,V1_rerank_ext,y,y,,CCDR-p065-H17=y,Đúng hai biện pháp âm; nêu rõ hai cột gần 0 không chắc là âm nên không đưa vào.
+ad-d21,V2_rerank_look_ext,y,y,,CCDR-p065-H17=y,Đúng hai biện pháp âm (khoảng -140 và -90 đến -100) sau khi nhìn từng cột.
+ad-d22,V0_dense_ext,y,y,,CCDR-p018-H4=y; CCDR-p091-bang-r2=y,"LULUCF; lập luận từ chú giải và hàng LULUCF năm 1990 là -71,38 (đoạn trích p091 đúng), nói rõ chưa xác nhận bằng màu."
+ad-d22,V1_rerank_ext,y,y,,CCDR-p018-H4=y,"LULUCF, nêu rõ phần màu lấy từ mô tả hình; kết quả đúng và đoạn dẫn đúng."
+ad-d22,V2_rerank_look_ext,y,y,,CCDR-p018-H4=y,"Look thấy vùng tím hồng dưới trục 0 và khớp với chú giải LULUCF, khoảng -70 đến -75 MtCO2e."
+ad-d23,V0_dense_ext,y,n,refusal,CCDR-p062-H15=y,Liệt kê đủ 12 chú giải nhưng từ chối vì chữ trích không cho biết màu nào là lớp nào; không dùng ảnh. Từ chối câu có đáp án là không đạt.
+ad-d23,V1_rerank_ext,y,n,refusal,CCDR-p062-H15=y; CCDR-p062-t01=y,Từ chối vì chữ trích không gắn màu với biện pháp; mô tả ước lượng lớp trên cùng là 1.1 nhưng không được dùng làm bằng chứng. Không đạt.
+ad-d23,V2_rerank_look_ext,y,y,,CCDR-p062-H15=y,"Look nhìn ảnh, thấy lớp xanh dương đậm sát trục 0 là 1.1 Tiết kiệm nhiên liệu và tiêu chuẩn khí thải mới; giá trị khoảng -4.200 nghìn tấn CO2 là ước lượng."
