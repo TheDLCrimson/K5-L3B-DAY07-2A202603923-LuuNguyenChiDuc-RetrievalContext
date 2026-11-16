@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+from src.advanced.check_crops import clipped
 from src.advanced.describe import numbers
 from src.advanced.extract import EXCLUDED, poor_markdown, split_table, squeeze_markdown
 from src.advanced.source import DATA_DIR, PDF_PATH
@@ -58,6 +59,12 @@ class CommittedExtractionTest(unittest.TestCase):
         crops = {c["crop"] for c in self.chunks if c["crop"]}
         self.assertEqual(crops, set(regions))
         self.assertTrue(all(r["description"].strip() for r in regions.values()))
+
+    @unittest.skipUnless(PDF_PATH.exists(), "source PDF not downloaded (python -m src.advanced.source)")
+    def test_no_crop_cuts_a_line_of_text_at_its_edges(self):
+        import pymupdf
+
+        self.assertEqual(clipped(pymupdf.open(PDF_PATH), self.chunks), [])
 
     @unittest.skipUnless(PDF_PATH.exists(), "source PDF not downloaded (python -m src.advanced.source)")
     def test_figure_regions_stop_at_their_source_line(self):

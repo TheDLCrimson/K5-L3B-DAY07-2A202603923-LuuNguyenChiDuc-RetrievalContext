@@ -52,6 +52,7 @@ python -m src.advanced.extract          # text, table and figure chunks plus cro
 python -m src.advanced.describe         # model-written description of each figure and table crop (cached)
 python -m src.advanced.index build      # embed every chunk into the pgvector table adv_chunks
 python -m src.advanced.verify_benchmark # quotas, evidence chunks, calculations and absence terms
+python -m src.advanced.check_crops      # no crop cuts a line of text at its edges
 python -m src.advanced.run_agent --split dev --config V2_rerank_look      # V0_dense, V1_rerank, V2_rerank_look, V3_rerank_look_strong
 python -m src.advanced.review_sheet sheet --split dev --configs V0_dense,V1_rerank,V2_rerank_look
 python -m src.advanced.review_sheet import --split dev --labelled-by "<who labelled>"

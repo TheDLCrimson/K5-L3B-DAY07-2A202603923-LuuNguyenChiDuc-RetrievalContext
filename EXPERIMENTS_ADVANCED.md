@@ -11,7 +11,7 @@ Fixed for every configuration:
 
 - the document (World Bank CCDR for Vietnam, Vietnamese edition, 103 pages) and its index: 384 chunks, `intfloat/multilingual-e5-base`, 768-d, exact cosine, in the pgvector table `adv_chunks`;
 - the agent model `anthropic/claude-haiku-5.5` through OpenRouter, and the agent loop: at most 8 model calls, 5 searches and 4 looks, 3 new chunks per search, 3,300 characters per chunk;
-- the benchmark and its split: dev 15 answerable and 3 without evidence, test 24 and 6;
+- the benchmark and its split: dev 15 answerable and 3 without evidence, test 24 and 6 (dev was later extended to 20 and 3, see A4; test never changed);
 - the question text is the only input: no gold, no filter, no rewritten query given by the harness.
 
 | ID | Retrieval | Tools | Hypothesis, written before the run |
